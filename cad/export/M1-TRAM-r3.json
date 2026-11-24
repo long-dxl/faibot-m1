@@ -1,0 +1,721 @@
+{
+ "gia_dinh": {
+  "h_j1_tren_ban": 0.05,
+  "cam_tren_ban": 0.65,
+  "fov_cheo_deg": 80.0,
+  "anh_ty_le": [
+   4,
+   3
+  ],
+  "r_vai": 0.05,
+  "r_canh": 0.035,
+  "r_cang": 0.03,
+  "r_kep": 0.045,
+  "z_vat": 0.03,
+  "pitches_deg": [
+   -90.0,
+   -60.0,
+   -45.0,
+   -30.0
+  ],
+  "cot_mast_r": 0.015,
+  "gimbal_r": 0.045
+ },
+ "khoang_vai": {
+  "0.375": {
+   "dien_tich_trai_m2": 0.3192,
+   "dien_tich_hop_m2": 0.5019,
+   "dien_tich_chung_m2": 0.1365,
+   "be_rong_chung_max_m": 0.65,
+   "dai_x_chung_m": [
+    0.14999999999999988,
+    0.5299999999999997
+   ],
+   "be_rong_phu_y_m": 1.43,
+   "tay_trai_qua_tam_m2": 0.0943,
+   "vung_rui_ro_cham_m2": 0.1829,
+   "ty_le_o_rui_ro_trong_vung_chung": 0.966,
+   "p_cham_ngau_nhien": 0.17875,
+   "p_cham_moi_tay_nua_minh": 0.00368149784369412,
+   "p_cham_cach_tam_5cm": 0.0
+  },
+  "0.450": {
+   "dien_tich_trai_m2": 0.3194,
+   "dien_tich_hop_m2": 0.5192,
+   "dien_tich_chung_m2": 0.1196,
+   "be_rong_chung_max_m": 0.57,
+   "dai_x_chung_m": [
+    0.0799999999999999,
+    0.5099999999999997
+   ],
+   "be_rong_phu_y_m": 1.51,
+   "tay_trai_qua_tam_m2": 0.0787,
+   "vung_rui_ro_cham_m2": 0.1476,
+   "ty_le_o_rui_ro_trong_vung_chung": 0.983,
+   "p_cham_ngau_nhien": 0.11125,
+   "p_cham_moi_tay_nua_minh": 0.0034570596797671035,
+   "p_cham_cach_tam_5cm": 0.0
+  },
+  "0.475": {
+   "dien_tich_trai_m2": 0.3192,
+   "dien_tich_hop_m2": 0.5223,
+   "dien_tich_chung_m2": 0.1161,
+   "be_rong_chung_max_m": 0.55,
+   "dai_x_chung_m": [
+    0.08999999999999989,
+    0.5099999999999997
+   ],
+   "be_rong_phu_y_m": 1.51,
+   "tay_trai_qua_tam_m2": 0.0733,
+   "vung_rui_ro_cham_m2": 0.1332,
+   "ty_le_o_rui_ro_trong_vung_chung": 0.951,
+   "p_cham_ngau_nhien": 0.09765,
+   "p_cham_moi_tay_nua_minh": 0.0035494762358237383,
+   "p_cham_cach_tam_5cm": 0.0
+  },
+  "0.500": {
+   "dien_tich_trai_m2": 0.3185,
+   "dien_tich_hop_m2": 0.5244,
+   "dien_tich_chung_m2": 0.1126,
+   "be_rong_chung_max_m": 0.51,
+   "dai_x_chung_m": [
+    0.08999999999999989,
+    0.49999999999999967
+   ],
+   "be_rong_phu_y_m": 1.51,
+   "tay_trai_qua_tam_m2": 0.0681,
+   "vung_rui_ro_cham_m2": 0.1263,
+   "ty_le_o_rui_ro_trong_vung_chung": 0.97,
+   "p_cham_ngau_nhien": 0.09175,
+   "p_cham_moi_tay_nua_minh": 0.00422654268808115,
+   "p_cham_cach_tam_5cm": 0.0
+  }
+ },
+ "fov": {
+  "H_V_deg": [
+   67.7,
+   53.4
+  ],
+  "x_m=-0.04": {
+   "25": {
+    "phu_mat_ban": 0.187,
+    "phu_kep_cao_12cm": 0.321,
+    "mep_gan_tren_ban_x_m": 0.473,
+    "truc_quang_cham_ban_x_m": 1.354
+   },
+   "30": {
+    "phu_mat_ban": 0.334,
+    "phu_kep_cao_12cm": 0.43,
+    "mep_gan_tren_ban_x_m": 0.387,
+    "truc_quang_cham_ban_x_m": 1.086
+   },
+   "35": {
+    "phu_mat_ban": 0.46,
+    "phu_kep_cao_12cm": 0.519,
+    "mep_gan_tren_ban_x_m": 0.31,
+    "truc_quang_cham_ban_x_m": 0.888
+   },
+   "40": {
+    "phu_mat_ban": 0.581,
+    "phu_kep_cao_12cm": 0.585,
+    "mep_gan_tren_ban_x_m": 0.24,
+    "truc_quang_cham_ban_x_m": 0.735
+   },
+   "45": {
+    "phu_mat_ban": 0.665,
+    "phu_kep_cao_12cm": 0.627,
+    "mep_gan_tren_ban_x_m": 0.175,
+    "truc_quang_cham_ban_x_m": 0.61
+   },
+   "50": {
+    "phu_mat_ban": 0.709,
+    "phu_kep_cao_12cm": 0.64,
+    "mep_gan_tren_ban_x_m": 0.113,
+    "truc_quang_cham_ban_x_m": 0.505
+   },
+   "55": {
+    "phu_mat_ban": 0.718,
+    "phu_kep_cao_12cm": 0.639,
+    "mep_gan_tren_ban_x_m": 0.055,
+    "truc_quang_cham_ban_x_m": 0.415
+   },
+   "60": {
+    "phu_mat_ban": 0.721,
+    "phu_kep_cao_12cm": 0.635,
+    "mep_gan_tren_ban_x_m": -0.003,
+    "truc_quang_cham_ban_x_m": 0.335
+   },
+   "65": {
+    "phu_mat_ban": 0.719,
+    "phu_kep_cao_12cm": 0.627,
+    "mep_gan_tren_ban_x_m": null,
+    "truc_quang_cham_ban_x_m": 0.263
+   },
+   "70": {
+    "phu_mat_ban": 0.712,
+    "phu_kep_cao_12cm": 0.524,
+    "mep_gan_tren_ban_x_m": null,
+    "truc_quang_cham_ban_x_m": 0.197
+   }
+  },
+  "x_m=-0.02": {
+   "25": {
+    "phu_mat_ban": 0.15,
+    "phu_kep_cao_12cm": 0.285,
+    "mep_gan_tren_ban_x_m": 0.493,
+    "truc_quang_cham_ban_x_m": 1.374
+   },
+   "30": {
+    "phu_mat_ban": 0.294,
+    "phu_kep_cao_12cm": 0.393,
+    "mep_gan_tren_ban_x_m": 0.407,
+    "truc_quang_cham_ban_x_m": 1.106
+   },
+   "35": {
+    "phu_mat_ban": 0.42,
+    "phu_kep_cao_12cm": 0.483,
+    "mep_gan_tren_ban_x_m": 0.33,
+    "truc_quang_cham_ban_x_m": 0.908
+   },
+   "40": {
+    "phu_mat_ban": 0.541,
+    "phu_kep_cao_12cm": 0.552,
+    "mep_gan_tren_ban_x_m": 0.26,
+    "truc_quang_cham_ban_x_m": 0.755
+   },
+   "45": {
+    "phu_mat_ban": 0.635,
+    "phu_kep_cao_12cm": 0.605,
+    "mep_gan_tren_ban_x_m": 0.195,
+    "truc_quang_cham_ban_x_m": 0.63
+   },
+   "50": {
+    "phu_mat_ban": 0.692,
+    "phu_kep_cao_12cm": 0.628,
+    "mep_gan_tren_ban_x_m": 0.133,
+    "truc_quang_cham_ban_x_m": 0.525
+   },
+   "55": {
+    "phu_mat_ban": 0.709,
+    "phu_kep_cao_12cm": 0.63,
+    "mep_gan_tren_ban_x_m": 0.075,
+    "truc_quang_cham_ban_x_m": 0.435
+   },
+   "60": {
+    "phu_mat_ban": 0.713,
+    "phu_kep_cao_12cm": 0.627,
+    "mep_gan_tren_ban_x_m": 0.017,
+    "truc_quang_cham_ban_x_m": 0.355
+   },
+   "65": {
+    "phu_mat_ban": 0.711,
+    "phu_kep_cao_12cm": 0.62,
+    "mep_gan_tren_ban_x_m": null,
+    "truc_quang_cham_ban_x_m": 0.283
+   },
+   "70": {
+    "phu_mat_ban": 0.705,
+    "phu_kep_cao_12cm": 0.552,
+    "mep_gan_tren_ban_x_m": null,
+    "truc_quang_cham_ban_x_m": 0.217
+   }
+  },
+  "x_m=+0.00": {
+   "25": {
+    "phu_mat_ban": 0.112,
+    "phu_kep_cao_12cm": 0.249,
+    "mep_gan_tren_ban_x_m": 0.513,
+    "truc_quang_cham_ban_x_m": 1.394
+   },
+   "30": {
+    "phu_mat_ban": 0.256,
+    "phu_kep_cao_12cm": 0.357,
+    "mep_gan_tren_ban_x_m": 0.427,
+    "truc_quang_cham_ban_x_m": 1.126
+   },
+   "35": {
+    "phu_mat_ban": 0.38,
+    "phu_kep_cao_12cm": 0.447,
+    "mep_gan_tren_ban_x_m": 0.35,
+    "truc_quang_cham_ban_x_m": 0.928
+   },
+   "40": {
+    "phu_mat_ban": 0.501,
+    "phu_kep_cao_12cm": 0.518,
+    "mep_gan_tren_ban_x_m": 0.28,
+    "truc_quang_cham_ban_x_m": 0.775
+   },
+   "45": {
+    "phu_mat_ban": 0.6,
+    "phu_kep_cao_12cm": 0.579,
+    "mep_gan_tren_ban_x_m": 0.215,
+    "truc_quang_cham_ban_x_m": 0.65
+   },
+   "50": {
+    "phu_mat_ban": 0.67,
+    "phu_kep_cao_12cm": 0.614,
+    "mep_gan_tren_ban_x_m": 0.153,
+    "truc_quang_cham_ban_x_m": 0.545
+   },
+   "55": {
+    "phu_mat_ban": 0.698,
+    "phu_kep_cao_12cm": 0.621,
+    "mep_gan_tren_ban_x_m": 0.095,
+    "truc_quang_cham_ban_x_m": 0.455
+   },
+   "60": {
+    "phu_mat_ban": 0.704,
+    "phu_kep_cao_12cm": 0.619,
+    "mep_gan_tren_ban_x_m": 0.037,
+    "truc_quang_cham_ban_x_m": 0.375
+   },
+   "65": {
+    "phu_mat_ban": 0.704,
+    "phu_kep_cao_12cm": 0.613,
+    "mep_gan_tren_ban_x_m": null,
+    "truc_quang_cham_ban_x_m": 0.303
+   },
+   "70": {
+    "phu_mat_ban": 0.699,
+    "phu_kep_cao_12cm": 0.576,
+    "mep_gan_tren_ban_x_m": null,
+    "truc_quang_cham_ban_x_m": 0.237
+   }
+  },
+  "vung_thao_tac_x_m=-0.02": {
+   "35": {
+    "mat_ban": 0.528,
+    "kep_cao_12cm": 0.721
+   },
+   "40": {
+    "mat_ban": 0.722,
+    "kep_cao_12cm": 0.854
+   },
+   "45": {
+    "mat_ban": 0.889,
+    "kep_cao_12cm": 0.987
+   },
+   "50": {
+    "mat_ban": 1.0,
+    "kep_cao_12cm": 0.994
+   },
+   "55": {
+    "mat_ban": 1.0,
+    "kep_cao_12cm": 0.998
+   },
+   "60": {
+    "mat_ban": 1.0,
+    "kep_cao_12cm": 0.999
+   }
+  },
+  "vung_thao_tac_x_m=+0.00": {
+   "35": {
+    "mat_ban": 0.472,
+    "kep_cao_12cm": 0.665
+   },
+   "40": {
+    "mat_ban": 0.667,
+    "kep_cao_12cm": 0.799
+   },
+   "45": {
+    "mat_ban": 0.833,
+    "kep_cao_12cm": 0.932
+   },
+   "50": {
+    "mat_ban": 1.0,
+    "kep_cao_12cm": 0.989
+   },
+   "55": {
+    "mat_ban": 1.0,
+    "kep_cao_12cm": 0.995
+   },
+   "60": {
+    "mat_ban": 1.0,
+    "kep_cao_12cm": 0.998
+   }
+  },
+  "nhay_80_la_ngang": {
+   "35": 0.572,
+   "45": 0.781,
+   "50": 0.822,
+   "55": 0.839
+  },
+  "nhay_fovy70_sim": {
+   "35": 0.702,
+   "45": 0.892,
+   "50": 0.917,
+   "55": 0.931
+  },
+  "che_khuat": {
+   "35": {
+    "trai": {
+     "che_cheo": 0.007250418293363078,
+     "tu_che": 0.017568321249302844,
+     "bat_ky": 0.024818739542665922
+    },
+    "phai": {
+     "che_cheo": 0.004740658114891244,
+     "tu_che": 0.018126045733407696,
+     "bat_ky": 0.02286670384829894
+    }
+   },
+   "50": {
+    "trai": {
+     "che_cheo": 0.007250418293363078,
+     "tu_che": 0.017568321249302844,
+     "bat_ky": 0.024818739542665922
+    },
+    "phai": {
+     "che_cheo": 0.004740658114891244,
+     "tu_che": 0.018126045733407696,
+     "bat_ky": 0.02286670384829894
+    }
+   }
+  }
+ },
+ "cot_camera": {
+  "0.475": {
+   "khe_cot_camera_theo_x_m": {
+    "-0.06": {
+     "than_cot": 0.0288,
+     "dau_camera": 0.0156
+    },
+    "-0.04": {
+     "than_cot": 0.0288,
+     "dau_camera": -0.003
+    },
+    "-0.02": {
+     "than_cot": 0.0333,
+     "dau_camera": -0.0218
+    },
+    "+0.00": {
+     "than_cot": 0.0174,
+     "dau_camera": -0.0401
+    },
+    "+0.03": {
+     "than_cot": -0.0108,
+     "dau_camera": -0.0688
+    }
+   },
+   "luat_cam_dau_x0": {
+    "cau_hinh_cham_dau": 276,
+    "con_cham_sau_luat_cau_0_12": 0,
+    "cau_hinh_bi_cam": 528
+   },
+   "be_tay_trai": {
+    "cau_hinh_cham_be": 2335,
+    "con_lai_sau_luat_TCP": 0,
+    "tong_cau_hinh": 114240
+   },
+   "khe_cot_nang": {
+    "lift_0.0": -0.0079,
+    "lift_0.45": -0.0079
+   },
+   "x_sau_nhat_vo_tay_tren_mat_ray": -0.2025
+  },
+  "0.450": {
+   "khe_cot_camera_theo_x_m": {
+    "-0.06": {
+     "than_cot": 0.0163,
+     "dau_camera": 0.0114
+    },
+    "-0.04": {
+     "than_cot": 0.0164,
+     "dau_camera": -0.0074
+    },
+    "-0.02": {
+     "than_cot": 0.0215,
+     "dau_camera": -0.0263
+    },
+    "+0.00": {
+     "than_cot": 0.0131,
+     "dau_camera": -0.0448
+    },
+    "+0.03": {
+     "than_cot": -0.015,
+     "dau_camera": -0.0721
+    }
+   },
+   "luat_cam_dau_x0": {
+    "cau_hinh_cham_dau": 367,
+    "con_cham_sau_luat_cau_0_12": 3,
+    "cau_hinh_bi_cam": 538
+   },
+   "be_tay_trai": {
+    "cau_hinh_cham_be": 2335,
+    "con_lai_sau_luat_TCP": 0,
+    "tong_cau_hinh": 114240
+   },
+   "khe_cot_nang": {
+    "lift_0.0": -0.0204,
+    "lift_0.45": -0.0204
+   },
+   "x_sau_nhat_vo_tay_tren_mat_ray": -0.2025
+  },
+  "0.500": {
+   "khe_cot_camera_theo_x_m": {
+    "-0.06": {
+     "than_cot": 0.0412,
+     "dau_camera": 0.02
+    },
+    "-0.04": {
+     "than_cot": 0.0412,
+     "dau_camera": 0.0016
+    },
+    "-0.02": {
+     "than_cot": 0.0405,
+     "dau_camera": -0.0176
+    },
+    "+0.00": {
+     "than_cot": 0.0217,
+     "dau_camera": -0.0363
+    },
+    "+0.03": {
+     "than_cot": -0.0065,
+     "dau_camera": -0.0641
+    }
+   },
+   "luat_cam_dau_x0": {
+    "cau_hinh_cham_dau": 259,
+    "con_cham_sau_luat_cau_0_12": 0,
+    "cau_hinh_bi_cam": 515
+   },
+   "be_tay_trai": {
+    "cau_hinh_cham_be": 2335,
+    "con_lai_sau_luat_TCP": 0,
+    "tong_cau_hinh": 114240
+   },
+   "khe_cot_nang": {
+    "lift_0.0": 0.0046,
+    "lift_0.45": 0.0046
+   },
+   "x_sau_nhat_vo_tay_tren_mat_ray": -0.2025
+  }
+ },
+ "gioi_han": "giới hạn khớp và bảng ghép spec.py (pan ±70, vai -80..48,5, khuỷu theo vai, cổ tay theo vai/khuỷu)",
+ "khoang_vai_chon_m": 0.475,
+ "khoi_luong": {
+  "tay_can_tren_sdk_kg": 2.161,
+  "tay_uoc_in_kg": 1.917,
+  "tram_khong_tay_kg": 2.53,
+  "tram_khong_tay_tam": [
+   -0.046,
+   0.008,
+   0.056
+  ],
+  "tram_ca_tay_uoc_kg": 6.365,
+  "tram_ca_tay_can_tren_kg": 6.852,
+  "chi_tiet": {
+   "ray 2040 trước 0,60 m (gá 2 tay, tựa lên khung T giữa)": [
+    0.48,
+    0.0,
+    0.0,
+    -0.01
+   ],
+   "2 tai sau 2040 0,20 m ở y ±0,11 (ôm hai bên cột)": [
+    0.32,
+    -0.1,
+    0.0,
+    -0.01
+   ],
+   "ke góc, ốc, con trượt T": [
+    0.15,
+    -0.05,
+    0.0,
+    -0.01
+   ],
+   "2 gá đáy tay in (thay khung T trái/phải)": [
+    0.2,
+    0.0,
+    0.0,
+    0.005
+   ],
+   "cột camera 2020 0,56 m": [
+    0.28,
+    0.0,
+    0.0,
+    0.28
+   ],
+   "gá pan-tilt in + 2 núm khoá": [
+    0.1,
+    0.01,
+    0.0,
+    0.57
+   ],
+   "camera đầu H65V1": [
+    0.03,
+    0.03,
+    0.0,
+    0.58
+   ],
+   "khối ngàm trạm (2 bạc chốt, 2 khoá kéo, đệm tựa)": [
+    0.2,
+    -0.12,
+    0.0,
+    -0.025
+   ],
+   "giắc gộp nửa trạm + vỏ (trên tai trái)": [
+    0.06,
+    -0.1,
+    0.11,
+    -0.035
+   ],
+   "2 hộp cầu chì tay FB-L/FB-R": [
+    0.16,
+    -0.08,
+    0.0,
+    0.01
+   ],
+   "2 bo bus + 2 cách ly USB + hub + buck 5 V": [
+    0.14,
+    -0.08,
+    0.0,
+    0.01
+   ],
+   "nút E-stop + hộp": [
+    0.12,
+    -0.05,
+    0.12,
+    0.03
+   ],
+   "dây trên trạm (8 AWG ngắn, 16/22 AWG, USB)": [
+    0.25,
+    -0.06,
+    0.0,
+    0.0
+   ],
+   "4 chân đệm cao su": [
+    0.04,
+    -0.08,
+    0.0,
+    -0.025
+   ]
+  }
+ },
+ "truc_nang": {
+  "uoc_in": {
+   "tram_kg": 2.53,
+   "xe_nang_giu_kg": 0.914,
+   "tay_kg": 3.835,
+   "tai_kg": 1.0,
+   "tong_kg": 8.279,
+   "luc_N": 85.4,
+   "momen_kgcm": 18.63,
+   "pct_dinh_muc": 82.8,
+   "gioi_han_hien_tai_N": 60.1,
+   "du": false,
+   "F_rang_can_do_N": 170.7,
+   "cu_LIFT_DESIGN_LOAD_KG": 6.1
+  },
+  "can_tren": {
+   "tram_kg": 2.53,
+   "xe_nang_giu_kg": 0.914,
+   "tay_kg": 4.322,
+   "tai_kg": 1.0,
+   "tong_kg": 8.766,
+   "luc_N": 90.4,
+   "momen_kgcm": 19.72,
+   "pct_dinh_muc": 87.7,
+   "gioi_han_hien_tai_N": 60.1,
+   "du": false,
+   "F_rang_can_do_N": 180.8,
+   "cu_LIFT_DESIGN_LOAD_KG": 6.1
+  },
+  "tai_1kg_moi_tay": {
+   "tram_kg": 2.53,
+   "xe_nang_giu_kg": 0.914,
+   "tay_kg": 3.835,
+   "tai_kg": 2.0,
+   "tong_kg": 9.279,
+   "luc_N": 95.7,
+   "momen_kgcm": 20.88,
+   "pct_dinh_muc": 92.8,
+   "gioi_han_hien_tai_N": 60.1,
+   "du": false,
+   "F_rang_can_do_N": 191.3,
+   "cu_LIFT_DESIGN_LOAD_KG": 6.1
+  }
+ },
+ "chong_lat_di_dong": {
+  "0.375": {
+   "co_khay_1kg": 1.734,
+   "khong_tai_khay": 2.004,
+   "pan": [
+    -60.0,
+    60.0
+   ],
+   "gia_toc_0_5": 1.361,
+   "doi_trong_can_1_5_kg": 6.25
+  },
+  "0.450": {
+   "co_khay_1kg": 1.714,
+   "khong_tai_khay": 1.972,
+   "pan": [
+    -60.0,
+    60.0
+   ],
+   "gia_toc_0_5": 1.353,
+   "doi_trong_can_1_5_kg": 6.37
+  },
+  "0.475": {
+   "co_khay_1kg": 1.707,
+   "khong_tai_khay": 1.962,
+   "pan": [
+    -60.0,
+    60.0
+   ],
+   "gia_toc_0_5": 1.35,
+   "doi_trong_can_1_5_kg": 6.41
+  },
+  "0.500": {
+   "co_khay_1kg": 1.701,
+   "khong_tai_khay": 1.952,
+   "pan": [
+    -60.0,
+    60.0
+   ],
+   "gia_toc_0_5": 1.348,
+   "doi_trong_can_1_5_kg": 6.45
+  },
+  "0.475_tay_can_tren_sdk": {
+   "co_khay_1kg": 1.527,
+   "arm_m": 2.16082
+  },
+  "ghi_chu": "tay theo tipover.arm_pl (URDF 1.30 kg, tâm 0.181 m, TCP 0.580 m), tải 1 kg/tay ở TCP, khay 1 kg góc xa, đối trọng 8,23 kg"
+ },
+ "chong_lat_ban": {
+  "tu_do": {
+   "he_so_tai_0_5": 0.54,
+   "he_so_tai_1": 0.345,
+   "canh": [
+    0.0,
+    0.0,
+    [
+     1,
+     0
+    ]
+   ],
+   "momen_lat_Nm_tai_1": 13.6
+  },
+  "them_3kg_sau": {
+   "he_so_tai_0_5": 1.386,
+   "he_so_tai_1": 0.886,
+   "canh": [
+    0.0,
+    0.0,
+    [
+     1,
+     0
+    ]
+   ],
+   "momen_lat_Nm_tai_1": 13.6
+  },
+  "luc_kep_can_moi_kep_N": 54.4
+ },
+ "ngam": {
+  "momen_quanh_mep_tua_Nm": 16.23,
+  "he_so_dong": 2.5,
+  "luc_moi_khoa_N": 106.8,
+  "ghi_chu": "tải 1 kg/tay ở TCP duỗi thẳng trước; mép tựa trước (mặt trước khung T giữa) x +0,01; 2 khoá kéo trên 2 tai ở x -0,18 (cánh tay đòn 0,19 m) [giả định]"
+ }
+}

@@ -1,0 +1,28 @@
+Faibotic M1 — CAD
+
+Thư mục upstream/ chứa bản sao một phần CAD từ các kho mã nguồn mở, giữ nguyên nội dung. Cả ba mục theo Apache License 2.0 (upstream/LICENSE). Phần kẹp cũ đã gỡ khỏi bản công khai và không còn trong danh sách này:
+
+1. AlohaMini (AlohaMini2) — https://github.com/liyiteng/AlohaMini
+   commit 59f024b6005b8516005150b98a3f6daa5d04d851 (20/11/2026), tải 22/11/2026.
+   Thêm 23/11/2026 (v0.5 cấu hình P-L), cùng commit, nguyên văn: 11 STEP mobile_base2 (OB_Main_Assembly_Post1..3, O_Main_Assembly_Post4,
+   O_POST4_Connector_Base, OB_T_Connector_Left/Middle/Right, O_T_Connector_Cross_Bar, O_T_Connector_Dowel_Pin_12_25,
+   OB_T_Camera_Mount) và urdf/alohamini2/urdf/alohamini2.urdf (xem CHANGES.md v0.5 P-L). Mesh URDF và STL bố trí chỉ dùng để đo, không chép.
+2. AM-ARM (AM-ARM200) — https://github.com/liyiteng/AM-ARM
+   commit 5b03af1ef6c80595bd988e0137cf8e7c35811eb6 (18/06/2026), tải 22/11/2026.
+   Thêm 23/11/2026 cùng commit: am-arm200/urdf/urdf/am-arm200.urdf (nguyên văn, SHA-256 a8caac56...0913, xem CHANGES.md).
+   Kẹp mặc định của M1 (24/11/2026) là kẹp gốc của kho này: stp/follower/OB_F_J7_Gripper, OB_F_J7_Jaw, OB_F_Camera, nguyên văn.
+   Thêm 24/11/2026 cùng commit: am-arm200/urdf/am-arm200-meshes/left_Fixed_Jaw.STL, left_Moving_Jaw.STL (nguyên văn, chỉ để đặt kẹp, xem CHANGES.md).
+
+3. MuJoCo Menagerie, robotstudio_so101 — https://github.com/google-deepmind/mujoco_menagerie
+   commit 3abca2e302625cec9429c49806121ea2855cef81 (28/09/2026), tải 23/11/2026. Chỉ một tệp: mesh servo STS3215 (upstream/menagerie-so101/, kèm LICENSE và README).
+   Menagerie ghi gói này dẫn xuất từ The Robot Studio SO-ARM100 (https://github.com/TheRobotStudio/SO-ARM100), Apache License 2.0.
+   Bản rút gọn upstream/menagerie-so101/derived/sts3215_03a_v1_sim.stl là tệp ĐÃ SỬA (xem CHANGES.md v0.4.6).
+
+Hai kho AlohaMini và AM-ARM chỉ có một tệp LICENSE (Apache-2.0, dòng "Copyright [yyyy] [name of copyright owner]" của phụ lục để trống, kho không nêu tên chủ bản quyền riêng). Không có tệp CAD nào mang header license riêng. Thông báo bản quyền, ghi công và tên chủ kho (liyiteng) được giữ ở đây và trong upstream/*/README.md nguyên văn.
+Không dùng tên "AlohaMini", "AM-ARM" làm nhãn hiệu của sản phẩm Faibotic (Apache-2.0 điều 6).
+
+Các tệp do Faibotic sửa hoặc vẽ mới: xem CHANGES.md. Phần Faibotic tự vẽ (faibotic/*.py và tệp xuất trong export/): CC BY-NC-SA 4.0, xem LICENSE-hardware ở gốc repo; dùng thương mại cần thoả thuận riêng. Các tệp upstream/ giữ Apache-2.0.
+
+Bố cục tài liệu theo cách tài liệu robot mở thường trình bày; không chép chữ, hình hay logo của ai.
+Thay đổi 24/11/2026 (v0.5c, Apache-2.0 điều 4b): `upstream/AM-ARM/am-arm200/urdf/derived/` dẫn xuất từ mesh URDF follower `am-arm200/urdf/am-arm200-meshes/left_{Base,Rotation_Pitch,Upper_Arm,Lower_Arm}.STL` (commit 5b03af1): tách thân link, chi tiết kim loại và thân servo; bỏ chi tiết nhỏ hơn 6 mm; rút gọn lưới (`faibotic/extract_urdf_servos.py`). Chỉ dùng cho hình web (`web-assets/m1.glb`).
+Thay đổi 24/11/2026 (tay 6+1 như bản gốc): thêm tệp dẫn xuất `upstream/AM-ARM/am-arm200/urdf/derived/left_wrist_yaw__servo__left_wrist_yaw.stl` (servo yaw tách từ mesh URDF follower `left_wrist_yaw.STL`, rút gọn); khớp yaw dùng nguyên URDF upstream. Xem CHANGES.md .

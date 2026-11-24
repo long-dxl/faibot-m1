@@ -1,0 +1,40 @@
+{
+ "(1)_truc_pan": {
+  "de_xoay_024_tam_xy_he_vai_mm": [
+   -0.691,
+   0.0
+  ],
+  "tam_giao_dien_023b_xy_he_vai_mm": [
+   0.0,
+   0.0
+  ],
+  "truc_vai_CAD_the_gioi_mm": [
+   120.0,
+   170.0
+  ],
+  "SDK_SHOULDER_XY_mm": [
+   120.0,
+   170.0
+  ],
+  "lech_mm": 0.691
+ },
+ "(2)_chan_duoi_vs_tay_do": {
+  "giao": [],
+  "giao_lon_nhat_mm3": 0.0,
+  "khe_nho_nhat_mm": 15.23,
+  "pan": [
+   -70,
+   70,
+   10
+  ],
+  "ghi_chu": "chặn dưới + đệm gắn gá vai (quay theo pan, không theo vai); tay đỡ/tấm giao diện tĩnh theo xe nâng"
+ },
+ "(3)_dau_ngon": {
+  "CAD_khep_tu_truc_gap_mm": 195.61,
+  "SDK_tu_truc_gap_mm": 195.7,
+  "CAD_khep_tu_chot_J5_mm": 167.48,
+  "SDK_tu_chot_J5_mm": 167.56,
+  "lech_mm": -0.08,
+  "ghi_chu": "số cũ 171,7 (CAD) / 165 (SDK) đo trước từ trục cổ tay giả định (chốt J5); nay cùng chuỗi khớp URDF, đo dọc trục cuộn ở gập 0"
+ }
+}

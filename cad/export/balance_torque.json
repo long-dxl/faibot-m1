@@ -1,0 +1,131 @@
+{
+ "ngay": "21/11/2026",
+ "don_vi": "kg·cm, duỗi hết (khuỷu = cổ tay = 0), tải 0,5 kg; dấu âm = giữ chống hạ",
+ "nguon": "demos/static_torque.py logic, MuJoCo, spec.py v0.3",
+ "bang": [
+  {
+   "q": -100,
+   "sh_nospring_loaded": 9.48,
+   "sh_spring_loaded": 12.7,
+   "sh_spring_unloaded": 8.15
+  },
+  {
+   "q": -90,
+   "sh_nospring_loaded": -0.0,
+   "sh_spring_loaded": 8.44,
+   "sh_spring_unloaded": 8.44
+  },
+  {
+   "q": -80,
+   "sh_nospring_loaded": -9.48,
+   "sh_spring_loaded": 3.74,
+   "sh_spring_unloaded": 8.29
+  },
+  {
+   "q": -70,
+   "sh_nospring_loaded": -18.68,
+   "sh_spring_loaded": -1.3,
+   "sh_spring_unloaded": 7.66
+  },
+  {
+   "q": -60,
+   "sh_nospring_loaded": -27.31,
+   "sh_spring_loaded": -6.51,
+   "sh_spring_unloaded": 6.58
+  },
+  {
+   "q": -50,
+   "sh_nospring_loaded": -35.11,
+   "sh_spring_loaded": -11.68,
+   "sh_spring_unloaded": 5.15
+  },
+  {
+   "q": -40,
+   "sh_nospring_loaded": -41.84,
+   "sh_spring_loaded": -16.59,
+   "sh_spring_unloaded": 3.48
+  },
+  {
+   "q": -30,
+   "sh_nospring_loaded": -47.3,
+   "sh_spring_loaded": -21.02,
+   "sh_spring_unloaded": 1.66
+  },
+  {
+   "q": -20,
+   "sh_nospring_loaded": -51.32,
+   "sh_spring_loaded": -24.79,
+   "sh_spring_unloaded": -0.18
+  },
+  {
+   "q": -10,
+   "sh_nospring_loaded": -53.79,
+   "sh_spring_loaded": -27.75,
+   "sh_spring_unloaded": -1.96
+  },
+  {
+   "q": 0,
+   "sh_nospring_loaded": -54.62,
+   "sh_spring_loaded": -29.79,
+   "sh_spring_unloaded": -3.6
+  },
+  {
+   "q": 10,
+   "sh_nospring_loaded": -53.79,
+   "sh_spring_loaded": -30.85,
+   "sh_spring_unloaded": -5.05
+  },
+  {
+   "q": 20,
+   "sh_nospring_loaded": -51.32,
+   "sh_spring_loaded": -30.87,
+   "sh_spring_unloaded": -6.26
+  },
+  {
+   "q": 30,
+   "sh_nospring_loaded": -47.3,
+   "sh_spring_loaded": -29.87,
+   "sh_spring_unloaded": -7.19
+  },
+  {
+   "q": 40,
+   "sh_nospring_loaded": -41.84,
+   "sh_spring_loaded": -27.89,
+   "sh_spring_unloaded": -7.83
+  },
+  {
+   "q": 50,
+   "sh_nospring_loaded": -35.11,
+   "sh_spring_loaded": -25.0,
+   "sh_spring_unloaded": -8.17
+  },
+  {
+   "q": 60,
+   "sh_nospring_loaded": -27.31,
+   "sh_spring_loaded": -21.31,
+   "sh_spring_unloaded": -8.21
+  },
+  {
+   "q": 70,
+   "sh_nospring_loaded": -18.68,
+   "sh_spring_loaded": -16.94,
+   "sh_spring_unloaded": -7.98
+  },
+  {
+   "q": 80,
+   "sh_nospring_loaded": -9.48,
+   "sh_spring_loaded": -12.04,
+   "sh_spring_unloaded": -7.49
+  },
+  {
+   "q": 90,
+   "sh_nospring_loaded": -0.0,
+   "sh_spring_loaded": -6.79,
+   "sh_spring_unloaded": -6.79
+  }
+ ],
+ "max_duoi_het_co_tai": 30.87,
+ "max_moi_tu_the": 33.84,
+ "max_khuyu": 33.44,
+ "ghi_chu": "mọi tư thế = lưới vai -100..90 x khuỷu -20..150 x cổ tay -100..120, tải 0 và 0,5 kg"
+}

@@ -1,0 +1,83 @@
+{
+ "ghi_chu": "khung cẳng tay mm, cổ tay 0, cuộn 0, tay trái; khung cuộn: gốc wrist_roll URDF, [dọc trục cuộn, y, z]",
+ "truc_kep_URDF_fore": [
+  309.15,
+  -24.03,
+  -28.51
+ ],
+ "huong_truc_kep": [
+  -0.0,
+  -0.0,
+  1.0
+ ],
+ "goc_khep_deg": 18.56,
+ "giao_goc_ham_vs_than_kep_1_do_mm3": 0.4,
+ "khe_dau_ngon_trung_bay_mm": 38.64,
+ "khe_dau_ngon_khep_mm": 11.29,
+ "dau_ngon_co_dinh": [
+  392.98,
+  12.11,
+  -33.24
+ ],
+ "dau_ham_dong_trung_bay": [
+  396.39,
+  -26.37,
+  -32.44
+ ],
+ "dau_ham_dong_khep": [
+  392.86,
+  0.85,
+  -32.49
+ ],
+ "TCP_khep_fore": [
+  394.02,
+  6.48,
+  -32.87
+ ],
+ "TCP_khep_cuon": [
+  106.49,
+  10.3,
+  -6.39
+ ],
+ "tam_kep_khep_lui_TIP_LEN_cuon": [
+  96.49,
+  10.3,
+  -6.39
+ ],
+ "TCP_trung_bay_cuon": [
+  108.39,
+  -3.31,
+  -6.36
+ ],
+ "SDK_TCP_fore": [
+  384.1,
+  6.5,
+  -32.9
+ ],
+ "SDK_TCP_cuon": [
+  96.57,
+  10.31,
+  -6.42
+ ],
+ "SDK_dau_ngon_cuon": [
+  106.57,
+  10.31,
+  -6.42
+ ],
+ "lech_tam_kep_khep_vs_SDK_TCP_mm": 0.09,
+ "lech_dau_ngon_khep_vs_SDK_dau_ngon_mm": 0.09,
+ "thanh_phan_lech_cuon": [
+  -0.08,
+  -0.01,
+  0.03
+ ],
+ "dau_ngon_xa_nhat_x": {
+  "co_dinh": 394.1,
+  "ham_dong_trung_bay": 397.74,
+  "ham_dong_khep": 393.94
+ },
+ "truc_gap_den_dau_ngon_khep_mm": 195.61,
+ "SDK_truc_gap_den_dau_ngon_mm": 195.7,
+ "truc_cuon_thap_hon_truc_gap_mm": 23.32,
+ "tam_kep_khep_thap_hon_truc_gap_mm": 29.71
+}

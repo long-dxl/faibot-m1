@@ -1,0 +1,398 @@
+# Trình tự lắp để vẽ hình nổ cho M1_assembly_A5_v0.5.pdf (render_pdf_buoc.py đọc file này).
+# Mỗi bước: cum, ten, nhom (biểu thức tên chi tiết trong manifest.json của assembly_pl.py -> độ lệch nổ, mm, hệ W: x trước, y trái, z lên),
+# chi_tiet (thẻ chi tiết: ma, ten, sl, hinh = biểu thức tên mesh dùng vẽ thẻ), oc (id trong media/hardware/bang-oc.csv, sl, ghi), mo_ta.
+# Nhóm có "radial": lệch ra ngoài theo hướng từ trục robot tới chi tiết, độ dài = radial (mm).
+# Chi tiết không khớp nhóm nào thì không vẽ; render_pdf_buoc.py in danh sách đó.
+# Nhóm có "cua_buoc": gom mọi chi tiết đã lắp ở các bước đó (đặt trạm lên đế ngàm). "canh_bao": hộp cảnh báo trên trang bước. "anh": thẻ dùng ảnh trong media/hardware/thumbs.
+cum: {de: Đế di động, truc: Trục nâng, tram: Trạm hai tay, dien: Điện}
+goc_mac_dinh: [20, -50]
+buoc:
+- id: de-1
+  cum: de
+  ten: Tấm thép đối trọng và ba nan nhôm
+  goc: [28, -50]
+  nhom:
+  - re: M1-BS-032|M1-BS-039
+    lech: [0, 0, 0]
+  - {re: M1-BS-031_spoke, radial: 170}
+  chi_tiet:
+  - {ma: M1-BS-032, ten: Tấm thép đối trọng, sl: 1, hinh: M1-BS-032_}
+  - {ma: M1-BS-031, ten: Nan nhôm 20×40, sl: 3, hinh: M1-BS-031_spoke0}
+  oc:
+  - {id: F06, sl: 3}
+  - {id: F07}
+  mo_ta: Đặt tấm thép nằm phẳng, lưỡi hướng ra trước. Bắt ba nan theo góc 0°, 120°, 240°.
+- id: de-2
+  cum: de
+  ten: Giá servo và servo bánh
+  goc: [28, -50]
+  nhom:
+  - re: M1-BS-036_wheel_mount
+    lech: [0, 0, 90]
+  - re: M1-SV-001_wheel
+    lech: [0, 0, 160]
+  chi_tiet:
+  - {ma: M1-BS-036, ten: Giá servo bánh (vách + nắp), sl: 3, hinh: M1-BS-036_wheel_mount_(wall|cap)0}
+  - {ma: M1-SV-001, ten: Servo STS3215 (bánh), sl: 3, hinh: M1-SV-001_wheel0}
+  oc:
+  - {id: F04}
+  mo_ta: Vách sau bắt vào đầu nan, nắp ôm thân servo. Servo 13 ở nan trước, 14 và 15 ở hai nan còn lại.
+- id: de-3
+  cum: de
+  ten: Bánh omni
+  goc: [28, -50]
+  nhom:
+  - {re: M1-BS-035_omni, radial: 130}
+  chi_tiet:
+  - {ma: M1-BS-035, ten: Bánh omni 4 in, sl: 3, hinh: M1-BS-035_omni0_}
+  oc: []
+  mo_ta: Lắp bánh thẳng lên còi servo, không có gối đỡ ngoài. Quay tay thử, con lăn không được kẹt.
+- id: de-4
+  cum: de
+  ten: Sàn đế và khoang điện
+  goc: [32, -50]
+  nhom:
+  - re: M1-BS-037|M1-BS-038
+    lech: [0, 0, 200]
+  chi_tiet:
+  - {ma: M1-BS-037, ten: Sàn đế R185, sl: 1, hinh: M1-BS-037_}
+  - {ma: M1-BS-038, ten: Khoang điện, sl: 2, hinh: M1-BS-038_ebay0}
+  oc:
+  - {id: F04}
+  mo_ta: Đặt sàn lên nan, chừa lỗ quanh đế trụ.
+- id: de-5
+  cum: de
+  ten: Cột đỡ và khay
+  goc: [28, -50]
+  nhom:
+  - re: M1-ST-011
+    lech: [0, 0, 120]
+  - re: M1-BS-006_2040_do_khay
+    lech: [0, 0, 200]
+  - re: M1-ST-012
+    lech: [0, 0, 300]
+  chi_tiet:
+  - {ma: M1-ST-011, ten: Cột đỡ khay, sl: 1, hinh: M1-ST-011_}
+  - {ma: M1-BS-006, ten: Thanh 2040 đỡ khay 190 mm, sl: 1, hinh: M1-BS-006_2040_do_khay}
+  - {ma: M1-ST-012, ten: Khay đế 4 mảnh, sl: 4, hinh: M1-ST-012_}
+  oc:
+  - {id: F04}
+  mo_ta: Cột đỡ trên nan trước, 2040 nằm ngang trên cột, rồi đặt khay lên và vặn 2 núm M5.
+- id: truc-1
+  cum: truc
+  ten: Trụ nâng bốn đoạn
+  goc: [20, -50]
+  nhom:
+  - re: M1-LF-055
+    lech: [0, 0, 160]
+  - re: M1-LF-054
+    lech: [0, 0, 340]
+  - re: M1-LF-053
+    lech: [0, 0, 520]
+  - re: M1-LF-052
+    lech: [0, 0, 700]
+  - re: M1-LF-051
+    lech: [0, 0, 880]
+  chi_tiet:
+  - {ma: M1-LF-055, ten: Đế nối trụ 4, sl: 1, hinh: M1-LF-055_}
+  - {ma: M1-LF-054, ten: Trụ đoạn 4 (chân), sl: 1, hinh: M1-LF-054_}
+  - {ma: M1-LF-053, ten: Trụ đoạn 3, sl: 1, hinh: M1-LF-053_}
+  - {ma: M1-LF-052, ten: Trụ đoạn 2, sl: 1, hinh: M1-LF-052_}
+  - {ma: M1-LF-051, ten: Trụ đoạn 1, sl: 1, hinh: M1-LF-051_}
+  oc:
+  - {id: F04}
+  mo_ta: Dựng từ đoạn 4 lên đoạn 1. Dán keo epoxy các mối nối, kiểm khe bằng mắt.
+  canh_bao: 'Epoxy: làm ở nơi thoáng gió, đeo găng. Chờ keo khô đủ thời gian ghi trên hộp trước khi gắn trạm lên.'
+- id: truc-2
+  cum: truc
+  ten: Xe nâng và bánh răng
+  goc: [20, -50]
+  nhom:
+  - re: M1-LF-057|M1-LF-004
+    lech: [-260, 0, 0]
+  - re: M1-LF-002|M1-LF-lift_servo
+    lech: [260, 0, 0]
+  chi_tiet:
+  - {ma: M1-LF-057, ten: Khung T giữa (xe nâng), sl: 1, hinh: M1-LF-057_}
+  - {ma: M1-LF-004, ten: Chốt 12×25, sl: 1, hinh: M1-LF-004_}
+  - {ma: M1-LF-002, ten: Bánh răng trục nâng, sl: 1, hinh: M1-LF-002_}
+  - {ma: M1-SV-002, ten: Servo STS3095 (trục nâng), sl: 1, hinh: M1-LF-lift_servo}
+  - {ma: 624ZZ, ten: Vòng bi (ép vào khung T), sl: 8, anh: 624zz.png}
+  oc:
+  - {id: F13}
+  mo_ta: Ép 8 vòng bi 624ZZ vào khung T giữa, nằm phẳng mặt và quay trơn. Cho xe nâng trượt trên trụ, bắt servo và bánh răng ăn khớp thanh răng.
+- id: truc-3
+  cum: truc
+  ten: Chốt hãm và công tắc
+  goc: [20, -50]
+  nhom:
+  - re: M1-LF-060|M1-LF-050|M1-LF-041|M1-LF-061
+    lech: [0, -220, 0]
+  chi_tiet:
+  - {ma: M1-LF-060, ten: Giá chốt hãm, sl: 1, hinh: M1-LF-060_}
+  - {ma: M1-LF-050, ten: Solenoid chốt hãm, sl: 1, hinh: M1-LF-050_}
+  - {ma: M1-LF-041, ten: Lẫy hãm, sl: 1, hinh: M1-LF-041_latch}
+  - {ma: M1-LF-061, ten: Cảm biến chốt, sl: 1, hinh: M1-LF-061_}
+  - {ma: M1-LF-041, ten: Công tắc hành trình, sl: 2, hinh: M1-LF-041_switch}
+  - {ma: Đệm PU, ten: Chặn hai đầu hành trình, sl: 2}
+  oc:
+  - {id: F04}
+  mo_ta: Lắp giá chốt hãm lên khung T giữa, rồi solenoid, lẫy và hai công tắc hành trình. Đệm PU chặn hai đầu (đệm chưa có trong hình).
+  canh_bao: 'Chưa nối nguồn. Solenoid 12 V: giữ tay xa lẫy khi thử. Đo thông mạch theo bảng dây trước khi cấp điện.'
+- id: tram-1
+  cum: truc
+  ten: Đế ngàm trên xe nâng
+  goc: [24, -50]
+  nhom:
+  - re: M1-TR-020
+    lech: [0, 0, 220]
+  - re: M1-TR-021|M1-TR-022
+    lech: [0, 0, 380]
+  - re: M1-TR-023
+    lech: [-220, 0, 0]
+  chi_tiet:
+  - {ma: M1-TR-020, ten: Đế ngàm chữ U, sl: 1, hinh: M1-TR-020_}
+  - {ma: M1-TR-021, ten: Chốt côn Ø8, sl: 2, hinh: M1-TR-021_chot_con_L}
+  - {ma: M1-TR-022, ten: Móc giữ khoá, sl: 2, hinh: M1-TR-022_moc_giu_L}
+  - {ma: M1-TR-023, ten: Giắc 21W4 (nửa cái), sl: 1, hinh: M1-TR-023_}
+  oc:
+  - {id: F08.n}
+  - {id: F10}
+  mo_ta: Bắt đế ngàm lên khung T giữa, chỉnh ba đệm tựa cao bằng nhau. Chốt côn hướng lên.
+  canh_bao: 'Nửa giắc 21W4 trên xe vẫn có 12 V ở chân 1 và chân 9 khi tháo trạm: không chạm, không để vật dẫn rơi vào. Chưa nối nguồn; đo thông mạch theo bảng dây trước. Bố trí chân 21W4 còn là giả định:
+    đối chiếu giắc và bản vẽ thật trước khi hàn cầu GND.'
+- id: tram-2
+  cum: tram
+  ten: 'Khung trạm: ray, hai tai, tay cầm'
+  goc: [24, -50]
+  nhom:
+  - re: M1-TR-001
+    lech: [0, 0, 330]
+  - re: M1-TR-002|M1-TR-014
+    lech: [-170, 0, 330]
+  chi_tiet:
+  - {ma: M1-TR-001, ten: Ray trước nhôm 2040, sl: 1, hinh: M1-TR-001_}
+  - {ma: M1-TR-002, ten: Tai 2040, sl: 2, hinh: M1-TR-002_tai_2040_L}
+  - {ma: M1-TR-014, ten: Tay cầm in, sl: 2, hinh: M1-TR-014_tay_cam_L}
+  oc:
+  - {id: F08a}
+  - {id: F08.t}
+  mo_ta: Bắt hai tai vào mặt sau ray bằng ke góc và con trượt T, đi về phía sau. Kiểm vuông bằng ke.
+- id: tram-3
+  cum: tram
+  ten: Gá vai và khối bạc
+  goc: [24, -50]
+  nhom:
+  - re: M1-TR-003
+    lech: [0, 0, 240]
+  - re: M1-TR-004
+    lech: [0, 0, -200]
+  chi_tiet:
+  - {ma: M1-TR-003, ten: Gá đáy tay, sl: 2, hinh: M1-TR-003_ga_day_tay_L}
+  - {ma: M1-TR-004, ten: Khối bạc dưới tai, sl: 2, hinh: M1-TR-004_khoi_bac_L}
+  - {ma: M1-TR-004b, ten: Bạc thép Ø12/Ø8, sl: 2, hinh: M1-TR-004b_bac_thep_L}
+  oc:
+  - {id: F04}
+  mo_ta: Hai gá vai cách nhau 0,475 m, mỗi bên 0,2375 m so với giữa ray. Ép bạc thép vào khối bạc rồi bắt dưới tai.
+- id: tram-4
+  cum: tram
+  ten: Khoá kéo và công tắc
+  goc: [24, -50]
+  nhom:
+  - re: M1-TR-008|M1-TR-009
+    lech: [0, 0, 220]
+  chi_tiet:
+  - {ma: M1-TR-008, ten: Khoá kéo 100 kg, sl: 2, hinh: M1-TR-008_khoa_keo_L}
+  - {ma: M1-TR-009, ten: Công tắc khoá KW12, sl: 2, hinh: M1-TR-009_cong_tac_khoa_L}
+  oc:
+  - {id: F04}
+  mo_ta: Bắt khoá trên mỗi tai. Lẫy khoá đè vào công tắc khi khoá đóng hẳn.
+- id: tram-5
+  cum: tram
+  ten: Cột camera đầu
+  goc: [22, -50]
+  nhom:
+  - re: M1-TR-005
+    lech: [0, 0, 200]
+  - re: M1-TR-006
+    lech: [0, 0, 420]
+  - re: M1-TR-007|M1-CM-001_head
+    lech: [0, 0, 640]
+  chi_tiet:
+  - {ma: M1-TR-005, ten: Cầu đỡ cột camera, sl: 1, hinh: M1-TR-005_}
+  - {ma: M1-TR-006, ten: Cột 2020, sl: 1, hinh: M1-TR-006_}
+  - {ma: M1-TR-007, ten: Gá pan + tilt, sl: 1, hinh: M1-TR-007_ga}
+  - {ma: M1-TR-007b, ten: Núm khoá M5, sl: 2, hinh: M1-TR-007b_num_khoa_M5_L}
+  - {ma: M1-CM-001, ten: Camera USB, sl: 1, hinh: M1-CM-001_head_cam}
+  oc:
+  - {id: F09}
+  - {id: F03}
+  mo_ta: Bắc cầu qua cụm chốt hãm, dựng cột ở giữa ray, rồi lắp gá pan + tilt và camera.
+- id: tay-1
+  cum: tram
+  ten: 'Tay trái: đế J1, khung xoay J2, vai J3'
+  goc: [24, -62]
+  nhom:
+  - re: M1-SH-005.*_L$
+    lech: [0, 0, 260]
+  - re: M1-SH-019.*_L$
+    lech: [0, 0, 420]
+  - re: M1-SH-006.*_L$
+    lech: [0, 0, 580]
+  chi_tiet:
+  - {ma: M1-SH-005, ten: Đế tay J1, sl: 1, hinh: M1-SH-005_.*_L$}
+  - {ma: M1-SH-019, ten: Khung xoay J2, sl: 1, hinh: M1-SH-019_.*_L$}
+  - {ma: M1-SH-006, ten: Vai J3, sl: 1, hinh: M1-SH-006_.*_L$}
+  oc:
+  - {id: F01.t, sl: 74}
+  mo_ta: Tay trái, servo ID 1 đến 6, yaw cổ tay ID 21. Gắn đế J1 lên gá vai, rồi khung xoay J2 và vai J3. Servo gán ID trước khi lắp.
+- id: tay-2
+  cum: tram
+  ten: 'Tay trái: khuỷu J4, giá J5, cổ tay'
+  goc: [24, -62]
+  nhom:
+  - re: M1-AR-001.*_L$
+    lech: [0, 0, 260]
+  - re: M1-AR-002.*_L$|M1-AR-011.*_L$
+    lech: [0, 0, 420]
+  - re: M1-AR-003.*_L$|M1-AR-004.*_L$|M1-AR-005.*_L$|M1-SV-001_wrist_yaw_L$
+    lech: [0, 0, 580]
+  chi_tiet:
+  - {ma: M1-AR-001, ten: Khuỷu J4, sl: 1, hinh: M1-AR-001_.*_L$}
+  - {ma: M1-AR-002, ten: Giá nối J5, sl: 1, hinh: M1-AR-002_.*_L$}
+  - {ma: M1-AR-011, ten: Chốt J5 có ổ bi, sl: 1, hinh: M1-AR-011_.*_L$}
+  - {ma: M1-AR-003, ten: Vỏ cổ tay, sl: 1, hinh: M1-AR-003_.*_L$}
+  - {ma: M1-AR-004, ten: Đáy cổ tay, sl: 1, hinh: M1-AR-004_.*_L$}
+  - {ma: M1-AR-005, ten: Nắp cổ tay, sl: 1, hinh: M1-AR-005_.*_L$}
+  - {ma: M1-SV-001, ten: Servo STS3215 (yaw cổ tay, ID 21), sl: 1, hinh: M1-SV-001_wrist_yaw_L}
+  oc:
+  - {id: F05, sl: 4}
+  - {id: F01.t, sl: 74, ghi: tiếp}
+  mo_ta: Lắp khuỷu J4 và giá nối J5. Ép hạt chèn nhiệt vào vỏ cổ tay, lắp servo yaw STS3215 (ID 21) vào hốc yaw bằng chi tiết gốc AM-ARM200, rồi đóng đáy và nắp cổ tay. Yaw quay trơn, không rơ.
+  canh_bao: 'Mỏ hàn ép hạt chèn nhiệt rất nóng: nguy cơ bỏng. Đặt mỏ lên giá, để nguội trước khi cất.'
+- id: tay-3
+  cum: tram
+  ten: 'Tay trái: kẹp và camera cổ tay'
+  goc: [24, -62]
+  nhom:
+  - re: M1-AR-007.*_L$|M1-SV-001_gripper_L
+    lech: [0, 0, 260]
+  - re: M1-AR-008.*_L$
+    lech: [0, 0, 420]
+  - re: M1-AR-027.*_L$|M1-CM-001_wrist_cam_L
+    lech: [0, 0, 580]
+  chi_tiet:
+  - {ma: M1-AR-007, ten: Thân kẹp J7, sl: 1, hinh: M1-AR-007_.*_L$}
+  - {ma: M1-AR-008, ten: Hàm kẹp J7, sl: 1, hinh: M1-AR-008_.*_L$}
+  - {ma: M1-AR-027, ten: Giá camera cổ tay, sl: 1, hinh: M1-AR-027_.*_L$}
+  - {ma: M1-SV-001, ten: Servo STS3215 (kẹp), sl: 1, hinh: M1-SV-001_gripper_L}
+  - {ma: M1-CM-001, ten: Camera cổ tay, sl: 1, hinh: M1-CM-001_wrist_cam_L}
+  oc:
+  - {id: F02, sl: 2}
+  mo_ta: Lắp servo kẹp vào thân J7, gắn hàm, rồi giá camera và camera cổ tay.
+- id: tay-4
+  cum: tram
+  ten: 'Tay phải: đế J1, khung xoay J2, vai J3'
+  goc: [24, -118]
+  nhom:
+  - re: M1-SH-005.*_R$
+    lech: [0, 0, 260]
+  - re: M1-SH-019.*_R$
+    lech: [0, 0, 420]
+  - re: M1-SH-006.*_R$
+    lech: [0, 0, 580]
+  chi_tiet:
+  - {ma: M1-SH-005, ten: Đế tay J1, sl: 1, hinh: M1-SH-005_.*_R$}
+  - {ma: M1-SH-019, ten: Khung xoay J2, sl: 1, hinh: M1-SH-019_.*_R$}
+  - {ma: M1-SH-006, ten: Vai J3, sl: 1, hinh: M1-SH-006_.*_R$}
+  oc:
+  - {id: F01.t, sl: 74}
+  mo_ta: Tay phải lắp giống tay trái, đối xứng qua giữa trạm. Servo gán ID 7 đến 12, yaw cổ tay ID 22.
+- id: tay-5
+  cum: tram
+  ten: 'Tay phải: khuỷu J4, giá J5, cổ tay'
+  goc: [24, -118]
+  nhom:
+  - re: M1-AR-001.*_R$
+    lech: [0, 0, 260]
+  - re: M1-AR-002.*_R$|M1-AR-011.*_R$
+    lech: [0, 0, 420]
+  - re: M1-AR-003.*_R$|M1-AR-004.*_R$|M1-AR-005.*_R$|M1-SV-001_wrist_yaw_R$
+    lech: [0, 0, 580]
+  chi_tiet:
+  - {ma: M1-AR-001, ten: Khuỷu J4, sl: 1, hinh: M1-AR-001_.*_R$}
+  - {ma: M1-AR-002, ten: Giá nối J5, sl: 1, hinh: M1-AR-002_.*_R$}
+  - {ma: M1-AR-011, ten: Chốt J5 có ổ bi, sl: 1, hinh: M1-AR-011_.*_R$}
+  - {ma: M1-AR-003, ten: Vỏ cổ tay, sl: 1, hinh: M1-AR-003_.*_R$}
+  - {ma: M1-AR-004, ten: Đáy cổ tay, sl: 1, hinh: M1-AR-004_.*_R$}
+  - {ma: M1-AR-005, ten: Nắp cổ tay, sl: 1, hinh: M1-AR-005_.*_R$}
+  - {ma: M1-SV-001, ten: Servo STS3215 (yaw cổ tay, ID 22), sl: 1, hinh: M1-SV-001_wrist_yaw_R}
+  oc:
+  - {id: F05, sl: 4}
+  - {id: F01.t, sl: 74, ghi: tiếp}
+  mo_ta: Lắp khuỷu J4 và giá nối J5. Ép hạt chèn nhiệt vào vỏ cổ tay, lắp servo yaw STS3215 (ID 22) vào hốc yaw bằng chi tiết gốc AM-ARM200, rồi đóng đáy và nắp cổ tay. Yaw quay trơn, không rơ.
+  canh_bao: 'Mỏ hàn ép hạt chèn nhiệt rất nóng: nguy cơ bỏng. Đặt mỏ lên giá, để nguội trước khi cất.'
+- id: tay-6
+  cum: tram
+  ten: 'Tay phải: kẹp và camera cổ tay'
+  goc: [24, -118]
+  nhom:
+  - re: M1-AR-007.*_R$|M1-SV-001_gripper_R
+    lech: [0, 0, 260]
+  - re: M1-AR-008.*_R$
+    lech: [0, 0, 420]
+  - re: M1-AR-027.*_R$|M1-CM-001_wrist_cam_R
+    lech: [0, 0, 580]
+  chi_tiet:
+  - {ma: M1-AR-007, ten: Thân kẹp J7, sl: 1, hinh: M1-AR-007_.*_R$}
+  - {ma: M1-AR-008, ten: Hàm kẹp J7, sl: 1, hinh: M1-AR-008_.*_R$}
+  - {ma: M1-AR-027, ten: Giá camera cổ tay, sl: 1, hinh: M1-AR-027_.*_R$}
+  - {ma: M1-SV-001, ten: Servo STS3215 (kẹp), sl: 1, hinh: M1-SV-001_gripper_R}
+  - {ma: M1-CM-001, ten: Camera cổ tay, sl: 1, hinh: M1-CM-001_wrist_cam_R}
+  oc:
+  - {id: F02, sl: 2}
+  mo_ta: Lắp servo kẹp vào thân J7, gắn hàm, rồi giá camera và camera cổ tay.
+- id: dien-1
+  cum: dien
+  ten: Giắc 21W4 và hộp E-stop
+  goc: [22, -50]
+  nhom:
+  - re: M1-TR-010|M1-TR-011
+    lech: [0, 0, -200]
+  - re: M1-TR-012
+    lech: [0, 200, 0]
+  chi_tiet:
+  - {ma: M1-TR-010, ten: Giắc 21W4 (nửa đực), sl: 1, hinh: M1-TR-010_}
+  - {ma: M1-TR-011, ten: Giá in giắc, sl: 1, hinh: M1-TR-011_}
+  - {ma: M1-TR-012, ten: Hộp E-stop, sl: 1, hinh: M1-TR-012_estop_hop}
+  - {ma: M1-TR-012b, ten: Nút E-stop 2NC, sl: 1, hinh: M1-TR-012b_}
+  oc:
+  - {id: F04}
+  mo_ta: Giắc dưới tai trái, đầu chân quay xuống. Hộp E-stop ở mặt ngoài tai trái, nút quay ra ngoài.
+  canh_bao: 'Bố trí chân 21W4 còn là giả định: đối chiếu giắc thật và bản vẽ hãng trước khi hàn cầu GND. Chưa nối nguồn; đo thông mạch theo bảng dây trước.'
+- id: dien-2
+  cum: dien
+  ten: Hộp điện trạm
+  goc: [22, -50]
+  nhom:
+  - re: M1-TR-013
+    lech: [0, -220, 0]
+  chi_tiet:
+  - {ma: M1-TR-013, ten: Hộp điện trạm, sl: 1, hinh: M1-TR-013_}
+  oc:
+  - {id: F04}
+  mo_ta: 'Bắt hộp ngoài tai phải. Trong hộp: hai hộp cầu chì, hai bo bus, hub USB và buck. Đi dây theo bảng dây.'
+  canh_bao: Chưa nối nguồn. Đo thông mạch theo bảng dây trước khi cấp điện. Không nối GND bus với GND Pi.
+- id: dat-tram
+  cum: tram
+  ten: Đặt trạm lên đế ngàm
+  goc: [24, -50]
+  nhom:
+  - cua_buoc: [tram-2, tram-3, tram-4, tram-5, tay-1, tay-2, tay-3, tay-4, tay-5, tay-6, dien-1, dien-2]
+    lech: [0, 0, 420]
+  chi_tiet:
+  - {ma: M1-TR-021, ten: Chốt côn Ø8 (trên đế ngàm), sl: 2, hinh: M1-TR-021_chot_con_L}
+  - {ma: M1-TR-008, ten: Khoá kéo 100 kg, sl: 2, hinh: M1-TR-008_khoa_keo_L}
+  oc: []
+  mo_ta: 'Đặt trạm lên đế ngàm, cài hai chốt côn vào bạc, khoá hai khoá kéo. Kiểm DOCK: hai công tắc KW12 đổi trạng thái khi khoá đóng.'
+  canh_bao: Hai tay chỉ có điện khi cả hai khoá kéo đã đóng (DOCK). Khi rút trạm, giắc trên xe vẫn mang 12 V. Chưa đấu pin thật.

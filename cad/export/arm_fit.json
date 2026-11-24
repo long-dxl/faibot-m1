@@ -1,0 +1,365 @@
+{
+ "gia_dinh": "J4 đặt theo tâm cung đầu khuỷu trùng đầu link; link 140 mm; không servo khuỷu",
+ "ket_qua": [
+  {
+   "q_vai": -100,
+   "q_khuyu": -20,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": -100,
+   "q_khuyu": 60,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": -100,
+   "q_khuyu": 90,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": -100,
+   "q_khuyu": 110,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 16.66
+   }
+  },
+  {
+   "q_vai": -100,
+   "q_khuyu": 130,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 5.71
+   }
+  },
+  {
+   "q_vai": -100,
+   "q_khuyu": 150,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 29.85
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 30.64
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 30.64
+   },
+   "link": {
+    "common_mm3": 621.7,
+    "min_dist_mm": null
+   }
+  },
+  {
+   "q_vai": 0,
+   "q_khuyu": -20,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": 0,
+   "q_khuyu": 60,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": 0,
+   "q_khuyu": 90,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": 0,
+   "q_khuyu": 110,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 16.66
+   }
+  },
+  {
+   "q_vai": 0,
+   "q_khuyu": 130,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 66.11
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 67.88
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 67.88
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 5.71
+   }
+  },
+  {
+   "q_vai": 0,
+   "q_khuyu": 150,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 26.85
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 27.94
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 27.94
+   },
+   "link": {
+    "common_mm3": 621.7,
+    "min_dist_mm": null
+   }
+  },
+  {
+   "q_vai": 90,
+   "q_khuyu": -20,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": 90,
+   "q_khuyu": 60,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": 90,
+   "q_khuyu": 90,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 23.78
+   }
+  },
+  {
+   "q_vai": 90,
+   "q_khuyu": 110,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": ">bbox"
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 16.66
+   }
+  },
+  {
+   "q_vai": 90,
+   "q_khuyu": 130,
+   "cradle": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 1.52
+   },
+   "servo_L": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 37.23
+   },
+   "servo_R": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 37.23
+   },
+   "link": {
+    "common_mm3": 0.0,
+    "min_dist_mm": 5.71
+   }
+  },
+  {
+   "q_vai": 90,
+   "q_khuyu": 150,
+   "cradle": {
+    "common_mm3": 11580.4,
+    "min_dist_mm": null
+   },
+   "servo_L": {
+    "common_mm3": 529.3,
+    "min_dist_mm": null
+   },
+   "servo_R": {
+    "common_mm3": 413.3,
+    "min_dist_mm": null
+   },
+   "link": {
+    "common_mm3": 621.7,
+    "min_dist_mm": null
+   }
+  }
+ ]
+}

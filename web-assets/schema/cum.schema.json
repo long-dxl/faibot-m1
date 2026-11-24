@@ -1,0 +1,100 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Faibot M1 cum",
+ "type": "object",
+ "required": [
+  "schema",
+  "cum"
+ ],
+ "properties": {
+  "schema": {
+   "const": "faibot-m1-cum/2"
+  },
+  "cum": {
+   "type": "array",
+   "minItems": 10,
+   "items": {
+    "type": "object",
+    "required": [
+     "ten",
+     "ma",
+     "ma_chinh",
+     "chi_tiet",
+     "trang_thai",
+     "node"
+    ],
+    "properties": {
+     "ten": {
+      "enum": [
+       "base",
+       "power",
+       "lift",
+       "shoulder_L",
+       "shoulder_R",
+       "arm_L",
+       "arm_R",
+       "gripper_L",
+       "gripper_R",
+       "camera"
+      ]
+     },
+     "ma": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^M1-[A-Z]{2}-[0-9]{3}$"
+      }
+     },
+     "trang_thai": {
+      "enum": [
+       "nháp",
+       "đủ"
+      ]
+     },
+     "node": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "minItems": 1
+     },
+     "chi_tiet": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "ma",
+        "ten",
+        "trang_thai_so",
+        "nhap",
+        "chi_tiet_cad"
+       ],
+       "properties": {
+        "nhap": {
+         "type": "boolean"
+        },
+        "chi_tiet_cad": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       }
+      }
+     },
+     "con_thieu": {
+      "type": "string"
+     },
+     "ma_chinh": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^M1-[A-Z]{2}-[0-9]{3}$"
+      },
+      "description": "mã chính web hiện đầu thẻ cụm (khung/servo chính); con của ma; [] khi cụm rỗng"
+     }
+    }
+   }
+  }
+ }
+}

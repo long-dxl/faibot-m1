@@ -1,0 +1,148 @@
+{
+ "link_vs_tam": {
+  "q_deg": 48.5,
+  "x_link_duoi_mat_tam_mm": 55.2,
+  "mep_truoc_tam_mm": 30.0,
+  "ho_mm": 25.2
+ },
+ "ray": {
+  "ray_z": [
+   375.0,
+   1075.0
+  ],
+  "ray_dai_mm": 700.0,
+  "qua_dem_duoi_mm": 12.0,
+  "qua_dem_tren_mm": 11.0,
+  "bien_khoi": {
+   "lift0": {
+    "khoi_z": [
+     392.3,
+     537.7
+    ],
+    "bien_duoi_mm": 17.3,
+    "bien_tren_mm": 537.3
+   },
+   "lift0_cham_dem": {
+    "khoi_z": [
+     392.3,
+     537.7
+    ],
+    "bien_duoi_mm": 17.3,
+    "bien_tren_mm": 537.3
+   },
+   "lift500": {
+    "khoi_z": [
+     904.3,
+     1049.7
+    ],
+    "bien_duoi_mm": 529.3,
+    "bien_tren_mm": 25.3
+   },
+   "lift500_cham_dem": {
+    "khoi_z": [
+     915.3,
+     1060.7
+    ],
+    "bien_duoi_mm": 540.3,
+    "bien_tren_mm": 14.3
+   }
+  },
+  "dat": true
+ },
+ "khoi_luong": {
+  "ray_g": 910,
+  "xe_g": 1741,
+  "chi_tiet_xe_g": {
+   "sideR": 170,
+   "sideL": 170,
+   "bridge": 185,
+   "beam": 324,
+   "outR": 164,
+   "padR": 58,
+   "outL": 164,
+   "padL": 58,
+   "nut": 16,
+   "safe_nut": 11,
+   "blocks_4x": 360,
+   "bu_long_vit_gia": 60,
+   "ray_2x700": 910
+  },
+  "cot_g": 2269
+ },
+ "kich_thuoc": {
+  "sideR": [
+   84.0,
+   5.0,
+   150.0
+  ],
+  "sideL": [
+   84.0,
+   5.0,
+   150.0
+  ],
+  "bridge": [
+   6.0,
+   76.0,
+   150.0
+  ],
+  "beam": [
+   25.0,
+   400.0,
+   40.0
+  ],
+  "outR": [
+   169.0,
+   60.0,
+   6.0
+  ],
+  "padR": [
+   60.0,
+   60.0,
+   6.0
+  ],
+  "outL": [
+   169.0,
+   60.0,
+   6.0
+  ],
+  "padL": [
+   60.0,
+   60.0,
+   6.0
+  ],
+  "nut": [
+   22.0,
+   22.0,
+   30.0
+  ],
+  "safe_nut": [
+   22.0,
+   22.0,
+   20.0
+  ]
+ },
+ "hub": [
+  58.6,
+  60.0,
+  55.0
+ ],
+ "hub_vol_mm3": 108438,
+ "outL_z": [
+  -91.0,
+  -85.0
+ ],
+ "outL_x": [
+  -19.0,
+  150.0
+ ],
+ "files": [
+  "M1-LF-010_column_4040.step",
+  "M1-LF-011_base_flange.step",
+  "M1-LF-020_carriage_side.step",
+  "M1-LF-021_carriage_bridge.step",
+  "M1-LF-022_carriage_beam.step",
+  "M1-LF-023_shoulder_outrigger.step",
+  "M1-LF-030_top_block.step",
+  "M1-LF-040_gearbox_plate.step"
+ ]
+}

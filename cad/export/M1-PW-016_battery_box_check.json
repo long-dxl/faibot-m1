@@ -1,0 +1,542 @@
+{
+ "fit": {
+  "ears": "x",
+  "pack": [
+   -12.0,
+   -30.0,
+   269.0,
+   131.0,
+   60.0
+  ],
+  "pcb": [
+   -80.0,
+   104.0,
+   150.0,
+   75.0,
+   40.0
+  ],
+  "pcb_phi": 40.0,
+  "k1": [
+   106.0,
+   -38.0,
+   80.5,
+   65.6,
+   60.0
+  ]
+ },
+ "dims": {
+  "outer": [
+   241.0,
+   131.0,
+   78.6
+  ],
+  "outer_with_ears": [
+   269.0,
+   131.0,
+   78.6
+  ],
+  "ears": "x",
+  "inner_pack": [
+   132.0,
+   84.0,
+   72.6
+  ],
+  "inner": [
+   235.0,
+   125.0,
+   72.6
+  ],
+  "bay_inner_x": 100.0,
+  "bms_bay_inner_y": 38.0
+ },
+ "interference_unexpected": [],
+ "interference_intended": [
+  [
+   "lid",
+   "bay_lid",
+   15.0
+  ],
+  [
+   "f1_stud_r",
+   "f1_spacer_r",
+   326.726
+  ],
+  [
+   "f1_stud_r",
+   "f1_nut_r",
+   326.726
+  ],
+  [
+   "f1_stud_r",
+   "bar1_h",
+   251.327
+  ],
+  [
+   "f1_stud_f",
+   "f1_spacer_f",
+   326.726
+  ],
+  [
+   "f1_stud_f",
+   "f1_nut_f",
+   326.726
+  ],
+  [
+   "f1_stud_f",
+   "bar2_a",
+   251.327
+  ],
+  [
+   "d0_A_stud",
+   "d0_A_washer",
+   141.764
+  ],
+  [
+   "d0_A_stud",
+   "d0_A_nut",
+   602.499
+  ],
+  [
+   "d0_A_stud",
+   "bar2_b",
+   542.465
+  ],
+  [
+   "d0_A_stud",
+   "bar2_v",
+   290.219
+  ],
+  [
+   "d0_A_washer",
+   "bar2_b",
+   194.046
+  ],
+  [
+   "d0_A_washer",
+   "bar2_v",
+   240.37
+  ],
+  [
+   "d0_A_nut",
+   "bar2_b",
+   446.707
+  ],
+  [
+   "d0_B_stud",
+   "d0_B_washer",
+   141.764
+  ],
+  [
+   "d0_B_stud",
+   "d0_B_nut",
+   602.499
+  ],
+  [
+   "d0_B_stud",
+   "bar3_v",
+   354.411
+  ],
+  [
+   "bar3_v",
+   "bar3_h",
+   425.0
+  ],
+  [
+   "bar3_h",
+   "ft_stud",
+   251.327
+  ],
+  [
+   "ft_stud",
+   "outlug_palm",
+   150.796
+  ],
+  [
+   "ft_stud",
+   "ft_washer",
+   100.531
+  ],
+  [
+   "ft_stud",
+   "ft_nut",
+   326.726
+  ],
+  [
+   "bms_stud_pos",
+   "bar1_v",
+   251.327
+  ],
+  [
+   "bar1_v",
+   "bar1_h",
+   425.0
+  ],
+  [
+   "bar2_a",
+   "bar2_b",
+   1020.0
+  ],
+  [
+   "bar2_b",
+   "bar2_v",
+   475.0
+  ]
+ ],
+ "cross_node_gap_mm": [
+  {
+   "a": "bar1_h",
+   "b": "bar2_a",
+   "d": 4.38,
+   "nodes": "N1-N2"
+  },
+  {
+   "a": "bar1_h",
+   "b": "bar2_b",
+   "d": 4.38,
+   "nodes": "N1-N2"
+  },
+  {
+   "a": "f1_nut_r",
+   "b": "bar2_a",
+   "d": 5.853,
+   "nodes": "N1-N2"
+  },
+  {
+   "a": "f1_nut_r",
+   "b": "bar2_b",
+   "d": 5.853,
+   "nodes": "N1-N2"
+  },
+  {
+   "a": "f1_spacer_r",
+   "b": "bar2_a",
+   "d": 5.88,
+   "nodes": "N1-N2"
+  },
+  {
+   "a": "f1_spacer_r",
+   "b": "bar2_b",
+   "d": 5.88,
+   "nodes": "N1-N2"
+  },
+  {
+   "a": "d0_A_nut",
+   "b": "bar1_h",
+   "d": 7.38,
+   "nodes": "N2-N1"
+  },
+  {
+   "a": "f1_stud_r",
+   "b": "bar2_a",
+   "d": 8.88,
+   "nodes": "N1-N2"
+  }
+ ],
+ "live_vs_other_lt3mm": [
+  {
+   "a": "lid",
+   "b": "outlug_barrel",
+   "d": 2.0
+  },
+  {
+   "a": "bay_lid",
+   "b": "outlug_palm",
+   "d": 2.0
+  },
+  {
+   "a": "bay_lid",
+   "b": "outlug_barrel",
+   "d": 2.0
+  },
+  {
+   "a": "d0_body",
+   "b": "bar3_v",
+   "d": 2.5
+  },
+  {
+   "a": "d0_body",
+   "b": "bar3_h",
+   "d": 2.5
+  },
+  {
+   "a": "bar3_v",
+   "b": "ft_standoff",
+   "d": 0.0
+  },
+  {
+   "a": "outlug_barrel",
+   "b": "ft_bush",
+   "d": 0.0
+  }
+ ],
+ "live_to_body_min": [
+  [
+   1.5,
+   "body",
+   "bar1_h"
+  ],
+  [
+   2.0,
+   "body",
+   "d0_B_washer"
+  ],
+  [
+   2.5,
+   "body",
+   "bar3_v"
+  ],
+  [
+   3.87,
+   "body",
+   "f1_nut_r"
+  ]
+ ],
+ "cell_to_shell_mm": 3.49,
+ "cable": {
+  "OD": 11.5,
+  "bend_min_mm": 57.5,
+  "W01_BMS_to_F1": "thanh \u0111\u1ed3ng d\u1eb9t 5x17 Cu-ETP (85 mm\u00b2; t\u1ea1i l\u1ed7 \u00d88,5 c\u00f2n 42.5 mm\u00b2 >= 33,6 mm\u00b2 2 AWG; 120,5 A), b\u1ecdc co nhi\u1ec7t, kh\u00f4ng u\u1ed1n c\u00e1p; thanh u\u1ed1n g\u1ea5p 2 ch\u1ed7 r >= 5 mm",
+  "W19_F1_to_D0": "thanh \u0111\u1ed3ng d\u1eb9t 5x17 (d\u1ea3i sau D0 r\u1ed9ng 12: 60 mm\u00b2; \u0111\u1ea7u c\u1ecdc D0 r\u1ed9ng 21, t\u1ea1i l\u1ed7 \u00d810,2 c\u00f2n 54 mm\u00b2), nh\u01b0 tr\u00ean",
+  "W_out_D0_to_PCB": "v0.4.5: thanh \u0111\u1ed3ng 5x21 t\u1eeb c\u1ecdc B D0 l\u00ean c\u1ecdc M8 xuy\u00ean n\u1eafp khoang (\u1ed1ng c\u00e1ch \u0111i\u1ec7n PA), cos 2 AWG M8 n\u1eb1m ngang tr\u00ean n\u1eafp, th\u00f9ng cos + c\u00e1p ngang v\u1ec1 +y, t\u00e2m c\u00e1p z 88.1 (h\u1ec7 h\u1ed9p), \u0111\u1ec9nh c\u00e1p 93.8; kho\u1ea3ng tr\u1ed1ng t\u1edbi t\u1ea5m tr\u00ean th\u00e2n (z=170, h\u1ec7 th\u00e2n) c\u00f2n 37.2 mm; kh\u00f4ng u\u1ed1n \u0111\u1ee9ng. Tr\u00ean n\u1eafp ph\u1ea3i c\u00f3 n\u1eafp ch\u1ee5p c\u00e1ch \u0111i\u1ec7n (boot) cho c\u1ecdc + cos [gi\u1ea3 \u0111\u1ecbnh, ch\u01b0a v\u1ebd]",
+  "bar3_tiet_dien": "thanh 3: t\u1ea1i l\u1ed7 c\u1ecdc B \u00d810,2 c\u00f2n (21-10,2)x5 = 54.0 mm\u00b2; t\u1ea1i l\u1ed7 c\u1ecdc xuy\u00ean \u00d88,5 c\u00f2n (17-8,5)x5 = 42.5 mm\u00b2 (>= 33,6 mm\u00b2 2 AWG)",
+  "F1_lug": "cos M8 tr\u00ean c\u1ecdc F1: thay b\u1eb1ng \u0111\u1ea7u thanh \u0111\u1ed3ng (khoan \u00d88,5); n\u1ebfu b\u1eaft bu\u1ed9c cos 2 AWG t\u1ea1i F1 c\u1ea7n th\u00eam ~44 mm (cos + th\u00f9ng) v\u00e0 b\u00e1n k\u00ednh 57,5 mm: kh\u00f4ng \u0111\u1ee7 ch\u1ed7 trong khoang s\u00e2u 84 mm [t\u1ef1 t\u00ednh]"
+ },
+ "mass_g": {
+  "cells": {
+   "g": 1050.0,
+   "cog": [
+    164.5,
+    45.0,
+    39.3
+   ]
+  },
+  "busbar_nickel": {
+   "g": 120.0,
+   "cog": [
+    164.5,
+    45.0,
+    39.3
+   ]
+  },
+  "bms": {
+   "g": 200.0,
+   "cog": [
+    130.0,
+    110.0,
+    39.3
+   ]
+  },
+  "f1": {
+   "g": 60.0,
+   "cog": [
+    21.0,
+    49.2,
+    15.0
+   ]
+  },
+  "d0": {
+   "g": 150.0,
+   "cog": [
+    70.0,
+    25.5,
+    39.3
+   ]
+  },
+  "foam_insulation": {
+   "g": 40.0,
+   "cog": [
+    164.5,
+    45.0,
+    39.3
+   ]
+  },
+  "thanh_dong_hai_cai+cap_ra": {
+   "g": 212.3,
+   "cog": [
+    23.5,
+    92.9,
+    29.3
+   ]
+  },
+  "ear_bushings_4": {
+   "g": 24.0,
+   "cog": [
+    164.5,
+    45.0,
+    39.3
+   ]
+  },
+  "body": {
+   "g": 356.3,
+   "cog": [
+    120.8,
+    65.8,
+    29.4
+   ]
+  },
+  "lid": {
+   "g": 67.6,
+   "cog": [
+    146.9,
+    76.8,
+    77.1
+   ]
+  },
+  "bay_lid": {
+   "g": 27.5,
+   "cog": [
+    49.5,
+    41.7,
+    77.1
+   ]
+  }
+ },
+ "mass_total_g": 2307.7,
+ "cog_box_frame_mm": {
+  "x": 130.0,
+  "y": 58.0,
+  "z_above_deck": 37.8
+ },
+ "cog_base_frame_mm": {
+  "x": -0.7,
+  "y": -25.5,
+  "r": 25.5,
+  "z_above_ground": 76.8,
+  "mass_g": 2307.7,
+  "moment_g_mm": [
+   -1693,
+   -58853
+  ]
+ },
+ "d0_access": {
+  "knob_xy": [
+   41.1,
+   -119.0
+  ],
+  "facing_deg": -30.0,
+  "distance_to_body_wall_mm": 81.6,
+  "note": "m\u1eb7t D0 h\u01b0\u1edbng ra th\u00e0nh th\u00e2n; c\u1ea7n c\u1eeda n\u1eafp \u1edf th\u00e0nh th\u00e2n ho\u1eb7c c\u1ea7n n\u1ed1i d\u00e0i ~82 mm (\u0111\u1ec1 xu\u1ea5t)"
+ },
+ "fit_check": {
+  "pack_with_ears": {
+   "max_r": 180.6,
+   "bien_toi_thanh_mm": 14.4,
+   "in_zone_points": 0,
+   "r_in": 195.0
+  },
+  "bang_di_day_evt": {
+   "max_r": 186.0,
+   "bien_toi_thanh_mm": 9.0,
+   "in_zone_points": 0,
+   "r_in": 195.0
+  },
+  "k1": {
+   "max_r": 155.6,
+   "bien_toi_thanh_mm": 39.4,
+   "in_zone_points": 0,
+   "r_in": 195.0
+  }
+ },
+ "fit_params": {
+  "R_IN": 195.0,
+  "wall": 5.0,
+  "wheel_r": 63.5,
+  "wheel_w": 40.0,
+  "wheel_mount_r": 170.0,
+  "servo_zone": [
+   [
+    105.0,
+    150.0
+   ],
+   46.0
+  ],
+  "assumption": "th\u00e0nh th\u00e2n 5 mm, servo b\u00e1nh STS3215 tr\u1ee5c h\u01b0\u1edbng t\u00e2m 105-150 mm x 46 mm ti\u1ebfp tuy\u1ebfn [gi\u1ea3 \u0111\u1ecbnh]; c\u1ed9t n\u00e2ng \u1edf m\u1eb7t tr\u00ean th\u00e2n (z >= 170), bu-l\u00f4ng ch\u00e2n c\u1ed9t kh\u00f4ng xu\u1ed1ng d\u01b0\u1edbi t\u1ea5m tr\u00ean"
+ },
+ "louver_vao": {
+  "duong_thang_xuyen": 0,
+  "ghi_chu": "0 = kh\u00f4ng c\u00f3 \u0111\u01b0\u1eddng th\u1eb3ng (d\u00e2y/phoi th\u1eb3ng kh\u00f4ng l\u1ecdt); \u0111\u1ed9 r\u1ed9ng k\u00eanh vu\u00f4ng g\u00f3c 1.80 mm"
+ },
+ "ntc": {
+  "ntc1": "gi\u1eefa pack, m\u1eb7t tr\u00ean cell gi\u1eefa h\u00e0ng tr\u00ean",
+  "ntc2": "d\u00e1n v\u00f9ng FET BMS \u0111\u1ea7u -x (c\u1ecdc P+), c\u00e1ch c\u1ecdc P+ ~10 mm",
+  "ghi_chu": "BMS c\u1ea7n >= 2 k\u00eanh NTC (QC2 V2.5); NTC d\u00e1n c\u00f3 l\u1edbp c\u00e1ch \u0111i\u1ec7n, kh\u00f4ng b\u1eaft l\u00ean c\u1ecdc mang \u0111i\u1ec7n"
+ },
+ "thermal": {
+  "I_A": 49.8,
+  "t_full_discharge_min": 20.5,
+  "R_pack_ambient_K_per_W": 5.78,
+  "R_els_ambient_K_per_W": 4.2,
+  "R_pack_els_K_per_W": 20.0,
+  "Q_els_W": {
+   "low": 12.2,
+   "high": 17.6
+  },
+  "cases": {
+   "12 m\u03a9 AC (datasheet tentative) | BMS+F1+D0 low": {
+    "Q_pack_W": 20.5,
+    "dT_pack_end_K": 22.2,
+    "dT_els_end_K": 33.8,
+    "T_pack_end_at_25C": 47.2,
+    "min_to_55C_from_25C": null
+   },
+   "12 m\u03a9 AC (datasheet tentative) | BMS+F1+D0 high": {
+    "Q_pack_W": 20.5,
+    "dT_pack_end_K": 22.7,
+    "dT_els_end_K": 48.2,
+    "T_pack_end_at_25C": 47.7,
+    "min_to_55C_from_25C": null
+   },
+   "18 m\u03a9 DC (1,5 x AC, gi\u1ea3 \u0111\u1ecbnh) | BMS+F1+D0 low": {
+    "Q_pack_W": 30.8,
+    "dT_pack_end_K": 32.8,
+    "dT_els_end_K": 34.7,
+    "T_pack_end_at_25C": 57.8,
+    "min_to_55C_from_25C": 18.6
+   },
+   "18 m\u03a9 DC (1,5 x AC, gi\u1ea3 \u0111\u1ecbnh) | BMS+F1+D0 high": {
+    "Q_pack_W": 30.8,
+    "dT_pack_end_K": 33.3,
+    "dT_els_end_K": 49.1,
+    "T_pack_end_at_25C": 58.3,
+    "min_to_55C_from_25C": 18.3
+   },
+   "20 m\u03a9 (tinh_toan.py R_cell) | BMS+F1+D0 low": {
+    "Q_pack_W": 34.2,
+    "dT_pack_end_K": 36.4,
+    "dT_els_end_K": 35.0,
+    "T_pack_end_at_25C": 61.4,
+    "min_to_55C_from_25C": 16.6
+   },
+   "20 m\u03a9 (tinh_toan.py R_cell) | BMS+F1+D0 high": {
+    "Q_pack_W": 34.2,
+    "dT_pack_end_K": 36.8,
+    "dT_els_end_K": 49.4,
+    "T_pack_end_at_25C": 61.8,
+    "min_to_55C_from_25C": 16.4
+   }
+  },
+  "T_ambient_max_for_55C_end_of_discharge": {
+   "12 m\u03a9": 32.3,
+   "18 m\u03a9": 21.7,
+   "20 m\u03a9": 18.2
+  }
+ },
+ "loads": {
+  "rung/v\u1eadn h\u00e0nh 50 g": {
+   "F_N": 1132,
+   "per_bolt_4xM5_N": 283
+  },
+  "s\u1ed1c UN38.3 T4 pack nh\u1ecf 150 g [ch\u01b0a ki\u1ec3m]": {
+   "F_N": 3396,
+   "per_bolt_4xM5_N": 849
+  },
+  "r\u01a1i 1 m": {
+   "v_m_s": 4.43,
+   "E_J": 22.6
+  },
+  "\u00e9p l\u1ed7 tai, \u1ed1ng l\u00f3t OD10 x 4 mm @ 50 g (MPa)": 7.1,
+  "\u00e9p l\u1ed7 tai, kh\u00f4ng \u1ed1ng l\u00f3t d5,5 x 4 mm @ 50 g (MPa)": 12.9,
+  "\u00e9p l\u1ed7 tai, \u1ed1ng l\u00f3t OD10 x 4 mm @ 150 g (MPa)": 21.2,
+  "\u00e9p l\u1ed7 tai, kh\u00f4ng \u1ed1ng l\u00f3t d5,5 x 4 mm @ 150 g (MPa)": 38.6
+ }
+}

@@ -1,0 +1,1365 @@
+{
+ "R": 0.25,
+ "angles": [
+  0.0,
+  120.0,
+  240.0
+ ],
+ "pan_xy": [
+  0.0599,
+  0.2375
+ ],
+ "khay_goc_xa": [
+  0.3,
+  0.15,
+  0.21
+ ],
+ "doi_trong_key": "M1-BS-032+039_doi_trong",
+ "co_dinh": {
+  "M1-BS-035_omni0_hub": [
+   0.2,
+   0.25,
+   0.0,
+   0.0508
+  ],
+  "M1-BS-035_omni1_hub": [
+   0.2,
+   -0.12499999999999994,
+   0.21650635094610968,
+   0.0508
+  ],
+  "M1-BS-035_omni2_hub": [
+   0.2,
+   -0.1250000000000001,
+   -0.2165063509461096,
+   0.0508
+  ],
+  "M1-BS-031_spoke0": [
+   0.0768,
+   0.124,
+   0.0,
+   0.04900026621727141
+  ],
+  "M1-BS-036_wheel_mount_wall0": [
+   0.005232241557078073,
+   0.1895,
+   0.009000000000000003,
+   0.0546501331086357
+  ],
+  "M1-BS-036_wheel_mount_cap0": [
+   0.011226799999999995,
+   0.208,
+   0.012000000000000004,
+   0.06869999999999998
+  ],
+  "M1-BS-031_spoke1": [
+   0.060324217531171676,
+   -0.07074999999999997,
+   0.1225425946354981,
+   0.04900026621727141
+  ],
+  "M1-BS-036_wheel_mount_wall1": [
+   0.005232241557078073,
+   -0.10254422863405992,
+   0.15961181401715116,
+   0.0546501331086357
+  ],
+  "M1-BS-036_wheel_mount_cap1": [
+   0.011226799999999995,
+   -0.11439230484541323,
+   0.17413328398716327,
+   0.06869999999999998
+  ],
+  "M1-BS-031_spoke2": [
+   0.060324217531171696,
+   -0.0707500000000001,
+   -0.12254259463549806,
+   0.04900026621727141
+  ],
+  "M1-BS-036_wheel_mount_wall2": [
+   0.0052322415570780784,
+   -0.08695577136594018,
+   -0.1686118140171511,
+   0.054650133108635715
+  ],
+  "M1-BS-036_wheel_mount_cap2": [
+   0.011226800000000002,
+   -0.09360769515458688,
+   -0.18613328398716325,
+   0.06869999999999998
+  ],
+  "M1-BS-037_deck": [
+   0.2854738022069264,
+   2.8484611080764528e-18,
+   -1.0133607755095318e-17,
+   0.06150026621727143
+  ],
+  "M1-BS-038_ebay0": [
+   1.1,
+   -0.03,
+   0.1225,
+   0.09900026621727141
+  ],
+  "M1-BS-038_ebay1": [
+   0.5,
+   -0.03,
+   -0.1225,
+   0.09900026621727141
+  ],
+  "M1-ST-012_khay_de_00": [
+   0.1364283783603045,
+   0.1481417959002399,
+   -0.09915094289275259,
+   0.20616322745821264
+  ],
+  "M1-ST-012_khay_de_01": [
+   0.13865837065931882,
+   0.14828073744386178,
+   0.1033745137207651,
+   0.2064424996359323
+  ],
+  "M1-ST-012_khay_de_10": [
+   0.07596152099568146,
+   0.2820222552318801,
+   -0.0979313069294067,
+   0.20649912216246288
+  ],
+  "M1-ST-012_khay_de_11": [
+   0.07417611789384704,
+   0.2823296946552397,
+   0.10534702773108458,
+   0.20690338473454686
+  ],
+  "M1-ST-011_cot_do_cat": [
+   0.2590038,
+   0.1495,
+   0.0,
+   0.1258
+  ],
+  "M1-BS-006_2040_do_khay": [
+   0.11399999999999999,
+   0.15,
+   0.0,
+   0.1976
+  ],
+  "M1-LF-051_OB_Main_Assembly_Post1": [
+   0.3830645741624101,
+   -0.03316219838388338,
+   -0.0001022131250701932,
+   0.8138926849713621
+  ],
+  "M1-LF-052_OB_Main_Assembly_Post2": [
+   0.39594882854465807,
+   -0.0369967516462782,
+   5.590931016467948e-05,
+   0.6129330252906741
+  ],
+  "M1-LF-053_OB_Main_Assembly_Post3": [
+   0.36962386229747085,
+   -0.03612005913451799,
+   -0.00035162107801988893,
+   0.40869777448568323
+  ],
+  "M1-LF-054_O_Main_Assembly_Post4": [
+   0.8355879364735178,
+   -0.01901098949837592,
+   -0.0001695584943227004,
+   0.18775562002876386
+  ],
+  "M1-LF-055_O_POST4_Connector_Base": [
+   0.2430992103622318,
+   -0.008901928968814673,
+   -8.969148080677768e-05,
+   0.08352985815064573
+  ],
+  "M1-SV-001_wheel0": [
+   0.0705,
+   0.20970164669412797,
+   0.01210093194532027,
+   0.0508
+  ],
+  "M1-SV-001_wheel1": [
+   0.0705,
+   -0.11533053782117796,
+   0.17555648727988377,
+   0.0508
+  ],
+  "M1-SV-001_wheel2": [
+   0.0705,
+   -0.0943711088729501,
+   -0.18765741922520396,
+   0.0508
+  ],
+  "xe_nang": [
+   0.9149843827997979,
+   0.05357216647380248,
+   0.010098893046404132,
+   0.4967236181475133
+  ],
+  "tram_hai_tay": [
+   2.0940502171633115,
+   0.022843459139748258,
+   -0.008355360275792024,
+   0.5835384727864817
+  ],
+  "M1-BS-032+039_doi_trong": [
+   8.228684,
+   -0.10424867873769365,
+   5.566451333723139e-19,
+   0.03186946601884357
+  ]
+ },
+ "chi_tiet": {
+  "M1-BS-035_omni0_hub": {
+   "kg": 0.2,
+   "xyz_m": [
+    0.25,
+    0.0,
+    0.0508
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-035_omni1_hub": {
+   "kg": 0.2,
+   "xyz_m": [
+    -0.125,
+    0.2165,
+    0.0508
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-035_omni2_hub": {
+   "kg": 0.2,
+   "xyz_m": [
+    -0.125,
+    -0.2165,
+    0.0508
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-031_spoke0": {
+   "kg": 0.0768,
+   "xyz_m": [
+    0.124,
+    0.0,
+    0.049
+   ],
+   "nguon": "[giả định 0,6 kg/m]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-036_wheel_mount_wall0": {
+   "kg": 0.0052,
+   "xyz_m": [
+    0.1895,
+    0.009,
+    0.0547
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-036_wheel_mount_cap0": {
+   "kg": 0.0112,
+   "xyz_m": [
+    0.208,
+    0.012,
+    0.0687
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-031_spoke1": {
+   "kg": 0.0603,
+   "xyz_m": [
+    -0.0707,
+    0.1225,
+    0.049
+   ],
+   "nguon": "[giả định 0,6 kg/m]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-036_wheel_mount_wall1": {
+   "kg": 0.0052,
+   "xyz_m": [
+    -0.1025,
+    0.1596,
+    0.0547
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-036_wheel_mount_cap1": {
+   "kg": 0.0112,
+   "xyz_m": [
+    -0.1144,
+    0.1741,
+    0.0687
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-031_spoke2": {
+   "kg": 0.0603,
+   "xyz_m": [
+    -0.0708,
+    -0.1225,
+    0.049
+   ],
+   "nguon": "[giả định 0,6 kg/m]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-036_wheel_mount_wall2": {
+   "kg": 0.0052,
+   "xyz_m": [
+    -0.087,
+    -0.1686,
+    0.0547
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-036_wheel_mount_cap2": {
+   "kg": 0.0112,
+   "xyz_m": [
+    -0.0936,
+    -0.1861,
+    0.0687
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-032_cw_hub_plate": {
+   "kg": 4.959,
+   "xyz_m": [
+    -0.0995,
+    0.0,
+    0.0348
+   ],
+   "nguon": "[tự tính]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-039_cw_plate2": {
+   "kg": 3.2697,
+   "xyz_m": [
+    -0.1115,
+    0.0,
+    0.0275
+   ],
+   "nguon": "[tự tính]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-037_deck": {
+   "kg": 0.2855,
+   "xyz_m": [
+    0.0,
+    -0.0,
+    0.0615
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-038_ebay0": {
+   "kg": 1.1,
+   "xyz_m": [
+    -0.03,
+    0.1225,
+    0.099
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-038_ebay1": {
+   "kg": 0.5,
+   "xyz_m": [
+    -0.03,
+    -0.1225,
+    0.099
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-ST-012_khay_de_00": {
+   "kg": 0.1364,
+   "xyz_m": [
+    0.1481,
+    -0.0992,
+    0.2062
+   ],
+   "nguon": "[tự tính, chi tiết mỏng 4 vách coi đặc]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-ST-012_khay_de_01": {
+   "kg": 0.1387,
+   "xyz_m": [
+    0.1483,
+    0.1034,
+    0.2064
+   ],
+   "nguon": "[tự tính, chi tiết mỏng 4 vách coi đặc]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-ST-012_khay_de_10": {
+   "kg": 0.076,
+   "xyz_m": [
+    0.282,
+    -0.0979,
+    0.2065
+   ],
+   "nguon": "[tự tính, chi tiết mỏng 4 vách coi đặc]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-ST-012_khay_de_11": {
+   "kg": 0.0742,
+   "xyz_m": [
+    0.2823,
+    0.1053,
+    0.2069
+   ],
+   "nguon": "[tự tính, chi tiết mỏng 4 vách coi đặc]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-ST-011_cot_do_cat": {
+   "kg": 0.259,
+   "xyz_m": [
+    0.1495,
+    0.0,
+    0.1258
+   ],
+   "nguon": "[tự tính, infill 0,5 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-BS-006_2040_do_khay": {
+   "kg": 0.114,
+   "xyz_m": [
+    0.15,
+    0.0,
+    0.1976
+   ],
+   "nguon": "[giả định 0,6 kg/m]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-LF-051_OB_Main_Assembly_Post1": {
+   "kg": 0.3831,
+   "xyz_m": [
+    -0.0332,
+    -0.0001,
+    0.8139
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-LF-052_OB_Main_Assembly_Post2": {
+   "kg": 0.3959,
+   "xyz_m": [
+    -0.037,
+    0.0001,
+    0.6129
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-LF-053_OB_Main_Assembly_Post3": {
+   "kg": 0.3696,
+   "xyz_m": [
+    -0.0361,
+    -0.0004,
+    0.4087
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-LF-054_O_Main_Assembly_Post4": {
+   "kg": 0.8356,
+   "xyz_m": [
+    -0.019,
+    -0.0002,
+    0.1878
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-LF-055_O_POST4_Connector_Base": {
+   "kg": 0.2431,
+   "xyz_m": [
+    -0.0089,
+    -0.0001,
+    0.0835
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-LF-057_OB_T_Connector_Middle": {
+   "kg": 0.2722,
+   "xyz_m": [
+    0.0378,
+    -0.002,
+    0.4912
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-004_O_T_Connector_Dowel_Pin_12_25": {
+   "kg": 0.0178,
+   "xyz_m": [
+    0.0441,
+    -0.0305,
+    0.4939
+   ],
+   "nguon": "[tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-002_lift_gear_z20": {
+   "kg": 0.0057,
+   "xyz_m": [
+    0.0396,
+    -0.0068,
+    0.4939
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-050_latch_solenoid": {
+   "kg": 0.06,
+   "xyz_m": [
+    0.0765,
+    -0.007,
+    0.5817
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-041_latch_pawl": {
+   "kg": 0.0098,
+   "xyz_m": [
+    0.041,
+    -0.007,
+    0.5817
+   ],
+   "nguon": "[tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-061_latch_sensor": {
+   "kg": 0.005,
+   "xyz_m": [
+    0.088,
+    0.011,
+    0.5817
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-060_latch_bracket": {
+   "kg": 0.0042,
+   "xyz_m": [
+    0.082,
+    -0.004,
+    0.5692
+   ],
+   "nguon": "[tự tính, infill 0,40 giả định]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-041_switch_bot": {
+   "kg": 0.0226,
+   "xyz_m": [
+    0.057,
+    0.055,
+    0.4191
+   ],
+   "nguon": "[tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-LF-041_switch_top": {
+   "kg": 0.0226,
+   "xyz_m": [
+    0.057,
+    0.055,
+    0.5717
+   ],
+   "nguon": "[tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-020_de_ngam_xe": {
+   "kg": 0.1933,
+   "xyz_m": [
+    0.0755,
+    -0.0027,
+    0.4914
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-021_chot_con_L_xe": {
+   "kg": 0.0108,
+   "xyz_m": [
+    0.0449,
+    0.11,
+    0.5087
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-022_moc_giu_L_xe": {
+   "kg": 0.0264,
+   "xyz_m": [
+    0.0499,
+    0.127,
+    0.5007
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-021_chot_con_R_xe": {
+   "kg": 0.0108,
+   "xyz_m": [
+    0.0449,
+    -0.11,
+    0.5087
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-022_moc_giu_R_xe": {
+   "kg": 0.0264,
+   "xyz_m": [
+    0.0499,
+    -0.127,
+    0.5007
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-023_giac_21W4_cai_xe": {
+   "kg": 0.04,
+   "xyz_m": [
+    0.0934,
+    0.11,
+    0.5017
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-001_ray_truoc_2040": {
+   "kg": 0.36,
+   "xyz_m": [
+    0.0919,
+    0.0,
+    0.5567
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-002_tai_2040_L": {
+   "kg": 0.12,
+   "xyz_m": [
+    -0.0281,
+    0.11,
+    0.5467
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-003_ga_day_tay_L": {
+   "kg": 0.1255,
+   "xyz_m": [
+    0.0356,
+    0.2375,
+    0.566
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-004_khoi_bac_L": {
+   "kg": 0.0087,
+   "xyz_m": [
+    0.0449,
+    0.11,
+    0.5167
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-004b_bac_thep_L": {
+   "kg": 0.0099,
+   "xyz_m": [
+    0.0449,
+    0.11,
+    0.5167
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-008_khoa_keo_L": {
+   "kg": 0.05,
+   "xyz_m": [
+    0.0471,
+    0.1279,
+    0.5393
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-009_cong_tac_khoa_L": {
+   "kg": 0.005,
+   "xyz_m": [
+    0.0199,
+    0.125,
+    0.5467
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-014_tay_cam_L": {
+   "kg": 0.0076,
+   "xyz_m": [
+    -0.1076,
+    0.11,
+    0.5858
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-002_tai_2040_R": {
+   "kg": 0.12,
+   "xyz_m": [
+    -0.0281,
+    -0.11,
+    0.5467
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-003_ga_day_tay_R": {
+   "kg": 0.1255,
+   "xyz_m": [
+    0.0356,
+    -0.2375,
+    0.566
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-004_khoi_bac_R": {
+   "kg": 0.0087,
+   "xyz_m": [
+    0.0449,
+    -0.11,
+    0.5167
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-004b_bac_thep_R": {
+   "kg": 0.0099,
+   "xyz_m": [
+    0.0449,
+    -0.11,
+    0.5167
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-008_khoa_keo_R": {
+   "kg": 0.05,
+   "xyz_m": [
+    0.0471,
+    -0.1279,
+    0.5393
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-009_cong_tac_khoa_R": {
+   "kg": 0.005,
+   "xyz_m": [
+    0.0199,
+    -0.125,
+    0.5467
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-014_tay_cam_R": {
+   "kg": 0.0076,
+   "xyz_m": [
+    -0.1076,
+    -0.11,
+    0.5858
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-010_giac_21W4_duc": {
+   "kg": 0.04,
+   "xyz_m": [
+    0.0934,
+    0.11,
+    0.5127
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-011_gia_giac": {
+   "kg": 0.0158,
+   "xyz_m": [
+    0.0926,
+    0.11,
+    0.5317
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-005_cau_cot_camera": {
+   "kg": 0.0633,
+   "xyz_m": [
+    0.0847,
+    0.0,
+    0.5906
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-006_cot_camera_2020": {
+   "kg": 0.1383,
+   "xyz_m": [
+    0.0599,
+    0.0,
+    0.8332
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-007_ga_pan_tilt": {
+   "kg": 0.0132,
+   "xyz_m": [
+    0.061,
+    -0.0,
+    1.0797
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-007b_num_khoa_M5_L": {
+   "kg": 0.005,
+   "xyz_m": [
+    0.0619,
+    0.027,
+    1.1037
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-007b_num_khoa_M5_R": {
+   "kg": 0.005,
+   "xyz_m": [
+    0.0619,
+    -0.027,
+    1.1037
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-CM-001_head_cam": {
+   "kg": 0.03,
+   "xyz_m": [
+    0.0653,
+    -0.0,
+    1.0996
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-012_estop_hop": {
+   "kg": 0.06,
+   "xyz_m": [
+    -0.0651,
+    0.1435,
+    0.5467
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-012b_estop_nam": {
+   "kg": 0.06,
+   "xyz_m": [
+    -0.0651,
+    0.1725,
+    0.5467
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-013_hop_dien_tram": {
+   "kg": 0.3,
+   "xyz_m": [
+    -0.0426,
+    -0.142,
+    0.5467
+   ],
+   "nguon": "[tram_hai_tay.part_kg: giả định/tự tính]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-SV-001_wheel0": {
+   "kg": 0.0705,
+   "xyz_m": [
+    0.2097,
+    0.0121,
+    0.0508
+   ],
+   "nguon": "[số hãng tự báo]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-SV-001_wheel1": {
+   "kg": 0.0705,
+   "xyz_m": [
+    -0.1153,
+    0.1756,
+    0.0508
+   ],
+   "nguon": "[số hãng tự báo]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-SV-001_wheel2": {
+   "kg": 0.0705,
+   "xyz_m": [
+    -0.0944,
+    -0.1877,
+    0.0508
+   ],
+   "nguon": "[số hãng tự báo]",
+   "xe_nang": false,
+   "tram": false
+  },
+  "M1-LF-lift_servo": {
+   "kg": 0.1875,
+   "xyz_m": [
+    0.0396,
+    0.0237,
+    0.4718
+   ],
+   "nguon": "[số hãng tự báo]",
+   "xe_nang": true,
+   "tram": false
+  },
+  "M1-TR-extra_ke_goc_oc": {
+   "kg": 0.1,
+   "xyz_m": [
+    0.0599,
+    0.0,
+    0.5537
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": false,
+   "tram": true
+  },
+  "M1-TR-extra_day_tram": {
+   "kg": 0.25,
+   "xyz_m": [
+    -0.0001,
+    0.0,
+    0.5437
+   ],
+   "nguon": "[giả định]",
+   "xe_nang": false,
+   "tram": true
+  }
+ },
+ "tong_khong_tay_kg": 17.207,
+ "xe_nang_kg": 0.915,
+ "tram_kg": 2.094,
+ "tram_tam_khung_tram_m": [
+  -0.0371,
+  -0.0084,
+  0.0098
+ ],
+ "tram_tam_khung_xe_m": [
+  0.0228,
+  -0.0084,
+  0.0098
+ ],
+ "de_kg": 11.971,
+ "tay_cad": {
+  "ghi_chu": "Một tay 6+1 từ CAD, tư thế duỗi ngang (amarm 'straight', như tipover.arm_pl): chi tiết in = thể tích STEP follower x 1,0 g/cm3",
+  "kg": 2.1281,
+  "quay_theo_pan_kg": 1.6445,
+  "r_m": 0.1894,
+  "z_tam_m": 0.1044,
+  "spec_tong_kg": 2.2008,
+  "spec_quay_theo_pan_kg": 1.6935,
+  "chenh_tong_kg": -0.0727,
+  "theo_body": {
+   "mount": {
+    "cad_kg": 0.4836,
+    "spec_kg": 0.50738,
+    "chenh_kg": -0.0237
+   },
+   "shoulder": {
+    "cad_kg": 0.3383,
+    "spec_kg": 0.35786,
+    "chenh_kg": -0.0196
+   },
+   "upper": {
+    "cad_kg": 0.4619,
+    "spec_kg": 0.48136,
+    "chenh_kg": -0.0194
+   },
+   "fore": {
+    "cad_kg": 0.3561,
+    "spec_kg": 0.37056,
+    "chenh_kg": -0.0145
+   },
+   "wrist": {
+    "cad_kg": 0.0403,
+    "spec_kg": 0.03045,
+    "chenh_kg": 0.0098
+   },
+   "yaw": {
+    "cad_kg": 0.2499,
+    "spec_kg": 0.25521,
+    "chenh_kg": -0.0053
+   },
+   "hand": {
+    "cad_kg": 0.1699,
+    "spec_kg": 0.16985,
+    "chenh_kg": 0.0
+   },
+   "jaw": {
+    "cad_kg": 0.0282,
+    "spec_kg": 0.02816,
+    "chenh_kg": 0.0
+   }
+  },
+  "chi_tiet": [
+   {
+    "ten": "O_F_J1_Base",
+    "body": "mount",
+    "kg": 0.29615,
+    "xyz_m": [
+     -0.0017,
+     0.0269,
+     0.0309
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "O_F_J2_Rotation",
+    "body": "shoulder",
+    "kg": 0.15081,
+    "xyz_m": [
+     -0.0073,
+     -0.0418,
+     0.0755
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "OB_F_J3_Shoulder",
+    "body": "upper",
+    "kg": 0.24441,
+    "xyz_m": [
+     -0.0017,
+     -0.1235,
+     0.1705
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "OB_F_J4_Elbow",
+    "body": "fore",
+    "kg": 0.25559,
+    "xyz_m": [
+     -0.0039,
+     -0.2713,
+     0.1396
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "OB_F_J5_Elbow_Wrist_Bracket",
+    "body": "wrist",
+    "kg": 0.03044,
+    "xyz_m": [
+     -0.0036,
+     -0.4061,
+     0.1434
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "OB_F_J5_Pin_Bearing",
+    "body": "wrist",
+    "kg": 0.00982,
+    "xyz_m": [
+     -0.0038,
+     -0.4195,
+     0.1264
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "OB_F_J56_Wrist_Housing",
+    "body": "yaw",
+    "kg": 0.07678,
+    "xyz_m": [
+     -0.0036,
+     -0.4518,
+     0.1559
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "OB_F_J56_Bottom",
+    "body": "yaw",
+    "kg": 0.03062,
+    "xyz_m": [
+     0.0199,
+     -0.4415,
+     0.1084
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "OB_F_J56_Top",
+    "body": "yaw",
+    "kg": 0.00146,
+    "xyz_m": [
+     -0.0035,
+     -0.436,
+     0.1992
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "M1-AR-007_OB_F_J7_Gripper",
+    "body": "hand",
+    "kg": 0.06173,
+    "xyz_m": [
+     0.0111,
+     -0.5105,
+     0.125
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "M1-AR-027_OB_F_Camera",
+    "body": "hand",
+    "kg": 0.01263,
+    "xyz_m": [
+     -0.0057,
+     -0.4809,
+     0.1776
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "M1-AR-008_OB_F_J7_Jaw",
+    "body": "jaw",
+    "kg": 0.02818,
+    "xyz_m": [
+     0.0075,
+     -0.5072,
+     0.1242
+    ],
+    "nguon": "STEP x 1,0 g/cm3 [tự tính]"
+   },
+   {
+    "ten": "servo yaw STS3215",
+    "body": "yaw",
+    "kg": 0.0705,
+    "xyz_m": [
+     -0.0038,
+     -0.4316,
+     0.1856
+    ],
+    "nguon": "datasheet, vị trí theo hình"
+   },
+   {
+    "ten": "servo kẹp STS3215",
+    "body": "hand",
+    "kg": 0.0705,
+    "xyz_m": [
+     -0.0119,
+     -0.5021,
+     0.1223
+    ],
+    "nguon": "datasheet, vị trí theo hình"
+   },
+   {
+    "ten": "camera cổ tay H65V1 + cáp",
+    "body": "hand",
+    "kg": 0.025,
+    "xyz_m": [
+     -0.0056,
+     -0.4801,
+     0.1929
+    ],
+    "nguon": "[giả định 25 g] như spec"
+   },
+   {
+    "ten": "servo pan STS3095",
+    "body": "mount",
+    "kg": 0.1875,
+    "xyz_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "nguon": "datasheet, tại gốc khớp [giả định như spec]"
+   },
+   {
+    "ten": "servo vai STS3095",
+    "body": "shoulder",
+    "kg": 0.1875,
+    "xyz_m": [
+     0.0,
+     0.0,
+     0.0397
+    ],
+    "nguon": "datasheet, tại gốc khớp [giả định như spec]"
+   },
+   {
+    "ten": "servo khuỷu STS3095",
+    "body": "upper",
+    "kg": 0.1875,
+    "xyz_m": [
+     -0.0,
+     -0.1929,
+     0.1476
+    ],
+    "nguon": "datasheet, tại gốc khớp [giả định như spec]"
+   },
+   {
+    "ten": "servo gập STS3215",
+    "body": "fore",
+    "kg": 0.0705,
+    "xyz_m": [
+     -0.0,
+     -0.3913,
+     0.148
+    ],
+    "nguon": "datasheet, tại gốc khớp [giả định như spec]"
+   },
+   {
+    "ten": "servo cuộn STS3215",
+    "body": "yaw",
+    "kg": 0.0705,
+    "xyz_m": [
+     -0.0038,
+     -0.4805,
+     0.1246
+    ],
+    "nguon": "datasheet, tại gốc khớp [giả định như spec]"
+   },
+   {
+    "ten": "cáp + ốc cánh tay",
+    "body": "upper",
+    "kg": 0.03,
+    "xyz_m": [
+     -0.0,
+     -0.1254,
+     0.1479
+    ],
+    "nguon": "[giả định] như spec"
+   },
+   {
+    "ten": "cáp + ốc cẳng tay",
+    "body": "fore",
+    "kg": 0.03,
+    "xyz_m": [
+     -0.0,
+     -0.2921,
+     0.1478
+    ],
+    "nguon": "[giả định] như spec"
+   }
+  ]
+ },
+ "tong_robot_kg": 21.463,
+ "he_so_lat": {
+  "doi_trong_kg": 8.229,
+  "co_khay_1kg": 1.679,
+  "khong_tai_khay": 1.927,
+  "khong_doi_trong_co_khay": 0.748,
+  "doi_trong_can_cho_1_5_kg": 6.64635019376874,
+  "gia_toc_0_5_lift_thap_cao": [
+   1.392,
+   1.338
+  ],
+  "tay_cad_kg": 2.1281,
+  "tay_cad_r_m": 0.1894,
+  "co_khay_1kg_tay_cad": 1.485,
+  "khong_tai_khay_tay_cad": 1.669
+ }
+}

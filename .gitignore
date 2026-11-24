@@ -1,0 +1,17 @@
+*.egg-info/
+*.pyc
+.pytest_cache/
+.venv/
+__pycache__/
+media/*.png
+
+# lắp ráp toàn robot: sinh lại bằng cad/faibotic/assembly_full.py (mỗi file ~21 MB)
+cad/export/M1-full_assembly*.step
+
+# ảnh render gốc (PNG) không vào git từ 23/11/2026: chỉ WebP; PNG giữ trên máy render, SHA-256 trong MANIFEST.md của bộ ảnh (bộ cũ: archive/v0.4/media/renders-web/MANIFEST.md)
+media/renders-web/*.png
+
+# tên riêng cho quét công khai: chỉ để trên máy
+scripts/private_terms.txt
+reports/
+MUJOCO_LOG.TXT

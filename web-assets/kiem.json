@@ -1,0 +1,75 @@
+{
+ "schema_manifest": {
+  "dat": true
+ },
+ "schema_joints": {
+  "dat": true
+ },
+ "schema_cum": {
+  "dat": true
+ },
+ "schema_lab_scene": {
+  "dat": true
+ },
+ "hash_manifest": {
+  "dat": true,
+  "so_file": 6,
+  "sai": []
+ },
+ "hash_sim_assets": {
+  "dat": true,
+  "so_stl": 42,
+  "sai": []
+ },
+ "brotli_le_1_2MB": {
+  "dat": true,
+  "brotli_bytes": 1160866,
+  "raw_bytes": 3672724
+ },
+ "gltf_validator": {
+  "dat": true,
+  "loi": 0,
+  "canh_bao": 0,
+  "info": 1
+ },
+ "node_cum_ton_tai": {
+  "dat": true,
+  "thieu": [],
+  "so_node": 73
+ },
+ "power_camera_co_luoi": {
+  "dat": true,
+  "node_la": {
+   "power": 1,
+   "camera": 3
+  }
+ },
+ "joints_trung_spec_va_xml": {
+  "dat": true,
+  "lech": [],
+  "bang_ghep_trung": true
+ },
+ "node_translation_glb_vs_joints": {
+  "dat": true,
+  "max_m": 0.0
+ },
+ "FK_vs_SDK_khung_goc_tay_1mm": {
+  "dat": true,
+  "max_mm": 0.0
+ },
+ "FK_vs_SDK_z_tuyet_doi_1mm": {
+  "dat": true,
+  "max_mm": 0.0,
+  "mau": 800
+ },
+ "FK_doc_lap_hang_so_CAD_1mm": {
+  "dat": true,
+  "max_mm": 0.0,
+  "ghi_chu": "ma trận quay viết tay, không dùng spec/kinematics/joints.json: hằng số URDF chép tay (gốc tay (59,9; ±237,5; 413,7 + lift), vai (57,99; 148,23), L1 134,91, L2 198,41, gập -3,16, yaw (28,13; ∓3,81; -1,30), cuộn từ yaw (60,99; 0; -22,02), tâm kẹp AM-ARM200 (93,82; ±10,13; -0,16) từ gốc cuộn) mm"
+ },
+ "hop_bao_GLB_vs_STL_sim_1mm": {
+  "dat": true,
+  "max_mm": 0.357,
+  "chieu_cao_m": 0.9557
+ }
+}

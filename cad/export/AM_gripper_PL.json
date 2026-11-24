@@ -1,0 +1,347 @@
+{
+ "ghi_chu": "khung tay mm (gốc khớp cuộn, x dọc trục cuộn, y trái, z lên; tư thế 0 SDK, cuộn 0, tay trái). Góc URDF left_gripper; mở = góc tính từ chạm khép.",
+ "chieu_khep_urdf": 1.0,
+ "goc_khep_urdf_deg": 64.605,
+ "mo_cham_deg": 180.0,
+ "mo_mem_deg": 64.0,
+ "truc_kep_goc": [
+  21.617,
+  -20.217,
+  -2.028
+ ],
+ "truc_kep_huong": [
+  -1e-05,
+  -0.0,
+  1.0
+ ],
+ "dau_ngon_co_dinh": [
+  102.65,
+  13.92,
+  0.25
+ ],
+ "mut_ngon_co_dinh_x": 104.0,
+ "dau_ham_khep": [
+  102.0,
+  6.34,
+  -0.57
+ ],
+ "khe_dau_ngon_khep_mm": 7.65,
+ "khe_dau_ngon_mo_mem_mm": 97.25,
+ "khe_dau_ngon_urdf0_mm": 98.0,
+ "tcp_khep": [
+  103.82,
+  10.13,
+  -0.16
+ ],
+ "tam_kep_lui_tip": [
+  93.82,
+  10.13,
+  -0.16
+ ],
+ "tip_len_mm": 10.0,
+ "hop_bao": {
+  "than_kep": [
+   -2.77,
+   -30.1,
+   -27.95,
+   104.0,
+   35.12,
+   24.06
+  ],
+  "than_kep_tru_ngon": [
+   -2.77,
+   -30.1,
+   -27.95,
+   70.0,
+   35.12,
+   24.06
+  ],
+  "ngon_co_dinh": [
+   70.0,
+   10.0,
+   -9.63,
+   104.0,
+   27.71,
+   9.79
+  ],
+  "ham_khep": [
+   11.5,
+   -30.34,
+   -28.52,
+   103.64,
+   11.31,
+   27.62
+  ],
+  "ham_khep_ngon": [
+   70.0,
+   -13.62,
+   -10.39,
+   103.64,
+   11.31,
+   9.49
+  ],
+  "gia_camera": [
+   -18.3,
+   -22.77,
+   22.28,
+   26.3,
+   17.74,
+   100.62
+  ],
+  "servo_kep": [
+   9.22,
+   -30.42,
+   -20.52,
+   34.02,
+   14.98,
+   17.98
+  ],
+  "camera": [
+   -12.6,
+   -19.81,
+   50.71,
+   14.29,
+   16.19,
+   86.82
+  ]
+ },
+ "hop_ham_xoay": {
+  "u": [
+   51.634,
+   85.898
+  ],
+  "w": [
+   -8.827,
+   3.222
+  ],
+  "z": [
+   -8.047,
+   11.203
+  ],
+  "beta_deg": 18.282,
+  "cat_mat_trong_mm": 1.766
+ },
+ "the_tich_cm3": {
+  "than_kep": 61.727,
+  "gia_camera": 12.631,
+  "ham": 28.176
+ },
+ "servo_pose_tay": [
+  [
+   -0.0,
+   1.0,
+   0.0,
+   21.62
+  ],
+  [
+   -1.0,
+   0.0,
+   -0.0,
+   -7.72
+  ],
+  [
+   0.0,
+   0.0,
+   1.0,
+   -2.22
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "cam_khung_tay": [
+  [
+   0.0,
+   -0.4107,
+   0.9118,
+   -5.206
+  ],
+  [
+   -1.0,
+   -0.0,
+   -0.0,
+   -1.8143
+  ],
+  [
+   0.0,
+   -0.9118,
+   -0.4107,
+   70.4107
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "quet_mo": [
+  {
+   "mo_deg": 10.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 20.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 30.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 40.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 50.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 60.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 70.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 80.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 90.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 100.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 110.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 120.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 130.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 140.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 150.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 160.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 170.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  },
+  {
+   "mo_deg": 180.0,
+   "giao_mm3": {
+    "than_kep": 0.0,
+    "gia_camera": 0.0,
+    "servo_kep": 0.0,
+    "camera": 0.0
+   }
+  }
+ ],
+ "finger_x0_mm": 70.0,
+ "hinge_r_mm": 22.0
+}

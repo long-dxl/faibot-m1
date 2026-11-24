@@ -1,0 +1,262 @@
+{
+ "left_lift0/cot_camera": {
+  "q_deg": [
+   -70.0,
+   -80.0,
+   -1.0,
+   82.5,
+   90.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-TR-006_cot_camera_2020",
+    "left_Fixed_Jaw"
+   ]
+  ]
+ },
+ "left_lift0/dau_camera": {
+  "q_deg": [
+   -60.0,
+   -80.0,
+   -10.0,
+   62.5,
+   90.0
+  ],
+  "gan_nhat": [
+   [
+    3.8,
+    "M1-CM-001_head_cam",
+    "left_Fixed_Jaw"
+   ],
+   [
+    11.6,
+    "M1-TR-007_ga_pan_tilt",
+    "left_Fixed_Jaw"
+   ],
+   [
+    16.6,
+    "M1-TR-007b_num_khoa_M5_L",
+    "left_Fixed_Jaw"
+   ],
+   [
+    40.9,
+    "M1-TR-007b_num_khoa_M5_R",
+    "left_Fixed_Jaw"
+   ]
+  ]
+ },
+ "left_lift0/be_tram": {
+  "q_deg": [
+   -60.0,
+   48.5,
+   -1.0,
+   -77.5,
+   0.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Lower_Arm"
+   ],
+   [
+    17.2,
+    "M1-TR-003_ga_day_tay_L",
+    "left_Rotation_Pitch"
+   ],
+   [
+    24.2,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Rotation_Pitch"
+   ],
+   [
+    26.0,
+    "M1-TR-011_gia_giac",
+    "left_Lower_Arm"
+   ],
+   [
+    30.3,
+    "M1-TR-002_tai_2040_L",
+    "left_Lower_Arm"
+   ]
+  ]
+ },
+ "left_lift0/de": {
+  "q_deg": [
+   -10.0,
+   -16.0,
+   80.0,
+   22.5,
+   0.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-ST-010_tray",
+    "left_Fixed_Jaw"
+   ]
+  ]
+ },
+ "left_lift0.45/cot_camera": {
+  "q_deg": [
+   -70.0,
+   -80.0,
+   -1.0,
+   82.5,
+   90.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-TR-006_cot_camera_2020",
+    "left_Fixed_Jaw"
+   ]
+  ]
+ },
+ "left_lift0.45/dau_camera": {
+  "q_deg": [
+   -60.0,
+   -80.0,
+   -10.0,
+   62.5,
+   90.0
+  ],
+  "gan_nhat": [
+   [
+    3.8,
+    "M1-CM-001_head_cam",
+    "left_Fixed_Jaw"
+   ],
+   [
+    11.6,
+    "M1-TR-007_ga_pan_tilt",
+    "left_Fixed_Jaw"
+   ],
+   [
+    16.6,
+    "M1-TR-007b_num_khoa_M5_L",
+    "left_Fixed_Jaw"
+   ],
+   [
+    40.9,
+    "M1-TR-007b_num_khoa_M5_R",
+    "left_Fixed_Jaw"
+   ]
+  ]
+ },
+ "left_lift0.45/be_tram": {
+  "q_deg": [
+   -60.0,
+   48.5,
+   -1.0,
+   -77.5,
+   0.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Lower_Arm"
+   ],
+   [
+    17.2,
+    "M1-TR-003_ga_day_tay_L",
+    "left_Rotation_Pitch"
+   ],
+   [
+    24.2,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Rotation_Pitch"
+   ],
+   [
+    26.0,
+    "M1-TR-011_gia_giac",
+    "left_Lower_Arm"
+   ],
+   [
+    30.3,
+    "M1-TR-002_tai_2040_L",
+    "left_Lower_Arm"
+   ]
+  ]
+ },
+ "right_lift0/be_tram": {
+  "q_deg": [
+   60.0,
+   48.5,
+   -1.0,
+   -77.5,
+   0.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Lower_Arm"
+   ],
+   [
+    17.2,
+    "M1-TR-003_ga_day_tay_R",
+    "left_Rotation_Pitch"
+   ],
+   [
+    24.2,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Rotation_Pitch"
+   ],
+   [
+    33.0,
+    "M1-TR-002_tai_2040_R",
+    "left_Lower_Arm"
+   ]
+  ]
+ },
+ "right_lift0/de": {
+  "q_deg": [
+   10.0,
+   -16.0,
+   80.0,
+   22.5,
+   0.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-ST-010_tray",
+    "left_Fixed_Jaw"
+   ]
+  ]
+ },
+ "right_lift0.45/be_tram": {
+  "q_deg": [
+   60.0,
+   48.5,
+   -1.0,
+   -77.5,
+   0.0
+  ],
+  "gan_nhat": [
+   [
+    0.0,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Lower_Arm"
+   ],
+   [
+    17.2,
+    "M1-TR-003_ga_day_tay_R",
+    "left_Rotation_Pitch"
+   ],
+   [
+    24.2,
+    "M1-TR-001_ray_truoc_2040",
+    "left_Rotation_Pitch"
+   ],
+   [
+    33.0,
+    "M1-TR-002_tai_2040_R",
+    "left_Lower_Arm"
+   ]
+  ]
+ }
+}

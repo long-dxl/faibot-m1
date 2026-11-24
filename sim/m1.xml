@@ -1,0 +1,276 @@
+<mujoco model="faibotic_m1">
+  <!-- Faibotic M1 v0.5 P-L. File sinh tự động bởi faibotic.model; sửa spec.py rồi xuất lại. -->
+  <compiler angle="radian" autolimits="true" meshdir="assets"/>
+  <option timestep="0.002" integrator="implicitfast" cone="elliptic" impratio="10"/>
+  <visual><global offwidth="1280" offheight="720"/><quality shadowsize="8192" offsamples="8"/></visual>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1="0.82 0.84 0.86" rgb2="0.74 0.76 0.78"/>
+    <material name="grid" texture="grid" texrepeat="8 8" reflectance="0.05"/>
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.95 0.96 0.98" rgb2="0.75 0.8 0.88" width="256" height="256"/>
+    <mesh name="base__alu" file="base__alu.stl"/>
+    <mesh name="base__hub" file="base__hub.stl"/>
+    <mesh name="base__ivory" file="base__ivory.stl"/>
+    <mesh name="base__ivory_hi" file="base__ivory_hi.stl"/>
+    <mesh name="base__navy" file="base__navy.stl"/>
+    <mesh name="base__rubber" file="base__rubber.stl"/>
+    <mesh name="base__servo_body" file="base__servo_body.stl"/>
+    <mesh name="base__steel" file="base__steel.stl"/>
+    <mesh name="carriage__alu" file="carriage__alu.stl"/>
+    <mesh name="carriage__ivory" file="carriage__ivory.stl"/>
+    <mesh name="carriage__navy" file="carriage__navy.stl"/>
+    <mesh name="carriage__servo" file="carriage__servo.stl"/>
+    <mesh name="carriage__servo_body" file="carriage__servo_body.stl"/>
+    <mesh name="carriage__steel" file="carriage__steel.stl"/>
+    <mesh name="left_carriage__ivory" file="left_carriage__ivory.stl"/>
+    <mesh name="left_fore__navy" file="left_fore__navy.stl"/>
+    <mesh name="left_fore__servo_body" file="left_fore__servo_body.stl"/>
+    <mesh name="left_hand__ivory" file="left_hand__ivory.stl"/>
+    <mesh name="left_hand__navy" file="left_hand__navy.stl"/>
+    <mesh name="left_hand__servo" file="left_hand__servo.stl"/>
+    <mesh name="left_hand__servo_body" file="left_hand__servo_body.stl"/>
+    <mesh name="left_jaw__navy" file="left_jaw__navy.stl"/>
+    <mesh name="left_shoulder__navy" file="left_shoulder__navy.stl"/>
+    <mesh name="left_upper__ivory" file="left_upper__ivory.stl"/>
+    <mesh name="left_wrist__ivory" file="left_wrist__ivory.stl"/>
+    <mesh name="left_yaw__navy" file="left_yaw__navy.stl"/>
+    <mesh name="left_yaw__servo_body" file="left_yaw__servo_body.stl"/>
+    <mesh name="left_yaw__steel" file="left_yaw__steel.stl"/>
+    <mesh name="right_carriage__ivory" file="right_carriage__ivory.stl"/>
+    <mesh name="right_fore__navy" file="right_fore__navy.stl"/>
+    <mesh name="right_fore__servo_body" file="right_fore__servo_body.stl"/>
+    <mesh name="right_hand__ivory" file="right_hand__ivory.stl"/>
+    <mesh name="right_hand__navy" file="right_hand__navy.stl"/>
+    <mesh name="right_hand__servo" file="right_hand__servo.stl"/>
+    <mesh name="right_hand__servo_body" file="right_hand__servo_body.stl"/>
+    <mesh name="right_jaw__navy" file="right_jaw__navy.stl"/>
+    <mesh name="right_shoulder__navy" file="right_shoulder__navy.stl"/>
+    <mesh name="right_upper__ivory" file="right_upper__ivory.stl"/>
+    <mesh name="right_wrist__ivory" file="right_wrist__ivory.stl"/>
+    <mesh name="right_yaw__navy" file="right_yaw__navy.stl"/>
+    <mesh name="right_yaw__servo_body" file="right_yaw__servo_body.stl"/>
+    <mesh name="right_yaw__steel" file="right_yaw__steel.stl"/>
+    <material name="m1_ivory" rgba="0.945098 0.937255 0.909804 1" specular="0.25" shininess="0.4" reflectance="0.0"/>
+    <material name="m1_ivory_hi" rgba="0.964706 0.960784 0.945098 1" specular="0.25" shininess="0.4" reflectance="0.0"/>
+    <material name="m1_navy" rgba="0.117647 0.227451 0.372549 1" specular="0.35" shininess="0.5" reflectance="0.0"/>
+    <material name="m1_alu" rgba="0.701961 0.717647 0.741176 1" specular="0.7" shininess="0.7" reflectance="0.05"/>
+    <material name="m1_steel" rgba="0.552941 0.576471 0.607843 1" specular="0.8" shininess="0.8" reflectance="0.08"/>
+    <material name="m1_servo" rgba="0.105882 0.113725 0.129412 1" specular="0.2" shininess="0.3" reflectance="0.0"/>
+    <material name="m1_servo_body" rgba="0.101961 0.101961 0.101961 1" specular="0.3" shininess="0.4" reflectance="0.0"/>
+    <material name="m1_pad" rgba="0.2 0.211765 0.239216 1" specular="0.1" shininess="0.2" reflectance="0.0"/>
+    <material name="m1_rubber" rgba="0.14902 0.156863 0.176471 1" specular="0.1" shininess="0.2" reflectance="0.0"/>
+    <material name="m1_hub" rgba="0.427451 0.447059 0.478431 1" specular="0.6" shininess="0.6" reflectance="0.04"/>
+  </asset>
+  <default>
+    <geom friction="1 0.01 0.001" solref="0.004 1"/>
+    <default class="visual"><geom contype="0" conaffinity="0" group="1"/></default>
+    <default class="vis"><geom type="mesh" contype="0" conaffinity="0" group="2" density="0"/></default>
+    <default class="arm"><joint damping="1.5" armature="0.05" frictionloss="0.05"/></default>
+    <default class="arm_small"><joint damping="0.3" armature="0.01" frictionloss="0.02"/></default>
+    <default class="gripper"><joint type="hinge" damping="0.05" armature="0.005" frictionloss="0.005"/></default>
+    <default class="finger">
+      <geom type="box" friction="1.5 0.02 0.001" condim="4" mass="0" rgba="0.15 0.15 0.15 1" group="3"/>
+    </default>
+  </default>
+  <worldbody>
+    <light pos="1 -1 3" dir="-0.2 0.3 -1" directional="true" diffuse="0.8 0.8 0.8"/>
+    <light pos="-1 1 3" dir="0.3 -0.2 -1" directional="true" diffuse="0.3 0.3 0.3" castshadow="false"/>
+    
+    
+    <body name="base" pos="0 0 0">
+      <joint name="base_x" type="slide" axis="1 0 0" damping="5"/>
+      <joint name="base_y" type="slide" axis="0 1 0" damping="5"/>
+      <joint name="base_yaw" type="hinge" axis="0 0 1" damping="2"/>
+      <geom name="base_geom" group="3" type="cylinder" size="0.185 0.0125" pos="0 0 0.0515" mass="2.147" rgba="0.92 0.92 0.94 1"/>
+        <geom name="base__alu" class="vis" mesh="base__alu" material="m1_alu"/>
+        <geom name="base__hub" class="vis" mesh="base__hub" material="m1_hub"/>
+        <geom name="base__ivory" class="vis" mesh="base__ivory" material="m1_ivory"/>
+        <geom name="base__ivory_hi" class="vis" mesh="base__ivory_hi" material="m1_ivory_hi"/>
+        <geom name="base__navy" class="vis" mesh="base__navy" material="m1_navy"/>
+        <geom name="base__rubber" class="vis" mesh="base__rubber" material="m1_rubber"/>
+        <geom name="base__servo_body" class="vis" mesh="base__servo_body" material="m1_servo_body"/>
+        <geom name="base__steel" class="vis" mesh="base__steel" material="m1_steel"/>
+      <geom name="base_spoke_0" group="3" type="box" size="0.0465 0.02 0.01" pos="0.1415 0 0.049" euler="0 0 0" mass="0.066" rgba="0.70 0.72 0.74 1"/><geom name="base_spoke_1" group="3" type="box" size="0.0465 0.02 0.01" pos="-0.07075 0.122543 0.049" euler="0 0 2.0944" mass="0.066" rgba="0.70 0.72 0.74 1"/><geom name="base_spoke_2" group="3" type="box" size="0.0465 0.02 0.01" pos="-0.07075 -0.122543 0.049" euler="0 0 4.18879" mass="0.066" rgba="0.70 0.72 0.74 1"/>
+      <geom name="base_counterweight" group="3" type="box" size="0.1825 0.13 0.00725" pos="-0.0625 0 0.03175" mass="8.229" rgba="0.35 0.36 0.38 1"/>
+      <geom name="base_tray" group="3" type="box" size="0.128 0.19 0.0142" pos="0.192 0 0.2058" mass="0.798" rgba="0.95 0.94 0.91 1"/>
+      <geom name="base_logo" group="3" type="box" size="0.002 0.06 0.02" pos="0.185 0 0.099" class="visual" rgba="0.12 0.23 0.37 1"/>
+      <geom name="column_geom" group="3" type="box" size="0.084455 0.05111 0.429415" pos="-0.058425 0 0.493415" mass="2.227" rgba="0.95 0.94 0.91 1"/>
+      <geom name="column_foot_geom" group="3" type="box" size="0.10949 0.07542 0.14202" pos="-0.0512 0 0.18102" mass="0" rgba="0.95 0.94 0.91 1"/>
+      
+      <body name="wheel_0" pos="0.25 0 0.0508" zaxis="1 0 0">
+        <joint name="wheel_0" type="hinge" axis="0 0 1" damping="0.001"/>
+        <geom name="wheel_0_geom" type="cylinder" size="0.0508 0.02" class="visual" group="3" rgba="0.15 0.16 0.18 1" mass="0.19"/>
+        <geom type="box" size="0.012 0.04572 0.021" class="visual" group="3" rgba="0.6 0.6 0.6 1" mass="0.01"/>
+      </body>
+      <body name="wheel_1" pos="-0.125 0.216506 0.0508" zaxis="-0.5 0.866025 0">
+        <joint name="wheel_1" type="hinge" axis="0 0 1" damping="0.001"/>
+        <geom name="wheel_1_geom" type="cylinder" size="0.0508 0.02" class="visual" group="3" rgba="0.15 0.16 0.18 1" mass="0.19"/>
+        <geom type="box" size="0.012 0.04572 0.021" class="visual" group="3" rgba="0.6 0.6 0.6 1" mass="0.01"/>
+      </body>
+      <body name="wheel_2" pos="-0.125 -0.216506 0.0508" zaxis="-0.5 -0.866025 0">
+        <joint name="wheel_2" type="hinge" axis="0 0 1" damping="0.001"/>
+        <geom name="wheel_2_geom" type="cylinder" size="0.0508 0.02" class="visual" group="3" rgba="0.15 0.16 0.18 1" mass="0.19"/>
+        <geom type="box" size="0.012 0.04572 0.021" class="visual" group="3" rgba="0.6 0.6 0.6 1" mass="0.01"/>
+      </body>
+      <body name="carriage" pos="0 0 0.413696">  <!-- gốc xe nâng = đáy J1 (gốc tay, mặt trên gá tay của trạm); trục vai cao hơn D0. Trạm hai tay (di_dong) gắn cứng vào xe nâng -->
+        <joint name="lift" type="slide" axis="0 0 1" range="0 0.45" damping="50" armature="1"/>
+        <geom name="carriage_geom" group="3" type="box" size="0.02 0.3 0.01" pos="0.0919 0 -0.017" mass="4.02376" rgba="0.70 0.72 0.74 1"/>
+        <geom name="carriage__alu" class="vis" mesh="carriage__alu" material="m1_alu"/>
+        <geom name="carriage__ivory" class="vis" mesh="carriage__ivory" material="m1_ivory"/>
+        <geom name="carriage__navy" class="vis" mesh="carriage__navy" material="m1_navy"/>
+        <geom name="carriage__servo" class="vis" mesh="carriage__servo" material="m1_servo"/>
+        <geom name="carriage__servo_body" class="vis" mesh="carriage__servo_body" material="m1_servo_body"/>
+        <geom name="carriage__steel" class="vis" mesh="carriage__steel" material="m1_steel"/>
+        <geom name="left_carriage__ivory" class="vis" mesh="left_carriage__ivory" material="m1_ivory"/>
+        <geom name="right_carriage__ivory" class="vis" mesh="right_carriage__ivory" material="m1_ivory"/>
+        <geom name="carriage_rack" group="3" type="box" size="0.03161 0.07084 0.0718" pos="0.03727 0 -0.07831" mass="0" rgba="0.3 0.3 0.33 1"/>
+        <geom name="carriage_ear_l" group="3" type="box" size="0.1 0.01 0.02" pos="-0.0281 0.11 -0.027" mass="0" rgba="0.70 0.72 0.74 1"/>
+        <geom name="carriage_ear_r" group="3" type="box" size="0.1 0.01 0.02" pos="-0.0281 -0.11 -0.027" mass="0" rgba="0.70 0.72 0.74 1"/>
+        <geom name="carriage_dock" group="3" type="box" size="0.046 0.12 0.015" pos="0.0759 0 -0.082" mass="0" rgba="0.12 0.23 0.37 1"/>
+        <geom name="head_mast" group="3" type="box" size="0.01 0.01 0.2305" pos="0.0599 0 0.2595" mass="0" rgba="0.70 0.72 0.74 1"/>
+        <geom name="head_gimbal" group="3" type="box" size="0.018465 0.03 0.026" pos="0.062365 0 0.516" mass="0" rgba="0.12 0.23 0.37 1"/>
+        <camera name="head" pos="0.07347 0 0.51621" xyaxes="0 -1 0 0.76604 0 0.64279" fovy="70"/>  <!-- camera đầu trên cột trạm, chúi 50° -->
+        
+      <geom name="left_mount_geom" group="3" type="box" size="0.045 0.045 0.02" pos="0.0599 0.2375 0.02" mass="0" rgba="0.95 0.94 0.91 1"/>
+      <body name="left_shoulder" pos="0.0599 0.2375 0">
+        <joint name="left_pan" class="arm" axis="0 0 1" range="-1.22173 1.22173"/>
+        <inertial pos="0.050178 -0.000423686 0.116039" mass="0.35786" fullinertia="0.000678107 0.000778286 0.00018047 -2.08263e-06 -0.000105622 -1.09368e-05"/>
+        <geom name="left_shoulder_geom" group="3" type="box" size="0.035 0.04 0.045" pos="0.03 0 0.105" rgba="0.95 0.94 0.91 1"/>
+        <geom name="left_shoulder__navy" class="vis" mesh="left_shoulder__navy" material="m1_navy"/>
+        <body name="left_upper" pos="0.05799 0 0.14823">
+          <joint name="left_shoulder" class="arm" axis="0 1 0" range="-1.39626 0.846485"/>
+          <inertial pos="0.094747 1.64447e-05 0.00929123" mass="0.48136" fullinertia="0.000329199 0.00106399 0.00115731 -9.36646e-07 -1.20899e-05 -6.44625e-07"/>
+          <geom name="left_upper_geom" group="3" type="capsule" size="0.026" fromto="0.03 0 0.012 0.09991 0 0.012" rgba="0.95 0.94 0.91 1"/>
+        <geom name="left_upper__ivory" class="vis" mesh="left_upper__ivory" material="m1_ivory"/>
+          <body name="left_fore" pos="0.13491 0 0">
+            <joint name="left_elbow" class="arm" axis="0 1 0" range="-0.174533 2.21657"/>
+            <inertial pos="0.104447 -0.00215722 -0.00356737" mass="0.37056" fullinertia="0.00022416 0.00147066 0.0016301 -1.53267e-05 2.17585e-06 -5.35792e-07"/>
+            <geom name="left_fore_geom" group="3" type="capsule" size="0.022" fromto="0.035 0 0 0.16841 0 -0.00316" rgba="0.12 0.23 0.37 1"/>
+        <geom name="left_fore__navy" class="vis" mesh="left_fore__navy" material="m1_navy"/>
+        <geom name="left_fore__servo_body" class="vis" mesh="left_fore__servo_body" material="m1_servo_body"/>
+            <body name="left_wrist" pos="0.19841 0 -0.00316">
+              <joint name="left_wrist_flex" class="arm_small" axis="0 1 0" range="-1.35263 1.52716"/>
+              <inertial pos="0.01479 -0.00273 0.00073" mass="0.03045" fullinertia="1.1295e-05 8.225e-06 1.4509e-05 -5.07e-07 -2.43e-07 -1.6e-08"/>
+        <geom name="left_wrist__ivory" class="vis" mesh="left_wrist__ivory" material="m1_ivory"/>
+              <body name="left_yaw" pos="0.02813 -0.00381 -0.0013">
+              <joint name="left_wrist_yaw" class="arm_small" axis="0 0 1" range="-1.41372 1.39626"/>
+              <inertial pos="0.0288148 -8.05525e-05 0.00799249" mass="0.25521" fullinertia="0.000214543 0.000246835 9.81605e-05 3.53029e-09 7.68304e-05 8.64788e-08"/>
+              <geom name="left_wrist_geom" group="3" type="capsule" size="0.02" fromto="0.00187 0 0.0013 0.04899 0 -0.02202" rgba="0.95 0.94 0.91 1"/>
+        <geom name="left_yaw__navy" class="vis" mesh="left_yaw__navy" material="m1_navy"/>
+        <geom name="left_yaw__servo_body" class="vis" mesh="left_yaw__servo_body" material="m1_servo_body"/>
+        <geom name="left_yaw__steel" class="vis" mesh="left_yaw__steel" material="m1_steel"/>
+              <body name="left_hand" pos="0.06099 0 -0.02202">
+                <joint name="left_wrist_roll" class="arm_small" axis="1 0 0" range="-2.79253 2.79253"/>
+                <inertial pos="0.0200643 0.00180399 0.0136616" mass="0.16985" fullinertia="0.000151358 0.000173391 9.51441e-05 -1.35655e-05 3.13269e-05 -1.12642e-06"/>
+                <geom name="left_palm_geom" group="3" type="box" size="0.032385 0.03261 0.026005" pos="0.029615 0.00251 -0.001945" rgba="0.25 0.25 0.28 1"/>
+        <geom name="left_hand__ivory" class="vis" mesh="left_hand__ivory" material="m1_ivory"/>
+        <geom name="left_hand__navy" class="vis" mesh="left_hand__navy" material="m1_navy"/>
+        <geom name="left_hand__servo" class="vis" mesh="left_hand__servo" material="m1_servo"/>
+        <geom name="left_hand__servo_body" class="vis" mesh="left_hand__servo_body" material="m1_servo_body"/>
+                <geom name="left_finger_fixed_geom" class="finger" size="0.017 0.008855 0.00971" pos="0.087 0.018855 8e-05"/>
+                <camera name="left_wrist_cam" pos="0.0112 -0.0018 0.063" xyaxes="0 -1 0 0.4107 0 0.9118" fovy="75"/>
+                <site name="left_tcp" pos="0.09382 0.01013 -0.00016" size="0.006" rgba="1 0 0 0.6"/>
+                <body name="left_jaw" pos="0.02161 -0.02021 -0.00203">
+                  <joint name="left_gripper" class="gripper" axis="0 0 -1" range="0 1.11701"/>
+                  <inertial pos="0.03073 0.00893 0.00157" mass="0.02816" fullinertia="6.801e-06 1.8295e-05 1.517e-05 -3.995e-06 -5e-09 -3e-09"/>
+                  <geom name="left_finger_jaw_geom" class="finger" size="0.017132 0.0060245 0.009625" pos="0.0661741 0.0189105 0.001578" quat="0.9873 0 0 0.158865"/>
+        <geom name="left_jaw__navy" class="vis" mesh="left_jaw__navy" material="m1_navy"/>
+                </body>
+              </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+        
+      <geom name="right_mount_geom" group="3" type="box" size="0.045 0.045 0.02" pos="0.0599 -0.2375 0.02" mass="0" rgba="0.95 0.94 0.91 1"/>
+      <body name="right_shoulder" pos="0.0599 -0.2375 0">
+        <joint name="right_pan" class="arm" axis="0 0 1" range="-1.22173 1.22173"/>
+        <inertial pos="0.050178 0.000423686 0.116039" mass="0.35786" fullinertia="0.000678107 0.000778286 0.00018047 2.08263e-06 -0.000105622 1.09368e-05"/>
+        <geom name="right_shoulder_geom" group="3" type="box" size="0.035 0.04 0.045" pos="0.03 0 0.105" rgba="0.95 0.94 0.91 1"/>
+        <geom name="right_shoulder__navy" class="vis" mesh="right_shoulder__navy" material="m1_navy"/>
+        <body name="right_upper" pos="0.05799 0 0.14823">
+          <joint name="right_shoulder" class="arm" axis="0 1 0" range="-1.39626 0.846485"/>
+          <inertial pos="0.094747 -1.64447e-05 0.00929123" mass="0.48136" fullinertia="0.000329199 0.00106399 0.00115731 9.36646e-07 -1.20899e-05 6.44625e-07"/>
+          <geom name="right_upper_geom" group="3" type="capsule" size="0.026" fromto="0.03 0 0.012 0.09991 0 0.012" rgba="0.95 0.94 0.91 1"/>
+        <geom name="right_upper__ivory" class="vis" mesh="right_upper__ivory" material="m1_ivory"/>
+          <body name="right_fore" pos="0.13491 0 0">
+            <joint name="right_elbow" class="arm" axis="0 1 0" range="-0.174533 2.21657"/>
+            <inertial pos="0.104447 0.00215722 -0.00356737" mass="0.37056" fullinertia="0.00022416 0.00147066 0.0016301 1.53267e-05 2.17585e-06 5.35792e-07"/>
+            <geom name="right_fore_geom" group="3" type="capsule" size="0.022" fromto="0.035 0 0 0.16841 0 -0.00316" rgba="0.74 0.75 0.78 1"/>
+        <geom name="right_fore__navy" class="vis" mesh="right_fore__navy" material="m1_navy"/>
+        <geom name="right_fore__servo_body" class="vis" mesh="right_fore__servo_body" material="m1_servo_body"/>
+            <body name="right_wrist" pos="0.19841 0 -0.00316">
+              <joint name="right_wrist_flex" class="arm_small" axis="0 1 0" range="-1.35263 1.52716"/>
+              <inertial pos="0.01479 0.00273 0.00073" mass="0.03045" fullinertia="1.1295e-05 8.225e-06 1.4509e-05 5.07e-07 -2.43e-07 1.6e-08"/>
+        <geom name="right_wrist__ivory" class="vis" mesh="right_wrist__ivory" material="m1_ivory"/>
+              <body name="right_yaw" pos="0.02813 0.00381 -0.0013">
+              <joint name="right_wrist_yaw" class="arm_small" axis="0 0 1" range="-1.41372 1.39626"/>
+              <inertial pos="0.0288148 8.05525e-05 0.00799249" mass="0.25521" fullinertia="0.000214543 0.000246835 9.81605e-05 -3.53029e-09 7.68304e-05 -8.64788e-08"/>
+              <geom name="right_wrist_geom" group="3" type="capsule" size="0.02" fromto="0.00187 0 0.0013 0.04899 0 -0.02202" rgba="0.95 0.94 0.91 1"/>
+        <geom name="right_yaw__navy" class="vis" mesh="right_yaw__navy" material="m1_navy"/>
+        <geom name="right_yaw__servo_body" class="vis" mesh="right_yaw__servo_body" material="m1_servo_body"/>
+        <geom name="right_yaw__steel" class="vis" mesh="right_yaw__steel" material="m1_steel"/>
+              <body name="right_hand" pos="0.06099 0 -0.02202">
+                <joint name="right_wrist_roll" class="arm_small" axis="1 0 0" range="-2.79253 2.79253"/>
+                <inertial pos="0.0200643 -0.00180399 0.0136616" mass="0.16985" fullinertia="0.000151358 0.000173391 9.51441e-05 1.35655e-05 3.13269e-05 1.12642e-06"/>
+                <geom name="right_palm_geom" group="3" type="box" size="0.032385 0.03261 0.026005" pos="0.029615 -0.00251 -0.001945" rgba="0.25 0.25 0.28 1"/>
+        <geom name="right_hand__ivory" class="vis" mesh="right_hand__ivory" material="m1_ivory"/>
+        <geom name="right_hand__navy" class="vis" mesh="right_hand__navy" material="m1_navy"/>
+        <geom name="right_hand__servo" class="vis" mesh="right_hand__servo" material="m1_servo"/>
+        <geom name="right_hand__servo_body" class="vis" mesh="right_hand__servo_body" material="m1_servo_body"/>
+                <geom name="right_finger_fixed_geom" class="finger" size="0.017 0.008855 0.00971" pos="0.087 -0.018855 8e-05"/>
+                <camera name="right_wrist_cam" pos="0.0112 0.0018 0.063" xyaxes="0 1 0 -0.4107 0 -0.9118" fovy="75"/>
+                <site name="right_tcp" pos="0.09382 -0.01013 -0.00016" size="0.006" rgba="1 0 0 0.6"/>
+                <body name="right_jaw" pos="0.02161 0.02021 -0.00203">
+                  <joint name="right_gripper" class="gripper" axis="0 0 1" range="0 1.11701"/>
+                  <inertial pos="0.03073 -0.00893 0.00157" mass="0.02816" fullinertia="6.801e-06 1.8295e-05 1.517e-05 3.995e-06 -5e-09 3e-09"/>
+                  <geom name="right_finger_jaw_geom" class="finger" size="0.017132 0.0060245 0.009625" pos="0.0661741 -0.0189105 0.001578" quat="0.9873 0 0 -0.158865"/>
+        <geom name="right_jaw__navy" class="vis" mesh="right_jaw__navy" material="m1_navy"/>
+                </body>
+              </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      </body>
+    </body>
+  </worldbody>
+  <contact>
+    <exclude body1="left_jaw" body2="left_wrist"/>
+    <exclude body1="left_jaw" body2="left_yaw"/>
+    <exclude body1="left_hand" body2="left_wrist"/>
+    <exclude body1="left_yaw" body2="left_fore"/>
+    <exclude body1="left_hand" body2="left_fore"/>
+    <exclude body1="carriage" body2="left_upper"/>
+    <exclude body1="right_jaw" body2="right_wrist"/>
+    <exclude body1="right_jaw" body2="right_yaw"/>
+    <exclude body1="right_hand" body2="right_wrist"/>
+    <exclude body1="right_yaw" body2="right_fore"/>
+    <exclude body1="right_hand" body2="right_fore"/>
+    <exclude body1="carriage" body2="right_upper"/>
+  </contact>
+  <actuator>
+    <position name="left_pan" joint="left_pan" kp="177.9" kv="10.7" ctrlrange="-1.22173 1.22173" forcerange="-4.65816 4.65816"/>
+    <position name="left_shoulder" joint="left_shoulder" kp="213.5" kv="12.8" ctrlrange="-1.39626 0.846485" forcerange="-5.58979 5.58979"/>
+    <position name="left_elbow" joint="left_elbow" kp="213.5" kv="12.8" ctrlrange="-0.174533 2.21657" forcerange="-5.58979 5.58979"/>
+    <position name="left_wrist_flex" joint="left_wrist_flex" kp="67.43" kv="4.05" ctrlrange="-1.35263 1.52716" forcerange="-1.7652 1.7652"/>
+    <position name="left_wrist_yaw" joint="left_wrist_yaw" kp="89.9" kv="5.39" ctrlrange="-1.41372 1.39626" forcerange="-2.3536 2.3536"/>
+    <position name="left_wrist_roll" joint="left_wrist_roll" kp="56.19" kv="3.37" ctrlrange="-2.79253 2.79253" forcerange="-1.471 1.471"/>
+    <position name="left_gripper" joint="left_gripper" kp="14.71" kv="0.735" ctrlrange="0 1.11701" forcerange="-1.471 1.471"/>
+    <position name="right_pan" joint="right_pan" kp="177.9" kv="10.7" ctrlrange="-1.22173 1.22173" forcerange="-4.65816 4.65816"/>
+    <position name="right_shoulder" joint="right_shoulder" kp="213.5" kv="12.8" ctrlrange="-1.39626 0.846485" forcerange="-5.58979 5.58979"/>
+    <position name="right_elbow" joint="right_elbow" kp="213.5" kv="12.8" ctrlrange="-0.174533 2.21657" forcerange="-5.58979 5.58979"/>
+    <position name="right_wrist_flex" joint="right_wrist_flex" kp="67.43" kv="4.05" ctrlrange="-1.35263 1.52716" forcerange="-1.7652 1.7652"/>
+    <position name="right_wrist_yaw" joint="right_wrist_yaw" kp="89.9" kv="5.39" ctrlrange="-1.41372 1.39626" forcerange="-2.3536 2.3536"/>
+    <position name="right_wrist_roll" joint="right_wrist_roll" kp="56.19" kv="3.37" ctrlrange="-2.79253 2.79253" forcerange="-1.471 1.471"/>
+    <position name="right_gripper" joint="right_gripper" kp="14.71" kv="0.735" ctrlrange="0 1.11701" forcerange="-1.471 1.471"/>
+    <position name="lift" joint="lift" kp="20000" kv="2000" ctrlrange="0 0.45" forcerange="-600 600"/>
+    <position name="base_x" joint="base_x" kp="20000" kv="3000"/>
+    <position name="base_y" joint="base_y" kp="20000" kv="3000"/>
+    <position name="base_yaw" joint="base_yaw" kp="3000" kv="400"/>
+    <velocity name="wheel_0" joint="wheel_0" kv="0.05"/>
+    <velocity name="wheel_1" joint="wheel_1" kv="0.05"/>
+    <velocity name="wheel_2" joint="wheel_2" kv="0.05"/>
+  </actuator>
+</mujoco>

@@ -1,0 +1,4762 @@
+[
+ {
+  "kind": "vai",
+  "q_vai": -90,
+  "L_spring": 74.3,
+  "link|cradle": [
+   0.0,
+   21.0
+  ],
+  "link|servo_L": [
+   0.0,
+   0.0
+  ],
+  "link|servo_R": [
+   0.0,
+   0.0
+  ],
+  "link|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|cradle": [
+   0.0,
+   2.0
+  ],
+  "pin|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|stop_pad": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -90,
+  "q_khuyu": -20,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -90,
+  "q_khuyu": 60,
+  "e_cradle|cradle": [
+   0.0,
+   13.86
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -90,
+  "q_khuyu": 110,
+  "e_cradle|cradle": [
+   23.5,
+   null
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   26.8
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   4.89
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   4.89
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -90,
+  "q_khuyu": 120,
+  "e_cradle|cradle": [
+   13.4,
+   null
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   17.98
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   5.03
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   5.03
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -90,
+  "q_khuyu": 130,
+  "e_cradle|cradle": [
+   36.3,
+   null
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   51.12
+  ],
+  "e_cradle|link": [
+   0.0,
+   8.16
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   4.29
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   4.29
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -90,
+  "q_khuyu": 140,
+  "e_cradle|cradle": [
+   135.0,
+   null
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   40.67
+  ],
+  "e_cradle|link": [
+   45.7,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   2.7
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   2.7
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -90,
+  "q_khuyu": 150,
+  "e_cradle|cradle": [
+   456.8,
+   null
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   30.32
+  ],
+  "e_cradle|link": [
+   1475.2,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   19.5
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   0.48
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   0.48
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "vai",
+  "q_vai": -50,
+  "L_spring": 91.5,
+  "link|cradle": [
+   0.0,
+   33.9
+  ],
+  "link|servo_L": [
+   0.0,
+   0.0
+  ],
+  "link|servo_R": [
+   0.0,
+   0.0
+  ],
+  "link|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|stop_pad": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -50,
+  "q_khuyu": -20,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -50,
+  "q_khuyu": 60,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -50,
+  "q_khuyu": 110,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   26.8
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -50,
+  "q_khuyu": 120,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   17.98
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -50,
+  "q_khuyu": 130,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   8.16
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -50,
+  "q_khuyu": 140,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   45.7,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": -50,
+  "q_khuyu": 150,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   1475.2,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "vai",
+  "q_vai": 0,
+  "L_spring": 120.9,
+  "link|cradle": [
+   0.0,
+   33.9
+  ],
+  "link|servo_L": [
+   0.0,
+   0.0
+  ],
+  "link|servo_R": [
+   0.0,
+   0.0
+  ],
+  "link|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|stop_pad": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 0,
+  "q_khuyu": -20,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 0,
+  "q_khuyu": 60,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 0,
+  "q_khuyu": 110,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   26.8
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 0,
+  "q_khuyu": 120,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   17.98
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 0,
+  "q_khuyu": 130,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   8.16
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 0,
+  "q_khuyu": 140,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   45.7,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 0,
+  "q_khuyu": 150,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   1475.2,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   19.5
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "vai",
+  "q_vai": 45,
+  "L_spring": 139.0,
+  "link|cradle": [
+   0.0,
+   33.9
+  ],
+  "link|servo_L": [
+   0.0,
+   0.0
+  ],
+  "link|servo_R": [
+   0.0,
+   0.0
+  ],
+  "link|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|stop_pad": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 45,
+  "q_khuyu": -20,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 45,
+  "q_khuyu": 60,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 45,
+  "q_khuyu": 110,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   26.8
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 45,
+  "q_khuyu": 120,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   17.98
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 45,
+  "q_khuyu": 130,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   8.16
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 45,
+  "q_khuyu": 140,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   45.7,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 45,
+  "q_khuyu": 150,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   1475.2,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "vai",
+  "q_vai": 90,
+  "L_spring": 142.2,
+  "link|cradle": [
+   0.0,
+   33.9
+  ],
+  "link|servo_L": [
+   0.0,
+   0.0
+  ],
+  "link|servo_R": [
+   0.0,
+   0.0
+  ],
+  "link|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "pin|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_L|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "spring_R|stop_pad": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 90,
+  "q_khuyu": -20,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 90,
+  "q_khuyu": 60,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   33.9
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 90,
+  "q_khuyu": 110,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   26.8
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 90,
+  "q_khuyu": 120,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   17.98
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 90,
+  "q_khuyu": 130,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   0.0,
+   8.16
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 90,
+  "q_khuyu": 140,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   45.7,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ },
+ {
+  "kind": "khuyu",
+  "q_vai": 90,
+  "q_khuyu": 150,
+  "e_cradle|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|link": [
+   1475.2,
+   null
+  ],
+  "e_cradle|pin": [
+   0.0,
+   19.5
+  ],
+  "e_cradle|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_cradle|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoL|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoL|spring_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|cradle": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|servo_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|bolt_A_R": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|stop_pad": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|link": [
+   0.0,
+   0.0
+  ],
+  "e_servoR|pin": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_L": [
+   0.0,
+   ">bbox"
+  ],
+  "e_servoR|spring_R": [
+   0.0,
+   ">bbox"
+  ]
+ }
+]

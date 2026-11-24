@@ -1,0 +1,152 @@
+{
+ "ngay": "22/11/2026",
+ "tai": {
+  "m_tay_kg": 1.042,
+  "m_vai_kg": 0.712,
+  "m_xe_kg": 1.75,
+  "tai_them_kg": 1.0,
+  "M_tong_kg": 6.26,
+  "W_N": 61.4,
+  "F_ma_sat_N": 10.0
+ },
+ "phuong_an": {
+  "A_thanh_rang": {
+   "ten": "A: banh rang-thanh rang truc tiep (nhu AlohaMini2), pinion r=24 mm",
+   "T_servo_Nm": 1.767,
+   "T_pct": 80.1,
+   "v_mm_s": 63.1,
+   "tu_ham": false
+  },
+  "B_dai_doi_trong": {
+   "ten": "B: dai GT2 (puly 30T r=9,55 mm) + doi trong 4,3 kg",
+   "T_servo_Nm": 0.195,
+   "T_pct": 8.8,
+   "v_mm_s": 30.4,
+   "tu_ham": false
+  },
+  "B2_dai_khong_doi_trong": {
+   "ten": "B2: dai GT2 30T, khong doi trong",
+   "T_servo_Nm": 0.703,
+   "T_pct": 31.9,
+   "v_mm_s": 28.7,
+   "tu_ham": false
+  },
+  "C_vitme_T8x2_16to1": {
+   "ten": "C: vitme T8x2 (lead 2, 1 dau) + tang toc 16:1 (2 cap banh rang)",
+   "lam_deg": 5.2,
+   "phi_deg": 8.81,
+   "eta_ren": 0.365,
+   "T_servo_Nm": 1.142,
+   "T_pct": 51.8,
+   "v_mm_s": 14.5,
+   "tu_ham": true
+  },
+  "D_vitme_T8x8_4to1": {
+   "ten": "D: vitme T8x8 (4 dau) + tang toc 4:1",
+   "lam_deg": 19.99,
+   "phi_deg": 8.81,
+   "eta_ren": 0.662,
+   "T_servo_Nm": 0.629,
+   "T_pct": 28.5,
+   "v_mm_s": 15.4,
+   "tu_ham": false
+  }
+ },
+ "C_nhay_cam_mu": {
+  "mu=0.08": {
+   "ten": "C",
+   "lam_deg": 5.2,
+   "phi_deg": 4.72,
+   "eta_ren": 0.52,
+   "T_servo_Nm": 0.801,
+   "T_pct": 36.3,
+   "v_mm_s": 15.1,
+   "tu_ham": false
+  },
+  "mu=0.1": {
+   "ten": "C",
+   "lam_deg": 5.2,
+   "phi_deg": 5.9,
+   "eta_ren": 0.464,
+   "T_servo_Nm": 0.898,
+   "T_pct": 40.7,
+   "v_mm_s": 14.9,
+   "tu_ham": true
+  },
+  "mu=0.12": {
+   "ten": "C",
+   "lam_deg": 5.2,
+   "phi_deg": 7.07,
+   "eta_ren": 0.418,
+   "T_servo_Nm": 0.995,
+   "T_pct": 45.1,
+   "v_mm_s": 14.8,
+   "tu_ham": true
+  },
+  "mu=0.15": {
+   "ten": "C",
+   "lam_deg": 5.2,
+   "phi_deg": 8.81,
+   "eta_ren": 0.365,
+   "T_servo_Nm": 1.142,
+   "T_pct": 51.8,
+   "v_mm_s": 14.5,
+   "tu_ham": true
+  },
+  "mu=0.2": {
+   "ten": "C",
+   "lam_deg": 5.2,
+   "phi_deg": 11.67,
+   "eta_ren": 0.3,
+   "T_servo_Nm": 1.389,
+   "T_pct": 62.9,
+   "v_mm_s": 14.1,
+   "tu_ham": true
+  }
+ },
+ "C_ha_tai_servo_Nm": 0.189,
+ "SOR003": {
+  "M_tong_kg": 6.26,
+  "F_nang_N": 71.4,
+  "suc_nang_70pct_N": 96.5,
+  "suc_nang_70pct_kg": 9.8,
+  "he_so_tai_70pct": 1.35,
+  "suc_nang_70pct_mu020_kg": 8.1
+ },
+ "tu_ham": {
+  "lam_deg": 5.2,
+  "mu_toi_thieu": 0.088,
+  "phi_mu015_deg": 8.81,
+  "phi_mu012_deg": 7.07,
+  "phi_mu010_deg": 5.9
+ },
+ "uon_cot": {
+  "M_pitch_Nm": 21.4,
+  "M_dyn_Nm": 16.5,
+  "H_vai_m": 0.88,
+  "sigma_tinh_MPa": 6.1,
+  "sigma_dong_MPa": 10.8,
+  "SF_tinh": 18.0,
+  "SF_dong": 10.2,
+  "goc_nghieng_mrad": 3.84,
+  "vong_xe_mm": 1.69,
+  "sut_dau_tay_mm": 3.05
+ },
+ "khoi_ray": {
+  "S_khoi_mm": 100,
+  "luc_moi_khoi_N": 110.0
+ },
+ "vitme_Pcr_N": 349,
+ "banh_rang_in": {
+  "Ft_N": 42.9,
+  "sigma_MPa": 6.0,
+  "SF_Kt3": 2.24,
+  "Ft_ket_tai_stall_N": 259.0,
+  "sigma_stall_MPa": 35.9,
+  "SF_stall_Kt3": 0.37
+ },
+ "luc_ket_chan_cung_N": {
+  "70%_dm": 97,
+  "stall": 582
+ }
+}

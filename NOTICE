@@ -1,0 +1,49 @@
+Faibot M1
+Copyright (c) 2026 Faibotic (Leo Dao)
+
+This repository contains material under different licences. Which licence
+applies depends on the folder (table below). A file header with an
+SPDX-License-Identifier line takes precedence over the folder default.
+
+Licences by folder
+- Apache-2.0 (LICENSE): sdk/, sim/, web-assets/ (except web-assets/docs/),
+  hardware/urdf/, hardware/tools/, demos/, examples/, tests/, scripts/,
+  product/evt/*.py, media/**/*.py, .github/, run.sh, requirements.txt.
+- CC-BY-NC-SA-4.0 (LICENSE-hardware): cad/ (except cad/upstream/),
+  hardware/assembly/, hardware/parts/faibotic/, hardware/parts/purchased/,
+  hardware/parts.csv, hardware/guide-part-map.json, hardware/README.md,
+  electrical/, product/ (except product/evt/*.py), docs/, web-assets/docs/,
+  media/ (except media/concept/), README.md. Commercial use needs a separate
+  written agreement with Faibotic.
+- Apache-2.0, third party: cad/upstream/, hardware/parts/inherited/.
+- Not released: bom/, archive/, internal notes in docs/, and media/concept/
+  (origin not settled, no licence granted).
+
+Third-party material (Apache License 2.0; the licence text is in
+cad/upstream/LICENSE and hardware/parts/inherited/LICENSE)
+1. AM-ARM (AM-ARM200) by liyiteng, https://github.com/liyiteng/AM-ARM,
+   commit 5b03af1ef6c80595bd988e0137cf8e7c35811eb6.
+   Unchanged: cad/upstream/AM-ARM/am-arm200/{stp/follower,urdf}/,
+   hardware/parts/inherited/am-arm200/.
+   Modified by Faibotic: cad/upstream/AM-ARM/am-arm200/urdf/derived/, the arm
+   and gripper meshes in sim/assets/ and web-assets/m1.glb, the placed copies
+   in hardware/assembly/ and cad/export/*assembly*.step.
+2. AlohaMini (AlohaMini2) by liyiteng, https://github.com/liyiteng/AlohaMini,
+   commit 59f024b6005b8516005150b98a3f6daa5d04d851.
+   Unchanged: cad/upstream/AlohaMini/, hardware/parts/inherited/alohamini2/.
+   Modified by Faibotic: base and carriage meshes in sim/assets/ and
+   web-assets/m1.glb, placed copies in the assembly files.
+3. MuJoCo Menagerie, robotstudio_so101 (STS3215 servo mesh), derived by
+   Menagerie from The Robot Studio SO-ARM100,
+   https://github.com/google-deepmind/mujoco_menagerie,
+   commit 3abca2e302625cec9429c49806121ea2855cef81.
+   Unchanged: cad/upstream/menagerie-so101/sts3215_03a_v1.stl.
+   Modified by Faibotic: cad/upstream/menagerie-so101/derived/,
+   sim/assets/*__servo_body.stl, servo bodies in web-assets/m1.glb.
+File-by-file changes and SHA-256 sums: cad/CHANGES.md.
+
+The CC BY-NC-SA 4.0 terms apply only to Faibotic's own material. The
+third-party portions above stay under the Apache License 2.0 and may be used
+under it, including commercially.
+"AM-ARM", "AlohaMini", "SO-ARM100" and "MuJoCo" are names of their owners.
+They are not Faibotic product names or trademarks.

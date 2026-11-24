@@ -1,0 +1,11 @@
+faibot-m1 (Python package "faibotic")
+Copyright 2026 Faibotic
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The simulation model that the package loads from ../sim (MJCF, URDF and meshes) includes
+geometry derived from third-party Apache-2.0 projects. Their names, commits and changes are
+listed in ../cad/NOTICE and ../NOTICE.
+
+The Feetech servo protocol is reimplemented from the manufacturer's protocol description. No
+LeRobot code is copied.

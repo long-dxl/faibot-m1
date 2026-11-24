@@ -1,0 +1,756 @@
+{
+ "source": "cad/faibotic/trinh_tu_lap.yaml",
+ "note": "part_number without a file: bought part with no model in the CAD",
+ "steps": [
+  {
+   "id": "de-1",
+   "group": "Base",
+   "title_vi": "Tấm thép đối trọng và ba nan nhôm",
+   "parts": [
+    {
+     "part_number": "M1-BS-032",
+     "file": "parts/faibotic/M1-BS-032-counterweight-plate-main.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-BS-031",
+     "file": "parts/faibotic/M1-BS-031-aluminium-spoke-20-x-40-front.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-BS-031",
+     "file": "parts/faibotic/M1-BS-031-aluminium-spoke-20-x-40-side.step",
+     "qty": 2
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F06",
+     "qty": 3
+    },
+    {
+     "id": "F07",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "de-2",
+   "group": "Base",
+   "title_vi": "Giá servo và servo bánh",
+   "parts": [
+    {
+     "part_number": "M1-BS-036",
+     "file": "parts/faibotic/M1-BS-036-wheel-servo-mount-cap.step",
+     "qty": 3
+    },
+    {
+     "part_number": "M1-BS-036",
+     "file": "parts/faibotic/M1-BS-036-wheel-servo-mount-wall.step",
+     "qty": 3
+    },
+    {
+     "part_number": "M1-SV-001",
+     "file": "parts/purchased/M1-SV-001-sts3215-servo.step",
+     "qty": 3
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "de-3",
+   "group": "Base",
+   "title_vi": "Bánh omni",
+   "parts": [
+    {
+     "part_number": "M1-BS-035",
+     "file": "parts/purchased/M1-BS-035-omni-wheel-hub.step",
+     "qty": 3
+    },
+    {
+     "part_number": "M1-BS-035",
+     "file": "parts/purchased/M1-BS-035-omni-wheel-roller.step",
+     "qty": 54
+    },
+    {
+     "part_number": "M1-BS-035",
+     "file": "parts/purchased/M1-BS-035-omni-wheel-side-plate.step",
+     "qty": 6
+    }
+   ],
+   "fasteners": []
+  },
+  {
+   "id": "de-4",
+   "group": "Base",
+   "title_vi": "Sàn đế và khoang điện",
+   "parts": [
+    {
+     "part_number": "M1-BS-037",
+     "file": "parts/faibotic/M1-BS-037-base-deck.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-BS-038",
+     "file": "parts/purchased/M1-BS-038-battery-bay-envelope.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-BS-038",
+     "file": "parts/purchased/M1-BS-038-electronics-bay-envelope.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "de-5",
+   "group": "Base",
+   "title_vi": "Cột đỡ và khay",
+   "parts": [
+    {
+     "part_number": "M1-ST-011",
+     "file": "parts/faibotic/M1-ST-011-tray-bracket-short.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-BS-006",
+     "file": "parts/faibotic/M1-BS-006-aluminium-2040-tray-rail-190-mm.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-ST-012",
+     "file": "parts/faibotic/M1-ST-012-tray-piece-00-rear-right.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-ST-012",
+     "file": "parts/faibotic/M1-ST-012-tray-piece-01-rear-left.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-ST-012",
+     "file": "parts/faibotic/M1-ST-012-tray-piece-10-front-right.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-ST-012",
+     "file": "parts/faibotic/M1-ST-012-tray-piece-11-front-left.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "truc-1",
+   "group": "Lift",
+   "title_vi": "Trụ nâng bốn đoạn",
+   "parts": [
+    {
+     "part_number": "M1-LF-055",
+     "file": "parts/inherited/alohamini2/O_POST4_Connector_Base.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-054",
+     "file": "parts/inherited/alohamini2/O_Main_Assembly_Post4.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-053",
+     "file": "parts/inherited/alohamini2/OB_Main_Assembly_Post3.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-052",
+     "file": "parts/inherited/alohamini2/OB_Main_Assembly_Post2.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-051",
+     "file": "parts/inherited/alohamini2/OB_Main_Assembly_Post1.stp",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "truc-2",
+   "group": "Lift",
+   "title_vi": "Xe nâng và bánh răng",
+   "parts": [
+    {
+     "part_number": "M1-LF-057",
+     "file": "parts/inherited/alohamini2/OB_T_Connector_Middle.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-004",
+     "file": "parts/inherited/alohamini2/O_T_Connector_Dowel_Pin_12_25.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-002",
+     "file": "parts/faibotic/M1-LF-002-lift-gear-20-teeth.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SV-002",
+     "file": "parts/purchased/M1-SV-002-sts3095-servo-lift.step",
+     "qty": 1
+    },
+    {
+     "part_number": "624ZZ",
+     "file": null,
+     "qty": 8
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F13",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "truc-3",
+   "group": "Lift",
+   "title_vi": "Chốt hãm và công tắc",
+   "parts": [
+    {
+     "part_number": "M1-LF-060",
+     "file": "parts/faibotic/M1-LF-060-latch-bracket.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-050",
+     "file": "parts/purchased/M1-LF-050-latch-solenoid.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-041",
+     "file": "parts/purchased/M1-LF-041-latch-pawl.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-041",
+     "file": "parts/purchased/M1-LF-041-travel-limit-switch.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-LF-061",
+     "file": "parts/purchased/M1-LF-061-latch-sensor-switch.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-041",
+     "file": "parts/purchased/M1-LF-041-latch-pawl.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-LF-041",
+     "file": "parts/purchased/M1-LF-041-travel-limit-switch.step",
+     "qty": 2
+    },
+    {
+     "part_number": "Đệm PU",
+     "file": null,
+     "qty": 2
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "tram-1",
+   "group": "Lift",
+   "title_vi": "Đế ngàm trên xe nâng",
+   "parts": [
+    {
+     "part_number": "M1-TR-020",
+     "file": "parts/faibotic/M1-TR-020-dock-mount-carriage-side.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-021",
+     "file": "parts/purchased/M1-TR-021-dock-taper-pin.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-TR-022",
+     "file": "parts/purchased/M1-TR-022-latch-hook.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-TR-023",
+     "file": "parts/purchased/M1-TR-023-d-sub-combo-connector-socket-half.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F08.n",
+     "qty": 1
+    },
+    {
+     "id": "F10",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "tram-2",
+   "group": "Station",
+   "title_vi": "Khung trạm: ray, hai tai, tay cầm",
+   "parts": [
+    {
+     "part_number": "M1-TR-001",
+     "file": "parts/faibotic/M1-TR-001-station-front-rail-2040.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-002",
+     "file": "parts/faibotic/M1-TR-002-station-ear-2040.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-TR-014",
+     "file": "parts/faibotic/M1-TR-014-handle.step",
+     "qty": 2
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F08a",
+     "qty": 1
+    },
+    {
+     "id": "F08.t",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "tram-3",
+   "group": "Station",
+   "title_vi": "Gá vai và khối bạc",
+   "parts": [
+    {
+     "part_number": "M1-TR-003",
+     "file": "parts/faibotic/M1-TR-003-arm-base-bracket.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-TR-004",
+     "file": "parts/faibotic/M1-TR-004-bushing-block.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-TR-004b",
+     "file": "parts/purchased/M1-TR-004b-steel-bushing.step",
+     "qty": 2
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "tram-4",
+   "group": "Station",
+   "title_vi": "Khoá kéo và công tắc",
+   "parts": [
+    {
+     "part_number": "M1-TR-008",
+     "file": "parts/purchased/M1-TR-008-draw-latch.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-TR-009",
+     "file": "parts/purchased/M1-TR-009-latch-limit-switch.step",
+     "qty": 2
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "tram-5",
+   "group": "Station",
+   "title_vi": "Cột camera đầu",
+   "parts": [
+    {
+     "part_number": "M1-TR-005",
+     "file": "parts/faibotic/M1-TR-005-camera-mast-bridge.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-006",
+     "file": "parts/faibotic/M1-TR-006-camera-mast-2020.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-007",
+     "file": "parts/faibotic/M1-TR-007-pan-tilt-bracket.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-007b",
+     "file": "parts/purchased/M1-TR-007b-locking-knob-m5.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-CM-001",
+     "file": "parts/purchased/M1-CM-001-usb-camera-module.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F09",
+     "qty": 1
+    },
+    {
+     "id": "F03",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "tay-1",
+   "group": "Station",
+   "title_vi": "Tay trái: đế J1, khung xoay J2, vai J3",
+   "parts": [
+    {
+     "part_number": "M1-SH-005",
+     "file": "parts/inherited/am-arm200/O_F_J1_Base.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SH-019",
+     "file": "parts/inherited/am-arm200/O_F_J2_Rotation.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SH-006",
+     "file": "parts/inherited/am-arm200/OB_F_J3_Shoulder.stp",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F01.t",
+     "qty": 74
+    }
+   ]
+  },
+  {
+   "id": "tay-2",
+   "group": "Station",
+   "title_vi": "Tay trái: khuỷu J4, giá J5, cổ tay",
+   "parts": [
+    {
+     "part_number": "M1-AR-001",
+     "file": "parts/inherited/am-arm200/OB_F_J4_Elbow.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-002",
+     "file": "parts/inherited/am-arm200/OB_F_J5_Elbow_Wrist_Bracket.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-011",
+     "file": "parts/inherited/am-arm200/OB_F_J5_Pin_Bearing.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-003",
+     "file": "parts/inherited/am-arm200/OB_F_J56_Wrist_Housing.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-004",
+     "file": "parts/inherited/am-arm200/OB_F_J56_Bottom.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-005",
+     "file": "parts/inherited/am-arm200/OB_F_J56_Top.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SV-001",
+     "file": "parts/purchased/M1-SV-001-sts3215-servo.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F05",
+     "qty": 4
+    },
+    {
+     "id": "F01.t",
+     "qty": 74
+    }
+   ]
+  },
+  {
+   "id": "tay-3",
+   "group": "Station",
+   "title_vi": "Tay trái: kẹp và camera cổ tay",
+   "parts": [
+    {
+     "part_number": "M1-AR-007",
+     "file": "parts/inherited/am-arm200/OB_F_J7_Gripper.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-008",
+     "file": "parts/inherited/am-arm200/OB_F_J7_Jaw.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-027",
+     "file": "parts/inherited/am-arm200/OB_F_Camera.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SV-001",
+     "file": "parts/purchased/M1-SV-001-sts3215-servo.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-CM-001",
+     "file": "parts/purchased/M1-CM-001-usb-camera-module.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F02",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "id": "tay-4",
+   "group": "Station",
+   "title_vi": "Tay phải: đế J1, khung xoay J2, vai J3",
+   "parts": [
+    {
+     "part_number": "M1-SH-005",
+     "file": "parts/inherited/am-arm200/O_F_J1_Base.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SH-019",
+     "file": "parts/inherited/am-arm200/O_F_J2_Rotation.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SH-006",
+     "file": "parts/inherited/am-arm200/OB_F_J3_Shoulder.stp",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F01.t",
+     "qty": 74
+    }
+   ]
+  },
+  {
+   "id": "tay-5",
+   "group": "Station",
+   "title_vi": "Tay phải: khuỷu J4, giá J5, cổ tay",
+   "parts": [
+    {
+     "part_number": "M1-AR-001",
+     "file": "parts/inherited/am-arm200/OB_F_J4_Elbow.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-002",
+     "file": "parts/inherited/am-arm200/OB_F_J5_Elbow_Wrist_Bracket.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-011",
+     "file": "parts/inherited/am-arm200/OB_F_J5_Pin_Bearing.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-003",
+     "file": "parts/inherited/am-arm200/OB_F_J56_Wrist_Housing.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-004",
+     "file": "parts/inherited/am-arm200/OB_F_J56_Bottom.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-005",
+     "file": "parts/inherited/am-arm200/OB_F_J56_Top.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SV-001",
+     "file": "parts/purchased/M1-SV-001-sts3215-servo.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F05",
+     "qty": 4
+    },
+    {
+     "id": "F01.t",
+     "qty": 74
+    }
+   ]
+  },
+  {
+   "id": "tay-6",
+   "group": "Station",
+   "title_vi": "Tay phải: kẹp và camera cổ tay",
+   "parts": [
+    {
+     "part_number": "M1-AR-007",
+     "file": "parts/inherited/am-arm200/OB_F_J7_Gripper.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-008",
+     "file": "parts/inherited/am-arm200/OB_F_J7_Jaw.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-AR-027",
+     "file": "parts/inherited/am-arm200/OB_F_Camera.stp",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-SV-001",
+     "file": "parts/purchased/M1-SV-001-sts3215-servo.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-CM-001",
+     "file": "parts/purchased/M1-CM-001-usb-camera-module.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F02",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "id": "dien-1",
+   "group": "Electronics",
+   "title_vi": "Giắc 21W4 và hộp E-stop",
+   "parts": [
+    {
+     "part_number": "M1-TR-010",
+     "file": "parts/purchased/M1-TR-010-d-sub-combo-connector-plug-half.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-011",
+     "file": "parts/faibotic/M1-TR-011-connector-holder.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-012",
+     "file": "parts/faibotic/M1-TR-012-emergency-stop-box.step",
+     "qty": 1
+    },
+    {
+     "part_number": "M1-TR-012b",
+     "file": "parts/purchased/M1-TR-012b-emergency-stop-button.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "dien-2",
+   "group": "Electronics",
+   "title_vi": "Hộp điện trạm",
+   "parts": [
+    {
+     "part_number": "M1-TR-013",
+     "file": "parts/faibotic/M1-TR-013-station-electronics-box.step",
+     "qty": 1
+    }
+   ],
+   "fasteners": [
+    {
+     "id": "F04",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "dat-tram",
+   "group": "Station",
+   "title_vi": "Đặt trạm lên đế ngàm",
+   "parts": [
+    {
+     "part_number": "M1-TR-021",
+     "file": "parts/purchased/M1-TR-021-dock-taper-pin.step",
+     "qty": 2
+    },
+    {
+     "part_number": "M1-TR-008",
+     "file": "parts/purchased/M1-TR-008-draw-latch.step",
+     "qty": 2
+    }
+   ],
+   "fasteners": []
+  }
+ ]
+}

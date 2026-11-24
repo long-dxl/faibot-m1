@@ -1,0 +1,556 @@
+{
+ "source": {
+  "variant": "P-L",
+  "cad": "cad/faibotic/assembly_pl.py (th\u00e2n, lift SDK 0 = lift CAD -160 mm) + cad/upstream/AM-ARM/am-arm200/stp/follower + cad/faibotic/gripper_am.py (k\u1eb9p AM-ARM200, h\u00e0m kh\u00e9p)",
+  "tol_mm": 0.35,
+  "trunk_tol_mm": 0.5,
+  "trunk_max_tri": 1200,
+  "ang_rad": 0.4,
+  "frames": {
+   "base": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "carriage": [
+    0.0,
+    0.0,
+    0.41369599999999995
+   ],
+   "left_shoulder": [
+    0.0599,
+    0.2375,
+    0.41369599999999995
+   ],
+   "left_upper": [
+    0.11789,
+    0.2375,
+    0.5619259999999999
+   ],
+   "left_fore": [
+    0.2528,
+    0.2375,
+    0.5619259999999999
+   ],
+   "left_wrist": [
+    0.45121,
+    0.2375,
+    0.5587659999999999
+   ],
+   "left_yaw": [
+    0.47934,
+    0.23368999999999998,
+    0.5574659999999999
+   ],
+   "left_hand": [
+    0.54033,
+    0.23368999999999998,
+    0.5354459999999999
+   ],
+   "left_jaw": [
+    0.56194,
+    0.21347999999999998,
+    0.5334159999999999
+   ],
+   "right_shoulder": [
+    0.0599,
+    -0.2375,
+    0.41369599999999995
+   ],
+   "right_upper": [
+    0.11789,
+    -0.2375,
+    0.5619259999999999
+   ],
+   "right_fore": [
+    0.2528,
+    -0.2375,
+    0.5619259999999999
+   ],
+   "right_wrist": [
+    0.45121,
+    -0.2375,
+    0.5587659999999999
+   ],
+   "right_yaw": [
+    0.47934,
+    -0.23368999999999998,
+    0.5574659999999999
+   ],
+   "right_hand": [
+    0.54033,
+    -0.23368999999999998,
+    0.5354459999999999
+   ],
+   "right_jaw": [
+    0.56194,
+    -0.21347999999999998,
+    0.5334159999999999
+   ]
+  },
+  "urdf": "cad/upstream/AM-ARM/am-arm200/urdf/am-arm200.urdf",
+  "t_step_minus_urdf_mm": [
+   -13.96,
+   -6.007,
+   -32.743
+  ],
+  "com_check_mm": {
+   "O_F_J1_Base": {
+    "link": "left_Base",
+    "com_step_minus_t": [
+     -1.68,
+     26.89,
+     30.91
+    ],
+    "com_urdf_link": [
+     -0.28,
+     31.47,
+     33.57
+    ]
+   },
+   "O_F_J2_Rotation": {
+    "link": "left_Rotation_Pitch",
+    "com_step_minus_t": [
+     -7.31,
+     -41.86,
+     75.54
+    ],
+    "com_urdf_link": [
+     -0.89,
+     -41.58,
+     80.61
+    ]
+   },
+   "OB_F_J3_Shoulder": {
+    "link": "left_Upper_Arm",
+    "com_step_minus_t": [
+     -1.6,
+     11.18,
+     146.67
+    ],
+    "com_urdf_link": [
+     0.03,
+     13.18,
+     153.22
+    ]
+   },
+   "OB_F_J4_Elbow": {
+    "link": "left_Lower_Arm",
+    "com_step_minus_t": [
+     -3.9,
+     -7.73,
+     179.94
+    ],
+    "com_urdf_link": [
+     -2.96,
+     -10.0,
+     185.28
+    ]
+   },
+   "OB_F_J5_Elbow_Wrist_Bracket": {
+    "link": "left_Wrist_Pitch_Roll",
+    "com_step_minus_t": [
+     -3.55,
+     -142.77,
+     181.59
+    ],
+    "com_urdf_link": [
+     -2.73,
+     -142.71,
+     186.93
+    ]
+   },
+   "OB_F_J5_Pin_Bearing": {
+    "link": "left_wrist_yaw",
+    "com_step_minus_t": [
+     -3.81,
+     -156.04,
+     164.61
+    ],
+    "com_urdf_link": [
+     -3.99,
+     -187.41,
+     193.84
+    ]
+   },
+   "OB_F_J56_Wrist_Housing": {
+    "link": "left_wrist_yaw",
+    "com_step_minus_t": [
+     -3.64,
+     -188.35,
+     194.09
+    ],
+    "com_urdf_link": [
+     -3.99,
+     -187.41,
+     193.84
+    ]
+   },
+   "OB_F_J56_Bottom": {
+    "link": "left_wrist_yaw",
+    "com_step_minus_t": [
+     19.88,
+     -178.1,
+     146.64
+    ],
+    "com_urdf_link": [
+     -3.99,
+     -187.41,
+     193.84
+    ]
+   },
+   "OB_F_J56_Top": {
+    "link": "left_wrist_yaw",
+    "com_step_minus_t": [
+     -3.53,
+     -172.57,
+     237.45
+    ],
+    "com_urdf_link": [
+     -3.99,
+     -187.41,
+     193.84
+    ]
+   }
+  },
+  "ghi_chu": "tay ph\u1ea3i = g\u01b0\u01a1ng y tay tr\u00e1i (nh\u01b0 MJCF); CAD l\u1eafp hai tay gi\u1ed1ng nhau. Servo STS3095 c\u1ee7a pan/vai/khu\u1ef7u ch\u01b0a c\u00f3 v\u1ecb tr\u00ed trong STEP follower: ch\u01b0a v\u1ebd"
+ },
+ "meshes": [
+  {
+   "name": "base__alu",
+   "file": "base__alu.stl",
+   "body": "base",
+   "material": "alu",
+   "tri": 48,
+   "sha256": "7ac76d986585fb08397c89440a24a05924012eeac9bfbe6c3768baf4777cb569"
+  },
+  {
+   "name": "base__hub",
+   "file": "base__hub.stl",
+   "body": "base",
+   "material": "hub",
+   "tri": 1116,
+   "sha256": "6d102aa2bf3354d501887139f2a64d1e3f57fb5f401c3854f76bcf3bf51ffb40"
+  },
+  {
+   "name": "base__ivory",
+   "file": "base__ivory.stl",
+   "body": "base",
+   "material": "ivory",
+   "tri": 9533,
+   "sha256": "5795f5b75656b1a407fa5bb65552f0f40d2ab98abc880dc5954231836358edd7"
+  },
+  {
+   "name": "base__ivory_hi",
+   "file": "base__ivory_hi.stl",
+   "body": "base",
+   "material": "ivory_hi",
+   "tri": 24,
+   "sha256": "ba7890c9d332e4e35b01154457965c79dd1290aa9f78820180097a0094059531"
+  },
+  {
+   "name": "base__navy",
+   "file": "base__navy.stl",
+   "body": "base",
+   "material": "navy",
+   "tri": 84,
+   "sha256": "ec7ab171dfe73d26539b251aa4a8834c6587dd8430dbddc45e952a9d7a749f3a"
+  },
+  {
+   "name": "base__rubber",
+   "file": "base__rubber.stl",
+   "body": "base",
+   "material": "rubber",
+   "tri": 3240,
+   "sha256": "d6d120c3caf44a201dd039cb87ed5b48c9c774c12d75bd9b15185b5797c1fcf4"
+  },
+  {
+   "name": "base__servo_body",
+   "file": "base__servo_body.stl",
+   "body": "base",
+   "material": "servo_body",
+   "tri": 4500,
+   "sha256": "319e8e6f297df4906c9ec0e40c0fe8e38e65c291c4f44d1f1c43f6f256e1cecb"
+  },
+  {
+   "name": "base__steel",
+   "file": "base__steel.stl",
+   "body": "base",
+   "material": "steel",
+   "tri": 40,
+   "sha256": "c6d35232488dec8a900edb2bdd4995a0d8da0b479d7c21962c67b4a15b86cbff"
+  },
+  {
+   "name": "carriage__alu",
+   "file": "carriage__alu.stl",
+   "body": "carriage",
+   "material": "alu",
+   "tri": 48,
+   "sha256": "f8c88f6f9d504f22ae63035a90d76386bb3c37734c62c64dfdb8e9a6c25cf919"
+  },
+  {
+   "name": "carriage__ivory",
+   "file": "carriage__ivory.stl",
+   "body": "carriage",
+   "material": "ivory",
+   "tri": 1642,
+   "sha256": "ad562b99100a9fab1c6b9c4b744175f20e5d674894e47cf959643009a8c77480"
+  },
+  {
+   "name": "carriage__navy",
+   "file": "carriage__navy.stl",
+   "body": "carriage",
+   "material": "navy",
+   "tri": 990,
+   "sha256": "192a2a4dd884e3bfc8fcbe7492555ae5d7d2c624715ae24e1547835cf6ae0a6a"
+  },
+  {
+   "name": "carriage__servo",
+   "file": "carriage__servo.stl",
+   "body": "carriage",
+   "material": "servo",
+   "tri": 584,
+   "sha256": "d565d0e693208eab7720283af586fbf6c74cdeaaa5aef6f9b5928258c33ad0a2"
+  },
+  {
+   "name": "carriage__servo_body",
+   "file": "carriage__servo_body.stl",
+   "body": "carriage",
+   "material": "servo_body",
+   "tri": 830,
+   "sha256": "1975470173e30ff3038481f4da90a1bb971fc6f7b56b9281b3b4e85915af590c"
+  },
+  {
+   "name": "carriage__steel",
+   "file": "carriage__steel.stl",
+   "body": "carriage",
+   "material": "steel",
+   "tri": 1016,
+   "sha256": "70abc7172d07ce528e4a4fc8d3503b2fc34bcca02c052c26340febd0ff57ed8b"
+  },
+  {
+   "name": "left_carriage__ivory",
+   "file": "left_carriage__ivory.stl",
+   "body": "carriage",
+   "material": "ivory",
+   "tri": 11246,
+   "sha256": "adb95ee794437f41f49546359e00725f7e792c97bfa871dc620512ef4a1d2f2d"
+  },
+  {
+   "name": "left_fore__navy",
+   "file": "left_fore__navy.stl",
+   "body": "left_fore",
+   "material": "navy",
+   "tri": 11154,
+   "sha256": "e3ee984e360e95f4c6122b5b55508a984bcbf468b6ea935e5d299200f2c3cf0a"
+  },
+  {
+   "name": "left_fore__servo_body",
+   "file": "left_fore__servo_body.stl",
+   "body": "left_fore",
+   "material": "servo_body",
+   "tri": 1500,
+   "sha256": "a311216d9733a901ff3518cadc60479da67b53b0f608f39af354c30be691fee2"
+  },
+  {
+   "name": "left_hand__ivory",
+   "file": "left_hand__ivory.stl",
+   "body": "left_hand",
+   "material": "ivory",
+   "tri": 5205,
+   "sha256": "803f716db8029d9b5e4523a7b8cd9e0480cecaeb7bab31baa032cc66eb6ea7f4"
+  },
+  {
+   "name": "left_hand__navy",
+   "file": "left_hand__navy.stl",
+   "body": "left_hand",
+   "material": "navy",
+   "tri": 2672,
+   "sha256": "74ac93ecdc9205c916d55c0541f85ac7c232c226a6aba3fbba33cdb0f522a53f"
+  },
+  {
+   "name": "left_hand__servo",
+   "file": "left_hand__servo.stl",
+   "body": "left_hand",
+   "material": "servo",
+   "tri": 140,
+   "sha256": "bdc2435f3081e20381c7bf6036add130273bb59f3e302186b5b206ff3f01dc02"
+  },
+  {
+   "name": "left_hand__servo_body",
+   "file": "left_hand__servo_body.stl",
+   "body": "left_hand",
+   "material": "servo_body",
+   "tri": 1500,
+   "sha256": "ccfb068ad0a0e8cb7b595c82173e638095f4a1bfa7ab64c2ebedadc85340acba"
+  },
+  {
+   "name": "left_jaw__navy",
+   "file": "left_jaw__navy.stl",
+   "body": "left_jaw",
+   "material": "navy",
+   "tri": 3274,
+   "sha256": "5997e96530895a1aa237ff6821b73f22b8d33fd84f2d619dda800980df9ea55d"
+  },
+  {
+   "name": "left_shoulder__navy",
+   "file": "left_shoulder__navy.stl",
+   "body": "left_shoulder",
+   "material": "navy",
+   "tri": 9026,
+   "sha256": "adc50b086a131ddb4a7760d20d5e5df74259c5dc08adf946f9be806b544811fa"
+  },
+  {
+   "name": "left_upper__ivory",
+   "file": "left_upper__ivory.stl",
+   "body": "left_upper",
+   "material": "ivory",
+   "tri": 12758,
+   "sha256": "1b911c7d0cdd90ae72f71125af9a756ae19a49e5832ec05722fb13cb3e0f7c3e"
+  },
+  {
+   "name": "left_wrist__ivory",
+   "file": "left_wrist__ivory.stl",
+   "body": "left_wrist",
+   "material": "ivory",
+   "tri": 5146,
+   "sha256": "1b0ccc08212be1541935ea0811853c3ab4cab281ca4794e6abaee505f80f3d57"
+  },
+  {
+   "name": "left_yaw__navy",
+   "file": "left_yaw__navy.stl",
+   "body": "left_yaw",
+   "material": "navy",
+   "tri": 7190,
+   "sha256": "a009019f07c335f64aab1b5f21e78fbe431e9294e43572656f7d382a4c91f9b4"
+  },
+  {
+   "name": "left_yaw__servo_body",
+   "file": "left_yaw__servo_body.stl",
+   "body": "left_yaw",
+   "material": "servo_body",
+   "tri": 3062,
+   "sha256": "74cb6d0e484d3baaee5a0bb1c36c2fe94e68ae3dd22a535c02ea39fdf998843f"
+  },
+  {
+   "name": "left_yaw__steel",
+   "file": "left_yaw__steel.stl",
+   "body": "left_yaw",
+   "material": "steel",
+   "tri": 492,
+   "sha256": "0ffe1aba54bba80ad39707c3f518b5c177f0cc2ca6ae5593b937480be929e469"
+  },
+  {
+   "name": "right_carriage__ivory",
+   "file": "right_carriage__ivory.stl",
+   "body": "carriage",
+   "material": "ivory",
+   "tri": 11246,
+   "sha256": "a355dd0425efd0abe60da03320c035ea56c830b6319d5e7db0e7ac86edf15ac5"
+  },
+  {
+   "name": "right_fore__navy",
+   "file": "right_fore__navy.stl",
+   "body": "right_fore",
+   "material": "navy",
+   "tri": 11154,
+   "sha256": "1f7eac5c47340b99695a9676debb5dd38b7aa62de137bf702b4c4b3b63b3da39"
+  },
+  {
+   "name": "right_fore__servo_body",
+   "file": "right_fore__servo_body.stl",
+   "body": "right_fore",
+   "material": "servo_body",
+   "tri": 1500,
+   "sha256": "e6ce702100c8d1faea06c8b9bffab6915243e6c34a6be32c762626b17d1e1fde"
+  },
+  {
+   "name": "right_hand__ivory",
+   "file": "right_hand__ivory.stl",
+   "body": "right_hand",
+   "material": "ivory",
+   "tri": 5205,
+   "sha256": "3ef4a4b54763c2da2ca69d5f1a9dcfa69f7ac2ce8158e90ba396472ccf48d2c3"
+  },
+  {
+   "name": "right_hand__navy",
+   "file": "right_hand__navy.stl",
+   "body": "right_hand",
+   "material": "navy",
+   "tri": 2672,
+   "sha256": "31226bdc730f8ce4094fa385df2b2d41a6b23ac60e27098ab174bca7da39d0c7"
+  },
+  {
+   "name": "right_hand__servo",
+   "file": "right_hand__servo.stl",
+   "body": "right_hand",
+   "material": "servo",
+   "tri": 140,
+   "sha256": "15b6b616fdc8c5bf2b145e7ac6db0655291efd3b92cceed11d56f6ef985f61dd"
+  },
+  {
+   "name": "right_hand__servo_body",
+   "file": "right_hand__servo_body.stl",
+   "body": "right_hand",
+   "material": "servo_body",
+   "tri": 1500,
+   "sha256": "33dec82f070fb6d5b7c8e2c2d33008a3f9685ad3593375cd68227f306c901a9e"
+  },
+  {
+   "name": "right_jaw__navy",
+   "file": "right_jaw__navy.stl",
+   "body": "right_jaw",
+   "material": "navy",
+   "tri": 3274,
+   "sha256": "3499631f514b9312bb9a7a6e2dba2979be44885aee2b047dd2ea3f1e6243463c"
+  },
+  {
+   "name": "right_shoulder__navy",
+   "file": "right_shoulder__navy.stl",
+   "body": "right_shoulder",
+   "material": "navy",
+   "tri": 9027,
+   "sha256": "fdf3a26aeabdbdc1eca985bdc76ee0538eaec1ba5c0b2b5f08468a8ef9584121"
+  },
+  {
+   "name": "right_upper__ivory",
+   "file": "right_upper__ivory.stl",
+   "body": "right_upper",
+   "material": "ivory",
+   "tri": 12758,
+   "sha256": "030d74665f001f700b25dfe89bc475ff4de7d0d31af6631fb340abb6f17e9657"
+  },
+  {
+   "name": "right_wrist__ivory",
+   "file": "right_wrist__ivory.stl",
+   "body": "right_wrist",
+   "material": "ivory",
+   "tri": 5146,
+   "sha256": "11910c9bef1e10083a3a861dfecc48b3283781ae2639b50fe0cab97de0c1bcdc"
+  },
+  {
+   "name": "right_yaw__navy",
+   "file": "right_yaw__navy.stl",
+   "body": "right_yaw",
+   "material": "navy",
+   "tri": 7190,
+   "sha256": "efb4e693b9cc26f50d87db8661f0e8aa0624c5ee2bd75bbebddc99cc3906a4af"
+  },
+  {
+   "name": "right_yaw__servo_body",
+   "file": "right_yaw__servo_body.stl",
+   "body": "right_yaw",
+   "material": "servo_body",
+   "tri": 3062,
+   "sha256": "199bf9f1de08436d83ef9dfa3cd81b9f220efcc256d80867a9c2c541dd88c3f1"
+  },
+  {
+   "name": "right_yaw__steel",
+   "file": "right_yaw__steel.stl",
+   "body": "right_yaw",
+   "material": "steel",
+   "tri": 492,
+   "sha256": "5da82627479ac8558e6af2599c623fa53457f0d60666f9f8af34ac341ce2aeb5"
+  }
+ ]
+}

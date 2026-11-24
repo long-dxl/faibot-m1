@@ -1,0 +1,897 @@
+{
+ "schema": "faibot-m1-joints/2",
+ "units": {
+  "length": "m",
+  "angle": "rad (limit_soft_deg: độ)"
+ },
+ "source": {
+  "mesh": "sim/assets (R7, meshes.json)",
+  "tree": "sim/m1.xml",
+  "limits": "sdk/faibotic/spec.py"
+ },
+ "nodes": {
+  "m1": {
+   "parent": null,
+   "sim_body": null,
+   "origin_rel_m": [
+    0,
+    0,
+    0
+   ],
+   "origin_world_home_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "note": "Gốc cảnh: quay CAD (x trước, y trái, z lên) -> glTF Y-up (X_gl = -y, Y_gl = z, Z_gl = -x). Mọi node con giữ hệ CAD/MJCF."
+  },
+  "base": {
+   "parent": "m1",
+   "sim_body": "base",
+   "origin_rel_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "origin_world_home_m": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "lift": {
+   "parent": "base",
+   "sim_body": "carriage",
+   "origin_rel_m": [
+    0.0,
+    0.0,
+    0.413696
+   ],
+   "origin_world_home_m": [
+    0.0,
+    0.0,
+    0.413696
+   ]
+  },
+  "left_pan": {
+   "parent": "lift",
+   "sim_body": "left_shoulder",
+   "origin_rel_m": [
+    0.0599,
+    0.2375,
+    0.0
+   ],
+   "origin_world_home_m": [
+    0.0599,
+    0.2375,
+    0.413696
+   ]
+  },
+  "left_shoulder": {
+   "parent": "left_pan",
+   "sim_body": "left_upper",
+   "origin_rel_m": [
+    0.05799,
+    0.0,
+    0.14823
+   ],
+   "origin_world_home_m": [
+    0.11789,
+    0.2375,
+    0.561926
+   ]
+  },
+  "left_elbow": {
+   "parent": "left_shoulder",
+   "sim_body": "left_fore",
+   "origin_rel_m": [
+    0.13491,
+    0.0,
+    0.0
+   ],
+   "origin_world_home_m": [
+    0.2528,
+    0.2375,
+    0.561926
+   ]
+  },
+  "left_wrist_flex": {
+   "parent": "left_elbow",
+   "sim_body": "left_wrist",
+   "origin_rel_m": [
+    0.19841,
+    0.0,
+    -0.00316
+   ],
+   "origin_world_home_m": [
+    0.45121,
+    0.2375,
+    0.558766
+   ]
+  },
+  "left_wrist_yaw": {
+   "parent": "left_wrist_flex",
+   "sim_body": "left_yaw",
+   "origin_rel_m": [
+    0.02813,
+    -0.00381,
+    -0.0013
+   ],
+   "origin_world_home_m": [
+    0.47934,
+    0.23369,
+    0.557466
+   ]
+  },
+  "left_wrist_roll": {
+   "parent": "left_wrist_yaw",
+   "sim_body": "left_hand",
+   "origin_rel_m": [
+    0.06099,
+    0.0,
+    -0.02202
+   ],
+   "origin_world_home_m": [
+    0.54033,
+    0.23369,
+    0.535446
+   ]
+  },
+  "left_gripper": {
+   "parent": "left_wrist_roll",
+   "sim_body": "left_jaw",
+   "origin_rel_m": [
+    0.02161,
+    -0.02021,
+    -0.00203
+   ],
+   "origin_world_home_m": [
+    0.56194,
+    0.21348,
+    0.533416
+   ]
+  },
+  "right_pan": {
+   "parent": "lift",
+   "sim_body": "right_shoulder",
+   "origin_rel_m": [
+    0.0599,
+    -0.2375,
+    0.0
+   ],
+   "origin_world_home_m": [
+    0.0599,
+    -0.2375,
+    0.413696
+   ]
+  },
+  "right_shoulder": {
+   "parent": "right_pan",
+   "sim_body": "right_upper",
+   "origin_rel_m": [
+    0.05799,
+    0.0,
+    0.14823
+   ],
+   "origin_world_home_m": [
+    0.11789,
+    -0.2375,
+    0.561926
+   ]
+  },
+  "right_elbow": {
+   "parent": "right_shoulder",
+   "sim_body": "right_fore",
+   "origin_rel_m": [
+    0.13491,
+    0.0,
+    0.0
+   ],
+   "origin_world_home_m": [
+    0.2528,
+    -0.2375,
+    0.561926
+   ]
+  },
+  "right_wrist_flex": {
+   "parent": "right_elbow",
+   "sim_body": "right_wrist",
+   "origin_rel_m": [
+    0.19841,
+    0.0,
+    -0.00316
+   ],
+   "origin_world_home_m": [
+    0.45121,
+    -0.2375,
+    0.558766
+   ]
+  },
+  "right_wrist_yaw": {
+   "parent": "right_wrist_flex",
+   "sim_body": "right_yaw",
+   "origin_rel_m": [
+    0.02813,
+    0.00381,
+    -0.0013
+   ],
+   "origin_world_home_m": [
+    0.47934,
+    -0.23369,
+    0.557466
+   ]
+  },
+  "right_wrist_roll": {
+   "parent": "right_wrist_yaw",
+   "sim_body": "right_hand",
+   "origin_rel_m": [
+    0.06099,
+    0.0,
+    -0.02202
+   ],
+   "origin_world_home_m": [
+    0.54033,
+    -0.23369,
+    0.535446
+   ]
+  },
+  "right_gripper": {
+   "parent": "right_wrist_roll",
+   "sim_body": "right_jaw",
+   "origin_rel_m": [
+    0.02161,
+    0.02021,
+    -0.00203
+   ],
+   "origin_world_home_m": [
+    0.56194,
+    -0.21348,
+    0.533416
+   ]
+  }
+ },
+ "joints": {
+  "lift": {
+   "node": "lift",
+   "sim_joint": "lift",
+   "type": "prismatic",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "sdk_unit": "m",
+   "limit_soft": [
+    0.0,
+    0.45
+   ],
+   "note": "Trượt z của node lift (xe nâng + mọi tay). Cột, ray, vitme, hộp số ở node base."
+  },
+  "left_pan": {
+   "node": "left_pan",
+   "sim_joint": "left_pan",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.2217304763960306,
+    1.2217304763960306
+   ],
+   "limit_soft_deg": [
+    -70.0,
+    70.0
+   ],
+   "sign": "dương = ngược chiều kim đồng hồ nhìn từ trên"
+  },
+  "left_shoulder": {
+   "node": "left_shoulder",
+   "sim_joint": "left_shoulder",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.3962634015954636,
+    0.8464846872172498
+   ],
+   "limit_soft_deg": [
+    -80.0,
+    48.5
+   ],
+   "sign": "dương = gập xuống; 0 = duỗi ngang ra trước"
+  },
+  "left_elbow": {
+   "node": "left_elbow",
+   "sim_joint": "left_elbow",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -0.17453292519943295,
+    2.2165681500327987
+   ],
+   "limit_soft_deg": [
+    -10.0,
+    127.0
+   ],
+   "sign": "dương = gập xuống; giới hạn trên theo vai (couplings.elbow_max)"
+  },
+  "left_wrist_flex": {
+   "node": "left_wrist_flex",
+   "sim_joint": "left_wrist_flex",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.3526301702956054,
+    1.5271630954950384
+   ],
+   "limit_soft_deg": [
+    -77.5,
+    87.5
+   ],
+   "sign": "dương = gập xuống; giới hạn trên theo vai và khuỷu (couplings.wrist_max)"
+  },
+  "left_wrist_yaw": {
+   "node": "left_wrist_yaw",
+   "sim_joint": "left_wrist_yaw",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.413716694115407,
+    1.3962634015954636
+   ],
+   "limit_soft_deg": [
+    -81.0,
+    80.0
+   ],
+   "sign": "quanh +z khung cổ tay (vuông góc trục gập và trục cuộn), cùng dấu hai tay (như MJCF); 6+1, góc URDF upstream = -góc SDK; tầm theo gập (couplings.wrist_yaw)"
+  },
+  "left_wrist_roll": {
+   "node": "left_wrist_roll",
+   "sim_joint": "left_wrist_roll",
+   "type": "revolute",
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -2.792526803190927,
+    2.792526803190927
+   ],
+   "limit_soft_deg": [
+    -160.0,
+    160.0
+   ],
+   "sign": "quanh +x, cùng dấu hai tay (như MJCF); trục đặt trên trục cổ tay theo SDK"
+  },
+  "left_gripper": {
+   "node": "left_gripper",
+   "sim_joint": "left_gripper",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "sdk_unit": "pct 0..100 (0 khép, 100 mở)",
+   "limit_soft": [
+    0.0,
+    100.0
+   ],
+   "open_rad": 1.117010721276371,
+   "mapping": "góc_rad = pct/100 * open_rad quanh axis",
+   "max_tip_gap_m": 0.0973,
+   "note": "Kẹp gốc AM-ARM200: hàm động (node <bên>_gripper, gốc tại trục kẹp) quay quanh axis; thân kẹp và ngón cố định nằm ở node <bên>_wrist_roll. 0 = hai ngón chạm, 100 = mở 64 độ (đầu ngón cách ~97 mm)."
+  },
+  "right_pan": {
+   "node": "right_pan",
+   "sim_joint": "right_pan",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.2217304763960306,
+    1.2217304763960306
+   ],
+   "limit_soft_deg": [
+    -70.0,
+    70.0
+   ],
+   "sign": "dương = ngược chiều kim đồng hồ nhìn từ trên"
+  },
+  "right_shoulder": {
+   "node": "right_shoulder",
+   "sim_joint": "right_shoulder",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.3962634015954636,
+    0.8464846872172498
+   ],
+   "limit_soft_deg": [
+    -80.0,
+    48.5
+   ],
+   "sign": "dương = gập xuống; 0 = duỗi ngang ra trước"
+  },
+  "right_elbow": {
+   "node": "right_elbow",
+   "sim_joint": "right_elbow",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -0.17453292519943295,
+    2.2165681500327987
+   ],
+   "limit_soft_deg": [
+    -10.0,
+    127.0
+   ],
+   "sign": "dương = gập xuống; giới hạn trên theo vai (couplings.elbow_max)"
+  },
+  "right_wrist_flex": {
+   "node": "right_wrist_flex",
+   "sim_joint": "right_wrist_flex",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.3526301702956054,
+    1.5271630954950384
+   ],
+   "limit_soft_deg": [
+    -77.5,
+    87.5
+   ],
+   "sign": "dương = gập xuống; giới hạn trên theo vai và khuỷu (couplings.wrist_max)"
+  },
+  "right_wrist_yaw": {
+   "node": "right_wrist_yaw",
+   "sim_joint": "right_wrist_yaw",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -1.413716694115407,
+    1.3962634015954636
+   ],
+   "limit_soft_deg": [
+    -81.0,
+    80.0
+   ],
+   "sign": "quanh +z khung cổ tay (vuông góc trục gập và trục cuộn), cùng dấu hai tay (như MJCF); 6+1, góc URDF upstream = -góc SDK; tầm theo gập (couplings.wrist_yaw)"
+  },
+  "right_wrist_roll": {
+   "node": "right_wrist_roll",
+   "sim_joint": "right_wrist_roll",
+   "type": "revolute",
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "sdk_unit": "rad",
+   "limit_soft": [
+    -2.792526803190927,
+    2.792526803190927
+   ],
+   "limit_soft_deg": [
+    -160.0,
+    160.0
+   ],
+   "sign": "quanh +x, cùng dấu hai tay (như MJCF); trục đặt trên trục cổ tay theo SDK"
+  },
+  "right_gripper": {
+   "node": "right_gripper",
+   "sim_joint": "right_gripper",
+   "type": "revolute",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "sdk_unit": "pct 0..100 (0 khép, 100 mở)",
+   "limit_soft": [
+    0.0,
+    100.0
+   ],
+   "open_rad": 1.117010721276371,
+   "mapping": "góc_rad = pct/100 * open_rad quanh axis",
+   "max_tip_gap_m": 0.0973,
+   "note": "Kẹp gốc AM-ARM200: hàm động (node <bên>_gripper, gốc tại trục kẹp) quay quanh axis; thân kẹp và ngón cố định nằm ở node <bên>_wrist_roll. 0 = hai ngón chạm, 100 = mở 64 độ (đầu ngón cách ~97 mm)."
+  }
+ },
+ "couplings": {
+  "note": "Bảng giới hạn ghép (độ), nội suy như spec.elbow_max / spec.wrist_max (xem limits.mjs).",
+  "pan_soft_max_deg": 70.0,
+  "elbow_max": {
+   "shoulder_deg": [
+    -80.0,
+    -32.0,
+    -16.0,
+    0.0,
+    8.0,
+    16.0,
+    24.0,
+    32.0,
+    36.0,
+    40.0,
+    44.0,
+    48.5
+   ],
+   "max_deg": [
+    127.0,
+    127.0,
+    119.0,
+    111.0,
+    104.6,
+    98.2,
+    91.8,
+    85.4,
+    82.2,
+    79.0,
+    74.0,
+    62.0
+   ]
+  },
+  "wrist_max": {
+   "shoulder_deg": [
+    -80.0,
+    0.0,
+    30.0,
+    40.0,
+    48.5
+   ],
+   "elbow_deg": [
+    -10.0,
+    70.0,
+    100.0,
+    110.0,
+    120.0,
+    127.0
+   ],
+   "max_deg": [
+    [
+     87.0,
+     87.0,
+     87.0,
+     87.0,
+     87.0,
+     74.5
+    ],
+    [
+     87.0,
+     87.0,
+     87.0,
+     82.0,
+     62.0,
+     47.0
+    ],
+    [
+     87.0,
+     87.0,
+     87.0,
+     59.5,
+     54.5,
+     49.5
+    ],
+    [
+     87.0,
+     87.0,
+     82.0,
+     59.5,
+     57.0,
+     39.5
+    ],
+    [
+     87.0,
+     87.0,
+     67.0,
+     62.0,
+     57.0,
+     22.0
+    ]
+   ]
+  },
+  "WRIST_COUPLE_MAX_DEG": [
+   [
+    87.0,
+    87.0,
+    87.0,
+    87.0,
+    87.0,
+    74.5
+   ],
+   [
+    87.0,
+    87.0,
+    87.0,
+    82.0,
+    62.0,
+    47.0
+   ],
+   [
+    87.0,
+    87.0,
+    87.0,
+    59.5,
+    54.5,
+    49.5
+   ],
+   [
+    87.0,
+    87.0,
+    82.0,
+    59.5,
+    57.0,
+    39.5
+   ],
+   [
+    87.0,
+    87.0,
+    67.0,
+    62.0,
+    57.0,
+    22.0
+   ]
+  ],
+  "WRIST_COUPLE_SHOULDER_DEG": [
+   -80.0,
+   0.0,
+   30.0,
+   40.0,
+   48.5
+  ],
+  "WRIST_COUPLE_ELBOW_DEG": [
+   -10.0,
+   70.0,
+   100.0,
+   110.0,
+   120.0,
+   127.0
+  ],
+  "ELBOW_COUPLE_SHOULDER_DEG": [
+   -80.0,
+   -32.0,
+   -16.0,
+   0.0,
+   8.0,
+   16.0,
+   24.0,
+   32.0,
+   36.0,
+   40.0,
+   44.0,
+   48.5
+  ],
+  "ELBOW_COUPLE_MAX_DEG": [
+   127.0,
+   127.0,
+   119.0,
+   111.0,
+   104.6,
+   98.2,
+   91.8,
+   85.4,
+   82.2,
+   79.0,
+   74.0,
+   62.0
+  ],
+  "wrist_yaw": {
+   "flex_deg": [
+    -77.5,
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0,
+    65.0,
+    70.0,
+    72.5,
+    87.5
+   ],
+   "min_deg": [
+    -81.0,
+    -81.0,
+    -81.0,
+    -81.0,
+    -81.0,
+    -81.0,
+    -81.0,
+    -80.0,
+    -78.5,
+    -78.0,
+    0.0
+   ],
+   "max_deg": [
+    80.0,
+    80.0,
+    62.5,
+    42.0,
+    27.5,
+    19.0,
+    11.0,
+    6.5,
+    1.5,
+    0.0,
+    0.0
+   ],
+   "note": "tầm yaw (độ SDK) theo gập cổ tay, hẹp nhất hai nút kề như spec.wrist_yaw_range; trong limit_soft của wrist_yaw"
+  },
+  "unscanned": "Cuộn cổ tay khác 0, kẹp, cáp chưa quét va chạm (Chưa có số liệu, theo spec.py)."
+ },
+ "poses": {
+  "home": {
+   "desc": "Tư thế gốc SDK (spec.HOME_ARM), lift 0",
+   "q": {
+    "left_pan": 0.0,
+    "left_shoulder": -1.396263,
+    "left_elbow": 1.623156,
+    "left_wrist_flex": 1.518436,
+    "left_wrist_yaw": 0.0,
+    "left_wrist_roll": 0.0,
+    "left_gripper": 100.0,
+    "right_pan": 0.0,
+    "right_shoulder": -1.396263,
+    "right_elbow": 1.623156,
+    "right_wrist_flex": 1.518436,
+    "right_wrist_yaw": 0.0,
+    "right_wrist_roll": 0.0,
+    "right_gripper": 100.0,
+    "lift": 0.0
+   }
+  },
+  "ready": {
+   "desc": "Sẵn sàng (vai -30, khuỷu 70, cổ tay 10), lift 0,20 m, như bộ render",
+   "q": {
+    "left_pan": 0.0,
+    "left_shoulder": -0.523599,
+    "left_elbow": 1.22173,
+    "left_wrist_flex": 0.174533,
+    "left_wrist_yaw": 0.0,
+    "left_wrist_roll": 0.0,
+    "left_gripper": 100.0,
+    "right_pan": 0.0,
+    "right_shoulder": -0.523599,
+    "right_elbow": 1.22173,
+    "right_wrist_flex": 0.174533,
+    "right_wrist_yaw": 0.0,
+    "right_wrist_roll": 0.0,
+    "right_gripper": 100.0,
+    "lift": 0.2
+   }
+  },
+  "straight": {
+   "desc": "Tay duỗi thẳng, lift 0,25 m",
+   "q": {
+    "left_pan": 0.0,
+    "left_shoulder": 0.0,
+    "left_elbow": 0.0,
+    "left_wrist_flex": 0.0,
+    "left_wrist_yaw": 0.0,
+    "left_wrist_roll": 0.0,
+    "left_gripper": 100.0,
+    "right_pan": 0.0,
+    "right_shoulder": 0.0,
+    "right_elbow": 0.0,
+    "right_wrist_flex": 0.0,
+    "right_wrist_yaw": 0.0,
+    "right_wrist_roll": 0.0,
+    "right_gripper": 100.0,
+    "lift": 0.25
+   }
+  },
+  "reach": {
+   "desc": "Với tới (-5, 30, 10), lift 0",
+   "q": {
+    "left_pan": 0.0,
+    "left_shoulder": -0.087266,
+    "left_elbow": 0.523599,
+    "left_wrist_flex": 0.174533,
+    "left_wrist_yaw": 0.0,
+    "left_wrist_roll": 0.0,
+    "left_gripper": 100.0,
+    "right_pan": 0.0,
+    "right_shoulder": -0.087266,
+    "right_elbow": 0.523599,
+    "right_wrist_flex": 0.174533,
+    "right_wrist_yaw": 0.0,
+    "right_wrist_roll": 0.0,
+    "right_gripper": 100.0,
+    "lift": 0.0
+   }
+  },
+  "rest": {
+   "desc": "Nghỉ (30, 100, 20), lift 0,45 m (đỉnh P-L)",
+   "q": {
+    "left_pan": 0.0,
+    "left_shoulder": 0.523599,
+    "left_elbow": 1.745329,
+    "left_wrist_flex": 0.349066,
+    "left_wrist_yaw": 0.0,
+    "left_wrist_roll": 0.0,
+    "left_gripper": 100.0,
+    "right_pan": 0.0,
+    "right_shoulder": 0.523599,
+    "right_elbow": 1.745329,
+    "right_wrist_flex": 0.349066,
+    "right_wrist_yaw": 0.0,
+    "right_wrist_roll": 0.0,
+    "right_gripper": 100.0,
+    "lift": 0.45
+   }
+  }
+ },
+ "tcp": {
+  "note": "TCP SDK (spec.py): tâm kẹp cách gốc khớp cuộn LT - LW dọc trục cuộn, lệch (TCP_DY, TCP_DZ) khỏi trục cuộn khi cuộn 0; tay phải lấy gương y. local_in_wrist_roll_m là tay trái, by_side cho từng tay.",
+  "local_in_wrist_roll_m": [
+   0.09382,
+   0.01013,
+   -0.00016
+  ],
+  "by_side": {
+   "left": [
+    0.09382,
+    0.01013,
+    -0.00016
+   ],
+   "right": [
+    0.09382,
+    -0.01013,
+    -0.00016
+   ]
+  }
+ },
+ "ghi_chu": [
+  "P-L (S1G): gốc tay (đáy J1, trục pan) ở (0,0599; ±0,18726; 0,4137 + lift) m theo khớp URDF AlohaMini2; trục vai cao hơn 0,14823 và ra trước 0,05799 (URDF AM-ARM200). Lift SDK 0..0,45 = lift CAD -160..+290 mm.",
+  "Tay AM-ARM200 6+1 (như bản gốc): khớp yaw cổ tay (node <bên>_wrist_yaw, servo STS3215 ID 21/22) giữa giá J5 và vỏ J56, gốc lệch (28,1; ∓3,8; -1,3) mm so với trục gập. Cổ tay theo URDF upstream: trục gập thấp hơn đường trục khuỷu 3,2 mm, gốc khớp cuộn lệch (89,1; ∓3,8; -23,3) mm so với trục gập. Tay phải = gương y tay trái (như MJCF).",
+  "Gán chi tiết vào khớp theo sim/m1.xml (cùng nguồn với sim). Đế di chuyển (base_x, base_y, base_yaw) và bánh quay không có node: web dời node m1. Camera ngực đi theo node lift."
+ ]
+}

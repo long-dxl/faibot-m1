@@ -1,0 +1,314 @@
+{
+ "shoulder_static": [
+  {
+   "a": "servo_L",
+   "b": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 8.0
+  },
+  {
+   "a": "servo_L",
+   "b": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.4
+  },
+  {
+   "a": "servo_L",
+   "b": "link",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "a": "servo_R",
+   "b": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.4
+  },
+  {
+   "a": "servo_R",
+   "b": "link",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "a": "cradle",
+   "b": "link",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  }
+ ],
+ "shoulder_sweep_link": [
+  {
+   "angle": -100,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -100,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -100,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": -75,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -75,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -75,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": -50,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -50,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -50,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": -25,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -25,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": -25,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": 0,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 0,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 0,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": 25,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 25,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 25,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": 50,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 50,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 50,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": 75,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 75,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 75,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  },
+  {
+   "angle": 90,
+   "vs": "servo_L",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 90,
+   "vs": "servo_R",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "angle": 90,
+   "vs": "cradle",
+   "common_mm3": 0.0,
+   "min_dist_mm": 33.9
+  }
+ ],
+ "power": [
+  {
+   "a": "deck",
+   "b": "battery",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "pcb",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "a": "deck",
+   "b": "pcb_components",
+   "common_mm3": 0.0,
+   "min_dist_mm": 1.6
+  },
+  {
+   "a": "deck",
+   "b": "estop_body",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.4
+  },
+  {
+   "a": "deck",
+   "b": "estop_head",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "a": "battery",
+   "b": "pcb",
+   "common_mm3": 0.0,
+   "min_dist_mm": 13.5
+  },
+  {
+   "a": "battery",
+   "b": "pcb_components",
+   "common_mm3": 0.0,
+   "min_dist_mm": 18.5
+  },
+  {
+   "a": "battery",
+   "b": "estop_body",
+   "common_mm3": 0.0,
+   "min_dist_mm": 52.9
+  },
+  {
+   "a": "battery",
+   "b": "estop_head",
+   "common_mm3": 0.0,
+   "min_dist_mm": 45.697
+  },
+  {
+   "a": "pcb",
+   "b": "pcb_components",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  },
+  {
+   "a": "pcb",
+   "b": "estop_body",
+   "common_mm3": 0.0,
+   "min_dist_mm": 31.8
+  },
+  {
+   "a": "pcb",
+   "b": "estop_head",
+   "common_mm3": 0.0,
+   "min_dist_mm": 26.415
+  },
+  {
+   "a": "pcb_components",
+   "b": "estop_body",
+   "common_mm3": 0.0,
+   "min_dist_mm": 13.8
+  },
+  {
+   "a": "pcb_components",
+   "b": "estop_head",
+   "common_mm3": 0.0,
+   "min_dist_mm": 19.503
+  },
+  {
+   "a": "estop_body",
+   "b": "estop_head",
+   "common_mm3": 0.0,
+   "min_dist_mm": 0.0
+  }
+ ],
+ "power_meta": {
+  "total_x": 287.0,
+  "total_y": 100.0,
+  "tray": [
+   9.5,
+   161.0,
+   81.0
+  ],
+  "pcb_x0": 177.0,
+  "panel_h": 80.0
+ },
+ "volumes_mm3": {
+  "servo_L": 95318.1,
+  "servo_R": 95318.1,
+  "cradle": 107961.4,
+  "link": 40532.5,
+  "deck": 184984.2
+ }
+}

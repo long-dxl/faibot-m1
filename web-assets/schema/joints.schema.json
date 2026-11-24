@@ -1,0 +1,129 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Faibot M1 joints",
+ "type": "object",
+ "required": [
+  "schema",
+  "nodes",
+  "joints",
+  "couplings",
+  "poses",
+  "tcp"
+ ],
+ "properties": {
+  "schema": {
+   "const": "faibot-m1-joints/2"
+  },
+  "nodes": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "object",
+    "required": [
+     "parent",
+     "origin_rel_m",
+     "origin_world_home_m"
+    ],
+    "properties": {
+     "parent": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "origin_rel_m": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+     },
+     "origin_world_home_m": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+     }
+    }
+   }
+  },
+  "joints": {
+   "type": "object",
+   "minProperties": 13,
+   "additionalProperties": {
+    "type": "object",
+    "required": [
+     "node",
+     "type",
+     "axis",
+     "limit_soft",
+     "sdk_unit"
+    ],
+    "properties": {
+     "node": {
+      "type": "string"
+     },
+     "type": {
+      "enum": [
+       "revolute",
+       "prismatic"
+      ]
+     },
+     "axis": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+     },
+     "limit_soft": {
+      "type": "array",
+      "items": {
+       "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+     }
+    }
+   }
+  },
+  "couplings": {
+   "type": "object",
+   "required": [
+    "elbow_max",
+    "wrist_max",
+    "pan_soft_max_deg"
+   ]
+  },
+  "poses": {
+   "type": "object",
+   "required": [
+    "home",
+    "ready"
+   ],
+   "additionalProperties": {
+    "type": "object",
+    "required": [
+     "q"
+    ],
+    "properties": {
+     "q": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "number"
+      }
+     }
+    }
+   }
+  },
+  "tcp": {
+   "type": "object",
+   "required": [
+    "local_in_wrist_roll_m"
+   ]
+  }
+ }
+}

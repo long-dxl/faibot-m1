@@ -1,0 +1,5 @@
+*.step binary -diff
+*.stp binary -diff
+*.stl binary -diff
+parts/** linguist-generated=true
+urdf/assets/** linguist-generated=true

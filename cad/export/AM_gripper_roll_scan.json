@@ -1,0 +1,75 @@
+{
+ "ghi_chu": "kẹp AM-ARM200 theo góc cuộn URDF (= góc SDK) với cụm cổ tay; giao mm3 > 0,5; g0/g100 = độ mở kẹp %",
+ "buoc_10": {
+  "g0_r-140": {
+   "M1-AR-027xOB_F_J56_Bottom": 99.7
+  },
+  "g0_r-130": {
+   "M1-AR-027xOB_F_J56_Bottom": 213.7
+  },
+  "g0_r-120": {
+   "M1-AR-027xOB_F_J56_Bottom": 234.8,
+   "M1-CM-001xOB_F_J56_Bottom": 1.0
+  },
+  "g0_r-110": {
+   "M1-AR-027xOB_F_J56_Bottom": 228.4
+  },
+  "g0_r-100": {
+   "M1-AR-027xOB_F_J56_Bottom": 212.8
+  },
+  "g0_r-90": {
+   "M1-AR-027xOB_F_J56_Bottom": 26.1
+  },
+  "g100_r-140": {
+   "M1-AR-027xOB_F_J56_Bottom": 99.7
+  },
+  "g100_r-130": {
+   "M1-AR-027xOB_F_J56_Bottom": 213.7
+  },
+  "g100_r-120": {
+   "M1-AR-027xOB_F_J56_Bottom": 234.8,
+   "M1-CM-001xOB_F_J56_Bottom": 1.0
+  },
+  "g100_r-110": {
+   "M1-AR-027xOB_F_J56_Bottom": 228.4
+  },
+  "g100_r-100": {
+   "M1-AR-027xOB_F_J56_Bottom": 212.8
+  },
+  "g100_r-90": {
+   "M1-AR-027xOB_F_J56_Bottom": 26.1
+  }
+ },
+ "mep_buoc_2": {
+  "g0_r-146": {
+   "M1-AR-027xOB_F_J56_Bottom": 3.5
+  },
+  "g0_r-144": {
+   "M1-AR-027xOB_F_J56_Bottom": 24.1
+  },
+  "g0_r-142": {
+   "M1-AR-027xOB_F_J56_Bottom": 62.9
+  },
+  "g0_r-140": {
+   "M1-AR-027xOB_F_J56_Bottom": 99.7
+  },
+  "g0_r-92": {
+   "M1-AR-027xOB_F_J56_Bottom": 60.7
+  },
+  "g0_r-90": {
+   "M1-AR-027xOB_F_J56_Bottom": 26.1
+  },
+  "g0_r-88": {
+   "M1-AR-027xOB_F_J56_Bottom": 3.7
+  }
+ },
+ "vung_cham_deg": [
+  -147,
+  -87
+ ],
+ "gioi_han_sdk_deg": [
+  -160,
+  160
+ ],
+ "ghi_chu_gioi_han": "SDK chưa thu hẹp, DK-N54 mở"
+}

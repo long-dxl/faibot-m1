@@ -1,0 +1,12 @@
+Faibot M1 web-sim assets (m1.glb, joints.json; bản cũ ở archive/v0.4/web-assets/legacy-web-sim/)
+
+m1.glb is a derivative work (tessellated, decimated, regrouped per joint, modified) of geometry from:
+1. AM-ARM (AM-ARM200), https://github.com/liyiteng/AM-ARM, commit 5b03af1ef6c80595bd988e0137cf8e7c35811eb6 (18/06/2026), by liyiteng, Apache License 2.0.
+2. AlohaMini (AlohaMini2), https://github.com/liyiteng/AlohaMini, commit 59f024b6005b8516005150b98a3f6daa5d04d851 (20/11/2026), by liyiteng, Apache License 2.0.
+3. MuJoCo Menagerie robotstudio_so101 (STS3215 servo mesh, assets/sts3215_03a_v1.stl), https://github.com/google-deepmind/mujoco_menagerie, commit 3abca2e302625cec9429c49806121ea2855cef81 (28/09/2026), derived by Menagerie from The Robot Studio SO-ARM100, Apache License 2.0 (modified: decimated, placed, merged per joint).
+The full license text is in LICENSE (same file as cad/upstream/LICENSE). Changes: see cad/CHANGES.md and README.md.
+"AlohaMini" and "AM-ARM" are not Faibotic trademarks or product names (Apache-2.0 section 6).
+Parts drawn by Faibotic (steel counterweight plates, aluminium spokes, wheel mounts, deck, electronics bay, tray, lift latch, wrist yaw lock, camera wedge, omni wheels): Copyright (c) 2026 Faibotic (Leo Dao), Apache License 2.0.
+Serve LICENSE and NOTICE together with the GLB on the web page.
+
+Modified 24/11/2026 (v0.5c): the arm links J1-J4 in m1.glb, including the STS3095/STS3215 servo bodies, are derived from the AM-ARM200 follower URDF meshes (am-arm200/urdf/am-arm200-meshes, commit 5b03af1, Apache-2.0): split into link body, metal parts and servo bodies, parts under 6 mm removed, decimated, recoloured, right arm mirrored.

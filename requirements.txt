@@ -1,0 +1,5 @@
+# Faibotic M1: phụ thuộc đã ghim (license ở docs/vi/licenses.md)
+mujoco==4.0.1
+numpy==2.5.5
+pyserial==3.5
+pytest==9.2.0

@@ -1,0 +1,26 @@
+Faibot M1: mesh hiển thị cho sim MuJoCo (P-L, S1C + thân S1G)
+
+Các tệp *.stl trong thư mục này sinh bằng `cad/faibotic/export_sim_meshes.py --pl` (tessellate STEP, gộp theo body và vật liệu, đổi sang mét theo
+hệ body MJCF ở tư thế 0 SDK). Xuất 23/11/2026 (S1G). 52 tệp. 212.426 tam giác, sha256 từng tệp trong meshes.json (source.variant = "P-L").
+Tay phải là gương y của tay trái.
+
+1. Tay AM-ARM200 follower (O_F_J1_Base, O_F_J2_Rotation, OB_F_J3_Shoulder, OB_F_J4_Elbow, OB_F_J5_Elbow_Wrist_Bracket, OB_F_J5_Pin_Bearing, OB_F_J56_*): AM-ARM của liyiteng,
+   https://github.com/liyiteng/AM-ARM, commit 5b03af1ef6c80595bd988e0137cf8e7c35811eb6, Apache License 2.0 (tệp LICENSE bên cạnh).
+   Đã sửa: chuyển STEP sang lưới tam giác, đặt theo FK URDF upstream (STEP = URDF + t), gộp theo khớp.
+   Tệp: left/right_carriage__ivory.stl (đế J1), *_shoulder__navy.stl (J2), *_upper__ivory.stl, *_fore__navy.stl, *_wrist__ivory.stl, *_wrist__navy.stl (cùng khoá yaw M1-AR-025 của Faibotic), *_wrist__steel.stl.
+   Không dùng tên "AM-ARM" làm nhãn hiệu của sản phẩm Faibotic (Apache-2.0 điều 6).
+2. Kẹp AM-ARM200 follower (OB_F_J7_Gripper thân kẹp, OB_F_J7_Jaw hàm động, OB_F_Camera giá camera cổ tay): AM-ARM của liyiteng,
+   https://github.com/liyiteng/AM-ARM, commit 5b03af1ef6c80595bd988e0137cf8e7c35811eb6, Apache License 2.0 (tệp LICENSE bên cạnh); (24/11/2026) là kẹp mặc định.
+   Đã sửa: chuyển STEP sang lưới tam giác, đặt lên cổ tay theo FK URDF upstream, gộp theo body.
+3. Thân servo STS3215 trong *__servo_body.stl (gập, cuộn, kẹp): MuJoCo Menagerie robotstudio_so101
+   (https://github.com/google-deepmind/mujoco_menagerie, commit 3abca2e302625cec9429c49806121ea2855cef81, assets/sts3215_03a_v1.stl), Apache License 2.0
+   (cad/upstream/menagerie-so101/LICENSE). Đã sửa: rút gọn 1.500 tam giác, đặt theo tư thế lắp.
+
+4. Thân P-L (S1G) trong base__*.stl và carriage__*.stl: trụ Post1-4 + đế nối, khung T giữa/trái/phải, thanh ngang, chốt, bánh răng trục Z,
+   giá camera ngực của AlohaMini2 (https://github.com/liyiteng/AlohaMini, commit 59f024b6005b8516005150b98a3f6daa5d04d851, Apache License 2.0),
+   đặt theo cad/export/AlohaMini2_placement.json (khung T theo khớp URDF, cad/faibotic/pl_tfix.py). Đã sửa: tessellate, rút gọn (<= 1.200 tam giác
+   mỗi chi tiết), gộp theo body và vật liệu. Phần còn lại của thân (tấm thép đối trọng, nan, giá bánh, sàn, khoang điện tử, khay, chốt hãm, công tắc,
+   nêm camera, bánh omni vẽ lại): Faibotic, Apache License 2.0 (mô hình mô phỏng; xem LICENSE gốc repo). Servo bánh: mesh Menagerie như mục 3; servo trục nâng STS3095: khối Faibotic.
+
+Chưa có mesh: thân servo STS3095 ở pan, vai, khuỷu (STEP follower không có vị trí servo). Hình va chạm vẫn là hộp/viên nang (spec.py).
+Ghi công và nguồn đầy đủ: cad/NOTICE.

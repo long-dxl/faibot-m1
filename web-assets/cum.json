@@ -1,0 +1,1326 @@
+{
+ "schema": "faibot-m1-cum/2",
+ "ghi_chu": [
+  "Mã từ product/parts-register.csv; tên chi tiết CAD theo cad/faibotic/assembly_pl.py (P-L, S1G), bắt đầu bằng mã M1.",
+  "nhap=true: sổ ghi nháp/CAD nháp.",
+  "Mỗi cụm = tập node lá <cum>.<node_khớp>.<vật liệu> (extras.cum), nằm dưới node khớp nên đi theo khớp. Tách lớp: dịch tâm cụm (tam_world_home_m, hệ CAD) rồi đổi sang Y-up qua node m1.",
+  "camera gồm camera ngực (node lift, đi theo xe nâng) và camera cổ tay (node left/right_wrist_roll). Khoang điện tử (power) là khối giữ chỗ, chưa có linh kiện chi tiết."
+ ],
+ "cum": [
+  {
+   "ten": "base",
+   "mo_ta": "Đế kiểu LeKiwi: tấm thép đối trọng 2 lớp (~8 kg), nan nhôm 20x40, giá servo bánh, sàn in, 3 bánh omni 4 in + 3 servo STS3215, khay trước",
+   "ma": [
+    "M1-BS-006",
+    "M1-BS-031",
+    "M1-BS-032",
+    "M1-BS-035",
+    "M1-BS-036",
+    "M1-BS-037",
+    "M1-BS-039",
+    "M1-ST-011",
+    "M1-ST-012",
+    "M1-SV-001"
+   ],
+   "ma_chinh": [
+    "M1-BS-032"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-BS-006",
+     "ten": "Nhôm định hình 20x40x2 mm dài 400 mm (hoặc in)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-BS-006_2040_do_khay"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-BS-031",
+     "ten": "Nan nhôm định hình 20x40 cắt sẵn (3: 1 x 128 mm, 2 x 93 mm), nằm trên tấm thép, nối giá bánh",
+     "trang_thai_so": "CAD nháp",
+     "license": "Thương mại (định hình)",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-BS-031_spoke0",
+      "M1-BS-031_spoke1",
+      "M1-BS-031_spoke2"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-BS-032",
+     "ten": "Tấm thép đối trọng ~5 kg, đồng thời là moay-ơ nối nan và đế trụ (267 x 260 x 8,5 + lưỡi trước 98 x 50), tâm x -0,10 m",
+     "trang_thai_so": "CAD nháp",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-BS-032_cw_hub_plate"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-BS-035",
+     "ten": "Bánh omni 4 in (101,6 mm) kiểu LeKiwi (3), lắp thẳng trên còi STS3215",
+     "trang_thai_so": "CAD nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-BS-035_omni0_hub",
+      "M1-BS-035_omni0_plate0",
+      "M1-BS-035_omni0_plate1",
+      "M1-BS-035_omni0_roller0",
+      "M1-BS-035_omni0_roller1",
+      "M1-BS-035_omni0_roller10",
+      "M1-BS-035_omni0_roller11",
+      "M1-BS-035_omni0_roller12",
+      "M1-BS-035_omni0_roller13",
+      "M1-BS-035_omni0_roller14",
+      "M1-BS-035_omni0_roller15",
+      "M1-BS-035_omni0_roller16",
+      "M1-BS-035_omni0_roller17",
+      "M1-BS-035_omni0_roller2",
+      "M1-BS-035_omni0_roller3",
+      "M1-BS-035_omni0_roller4",
+      "M1-BS-035_omni0_roller5",
+      "M1-BS-035_omni0_roller6",
+      "M1-BS-035_omni0_roller7",
+      "M1-BS-035_omni0_roller8",
+      "M1-BS-035_omni0_roller9",
+      "M1-BS-035_omni1_hub",
+      "M1-BS-035_omni1_plate0",
+      "M1-BS-035_omni1_plate1",
+      "M1-BS-035_omni1_roller0",
+      "M1-BS-035_omni1_roller1",
+      "M1-BS-035_omni1_roller10",
+      "M1-BS-035_omni1_roller11",
+      "M1-BS-035_omni1_roller12",
+      "M1-BS-035_omni1_roller13",
+      "M1-BS-035_omni1_roller14",
+      "M1-BS-035_omni1_roller15",
+      "M1-BS-035_omni1_roller16",
+      "M1-BS-035_omni1_roller17",
+      "M1-BS-035_omni1_roller2",
+      "M1-BS-035_omni1_roller3",
+      "M1-BS-035_omni1_roller4",
+      "M1-BS-035_omni1_roller5",
+      "M1-BS-035_omni1_roller6",
+      "M1-BS-035_omni1_roller7",
+      "M1-BS-035_omni1_roller8",
+      "M1-BS-035_omni1_roller9",
+      "M1-BS-035_omni2_hub",
+      "M1-BS-035_omni2_plate0",
+      "M1-BS-035_omni2_plate1",
+      "M1-BS-035_omni2_roller0",
+      "M1-BS-035_omni2_roller1",
+      "M1-BS-035_omni2_roller10",
+      "M1-BS-035_omni2_roller11",
+      "M1-BS-035_omni2_roller12",
+      "M1-BS-035_omni2_roller13",
+      "M1-BS-035_omni2_roller14",
+      "M1-BS-035_omni2_roller15",
+      "M1-BS-035_omni2_roller16",
+      "M1-BS-035_omni2_roller17",
+      "M1-BS-035_omni2_roller2",
+      "M1-BS-035_omni2_roller3",
+      "M1-BS-035_omni2_roller4",
+      "M1-BS-035_omni2_roller5",
+      "M1-BS-035_omni2_roller6",
+      "M1-BS-035_omni2_roller7",
+      "M1-BS-035_omni2_roller8",
+      "M1-BS-035_omni2_roller9"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-BS-036",
+     "ten": "Giá servo bánh in kiểu LeKiwi (3): vách sau servo bắt đầu nan + nắp ôm thân servo",
+     "trang_thai_so": "CAD nháp",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-BS-036_wheel_mount_cap0",
+      "M1-BS-036_wheel_mount_cap1",
+      "M1-BS-036_wheel_mount_cap2",
+      "M1-BS-036_wheel_mount_wall0",
+      "M1-BS-036_wheel_mount_wall1",
+      "M1-BS-036_wheel_mount_wall2"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-BS-037",
+     "ten": "Sàn in kiểu LeKiwi R185 x 5 mm trên nan (khoét quanh đế trụ), đỡ khoang điện tử và cột khay",
+     "trang_thai_so": "CAD nháp",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-BS-037_deck"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-BS-039",
+     "ten": "Tấm thép đối trọng phụ 267 x 260 x 6 mm bắt dưới M1-BS-032 (cùng biên, 4 bulông M6 [giả định]); tổng đối trọng ~8,2 kg (DK-N40, Q8 mặc định (a))",
+     "trang_thai_so": "CAD nháp",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-BS-039_cw_plate2"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-ST-011",
+     "ten": "Cột đỡ khay in trên sàn, trên nan trước",
+     "trang_thai_so": "CAD nháp",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-ST-011_cot_do_cat"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-ST-012",
+     "ten": "Khay đế sàn thiết bị PETG 4 mảnh (bàn 220), x 64–320, y ±190, mặt z 0,21 m, gờ 10 mm, gân 14 mm, khe thông gió 32 %, gá Jetson VESA 75/100; định mức 3 kg",
+     "trang_thai_so": "CAD nháp",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-ST-012_khay_de_00",
+      "M1-ST-012_khay_de_01",
+      "M1-ST-012_khay_de_10",
+      "M1-ST-012_khay_de_11"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-SV-001",
+     "ten": "Servo Feetech STS3215 C018 12 V 1/345 (4/tay: gập, yaw, cuộn, kẹp; 3 bánh; tổng = 11)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-SV-001_wheel0",
+      "M1-SV-001_wheel1",
+      "M1-SV-001_wheel2"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "base.base.alu",
+    "base.base.hub",
+    "base.base.ivory",
+    "base.base.navy",
+    "base.base.rubber",
+    "base.base.servo_body.wheel_0",
+    "base.base.servo_body.wheel_1",
+    "base.base.servo_body.wheel_2",
+    "base.base.steel"
+   ],
+   "bbox_world_home_m": [
+    -0.245,
+    -0.2549,
+    -0.0004,
+    0.32,
+    0.2545,
+    0.22
+   ],
+   "tam_world_home_m": [
+    0.0375,
+    -0.0002,
+    0.1098
+   ]
+  },
+  {
+   "ten": "power",
+   "mo_ta": "Khoang điện tử trên sàn đế (khối giữ chỗ): pin 12 V; Pi 5, bus adapter, E-stop, contactor",
+   "ma": [
+    "M1-BS-038"
+   ],
+   "ma_chinh": [
+    "M1-BS-038"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-BS-038",
+     "ten": "Khoang điện tử (giữ chỗ): trái 2 pin 12 V 11200 mAh; phải Pi 5 + 3 bus adapter + E-stop/contactor",
+     "trang_thai_so": "giữ chỗ",
+     "license": "",
+     "nguon_goc": "",
+     "chi_tiet_cad": [
+      "M1-BS-038_ebay0",
+      "M1-BS-038_ebay1"
+     ],
+     "nhap": false
+    }
+   ],
+   "trang_thai": "đủ",
+   "node": [
+    "power.base.ivory_hi"
+   ],
+   "bbox_world_home_m": [
+    -0.08,
+    -0.16,
+    0.064,
+    0.02,
+    0.16,
+    0.134
+   ],
+   "tam_world_home_m": [
+    -0.03,
+    0.0,
+    0.099
+   ]
+  },
+  {
+   "ten": "lift",
+   "mo_ta": "Trục nâng AlohaMini2: trụ Post1-4 có thanh răng, khung T giữa/trái/phải, thanh ngang 2040, bánh răng + servo STS3095 (giữ chỗ), chốt hãm, công tắc hành trình",
+   "ma": [
+    "M1-LF-002",
+    "M1-LF-004",
+    "M1-LF-041",
+    "M1-LF-050",
+    "M1-LF-051",
+    "M1-LF-052",
+    "M1-LF-053",
+    "M1-LF-054",
+    "M1-LF-055",
+    "M1-LF-057",
+    "M1-LF-060",
+    "M1-LF-061",
+    "M1-SV-002",
+    "M1-TR-001",
+    "M1-TR-002",
+    "M1-TR-003",
+    "M1-TR-004",
+    "M1-TR-005",
+    "M1-TR-006",
+    "M1-TR-007",
+    "M1-TR-008",
+    "M1-TR-009",
+    "M1-TR-010",
+    "M1-TR-011",
+    "M1-TR-012",
+    "M1-TR-013",
+    "M1-TR-014",
+    "M1-TR-020",
+    "M1-TR-021",
+    "M1-TR-022",
+    "M1-TR-023"
+   ],
+   "ma_chinh": [
+    "M1-LF-057",
+    "M1-SV-002"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-LF-002",
+     "ten": "Bánh răng servo trục Z (OB_Z_Axis_Servo_Gear)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AlohaMini2",
+     "chi_tiet_cad": [
+      "M1-LF-002_lift_gear_z20"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-004",
+     "ten": "Chốt thép Φ12x25 mm (trục nâng) (1)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-LF-004_O_T_Connector_Dowel_Pin_12_25"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-041",
+     "ten": "Bộ chốt hãm và hành trình: đầu chốt thép răng cưa nghiêng, lò xo, 2 công tắc hành trình NC, 2 đệm PU",
+     "trang_thai_so": "CAD nháp",
+     "license": "Thương mại + CC-BY-NC-SA-4.0 (phần Faibotic)",
+     "nguon_goc": "Faibotic + thương mại",
+     "chi_tiet_cad": [
+      "M1-LF-041_latch_pawl",
+      "M1-LF-041_switch_bot",
+      "M1-LF-041_switch_top"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-LF-050",
+     "ten": "Solenoid 12 V kiểu latch (mất điện chốt bung), chốt hãm thanh răng",
+     "trang_thai_so": "CAD nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-LF-050_latch_solenoid"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-LF-051",
+     "ten": "Trụ AlohaMini2 đoạn 1 (có thanh răng)",
+     "trang_thai_so": "dùng v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AlohaMini2",
+     "chi_tiet_cad": [
+      "M1-LF-051_OB_Main_Assembly_Post1"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-052",
+     "ten": "Trụ AlohaMini2 đoạn 2 (có thanh răng)",
+     "trang_thai_so": "dùng v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AlohaMini2",
+     "chi_tiet_cad": [
+      "M1-LF-052_OB_Main_Assembly_Post2"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-053",
+     "ten": "Trụ AlohaMini2 đoạn 3 (có thanh răng)",
+     "trang_thai_so": "dùng v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AlohaMini2",
+     "chi_tiet_cad": [
+      "M1-LF-053_OB_Main_Assembly_Post3"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-054",
+     "ten": "Trụ AlohaMini2 đoạn 4 (chân)",
+     "trang_thai_so": "dùng v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AlohaMini2",
+     "chi_tiet_cad": [
+      "M1-LF-054_O_Main_Assembly_Post4"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-055",
+     "ten": "Đế nối trụ 4 AlohaMini2 (bắt xuống tấm thép M1-BS-032)",
+     "trang_thai_so": "dùng v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AlohaMini2",
+     "chi_tiet_cad": [
+      "M1-LF-055_O_POST4_Connector_Base"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-057",
+     "ten": "Khung T giữa AlohaMini2 (xe nâng: servo, bánh răng, 8 vòng bi)",
+     "trang_thai_so": "dùng v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AlohaMini2",
+     "chi_tiet_cad": [
+      "M1-LF-057_OB_T_Connector_Middle"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-LF-060",
+     "ten": "Giá chốt hãm in trên mặt khung T giữa",
+     "trang_thai_so": "CAD nháp",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-LF-060_latch_bracket"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-LF-061",
+     "ten": "Công tắc báo chốt đã rút (micro switch)",
+     "trang_thai_so": "CAD nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-LF-061_latch_sensor"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-SV-002",
+     "ten": "Servo Feetech STS3095 C002 12 V (3/tay: pan, vai, khuỷu; 1 trục nâng; tổng = 7)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-LF-lift_servo"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-001",
+     "ten": "Ray trước trạm hai tay, nhôm định hình 2040 dài 600 mm (rãnh T cho dời gá tay ±25 mm)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-001_ray_truoc_2040"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-002",
+     "ten": "Tai trạm 2040 dài 200 mm ×2 (ôm hai bên cột nâng)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-002_tai_2040_L",
+      "M1-TR-002_tai_2040_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-003",
+     "ten": "Gá đáy tay in (tấm 7 mm + gân) ×2, bắt ray bằng con trượt T",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-003_ga_day_tay_L",
+      "M1-TR-003_ga_day_tay_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-004",
+     "ten": "Khối bạc dưới tai ×2 (chứa bạc thép Ø8: trái lỗ tròn, phải lỗ dẹt)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-004_khoi_bac_L",
+      "M1-TR-004_khoi_bac_R",
+      "M1-TR-004b_bac_thep_L",
+      "M1-TR-004b_bac_thep_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-005",
+     "ten": "Cầu in đỡ cột camera, bắc qua cụm chốt hãm trục nâng",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-005_cau_cot_camera"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-006",
+     "ten": "Cột camera đầu nhôm 2020 dài ~460 mm",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-006_cot_camera_2020"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-007",
+     "ten": "Gá pan + tilt camera đầu (đĩa pan, hai má tilt, chốt định vị 35°/50°)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-007_ga_pan_tilt",
+      "M1-TR-007b_num_khoa_M5_L",
+      "M1-TR-007b_num_khoa_M5_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-008",
+     "ten": "Khoá kéo 100 kg có chốt an toàn ×2 (trạm ↔ đế ngàm)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-008_khoa_keo_L",
+      "M1-TR-008_khoa_keo_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-009",
+     "ten": "Công tắc hành trình KW12 báo khoá đóng ×2 (DOCK_L/DOCK_R, nối tiếp vòng E-stop)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-009_cong_tac_khoa_L",
+      "M1-TR-009_cong_tac_khoa_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-010",
+     "ten": "Giắc D-sub combo 21W4 nửa đực (4 tiếp điểm 40 A + 17 tín hiệu), trên trạm",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-010_giac_21W4_duc"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-011",
+     "ten": "Giá in giắc 21W4 dưới tai trái",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-011_gia_giac"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-012",
+     "ten": "Hộp E-stop trạm (mặt ngoài tai trái)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-012_estop_hop",
+      "M1-TR-012b_estop_nam"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-013",
+     "ten": "Hộp điện trạm (cầu chì 2 nhánh tay, 2 bo bus, cách ly, hub USB, buck 5 V)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-013_hop_dien_tram"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-014",
+     "ten": "Tay cầm in ×2 ở đuôi tai",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-014_tay_cam_L",
+      "M1-TR-014_tay_cam_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-020",
+     "ten": "Đế ngàm xe nâng chữ U (bắt khung T giữa M1-LF-057)",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "CC-BY-NC-SA-4.0",
+     "nguon_goc": "Faibotic",
+     "chi_tiet_cad": [
+      "M1-TR-020_de_ngam_xe"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-021",
+     "ten": "Chốt côn thép Ø8 ×2 trên đế ngàm",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-021_chot_con_L_xe",
+      "M1-TR-021_chot_con_R_xe"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-022",
+     "ten": "Móc giữ khoá kéo ×2 trên đế ngàm",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-022_moc_giu_L_xe",
+      "M1-TR-022_moc_giu_R_xe"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-TR-023",
+     "ten": "Giắc D-sub combo 21W4 nửa cái gắn nổi ±0,8 mm trên đế ngàm",
+     "trang_thai_so": "CAD nháp S2",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "mua",
+     "chi_tiet_cad": [
+      "M1-TR-023_giac_21W4_cai_xe"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "lift.base.ivory",
+    "lift.lift.alu",
+    "lift.lift.ivory",
+    "lift.lift.navy",
+    "lift.lift.servo",
+    "lift.lift.servo_body.lift",
+    "lift.lift.steel"
+   ],
+   "bbox_world_home_m": [
+    -0.1559,
+    -0.3095,
+    0.039,
+    0.1219,
+    0.3095,
+    0.9557
+   ],
+   "tam_world_home_m": [
+    -0.017,
+    0.0,
+    0.4973
+   ]
+  },
+  {
+   "ten": "shoulder_L",
+   "mo_ta": "Vai trái AM-ARM200: đế J1, khung xoay J2, cánh tay J3",
+   "ma": [
+    "M1-SH-005",
+    "M1-SH-006",
+    "M1-SH-019",
+    "M1-SV-002"
+   ],
+   "ma_chinh": [
+    "M1-SH-005",
+    "M1-SH-006"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-SH-005",
+     "ten": "Đế tay J1 (O_F_J1_Base)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-SH-005_O_F_J1_Base_L"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SH-006",
+     "ten": "Vai J3 upstream (OB_F_J3_Shoulder) (×2 tay)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-SH-006_OB_F_J3_Shoulder_L"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SH-019",
+     "ten": "Khung xoay pan J2 (O_F_J2_Rotation) (×2 tay)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-SH-019_O_F_J2_Rotation_L"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SV-002",
+     "ten": "Servo Feetech STS3095 C002 12 V (3/tay: pan, vai, khuỷu; 1 trục nâng; tổng = 7)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "STS3095_left_elbow",
+      "STS3095_left_pan",
+      "STS3095_left_shoulder"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "shoulder_L.lift.ivory",
+    "shoulder_L.lift.servo_body.left_pan",
+    "shoulder_L.left_pan.navy",
+    "shoulder_L.left_pan.servo_body.left_shoulder",
+    "shoulder_L.left_pan.steel",
+    "shoulder_L.left_shoulder.ivory",
+    "shoulder_L.left_shoulder.servo_body.left_elbow",
+    "shoulder_L.left_shoulder.steel"
+   ],
+   "bbox_world_home_m": [
+    -0.0212,
+    0.1682,
+    0.4137,
+    0.2726,
+    0.3068,
+    0.62
+   ],
+   "tam_world_home_m": [
+    0.1257,
+    0.2375,
+    0.5169
+   ]
+  },
+  {
+   "ten": "shoulder_R",
+   "mo_ta": "Vai phải",
+   "ma": [
+    "M1-SH-005",
+    "M1-SH-006",
+    "M1-SH-019",
+    "M1-SV-002"
+   ],
+   "ma_chinh": [
+    "M1-SH-005",
+    "M1-SH-006"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-SH-005",
+     "ten": "Đế tay J1 (O_F_J1_Base)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-SH-005_O_F_J1_Base_R"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SH-006",
+     "ten": "Vai J3 upstream (OB_F_J3_Shoulder) (×2 tay)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-SH-006_OB_F_J3_Shoulder_R"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SH-019",
+     "ten": "Khung xoay pan J2 (O_F_J2_Rotation) (×2 tay)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-SH-019_O_F_J2_Rotation_R"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SV-002",
+     "ten": "Servo Feetech STS3095 C002 12 V (3/tay: pan, vai, khuỷu; 1 trục nâng; tổng = 7)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "STS3095_right_elbow",
+      "STS3095_right_pan",
+      "STS3095_right_shoulder"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "shoulder_R.lift.ivory",
+    "shoulder_R.lift.servo_body.right_pan",
+    "shoulder_R.right_pan.navy",
+    "shoulder_R.right_pan.servo_body.right_shoulder",
+    "shoulder_R.right_pan.steel",
+    "shoulder_R.right_shoulder.ivory",
+    "shoulder_R.right_shoulder.servo_body.right_elbow",
+    "shoulder_R.right_shoulder.steel"
+   ],
+   "bbox_world_home_m": [
+    -0.0212,
+    -0.3068,
+    0.4137,
+    0.2726,
+    -0.1682,
+    0.62
+   ],
+   "tam_world_home_m": [
+    0.1257,
+    -0.2375,
+    0.5169
+   ]
+  },
+  {
+   "ten": "arm_L",
+   "mo_ta": "Tay trái: khuỷu J4, giá J5, vỏ cổ tay J56, servo gập, yaw và cuộn STS3215",
+   "ma": [
+    "M1-AR-001",
+    "M1-AR-002",
+    "M1-AR-003",
+    "M1-AR-004",
+    "M1-AR-005",
+    "M1-AR-011",
+    "M1-SV-001"
+   ],
+   "ma_chinh": [
+    "M1-AR-001",
+    "M1-SV-001"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-AR-001",
+     "ten": "Khuỷu J4 (cẳng tay, ngàm servo khuỷu) (×2 tay)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-001_OB_F_J4_Elbow_L"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-AR-002",
+     "ten": "Giá nối khuỷu-cổ tay J5 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_L"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-003",
+     "ten": "Vỏ cổ tay J5/J6 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-003_OB_F_J56_Wrist_Housing_L"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-004",
+     "ten": "Đáy cổ tay J5/J6 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-004_OB_F_J56_Bottom_L"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-005",
+     "ten": "Nắp cổ tay J5/J6 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-005_OB_F_J56_Top_L"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-011",
+     "ten": "Chốt J5 (bản có ổ bi) (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-011_OB_F_J5_Pin_Bearing_L"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-SV-001",
+     "ten": "Servo Feetech STS3215 C018 12 V 1/345 (4/tay: gập, yaw, cuộn, kẹp; 3 bánh; tổng = 11)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-SV-001_wrist_flex_L",
+      "M1-SV-001_wrist_roll_L",
+      "M1-SV-001_wrist_yaw_L",
+      "STS3215_left_wrist_flex",
+      "STS3215_left_wrist_roll",
+      "STS3215_left_wrist_yaw"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "arm_L.left_elbow.navy",
+    "arm_L.left_elbow.servo_body.left_wrist_flex",
+    "arm_L.left_elbow.steel",
+    "arm_L.left_wrist_flex.ivory",
+    "arm_L.left_wrist_yaw.navy",
+    "arm_L.left_wrist_yaw.servo_body.left_wrist_roll",
+    "arm_L.left_wrist_yaw.servo_body.left_wrist_yaw"
+   ],
+   "bbox_world_home_m": [
+    0.234,
+    0.185,
+    0.5172,
+    0.5724,
+    0.2892,
+    0.6205
+   ],
+   "tam_world_home_m": [
+    0.4032,
+    0.2371,
+    0.5689
+   ]
+  },
+  {
+   "ten": "arm_R",
+   "mo_ta": "Tay phải",
+   "ma": [
+    "M1-AR-001",
+    "M1-AR-002",
+    "M1-AR-003",
+    "M1-AR-004",
+    "M1-AR-005",
+    "M1-AR-011",
+    "M1-SV-001"
+   ],
+   "ma_chinh": [
+    "M1-AR-001",
+    "M1-SV-001"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-AR-001",
+     "ten": "Khuỷu J4 (cẳng tay, ngàm servo khuỷu) (×2 tay)",
+     "trang_thai_so": "dùng lại v0.5 P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-001_OB_F_J4_Elbow_R"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-AR-002",
+     "ten": "Giá nối khuỷu-cổ tay J5 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-003",
+     "ten": "Vỏ cổ tay J5/J6 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-003_OB_F_J56_Wrist_Housing_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-004",
+     "ten": "Đáy cổ tay J5/J6 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-004_OB_F_J56_Bottom_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-005",
+     "ten": "Nắp cổ tay J5/J6 (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-005_OB_F_J56_Top_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-AR-011",
+     "ten": "Chốt J5 (bản có ổ bi) (×2 tay)",
+     "trang_thai_so": "nháp",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-011_OB_F_J5_Pin_Bearing_R"
+     ],
+     "nhap": true
+    },
+    {
+     "ma": "M1-SV-001",
+     "ten": "Servo Feetech STS3215 C018 12 V 1/345 (4/tay: gập, yaw, cuộn, kẹp; 3 bánh; tổng = 11)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-SV-001_wrist_flex_R",
+      "M1-SV-001_wrist_roll_R",
+      "M1-SV-001_wrist_yaw_R",
+      "STS3215_right_wrist_flex",
+      "STS3215_right_wrist_roll",
+      "STS3215_right_wrist_yaw"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "arm_R.right_elbow.navy",
+    "arm_R.right_elbow.servo_body.right_wrist_flex",
+    "arm_R.right_elbow.steel",
+    "arm_R.right_wrist_flex.ivory",
+    "arm_R.right_wrist_yaw.navy",
+    "arm_R.right_wrist_yaw.servo_body.right_wrist_roll",
+    "arm_R.right_wrist_yaw.servo_body.right_wrist_yaw"
+   ],
+   "bbox_world_home_m": [
+    0.234,
+    -0.2892,
+    0.5172,
+    0.5724,
+    -0.185,
+    0.6205
+   ],
+   "tam_world_home_m": [
+    0.4032,
+    -0.2371,
+    0.5689
+   ]
+  },
+  {
+   "ten": "gripper_L",
+   "mo_ta": "Kẹp gốc AM-ARM200 trái: thân J7, hàm J7, giá camera, servo kẹp STS3215",
+   "ma": [
+    "M1-AR-007",
+    "M1-AR-008",
+    "M1-AR-027",
+    "M1-SV-001"
+   ],
+   "ma_chinh": [
+    "M1-AR-007"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-AR-007",
+     "ten": "Thân kẹp J7 (×2 tay)",
+     "trang_thai_so": "dùng ở P-L (kẹp mặc định)",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-007_OB_F_J7_Gripper_L"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-AR-008",
+     "ten": "Hàm kẹp J7 (×2 tay)",
+     "trang_thai_so": "dùng ở P-L (kẹp mặc định)",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-008_OB_F_J7_Jaw_L"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-AR-027",
+     "ten": "Giá camera cổ tay OB_F_Camera upstream nguyên (×2 tay)",
+     "trang_thai_so": "dùng ở P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-027_OB_F_Camera_L"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SV-001",
+     "ten": "Servo Feetech STS3215 C018 12 V 1/345 (4/tay: gập, yaw, cuộn, kẹp; 3 bánh; tổng = 11)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-SV-001_gripper_L",
+      "STS3215_left_gripper"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "gripper_L.left_wrist_roll.ivory",
+    "gripper_L.left_wrist_roll.servo_body.left_gripper",
+    "gripper_L.left_gripper.navy"
+   ],
+   "bbox_world_home_m": [
+    0.5221,
+    0.2033,
+    0.5069,
+    0.6443,
+    0.2689,
+    0.6361
+   ],
+   "tam_world_home_m": [
+    0.5832,
+    0.2361,
+    0.5715
+   ]
+  },
+  {
+   "ten": "gripper_R",
+   "mo_ta": "Kẹp phải",
+   "ma": [
+    "M1-AR-007",
+    "M1-AR-008",
+    "M1-AR-027",
+    "M1-SV-001"
+   ],
+   "ma_chinh": [
+    "M1-AR-007"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-AR-007",
+     "ten": "Thân kẹp J7 (×2 tay)",
+     "trang_thai_so": "dùng ở P-L (kẹp mặc định)",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-007_OB_F_J7_Gripper_R"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-AR-008",
+     "ten": "Hàm kẹp J7 (×2 tay)",
+     "trang_thai_so": "dùng ở P-L (kẹp mặc định)",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-008_OB_F_J7_Jaw_R"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-AR-027",
+     "ten": "Giá camera cổ tay OB_F_Camera upstream nguyên (×2 tay)",
+     "trang_thai_so": "dùng ở P-L",
+     "license": "Apache-2.0 (dùng thương mại được; giữ NOTICE, điều 4)",
+     "nguon_goc": "AM-ARM",
+     "chi_tiet_cad": [
+      "M1-AR-027_OB_F_Camera_R"
+     ],
+     "nhap": false
+    },
+    {
+     "ma": "M1-SV-001",
+     "ten": "Servo Feetech STS3215 C018 12 V 1/345 (4/tay: gập, yaw, cuộn, kẹp; 3 bánh; tổng = 11)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-SV-001_gripper_R",
+      "STS3215_right_gripper"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "gripper_R.right_wrist_roll.ivory",
+    "gripper_R.right_wrist_roll.servo_body.right_gripper",
+    "gripper_R.right_gripper.navy"
+   ],
+   "bbox_world_home_m": [
+    0.5221,
+    -0.2689,
+    0.5069,
+    0.6443,
+    -0.2033,
+    0.6361
+   ],
+   "tam_world_home_m": [
+    0.5832,
+    -0.2361,
+    0.5715
+   ]
+  },
+  {
+   "ten": "camera",
+   "mo_ta": "Camera đầu H65V1 trên cột trạm và camera cổ tay trên giá OB_F_Camera của kẹp",
+   "ma": [
+    "M1-CM-001"
+   ],
+   "ma_chinh": [
+    "M1-CM-001"
+   ],
+   "chi_tiet": [
+    {
+     "ma": "M1-CM-001",
+     "ten": "Camera USB 720p H65V1 2,4 mm (1 đầu + 2 cổ tay)",
+     "trang_thai_so": "nháp",
+     "license": "Thương mại, không phải mã mở",
+     "nguon_goc": "thương mại",
+     "chi_tiet_cad": [
+      "M1-CM-001_head_cam",
+      "M1-CM-001_wrist_cam_L",
+      "M1-CM-001_wrist_cam_R"
+     ],
+     "nhap": true
+    }
+   ],
+   "trang_thai": "nháp",
+   "node": [
+    "camera.lift.servo",
+    "camera.left_wrist_roll.servo",
+    "camera.right_wrist_roll.servo"
+   ],
+   "bbox_world_home_m": [
+    0.0481,
+    -0.2499,
+    0.5841,
+    0.5547,
+    0.2499,
+    0.9553
+   ],
+   "tam_world_home_m": [
+    0.3014,
+    0.0,
+    0.7697
+   ]
+  }
+ ]
+}

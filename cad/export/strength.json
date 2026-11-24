@@ -1,0 +1,186 @@
+{
+ "T_design_Nmm": 3677.49375,
+ "T_stall_both_Nmm": 18632.635000000002,
+ "Kt": 3.0,
+ "F_bolt_N": 45.968671875,
+ "bearing_MPa": 1.915361328125,
+ "tearout_shear_MPa": 0.45603841145833335,
+ "sigma_MPa": {
+  "neck_bending": 3.064578125,
+  "back_wall_bending": 3.926708873149203,
+  "cheek_bending": 3.2503101325757573
+ },
+ "Z": {
+  "neck": 1200.0,
+  "back": 936.5333333333333,
+  "cheek": 360.0
+ },
+ "torque_allow_kgcm_PETG_SF2_Kt3": {
+  "neck": 79.5,
+  "back": 62.1,
+  "cheek": 75.0,
+  "bolt": 127.3
+ },
+ "rows": [
+  {
+   "mat": "PETG",
+   "check": "neck_bending",
+   "load": "37.5 kg·cm",
+   "sigma": 3.06,
+   "sigma_Kt": 9.19,
+   "SF_Kt": 4.24
+  },
+  {
+   "mat": "PETG",
+   "check": "neck_bending",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 15.53,
+   "sigma_Kt": 46.58,
+   "SF_Kt": 0.84
+  },
+  {
+   "mat": "PETG",
+   "check": "back_wall_bending",
+   "load": "37.5 kg·cm",
+   "sigma": 3.93,
+   "sigma_Kt": 11.78,
+   "SF_Kt": 3.31
+  },
+  {
+   "mat": "PETG",
+   "check": "back_wall_bending",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 19.9,
+   "sigma_Kt": 59.69,
+   "SF_Kt": 0.65
+  },
+  {
+   "mat": "PETG",
+   "check": "cheek_bending",
+   "load": "37.5 kg·cm",
+   "sigma": 3.25,
+   "sigma_Kt": 9.75,
+   "SF_Kt": 4.0
+  },
+  {
+   "mat": "PETG",
+   "check": "cheek_bending",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 16.47,
+   "sigma_Kt": 49.4,
+   "SF_Kt": 0.79
+  },
+  {
+   "mat": "PETG",
+   "check": "bolt_bearing",
+   "load": "37.5 kg·cm",
+   "sigma": 1.92,
+   "sigma_Kt": 5.75,
+   "SF_Kt": 6.79
+  },
+  {
+   "mat": "PETG",
+   "check": "bolt_bearing",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 9.7,
+   "sigma_Kt": 29.11,
+   "SF_Kt": 1.34
+  },
+  {
+   "mat": "PETG",
+   "check": "tearout(0.6*lim)",
+   "load": "37.5 kg·cm",
+   "sigma": 0.46,
+   "sigma_Kt": 1.37,
+   "SF_Kt": 17.1
+  },
+  {
+   "mat": "PETG",
+   "check": "tearout(0.6*lim)",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 2.31,
+   "sigma_Kt": 6.93,
+   "SF_Kt": 3.38
+  },
+  {
+   "mat": "PLA",
+   "check": "neck_bending",
+   "load": "37.5 kg·cm",
+   "sigma": 3.06,
+   "sigma_Kt": 9.19,
+   "SF_Kt": 5.55
+  },
+  {
+   "mat": "PLA",
+   "check": "neck_bending",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 15.53,
+   "sigma_Kt": 46.58,
+   "SF_Kt": 1.09
+  },
+  {
+   "mat": "PLA",
+   "check": "back_wall_bending",
+   "load": "37.5 kg·cm",
+   "sigma": 3.93,
+   "sigma_Kt": 11.78,
+   "SF_Kt": 4.33
+  },
+  {
+   "mat": "PLA",
+   "check": "back_wall_bending",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 19.9,
+   "sigma_Kt": 59.69,
+   "SF_Kt": 0.85
+  },
+  {
+   "mat": "PLA",
+   "check": "cheek_bending",
+   "load": "37.5 kg·cm",
+   "sigma": 3.25,
+   "sigma_Kt": 9.75,
+   "SF_Kt": 5.23
+  },
+  {
+   "mat": "PLA",
+   "check": "cheek_bending",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 16.47,
+   "sigma_Kt": 49.4,
+   "SF_Kt": 1.03
+  },
+  {
+   "mat": "PLA",
+   "check": "bolt_bearing",
+   "load": "37.5 kg·cm",
+   "sigma": 1.92,
+   "sigma_Kt": 5.75,
+   "SF_Kt": 8.88
+  },
+  {
+   "mat": "PLA",
+   "check": "bolt_bearing",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 9.7,
+   "sigma_Kt": 29.11,
+   "SF_Kt": 1.75
+  },
+  {
+   "mat": "PLA",
+   "check": "tearout(0.6*lim)",
+   "load": "37.5 kg·cm",
+   "sigma": 0.46,
+   "sigma_Kt": 1.37,
+   "SF_Kt": 22.37
+  },
+  {
+   "mat": "PLA",
+   "check": "tearout(0.6*lim)",
+   "load": "2x95 kg·cm chặn",
+   "sigma": 2.31,
+   "sigma_Kt": 6.93,
+   "SF_Kt": 4.41
+  }
+ ]
+}

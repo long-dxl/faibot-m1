@@ -1,0 +1,279 @@
+{
+ "ngay": "21/11/2026",
+ "gia_dinh": {
+  "density_g_cm3": {
+   "PETG": 1.27,
+   "PLA": 1.24
+  },
+  "nozzle_mm": 0.4,
+  "cases(thanh,infill)": {
+   "thap(4 thanh,15%)": [
+    4,
+    0.15
+   ],
+   "giua(6 thanh,20%)": [
+    6,
+    0.2
+   ],
+   "cao(6 thanh,40%)": [
+    6,
+    0.4
+   ]
+  },
+  "vo_in": "thể tích vỏ = min(diện tích x thanh x 0,4 mm, V) (cận trên); nội thất = infill x phần còn lại",
+  "cờ": "mật độ [điển hình, chưa kiểm nguồn]; thành/infill từ 3d-print.md upstream (4-6 thanh, 15-20%)",
+  "STS3215_g": 70.5,
+  "STS3095_g": 187.5,
+  "oc_g": 1.1,
+  "cap_g": 4.0,
+  "vi_tri_servo": "đặt tại trục khớp/trọng tâm vỏ [giả định, thân servo thật lệch ~20 mm]"
+ },
+ "truc_khop_suy_tu_bbox_mm": {
+  "y_elbow_stp": 66.5,
+  "z_elbow_stp": 147.0,
+  "y_wrist_stp": -162.1,
+  "y_dau_ngon_co_dinh": -327.0,
+  "y_dau_ngon_xa_nhat": -330.7
+ },
+ "chieu_dai_mm": {
+  "L1_link_Faibotic": 140.0,
+  "L2_khuyu_co_tay_CAD": 228.6,
+  "co_tay_den_dau_ngon_CAD": 165.0,
+  "tam_voi_den_dau_ngon": 533.5
+ },
+ "chi_tiet": {
+  "link_vai_khuyu(Faibotic)": {
+   "seg": "upper",
+   "origin": "faibotic",
+   "file": "faibotic/shoulder.py",
+   "mat": "PETG",
+   "V_cm3": 40.53,
+   "A_cm2": 135.5,
+   "s_com_mm": 67.5,
+   "com_stp": [
+    67.5,
+    0.0,
+    0.0
+   ]
+  },
+  "J4_Elbow": {
+   "seg": "fore",
+   "origin": "upstream",
+   "file": "OB_F_J4_Elbow.stp",
+   "mat": "PETG",
+   "V_cm3": 255.59,
+   "A_cm2": 718.4,
+   "s_com_mm": 80.2,
+   "com_stp": [
+    -17.9,
+    -13.7,
+    147.2
+   ]
+  },
+  "J5_Elbow_Wrist_Bracket": {
+   "seg": "fore",
+   "origin": "upstream",
+   "file": "OB_F_J5_Elbow_Wrist_Bracket.stp",
+   "mat": "PETG",
+   "V_cm3": 30.44,
+   "A_cm2": 129.4,
+   "s_com_mm": 215.2,
+   "com_stp": [
+    -17.5,
+    -148.7,
+    148.9
+   ]
+  },
+  "OB_F_J56_Wrist_Housing": {
+   "seg": "wrist",
+   "origin": "upstream",
+   "file": "OB_F_J56_Wrist_Housing.stp",
+   "mat": "PETG",
+   "V_cm3": 76.78,
+   "A_cm2": 300.7,
+   "s_com_mm": 32.3,
+   "com_stp": [
+    -17.6,
+    -194.4,
+    161.4
+   ]
+  },
+  "OB_F_J56_Bottom": {
+   "seg": "wrist",
+   "origin": "upstream",
+   "file": "OB_F_J56_Bottom.stp",
+   "mat": "PETG",
+   "V_cm3": 30.62,
+   "A_cm2": 114.5,
+   "s_com_mm": 22.0,
+   "com_stp": [
+    5.9,
+    -184.1,
+    113.9
+   ]
+  },
+  "OB_F_J56_Top": {
+   "seg": "wrist",
+   "origin": "upstream",
+   "file": "OB_F_J56_Top.stp",
+   "mat": "PETG",
+   "V_cm3": 1.46,
+   "A_cm2": 15.7,
+   "s_com_mm": 16.5,
+   "com_stp": [
+    -17.5,
+    -178.6,
+    204.7
+   ]
+  },
+  "OB_F_J5_Pin_No_Bearing": {
+   "seg": "wrist",
+   "origin": "upstream",
+   "file": "OB_F_J5_Pin_No_Bearing.stp",
+   "mat": "PETG",
+   "V_cm3": 10.79,
+   "A_cm2": 28.3,
+   "s_com_mm": 0.0,
+   "com_stp": [
+    -17.8,
+    -162.1,
+    130.2
+   ]
+  },
+  "OB_F_J7_Gripper": {
+   "seg": "hand",
+   "origin": "upstream",
+   "file": "OB_F_J7_Gripper.stp",
+   "mat": "PETG",
+   "V_cm3": 61.73,
+   "A_cm2": 188.2,
+   "s_com_mm": 91.0,
+   "com_stp": [
+    -2.8,
+    -253.1,
+    50.9
+   ]
+  },
+  "OB_F_J7_Jaw": {
+   "seg": "hand",
+   "origin": "upstream",
+   "file": "OB_F_J7_Jaw.stp",
+   "mat": "PETG",
+   "V_cm3": 28.18,
+   "A_cm2": 103.1,
+   "s_com_mm": 114.5,
+   "com_stp": [
+    -84.4,
+    -276.6,
+    124.3
+   ]
+  },
+  "OB_F_Camera": {
+   "seg": "hand",
+   "origin": "upstream",
+   "file": "OB_F_Camera.stp",
+   "mat": "PETG",
+   "V_cm3": 12.63,
+   "A_cm2": 91.9,
+   "s_com_mm": 61.7,
+   "com_stp": [
+    31.1,
+    -223.8,
+    177.9
+   ]
+  }
+ },
+ "doi_chieu_khong_tinh": {
+  "OB_F_J3_Shoulder": {
+   "V_cm3": 244.41,
+   "A_cm2": 627.9
+  },
+  "O_F_J1_Base": {
+   "V_cm3": 296.15,
+   "A_cm2": 1175.8
+  },
+  "O_F_J2_Rotation": {
+   "V_cm3": 150.81,
+   "A_cm2": 708.8
+  },
+  "OB_F_WaveShare_Mounting_Plate": {
+   "V_cm3": 9.09,
+   "A_cm2": 53.5
+  },
+  "OB_F_J5_Pin_Bearing": {
+   "V_cm3": 9.82,
+   "A_cm2": 26.2
+  },
+  "cradle(Faibotic)": {
+   "V_cm3": 107.96,
+   "A_cm2": 377.6
+  }
+ },
+ "doan_tay": {
+  "thap(4 thanh,15%)": {
+   "upper": {
+    "mass_g": 41.7,
+    "com_from_joint_mm": 67.5
+   },
+   "fore": {
+    "mass_g": 491.1,
+    "com_from_joint_mm": 78.5
+   },
+   "wrist": {
+    "mass_g": 205.9,
+    "com_from_joint_mm": 27.2
+   },
+   "hand": {
+    "mass_g": 182.2,
+    "com_from_joint_mm": 41.9
+   }
+  },
+  "giua(6 thanh,20%)": {
+   "upper": {
+    "mass_g": 53.9,
+    "com_from_joint_mm": 67.5
+   },
+   "fore": {
+    "mass_g": 569.0,
+    "com_from_joint_mm": 81.4
+   },
+   "wrist": {
+    "mass_g": 244.9,
+    "com_from_joint_mm": 27.2
+   },
+   "hand": {
+    "mass_g": 208.6,
+    "com_from_joint_mm": 43.6
+   }
+  },
+  "cao(6 thanh,40%)": {
+   "upper": {
+    "mass_g": 56.0,
+    "com_from_joint_mm": 67.5
+   },
+   "fore": {
+    "mass_g": 590.1,
+    "com_from_joint_mm": 81.3
+   },
+   "wrist": {
+    "mass_g": 247.9,
+    "com_from_joint_mm": 27.1
+   },
+   "hand": {
+    "mass_g": 213.7,
+    "com_from_joint_mm": 43.7
+   }
+  }
+ },
+ "tong_tay_g": {
+  "thap(4 thanh,15%)": 920.9,
+  "giua(6 thanh,20%)": 1076.4,
+  "cao(6 thanh,40%)": 1107.7
+ },
+ "than_pan_g": {
+  "thap(4 thanh,15%)": 611.9,
+  "giua(6 thanh,20%)": 686.0,
+  "cao(6 thanh,40%)": 690.4
+ },
+ "ghi_chu": "chưa gồm module camera (chỉ giá đỡ), WaveShare, dây nguồn/bus lên cột; trục khớp suy từ bbox"
+}

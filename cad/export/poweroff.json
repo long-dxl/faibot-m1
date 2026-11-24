@@ -1,0 +1,1846 @@
+{
+ "capacity_J": {
+  "shoulder_low": 0.348,
+  "shoulder_up": 0.696,
+  "elbow_high": 0.197,
+  "elbow_low": 0.338
+ },
+ "T_allow_nm": 9.3,
+ "link_alu": true,
+ "pad_cap_detail": {
+  "shoulder_low": {
+   "cap_J": 0.348,
+   "tau_nm": 9.307,
+   "bottom": false,
+   "pen_mm": 8.8,
+   "pen_hard_mm": 11.781
+  },
+  "shoulder_up": {
+   "cap_J": 0.696,
+   "tau_nm": 9.307,
+   "bottom": false,
+   "pen_mm": 8.8,
+   "pen_hard_mm": 9.425
+  },
+  "elbow_high": {
+   "cap_J": 0.197,
+   "tau_nm": 9.311,
+   "bottom": false,
+   "pen_mm": 4.19,
+   "pen_hard_mm": 5.323
+  },
+  "elbow_low": {
+   "cap_J": 0.338,
+   "tau_nm": 5.078,
+   "bottom": true,
+   "pen_mm": 2.522,
+   "pen_hard_mm": 2.522
+  }
+ },
+ "pads": {
+  "shoulder_low": {
+   "contact_deg": -80.5,
+   "hard_deg": -88.0,
+   "r_m": 0.09,
+   "shore": 50,
+   "area_mm2": 48.0,
+   "t_mm": 20.0
+  },
+  "shoulder_up": {
+   "contact_deg": 50.0,
+   "hard_deg": 62.0,
+   "r_m": 0.045,
+   "shore": 50,
+   "area_mm2": 96.0,
+   "t_mm": 20.0
+  },
+  "elbow_high": {
+   "contact_deg": 128.0,
+   "hard_deg": 133.0,
+   "r_m": 0.061,
+   "shore": 50,
+   "area_mm2": 32.0,
+   "t_mm": 7.0
+  },
+  "elbow_low": {
+   "contact_deg": -23.5,
+   "hard_deg": -32.0,
+   "r_m": 0.017,
+   "shore": 70,
+   "area_mm2": 156.0,
+   "t_mm": 10.0
+  }
+ },
+ "static_hold_nm": {
+  "hold_down_nm": 2.7357825455311255,
+  "hold_up_nm": 2.8819765934465673
+ },
+ "cases": {
+  "mo_hinh_sim|lo_xo_1|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 0.049,
+    "v_tcp": 0.07,
+    "tau_nm": 0.93,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     0
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.01,
+    "v_tcp": 0.08,
+    "tau_nm": 0.59,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.065,
+    "v_tcp": 0.05,
+    "tau_nm": 1.3,
+    "hard": false,
+    "start": [
+     -30,
+     130,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.085,
+    "v_tcp": 0.46,
+    "tau_nm": 0.96,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "mo_hinh_sim|lo_xo_1|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.06,
+    "v_tcp": 0.04,
+    "tau_nm": 2.16,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     0
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.079,
+    "v_tcp": 0.19,
+    "tau_nm": 1.73,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.324,
+    "v_tcp": 0.94,
+    "tau_nm": 2.82,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.471,
+    "v_tcp": 1.14,
+    "tau_nm": 2.68,
+    "hard": false,
+    "start": [
+     20,
+     -10,
+     -100
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_1|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 0.169,
+    "v_tcp": 0.03,
+    "tau_nm": 1.59,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     120
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.259,
+    "v_tcp": 0.2,
+    "tau_nm": 1.41,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.51,
+    "v_tcp": 0.98,
+    "tau_nm": 4.9,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.33,
+    "v_tcp": 0.63,
+    "tau_nm": 1.17,
+    "hard": false,
+    "start": [
+     49,
+     18,
+     -100
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_1|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.179,
+    "v_tcp": 0.01,
+    "tau_nm": 4.72,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     0
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.409,
+    "v_tcp": 0.39,
+    "tau_nm": 3.16,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 1.307,
+    "v_tcp": 1.82,
+    "tau_nm": 6.61,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 1.565,
+    "v_tcp": 2.13,
+    "tau_nm": 5.93,
+    "hard": false,
+    "start": [
+     20,
+     -10,
+     -100
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_1|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 2.364,
+    "v_tcp": 1.85,
+    "tau_nm": 35.94,
+    "hard": true,
+    "start": [
+     -5,
+     130,
+     120
+    ],
+    "cap_J": 0.348,
+    "ok": false
+   },
+   "elbow_low": {
+    "E_J": 1.421,
+    "v_tcp": 0.43,
+    "tau_nm": 3.74,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 3.495,
+    "v_tcp": 2.59,
+    "tau_nm": 159.63,
+    "hard": true,
+    "start": [
+     -55,
+     18,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 1.895,
+    "v_tcp": 0.51,
+    "tau_nm": 9.57,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     120
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_1|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.615,
+    "v_tcp": 0.83,
+    "tau_nm": 10.16,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     120
+    ],
+    "cap_J": 0.348,
+    "ok": false
+   },
+   "elbow_low": {
+    "E_J": 1.232,
+    "v_tcp": 0.34,
+    "tau_nm": 5.83,
+    "hard": true,
+    "start": [
+     -5,
+     18,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 3.902,
+    "v_tcp": 1.71,
+    "tau_nm": 18.61,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 5.796,
+    "v_tcp": 3.85,
+    "tau_nm": 60.97,
+    "hard": true,
+    "start": [
+     -80,
+     46,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   }
+  },
+  "mo_hinh_sim|lo_xo_dut_1_(0,5)|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 0.131,
+    "v_tcp": 0.08,
+    "tau_nm": 0.65,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.01,
+    "v_tcp": 0.08,
+    "tau_nm": 0.59,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.121,
+    "v_tcp": 0.19,
+    "tau_nm": 1.26,
+    "hard": false,
+    "start": [
+     -55,
+     130,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.154,
+    "v_tcp": 0.04,
+    "tau_nm": 1.68,
+    "hard": false,
+    "start": [
+     49,
+     46,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "mo_hinh_sim|lo_xo_dut_1_(0,5)|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.122,
+    "v_tcp": 0.16,
+    "tau_nm": 1.87,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.152,
+    "v_tcp": 0.19,
+    "tau_nm": 1.7,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.438,
+    "v_tcp": 1.01,
+    "tau_nm": 2.7,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.872,
+    "v_tcp": 1.38,
+    "tau_nm": 4.65,
+    "hard": false,
+    "start": [
+     20,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_dut_1_(0,5)|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 0.258,
+    "v_tcp": 0.14,
+    "tau_nm": 1.22,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.52,
+    "v_tcp": 0.22,
+    "tau_nm": 1.43,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.937,
+    "v_tcp": 1.21,
+    "tau_nm": 3.25,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 1.184,
+    "v_tcp": 1.65,
+    "tau_nm": 4.59,
+    "hard": false,
+    "start": [
+     20,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_dut_1_(0,5)|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.331,
+    "v_tcp": 0.27,
+    "tau_nm": 4.16,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.721,
+    "v_tcp": 0.4,
+    "tau_nm": 3.4,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 3.436,
+    "v_tcp": 2.45,
+    "tau_nm": 13.85,
+    "hard": true,
+    "start": [
+     -30,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 1.931,
+    "v_tcp": 2.09,
+    "tau_nm": 3.58,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_dut_1_(0,5)|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 1.77,
+    "v_tcp": 1.67,
+    "tau_nm": 19.6,
+    "hard": true,
+    "start": [
+     -30,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": false
+   },
+   "elbow_low": {
+    "E_J": 1.564,
+    "v_tcp": 0.39,
+    "tau_nm": 3.35,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 3.614,
+    "v_tcp": 3.71,
+    "tau_nm": 15.61,
+    "hard": true,
+    "start": [
+     -5,
+     -10,
+     -100
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 3.293,
+    "v_tcp": 2.98,
+    "tau_nm": 17.46,
+    "hard": false,
+    "start": [
+     -80,
+     74,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_dut_1_(0,5)|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.958,
+    "v_tcp": 0.51,
+    "tau_nm": 7.73,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 2.549,
+    "v_tcp": 2.09,
+    "tau_nm": 6.48,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 7.542,
+    "v_tcp": 3.18,
+    "tau_nm": 23.37,
+    "hard": true,
+    "start": [
+     -30,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 3.043,
+    "v_tcp": 0.97,
+    "tau_nm": 159.63,
+    "hard": true,
+    "start": [
+     -80,
+     102,
+     120
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   }
+  },
+  "mo_hinh_sim|lo_xo_dut_ca_hai_(0)|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 0.004,
+    "v_tcp": 0.09,
+    "tau_nm": 0.34,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.003,
+    "v_tcp": 0.08,
+    "tau_nm": 0.57,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.296,
+    "v_tcp": 0.3,
+    "tau_nm": 1.22,
+    "hard": false,
+    "start": [
+     -55,
+     130,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.445,
+    "v_tcp": 0.97,
+    "tau_nm": 2.81,
+    "hard": false,
+    "start": [
+     20,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "mo_hinh_sim|lo_xo_dut_ca_hai_(0)|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.309,
+    "v_tcp": 0.17,
+    "tau_nm": 1.56,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.227,
+    "v_tcp": 0.18,
+    "tau_nm": 1.68,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.439,
+    "v_tcp": 0.93,
+    "tau_nm": 2.57,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 1.372,
+    "v_tcp": 1.69,
+    "tau_nm": 6.53,
+    "hard": false,
+    "start": [
+     -5,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_dut_ca_hai_(0)|tai=0.0": {
+   "elbow_low": {
+    "E_J": 0.126,
+    "v_tcp": 0.2,
+    "tau_nm": 1.14,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "shoulder_low": {
+    "E_J": 0.014,
+    "v_tcp": 0.09,
+    "tau_nm": 1.23,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 2.463,
+    "v_tcp": 2.52,
+    "tau_nm": 11.85,
+    "hard": true,
+    "start": [
+     -5,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 0.883,
+    "v_tcp": 1.49,
+    "tau_nm": 1.94,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_dut_ca_hai_(0)|tai=0.5": {
+   "elbow_low": {
+    "E_J": 1.215,
+    "v_tcp": 0.41,
+    "tau_nm": 2.87,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "shoulder_low": {
+    "E_J": 1.271,
+    "v_tcp": 0.44,
+    "tau_nm": 4.51,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 5.492,
+    "v_tcp": 3.61,
+    "tau_nm": 15.82,
+    "hard": true,
+    "start": [
+     -80,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 0.536,
+    "v_tcp": 0.9,
+    "tau_nm": 3.21,
+    "hard": false,
+    "start": [
+     -55,
+     130,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_dut_ca_hai_(0)|tai=0.0": {
+   "elbow_low": {
+    "E_J": 3.071,
+    "v_tcp": 1.16,
+    "tau_nm": 6.45,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.338,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 5.364,
+    "v_tcp": 4.47,
+    "tau_nm": 20.28,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 3.842,
+    "v_tcp": 2.56,
+    "tau_nm": 159.63,
+    "hard": true,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_dut_ca_hai_(0)|tai=0.5": {
+   "elbow_low": {
+    "E_J": 4.905,
+    "v_tcp": 3.1,
+    "tau_nm": 7.15,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.338,
+    "ok": false
+   },
+   "shoulder_low": {
+    "E_J": 1.228,
+    "v_tcp": 0.26,
+    "tau_nm": 8.26,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 9.442,
+    "v_tcp": 3.08,
+    "tau_nm": 26.48,
+    "hard": true,
+    "start": [
+     -80,
+     18,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 5.64,
+    "v_tcp": 2.19,
+    "tau_nm": 159.63,
+    "hard": true,
+    "start": [
+     -80,
+     -10,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "lowstop_hit": {
+    "E_J": 2.636,
+    "v_tcp": 0.0,
+    "tau_nm": 0.0,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     -100
+    ],
+    "cap_J": 0.0,
+    "ok": false
+   }
+  },
+  "mo_hinh_sim|lo_xo_x2_(kẹt/căng)|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 0.075,
+    "v_tcp": 0.27,
+    "tau_nm": 2.01,
+    "hard": false,
+    "start": [
+     -55,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.03,
+    "v_tcp": 0.08,
+    "tau_nm": 0.6,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.122,
+    "v_tcp": 0.26,
+    "tau_nm": 1.51,
+    "hard": false,
+    "start": [
+     -30,
+     130,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   }
+  },
+  "mo_hinh_sim|lo_xo_x2_(kẹt/căng)|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.102,
+    "v_tcp": 0.33,
+    "tau_nm": 2.71,
+    "hard": false,
+    "start": [
+     -55,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.08,
+    "v_tcp": 0.19,
+    "tau_nm": 1.76,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.261,
+    "v_tcp": 0.81,
+    "tau_nm": 3.8,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.235,
+    "v_tcp": 0.72,
+    "tau_nm": 1.13,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_x2_(kẹt/căng)|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 0.849,
+    "v_tcp": 0.95,
+    "tau_nm": 7.75,
+    "hard": false,
+    "start": [
+     20,
+     130,
+     120
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.345,
+    "v_tcp": 0.2,
+    "tau_nm": 1.41,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 1.067,
+    "v_tcp": 0.81,
+    "tau_nm": 8.59,
+    "hard": false,
+    "start": [
+     -5,
+     130,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   }
+  },
+  "ma_sat_0,3x|lo_xo_x2_(kẹt/căng)|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 0.472,
+    "v_tcp": 0.32,
+    "tau_nm": 5.46,
+    "hard": false,
+    "start": [
+     -55,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.602,
+    "v_tcp": 0.4,
+    "tau_nm": 3.52,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 1.641,
+    "v_tcp": 2.23,
+    "tau_nm": 21.33,
+    "hard": false,
+    "start": [
+     -80,
+     46,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_x2_(kẹt/căng)|tai=0.0": {
+   "shoulder_low": {
+    "E_J": 9.308,
+    "v_tcp": 5.36,
+    "tau_nm": 112.77,
+    "hard": true,
+    "start": [
+     49,
+     130,
+     120
+    ],
+    "cap_J": 0.348,
+    "ok": false
+   },
+   "elbow_low": {
+    "E_J": 3.89,
+    "v_tcp": 0.57,
+    "tau_nm": 6.01,
+    "hard": true,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 5.917,
+    "v_tcp": 1.78,
+    "tau_nm": 159.63,
+    "hard": true,
+    "start": [
+     49,
+     -10,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   }
+  },
+  "khong_ma_sat_can_tren|lo_xo_x2_(kẹt/căng)|tai=0.5": {
+   "shoulder_low": {
+    "E_J": 7.666,
+    "v_tcp": 3.75,
+    "tau_nm": 77.95,
+    "hard": true,
+    "start": [
+     20,
+     130,
+     120
+    ],
+    "cap_J": 0.348,
+    "ok": false
+   },
+   "elbow_low": {
+    "E_J": 2.922,
+    "v_tcp": 0.51,
+    "tau_nm": 5.3,
+    "hard": true,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 8.334,
+    "v_tcp": 2.85,
+    "tau_nm": 159.63,
+    "hard": true,
+    "start": [
+     -5,
+     18,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 1.985,
+    "v_tcp": 0.81,
+    "tau_nm": 11.31,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   }
+  }
+ },
+ "pad_tol": {
+  "mo_hinh_sim|lo_xo_dut_ca_hai_(0)|tai=0.0|E_dem_x0.8": {
+   "shoulder_low": {
+    "E_J": 0.004,
+    "v_tcp": 0.09,
+    "tau_nm": 0.33,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.003,
+    "v_tcp": 0.08,
+    "tau_nm": 0.51,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.296,
+    "v_tcp": 0.3,
+    "tau_nm": 1.15,
+    "hard": false,
+    "start": [
+     -55,
+     130,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.445,
+    "v_tcp": 0.97,
+    "tau_nm": 2.59,
+    "hard": false,
+    "start": [
+     20,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "mo_hinh_sim|lo_xo_dut_ca_hai_(0)|tai=0.5|E_dem_x0.8": {
+   "shoulder_low": {
+    "E_J": 0.309,
+    "v_tcp": 0.17,
+    "tau_nm": 1.52,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.227,
+    "v_tcp": 0.19,
+    "tau_nm": 1.64,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.439,
+    "v_tcp": 0.93,
+    "tau_nm": 2.5,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 1.372,
+    "v_tcp": 1.69,
+    "tau_nm": 6.1,
+    "hard": false,
+    "start": [
+     -5,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "mo_hinh_sim|lo_xo_dut_ca_hai_(0)|tai=0.0|E_dem_x1.2": {
+   "shoulder_low": {
+    "E_J": 0.004,
+    "v_tcp": 0.09,
+    "tau_nm": 0.36,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.003,
+    "v_tcp": 0.08,
+    "tau_nm": 0.61,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.296,
+    "v_tcp": 0.3,
+    "tau_nm": 1.28,
+    "hard": false,
+    "start": [
+     -55,
+     130,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.445,
+    "v_tcp": 0.97,
+    "tau_nm": 3.01,
+    "hard": false,
+    "start": [
+     20,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "mo_hinh_sim|lo_xo_dut_ca_hai_(0)|tai=0.5|E_dem_x1.2": {
+   "shoulder_low": {
+    "E_J": 0.309,
+    "v_tcp": 0.17,
+    "tau_nm": 1.61,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.226,
+    "v_tcp": 0.18,
+    "tau_nm": 1.73,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 0.439,
+    "v_tcp": 0.93,
+    "tau_nm": 2.65,
+    "hard": false,
+    "start": [
+     -80,
+     102,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 1.372,
+    "v_tcp": 1.69,
+    "tau_nm": 6.91,
+    "hard": false,
+    "start": [
+     -5,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  }
+ },
+ "friction_sweep": {
+  "0.05": {
+   "shoulder_low": {
+    "E_J": 0.51,
+    "v_tcp": 0.03,
+    "tau_nm": 8.9,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     0
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 1.046,
+    "v_tcp": 0.52,
+    "tau_nm": 5.04,
+    "hard": true,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": false
+   },
+   "elbow_high": {
+    "E_J": 5.428,
+    "v_tcp": 3.71,
+    "tau_nm": 31.27,
+    "hard": true,
+    "start": [
+     -80,
+     46,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 3.63,
+    "v_tcp": 1.93,
+    "tau_nm": 17.46,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   }
+  },
+  "0.2": {
+   "shoulder_low": {
+    "E_J": 0.142,
+    "v_tcp": 0.19,
+    "tau_nm": 7.0,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.941,
+    "v_tcp": 0.49,
+    "tau_nm": 4.44,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 4.57,
+    "v_tcp": 3.32,
+    "tau_nm": 31.89,
+    "hard": true,
+    "start": [
+     -80,
+     46,
+     -100
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 2.705,
+    "v_tcp": 1.76,
+    "tau_nm": 15.04,
+    "hard": true,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   }
+  },
+  "0.5": {
+   "shoulder_low": {
+    "E_J": 0.099,
+    "v_tcp": 0.1,
+    "tau_nm": 4.02,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.348,
+    "ok": true
+   },
+   "elbow_low": {
+    "E_J": 0.82,
+    "v_tcp": 0.4,
+    "tau_nm": 3.43,
+    "hard": false,
+    "start": [
+     -80,
+     -10,
+     -100
+    ],
+    "cap_J": 0.338,
+    "ok": true
+   },
+   "elbow_high": {
+    "E_J": 3.921,
+    "v_tcp": 2.8,
+    "tau_nm": 41.92,
+    "hard": true,
+    "start": [
+     -80,
+     18,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 1.287,
+    "v_tcp": 1.19,
+    "tau_nm": 9.74,
+    "hard": false,
+    "start": [
+     -55,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": false
+   }
+  },
+  "1.0": {
+   "elbow_high": {
+    "E_J": 2.533,
+    "v_tcp": 2.38,
+    "tau_nm": 40.3,
+    "hard": true,
+    "start": [
+     -80,
+     18,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 0.218,
+    "v_tcp": 0.68,
+    "tau_nm": 1.4,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "1.5": {
+   "elbow_high": {
+    "E_J": 1.298,
+    "v_tcp": 1.78,
+    "tau_nm": 17.45,
+    "hard": false,
+    "start": [
+     -80,
+     46,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": false
+   },
+   "shoulder_up": {
+    "E_J": 0.084,
+    "v_tcp": 0.46,
+    "tau_nm": 1.29,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "2.0": {
+   "elbow_high": {
+    "E_J": 0.637,
+    "v_tcp": 1.28,
+    "tau_nm": 6.86,
+    "hard": false,
+    "start": [
+     -80,
+     46,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.022,
+    "v_tcp": 0.23,
+    "tau_nm": 1.33,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "2.5": {
+   "elbow_high": {
+    "E_J": 0.113,
+    "v_tcp": 0.5,
+    "tau_nm": 3.81,
+    "hard": false,
+    "start": [
+     -80,
+     74,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.0,
+    "v_tcp": 0.03,
+    "tau_nm": 0.23,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  },
+  "3.0": {
+   "elbow_high": {
+    "E_J": 0.0,
+    "v_tcp": 0.02,
+    "tau_nm": 0.88,
+    "hard": false,
+    "start": [
+     -80,
+     130,
+     0
+    ],
+    "cap_J": 0.197,
+    "ok": true
+   },
+   "shoulder_up": {
+    "E_J": 0.0,
+    "v_tcp": 0.03,
+    "tau_nm": 0.11,
+    "hard": false,
+    "start": [
+     49,
+     -10,
+     0
+    ],
+    "cap_J": 0.696,
+    "ok": true
+   }
+  }
+ }
+}

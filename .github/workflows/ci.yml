@@ -1,0 +1,45 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      M1_SKIP_RENDER: "1"        # runners have no OpenGL offscreen; camera tests are skipped
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e "sdk[dev]"
+      - name: faibot-m1 doctor
+        run: faibot-m1 doctor
+      - name: Tests
+        run: python -m pytest -q tests sdk/tests --ignore=tests/tier1b
+      - name: Tier 1b (fast - fuzz 200 cases, config, bus, safety; no soak)
+        # pytest.ini skips the soak mark by default; the 2-hour soak and the 10,000-case fuzz run in nightly.yml
+        env:
+          FUZZ_N: "200"
+          SOAK_CHU_KY: "200"
+        run: python -m pytest -q tests/tier1b -m "not soak"
+      - name: Cross-checks (CAD, simulation, assets, docs)
+        run: python scripts/kiem_cheo.py
+      - name: Retired product names
+        run: python scripts/check_ban_cu.py
+      - name: Joint table in sdk/README.md is current
+        run: python sdk/tools/sinh_bang_khop.py --check
+      - name: Part files are current
+        run: |
+          if [ -f hardware/tools/export_parts.py ]; then
+            python hardware/tools/export_parts.py --check-only
+          else
+            echo "hardware/tools/export_parts.py not present, skipped"
+          fi

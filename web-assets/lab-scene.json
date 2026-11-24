@@ -1,0 +1,2511 @@
+{
+ "schema": "faibot-m1-lab-scene/2",
+ "generator": "sim/lab/build_lab.py",
+ "mjcf": "sim/lab/lab.xml",
+ "seed": 0,
+ "units": {
+  "length": "m",
+  "angle": "rad",
+  "mass": "kg",
+  "frame": "z lên, x từ chỗ robot đứng lúc đầu vào bàn, y sang trái robot; three.js (y lên): (x, z, -y)",
+  "sizes": "size = kích thước đầy đủ [lx, ly, lz]; trong items[].links[].geoms: box [lx,ly,lz], cylinder [bán kính, cao] trục z, sphere [bán kính]",
+  "position": "fridge/cabinet/box/table: tâm đáy; trays: tâm đáy ngăn; objects: tâm vật",
+  "geom_pos": "items: geom.pos theo khung link; link.pos theo khung link cha (link gốc: thế giới); link.yaw quanh z",
+  "geom_euler": "geom.euler (nếu có) xyz nội tại, rad",
+  "joint_start": "joint.start / box.lid.start: góc (rad) hoặc khoảng trượt (m) lúc đầu, MJCF qpos0 = ref = start; 0 = đóng. items[].links[].geoms, handle, knob, hinge vẽ ở trạng thái 0; trạng thái start = quay/dời quanh khớp theo joint.axis"
+ },
+ "robot": {
+  "mjcf": "sim/m1.xml",
+  "start": [
+   0,
+   0,
+   0
+  ],
+  "work_standoff_from_table_m": 0.21,
+  "lift_work_m": 0.45,
+  "gripper_max_gap_m": 0.0973
+ },
+ "table": {
+  "height": 0.75,
+  "edge_x": 0.5,
+  "depth": 0.6,
+  "y_range": [
+   -1.0,
+   1.0
+  ],
+  "size": [
+   0.6,
+   2.0,
+   0.75
+  ],
+  "position": [
+   0.8,
+   0,
+   0
+  ]
+ },
+ "palette": {
+  "navy": "#1e3a5f",
+  "ivory": "#f1efe8",
+  "bg": "#d6d3cc",
+  "white": "#fafaf9",
+  "alu": "#b3b7bd",
+  "slate": "#64748b",
+  "slate_dk": "#475569",
+  "ink": "#0f172a",
+  "tint": "#eaf0f7",
+  "border": "#e2e8f0",
+  "red": "#b91c1c",
+  "blue": "#2563eb",
+  "green": "#15803d"
+ },
+ "fridge": {
+  "id": "fridge",
+  "size": [
+   0.5,
+   0.5,
+   0.95
+  ],
+  "position": [
+   0.75,
+   -1.4,
+   0
+  ],
+  "door": {
+   "joint": {
+    "name": "fridge_hinge",
+    "type": "hinge",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "range": [
+     0.0,
+     1.75
+    ],
+    "start": 0.0,
+    "open_min": 1.2,
+    "closed_max": 0.05
+   },
+   "hinge": [
+    0.48,
+    -1.645,
+    0.0
+   ],
+   "handle": [
+    0.41,
+    -1.205,
+    0.775
+   ]
+  }
+ },
+ "cabinet": {
+  "id": "drawer_cabinet",
+  "size": [
+   0.26,
+   0.3,
+   0.16
+  ],
+  "position": [
+   0.87,
+   0.85,
+   0.75
+  ],
+  "drawers": [
+   {
+    "id": "drawer_0",
+    "joint": {
+     "name": "drawer_0_slide",
+     "type": "slide",
+     "axis": [
+      -1,
+      0,
+      0
+     ],
+     "range": [
+      0.0,
+      0.13
+     ],
+     "start": 0.0,
+     "open_min": 0.08,
+     "closed_max": 0.01
+    },
+    "handle": [
+     0.7,
+     0.85,
+     0.795
+    ]
+   },
+   {
+    "id": "drawer_1",
+    "joint": {
+     "name": "drawer_1_slide",
+     "type": "slide",
+     "axis": [
+      -1,
+      0,
+      0
+     ],
+     "range": [
+      0.0,
+      0.13
+     ],
+     "start": 0.0,
+     "open_min": 0.08,
+     "closed_max": 0.01
+    },
+    "handle": [
+     0.7,
+     0.85,
+     0.865
+    ]
+   }
+  ]
+ },
+ "box": {
+  "id": "lid_box",
+  "size": [
+   0.16,
+   0.16,
+   0.05
+  ],
+  "position": [
+   0.65,
+   -0.58,
+   0.75
+  ],
+  "lid": {
+   "joint": {
+    "name": "lid_hinge",
+    "type": "hinge",
+    "axis": [
+     -1,
+     0,
+     0
+    ],
+    "range": [
+     0.0,
+     1.75
+    ],
+    "start": 0.0,
+    "open_min": 1.2,
+    "closed_max": 0.09
+   },
+   "start": 0.0,
+   "hinge": [
+    0.65,
+    -0.5,
+    0.8
+   ],
+   "knob": [
+    0.65,
+    -0.58,
+    0.838
+   ]
+  }
+ },
+ "trays": [
+  {
+   "id": "tray_red",
+   "color": "#b91c1c",
+   "color_class": "red",
+   "label": "Đỏ",
+   "shape": "tron",
+   "shape_label": "Tròn",
+   "size": [
+    0.13,
+    0.1,
+    0.04
+   ],
+   "position": [
+    0.63,
+    -0.214,
+    0.75
+   ]
+  },
+  {
+   "id": "tray_green",
+   "color": "#15803d",
+   "color_class": "green",
+   "label": "Xanh lá",
+   "shape": "vuong",
+   "shape_label": "Vuông",
+   "size": [
+    0.13,
+    0.1,
+    0.04
+   ],
+   "position": [
+    0.63,
+    -0.32,
+    0.75
+   ]
+  },
+  {
+   "id": "tray_blue",
+   "color": "#2563eb",
+   "color_class": "blue",
+   "label": "Xanh dương",
+   "shape": "tam_giac",
+   "shape_label": "Tam giác",
+   "size": [
+    0.13,
+    0.1,
+    0.04
+   ],
+   "position": [
+    0.63,
+    -0.426,
+    0.75
+   ]
+  }
+ ],
+ "objects": [
+  {
+   "id": "obj_red_cube",
+   "label": "Vật 1",
+   "color": "#b91c1c",
+   "color_class": "red",
+   "shape": "box",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "position": [
+    0.636888437030501,
+    0.12412727044704483,
+    0.7705
+   ],
+   "yaw": -0.031771367667662004,
+   "mass": 0.06,
+   "tray": "tray_red"
+  },
+  {
+   "id": "obj_blue_cyl",
+   "label": "Vật 2",
+   "color": "#2563eb",
+   "color_class": "blue",
+   "shape": "cylinder",
+   "size": [
+    0.04,
+    0.04,
+    0.05
+   ],
+   "position": [
+    0.6251783350058593,
+    0.18018039554189774,
+    0.7755
+   ],
+   "yaw": -0.03802634501983429,
+   "mass": 0.06,
+   "tray": "tray_blue"
+  },
+  {
+   "id": "obj_green_cube",
+   "label": "Vật 3",
+   "color": "#15803d",
+   "color_class": "green",
+   "shape": "box",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "position": [
+    0.6356759717806955,
+    0.23685300361726283,
+    0.7705
+   ],
+   "yaw": -0.009361218339057675,
+   "mass": 0.06,
+   "tray": "tray_green"
+  },
+  {
+   "id": "obj_red_cyl",
+   "label": "Vật 4",
+   "color": "#b91c1c",
+   "color_class": "red",
+   "shape": "cylinder",
+   "size": [
+    0.04,
+    0.04,
+    0.05
+   ],
+   "position": [
+    0.6316676407891006,
+    0.30652980616312536,
+    0.7755
+   ],
+   "yaw": 0.0018747423269561136,
+   "mass": 0.06,
+   "tray": "tray_red"
+  },
+  {
+   "id": "obj_blue_cube",
+   "label": "Vật 5",
+   "color": "#2563eb",
+   "color_class": "blue",
+   "shape": "box",
+   "size": [
+    0.045,
+    0.045,
+    0.045
+   ],
+   "position": [
+    0.625636756887994,
+    0.3640928672665156,
+    0.7729999999999999
+   ],
+   "yaw": 0.04734759867013266,
+   "mass": 0.06,
+   "tray": "tray_blue"
+  },
+  {
+   "id": "obj_green_cyl",
+   "label": "Vật 6",
+   "color": "#15803d",
+   "color_class": "green",
+   "shape": "cylinder",
+   "size": [
+    0.04,
+    0.04,
+    0.05
+   ],
+   "position": [
+    0.6250101268272488,
+    0.4265559400954918,
+    0.7755
+   ],
+   "yaw": 0.19311419041506123,
+   "mass": 0.06,
+   "tray": "tray_green"
+  },
+  {
+   "id": "obj_red_block",
+   "label": "Vật 7",
+   "color": "#b91c1c",
+   "color_class": "red",
+   "shape": "box",
+   "size": [
+    0.03,
+    0.05,
+    0.04
+   ],
+   "position": [
+    0.6362043447199318,
+    0.48643465520703333,
+    0.7705
+   ],
+   "yaw": -0.07594097227226695,
+   "mass": 0.06,
+   "tray": "tray_red"
+  },
+  {
+   "id": "obj_blue_block",
+   "label": "Vật 8",
+   "color": "#2563eb",
+   "color_class": "blue",
+   "shape": "box",
+   "size": [
+    0.035,
+    0.05,
+    0.035
+   ],
+   "position": [
+    0.6345966349652026,
+    0.546381412607488,
+    0.7679999999999999
+   ],
+   "yaw": 0.07359357276617651,
+   "mass": 0.06,
+   "tray": "tray_blue"
+  },
+  {
+   "id": "obj_green_can",
+   "label": "Lon trong tủ lạnh",
+   "color": "#15803d",
+   "color_class": "green",
+   "shape": "cylinder",
+   "size": [
+    0.04,
+    0.04,
+    0.06
+   ],
+   "position": [
+    0.62,
+    -1.28,
+    0.7805
+   ],
+   "yaw": 0.0,
+   "mass": 0.06,
+   "tray": "tray_green",
+   "inside": "fridge"
+  }
+ ],
+ "tasks": {
+  "pick_place": {
+   "k": 3,
+   "objects": [
+    "obj_red_cube",
+    "obj_blue_cyl",
+    "obj_green_can"
+   ],
+   "target": "target_zone",
+   "target_zone": {
+    "position": [
+     0.64,
+     -0.02,
+     0.75
+    ],
+    "size": [
+     0.14,
+     0.2
+    ]
+   },
+   "script": "demos/lab_pick_place.py",
+   "run": "./run.sh --lab-pick",
+   "done_when": "mỗi vật có tâm trong vùng target_zone, đáy trên mặt bàn ±1,5 cm, |v| <= 0,02 sau 1 s; vật trong tủ lạnh lấy ra sau khi mở cửa"
+  },
+  "sorting": {
+   "objects": [
+    "obj_red_cube",
+    "obj_blue_cyl",
+    "obj_green_cube",
+    "obj_red_cyl",
+    "obj_blue_cube",
+    "obj_green_cyl",
+    "obj_red_block",
+    "obj_blue_block"
+   ],
+   "script": "demos/lab_sorting.py",
+   "run": "./run.sh --lab-sort",
+   "done_when": "mỗi vật có tâm trong ngăn trays[].id = objects[].tray, đáy trên đáy khay ±1,5 cm, đứng yên"
+  },
+  "open_close": {
+   "targets": [
+    "drawer_1",
+    "lid_box",
+    "fridge"
+   ],
+   "script": "demos/lab_open_close.py",
+   "run": "./run.sh --lab-open",
+   "fridge_open_min_rad": 1.2,
+   "done_when": "mỗi khớp mở tới >= open_min rồi đóng về <= closed_max, đo sau khi nhả kẹp 1 s"
+  }
+ },
+ "items": [
+  {
+   "id": "room",
+   "label": "Phòng",
+   "category": "room",
+   "links": [
+    {
+     "name": "room",
+     "parent": null,
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "joint": null,
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        6.0,
+        6.0,
+        0.01
+       ],
+       "pos": [
+        0.5,
+        0.0,
+        -0.005
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.05,
+        6.0,
+        1.6
+       ],
+       "pos": [
+        2.0,
+        0.0,
+        0.8
+       ],
+       "color": "#fafaf9",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        6.0,
+        0.05,
+        1.6
+       ],
+       "pos": [
+        0.5,
+        2.4,
+        0.8
+       ],
+       "color": "#fafaf9",
+       "collide": true
+      }
+     ]
+    }
+   ],
+   "name": "room",
+   "type": "room",
+   "pos": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "table",
+   "label": "Bàn thí nghiệm 0,75 m",
+   "category": "furniture",
+   "links": [
+    {
+     "name": "table",
+     "parent": null,
+     "pos": [
+      0.8,
+      0.0,
+      0
+     ],
+     "joint": null,
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.6,
+        2.0,
+        0.03
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.735
+       ],
+       "color": "#b3b7bd",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.04,
+        0.72
+       ],
+       "pos": [
+        -0.26,
+        -0.96,
+        0.36
+       ],
+       "color": "#b3b7bd",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.04,
+        0.72
+       ],
+       "pos": [
+        -0.26,
+        0.96,
+        0.36
+       ],
+       "color": "#b3b7bd",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.04,
+        0.72
+       ],
+       "pos": [
+        0.26,
+        -0.96,
+        0.36
+       ],
+       "color": "#b3b7bd",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.04,
+        0.72
+       ],
+       "pos": [
+        0.26,
+        0.96,
+        0.36
+       ],
+       "color": "#b3b7bd",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.004,
+        2.0,
+        0.03
+       ],
+       "pos": [
+        -0.298,
+        0.0,
+        0.705
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      }
+     ]
+    }
+   ],
+   "name": "table",
+   "type": "furniture",
+   "pos": [
+    0.8,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "target_zone",
+   "label": "Vùng đích gắp đặt",
+   "category": "zone",
+   "size": [
+    0.14,
+    0.2
+   ],
+   "links": [
+    {
+     "name": "target_zone",
+     "parent": null,
+     "pos": [
+      0.64,
+      -0.02,
+      0.75
+     ],
+     "joint": null,
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.14,
+        0.2,
+        0.002
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.001
+       ],
+       "color": "#1e3a5f",
+       "collide": false
+      }
+     ]
+    }
+   ],
+   "name": "target_zone",
+   "type": "zone",
+   "pos": [
+    0.64,
+    -0.02,
+    0.75
+   ]
+  },
+  {
+   "id": "sort_tray",
+   "label": "Khay phân loại 3 ngăn",
+   "category": "fixture",
+   "cells": [
+    {
+     "color_class": "red",
+     "shape": "tron",
+     "center": [
+      0.63,
+      -0.214,
+      0.75
+     ],
+     "size": [
+      0.13,
+      0.1
+     ]
+    },
+    {
+     "color_class": "green",
+     "shape": "vuong",
+     "center": [
+      0.63,
+      -0.32,
+      0.75
+     ],
+     "size": [
+      0.13,
+      0.1
+     ]
+    },
+    {
+     "color_class": "blue",
+     "shape": "tam_giac",
+     "center": [
+      0.63,
+      -0.426,
+      0.75
+     ],
+     "size": [
+      0.13,
+      0.1
+     ]
+    }
+   ],
+   "links": [
+    {
+     "name": "sort_tray",
+     "parent": null,
+     "pos": [
+      0.63,
+      -0.32,
+      0.75
+     ],
+     "joint": null,
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.142,
+        0.324,
+        0.004
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.002
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.006,
+        0.324,
+        0.04
+       ],
+       "pos": [
+        -0.068,
+        0.0,
+        0.02
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.006,
+        0.324,
+        0.04
+       ],
+       "pos": [
+        0.068,
+        0.0,
+        0.02
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.13,
+        0.006,
+        0.04
+       ],
+       "pos": [
+        0.0,
+        0.159,
+        0.02
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.13,
+        0.006,
+        0.04
+       ],
+       "pos": [
+        0.0,
+        0.053,
+        0.02
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.13,
+        0.006,
+        0.04
+       ],
+       "pos": [
+        0.0,
+        -0.053,
+        0.02
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.13,
+        0.006,
+        0.04
+       ],
+       "pos": [
+        0.0,
+        -0.159,
+        0.02
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.13,
+        0.1,
+        0.001
+       ],
+       "pos": [
+        0.0,
+        0.106,
+        0.0045
+       ],
+       "color": "#b91c1c",
+       "collide": false
+      },
+      {
+       "shape": "cylinder",
+       "size": [
+        0.025,
+        0.001
+       ],
+       "pos": [
+        0.0,
+        0.106,
+        0.0055
+       ],
+       "color": "#fafaf9",
+       "collide": false
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.004,
+        0.08,
+        0.03
+       ],
+       "pos": [
+        -0.072,
+        0.106,
+        0.022
+       ],
+       "color": "#b91c1c",
+       "collide": false
+      },
+      {
+       "shape": "cylinder",
+       "size": [
+        0.011,
+        0.002
+       ],
+       "pos": [
+        -0.075,
+        0.106,
+        0.022
+       ],
+       "color": "#fafaf9",
+       "collide": false,
+       "euler": [
+        0,
+        1.5707963267948966,
+        0
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.13,
+        0.1,
+        0.001
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0045
+       ],
+       "color": "#15803d",
+       "collide": false
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.043,
+        0.043,
+        0.001
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0055
+       ],
+       "color": "#fafaf9",
+       "collide": false
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.004,
+        0.08,
+        0.03
+       ],
+       "pos": [
+        -0.072,
+        0.0,
+        0.022
+       ],
+       "color": "#15803d",
+       "collide": false
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.002,
+        0.01892,
+        0.01892
+       ],
+       "pos": [
+        -0.075,
+        0.0,
+        0.022
+       ],
+       "color": "#fafaf9",
+       "collide": false
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.13,
+        0.1,
+        0.001
+       ],
+       "pos": [
+        0.0,
+        -0.106,
+        0.0045
+       ],
+       "color": "#2563eb",
+       "collide": false
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.059,
+        0.01,
+        0.001
+       ],
+       "pos": [
+        -0.01443,
+        -0.106,
+        0.0055
+       ],
+       "color": "#fafaf9",
+       "collide": false,
+       "euler": [
+        0,
+        0,
+        -1.570796
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.059,
+        0.01,
+        0.001
+       ],
+       "pos": [
+        0.00722,
+        -0.1185,
+        0.0055
+       ],
+       "color": "#fafaf9",
+       "collide": false,
+       "euler": [
+        0,
+        0,
+        0.523599
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.059,
+        0.01,
+        0.001
+       ],
+       "pos": [
+        0.00722,
+        -0.0935,
+        0.0055
+       ],
+       "color": "#fafaf9",
+       "collide": false,
+       "euler": [
+        0,
+        0,
+        2.617994
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.004,
+        0.08,
+        0.03
+       ],
+       "pos": [
+        -0.072,
+        -0.106,
+        0.022
+       ],
+       "color": "#2563eb",
+       "collide": false
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.002,
+        0.02596,
+        0.0044
+       ],
+       "pos": [
+        -0.075,
+        -0.106,
+        0.01565
+       ],
+       "color": "#fafaf9",
+       "collide": false,
+       "euler": [
+        3.141593,
+        0,
+        0
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.002,
+        0.02596,
+        0.0044
+       ],
+       "pos": [
+        -0.075,
+        -0.1115,
+        0.02518
+       ],
+       "color": "#fafaf9",
+       "collide": false,
+       "euler": [
+        1.047198,
+        0,
+        0
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.002,
+        0.02596,
+        0.0044
+       ],
+       "pos": [
+        -0.075,
+        -0.1005,
+        0.02518
+       ],
+       "color": "#fafaf9",
+       "collide": false,
+       "euler": [
+        -1.047198,
+        0,
+        0
+       ]
+      }
+     ]
+    }
+   ],
+   "name": "sort_tray",
+   "type": "fixture",
+   "pos": [
+    0.63,
+    -0.32,
+    0.75
+   ]
+  },
+  {
+   "id": "lid_box",
+   "label": "Hộp có nắp bản lề",
+   "category": "articulated",
+   "links": [
+    {
+     "name": "lid_box",
+     "parent": null,
+     "pos": [
+      0.65,
+      -0.58,
+      0.75
+     ],
+     "joint": null,
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.16,
+        0.16,
+        0.006
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.003
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.006,
+        0.16,
+        0.05
+       ],
+       "pos": [
+        -0.077,
+        0.0,
+        0.025
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.006,
+        0.16,
+        0.05
+       ],
+       "pos": [
+        0.077,
+        0.0,
+        0.025
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.148,
+        0.006,
+        0.05
+       ],
+       "pos": [
+        0.0,
+        -0.077,
+        0.025
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.148,
+        0.006,
+        0.05
+       ],
+       "pos": [
+        0.0,
+        0.077,
+        0.025
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      }
+     ]
+    },
+    {
+     "name": "lid_box_lid",
+     "parent": "lid_box",
+     "pos": [
+      0,
+      0.08,
+      0.05
+     ],
+     "joint": {
+      "name": "lid_hinge",
+      "type": "hinge",
+      "axis": [
+       -1,
+       0,
+       0
+      ],
+      "range": [
+       0.0,
+       1.75
+      ],
+      "start": 0.0,
+      "damping": 0.05,
+      "frictionloss": 0.01,
+      "open_min": 1.2,
+      "closed_max": 0.09
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.164,
+        0.164,
+        0.008
+       ],
+       "pos": [
+        0.0,
+        -0.08,
+        0.004
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "cylinder",
+       "size": [
+        0.005,
+        0.02
+       ],
+       "pos": [
+        0.0,
+        -0.08,
+        0.018
+       ],
+       "color": "#475569",
+       "collide": true
+      },
+      {
+       "shape": "sphere",
+       "size": [
+        0.012
+       ],
+       "pos": [
+        0.0,
+        -0.08,
+        0.038
+       ],
+       "color": "#475569",
+       "collide": true
+      }
+     ],
+     "knob": [
+      0,
+      -0.08,
+      0.038
+     ]
+    }
+   ],
+   "name": "lid_box",
+   "type": "articulated",
+   "pos": [
+    0.65,
+    -0.58,
+    0.75
+   ]
+  },
+  {
+   "id": "drawer_cabinet",
+   "label": "Tủ 2 ngăn kéo",
+   "category": "articulated",
+   "links": [
+    {
+     "name": "drawer_cabinet",
+     "parent": null,
+     "pos": [
+      0.87,
+      0.85,
+      0.75
+     ],
+     "joint": null,
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.26,
+        0.3,
+        0.01
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.005
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.26,
+        0.3,
+        0.01
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.155
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.26,
+        0.3,
+        0.01
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.08
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.01,
+        0.3,
+        0.16
+       ],
+       "pos": [
+        0.125,
+        0.0,
+        0.08
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.26,
+        0.01,
+        0.16
+       ],
+       "pos": [
+        0.0,
+        -0.145,
+        0.08
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.26,
+        0.01,
+        0.16
+       ],
+       "pos": [
+        0.0,
+        0.145,
+        0.08
+       ],
+       "color": "#1e3a5f",
+       "collide": true
+      }
+     ]
+    },
+    {
+     "name": "drawer_0",
+     "parent": "drawer_cabinet",
+     "pos": [
+      0,
+      0,
+      0.04499999999999993
+     ],
+     "joint": {
+      "name": "drawer_0_slide",
+      "type": "slide",
+      "axis": [
+       -1,
+       0,
+       0
+      ],
+      "range": [
+       0.0,
+       0.13
+      ],
+      "start": 0.0,
+      "damping": 3.0,
+      "frictionloss": 0.3,
+      "open_min": 0.08,
+      "closed_max": 0.01
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.012,
+        0.294,
+        0.061
+       ],
+       "pos": [
+        -0.124,
+        0.0,
+        0.0
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.23,
+        0.274,
+        0.006
+       ],
+       "pos": [
+        -0.015,
+        0.0,
+        -0.0205
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.006,
+        0.274,
+        0.031
+       ],
+       "pos": [
+        0.1,
+        0.0,
+        -0.005
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.23,
+        0.006,
+        0.031
+       ],
+       "pos": [
+        -0.015,
+        -0.134,
+        -0.005
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.23,
+        0.006,
+        0.031
+       ],
+       "pos": [
+        -0.015,
+        0.134,
+        -0.005
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "cylinder",
+       "size": [
+        0.006,
+        0.1
+       ],
+       "pos": [
+        -0.17,
+        0.0,
+        0.0
+       ],
+       "color": "#475569",
+       "collide": true,
+       "euler": [
+        1.5707963267948966,
+        0,
+        0
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.008,
+        0.008
+       ],
+       "pos": [
+        -0.15,
+        -0.045,
+        0.0
+       ],
+       "color": "#475569",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.008,
+        0.008
+       ],
+       "pos": [
+        -0.15,
+        0.045,
+        0.0
+       ],
+       "color": "#475569",
+       "collide": true
+      }
+     ],
+     "handle": [
+      -0.17,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "drawer_1",
+     "parent": "drawer_cabinet",
+     "pos": [
+      0,
+      0,
+      0.11499999999999999
+     ],
+     "joint": {
+      "name": "drawer_1_slide",
+      "type": "slide",
+      "axis": [
+       -1,
+       0,
+       0
+      ],
+      "range": [
+       0.0,
+       0.13
+      ],
+      "start": 0.0,
+      "damping": 3.0,
+      "frictionloss": 0.3,
+      "open_min": 0.08,
+      "closed_max": 0.01
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.012,
+        0.294,
+        0.061
+       ],
+       "pos": [
+        -0.124,
+        0.0,
+        0.0
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.23,
+        0.274,
+        0.006
+       ],
+       "pos": [
+        -0.015,
+        0.0,
+        -0.0205
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.006,
+        0.274,
+        0.031
+       ],
+       "pos": [
+        0.1,
+        0.0,
+        -0.005
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.23,
+        0.006,
+        0.031
+       ],
+       "pos": [
+        -0.015,
+        -0.134,
+        -0.005
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.23,
+        0.006,
+        0.031
+       ],
+       "pos": [
+        -0.015,
+        0.134,
+        -0.005
+       ],
+       "color": "#f1efe8",
+       "collide": true
+      },
+      {
+       "shape": "cylinder",
+       "size": [
+        0.006,
+        0.1
+       ],
+       "pos": [
+        -0.17,
+        0.0,
+        0.0
+       ],
+       "color": "#475569",
+       "collide": true,
+       "euler": [
+        1.5707963267948966,
+        0,
+        0
+       ]
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.008,
+        0.008
+       ],
+       "pos": [
+        -0.15,
+        -0.045,
+        0.0
+       ],
+       "color": "#475569",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.008,
+        0.008
+       ],
+       "pos": [
+        -0.15,
+        0.045,
+        0.0
+       ],
+       "color": "#475569",
+       "collide": true
+      }
+     ],
+     "handle": [
+      -0.17,
+      0,
+      0
+     ]
+    }
+   ],
+   "name": "drawer_cabinet",
+   "type": "articulated",
+   "pos": [
+    0.87,
+    0.85,
+    0.75
+   ]
+  },
+  {
+   "id": "fridge",
+   "label": "Tủ lạnh mini",
+   "category": "articulated",
+   "links": [
+    {
+     "name": "fridge",
+     "parent": null,
+     "pos": [
+      0.75,
+      -1.4,
+      0
+     ],
+     "joint": null,
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.5,
+        0.5,
+        0.03
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.265
+       ],
+       "color": "#fafaf9",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.5,
+        0.5,
+        0.03
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.935
+       ],
+       "color": "#fafaf9",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.03,
+        0.5,
+        0.7
+       ],
+       "pos": [
+        0.235,
+        0.0,
+        0.6
+       ],
+       "color": "#fafaf9",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.44,
+        0.44,
+        0.012
+       ],
+       "pos": [
+        0.01,
+        0.0,
+        0.744
+       ],
+       "color": "#eaf0f7",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.44,
+        0.44,
+        0.012
+       ],
+       "pos": [
+        0.01,
+        0.0,
+        0.45
+       ],
+       "color": "#eaf0f7",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.03,
+        0.03,
+        0.25
+       ],
+       "pos": [
+        -0.235,
+        -0.235,
+        0.125
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.03,
+        0.03,
+        0.25
+       ],
+       "pos": [
+        -0.235,
+        0.235,
+        0.125
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.03,
+        0.03,
+        0.25
+       ],
+       "pos": [
+        0.235,
+        -0.235,
+        0.125
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.03,
+        0.03,
+        0.25
+       ],
+       "pos": [
+        0.235,
+        0.235,
+        0.125
+       ],
+       "color": "#64748b",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.5,
+        0.03,
+        0.7
+       ],
+       "pos": [
+        0.0,
+        -0.235,
+        0.6
+       ],
+       "color": "#fafaf9",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.5,
+        0.03,
+        0.7
+       ],
+       "pos": [
+        0.0,
+        0.235,
+        0.6
+       ],
+       "color": "#fafaf9",
+       "collide": true
+      }
+     ]
+    },
+    {
+     "name": "fridge_door",
+     "parent": "fridge",
+     "pos": [
+      -0.27,
+      -0.245,
+      0
+     ],
+     "joint": {
+      "name": "fridge_hinge",
+      "type": "hinge",
+      "axis": [
+       0,
+       0,
+       1
+      ],
+      "range": [
+       0.0,
+       1.75
+      ],
+      "start": 0.0,
+      "damping": 1.0,
+      "frictionloss": 0.2,
+      "open_min": 1.2,
+      "closed_max": 0.05
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.49,
+        0.69
+       ],
+       "pos": [
+        0.0,
+        0.245,
+        0.6
+       ],
+       "color": "#f1efe8",
+       "collide": true,
+       "mass": 2.5
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.004,
+        0.3,
+        0.012
+       ],
+       "pos": [
+        -0.022,
+        0.245,
+        0.87
+       ],
+       "color": "#1e3a5f",
+       "collide": false
+      },
+      {
+       "shape": "cylinder",
+       "size": [
+        0.008,
+        0.18
+       ],
+       "pos": [
+        -0.07,
+        0.44,
+        0.71
+       ],
+       "color": "#475569",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.05,
+        0.014,
+        0.014
+       ],
+       "pos": [
+        -0.045,
+        0.44,
+        0.64
+       ],
+       "color": "#475569",
+       "collide": true
+      },
+      {
+       "shape": "box",
+       "size": [
+        0.05,
+        0.014,
+        0.014
+       ],
+       "pos": [
+        -0.045,
+        0.44,
+        0.7
+       ],
+       "color": "#475569",
+       "collide": true
+      }
+     ],
+     "handle": [
+      -0.07,
+      0.44,
+      0.775
+     ]
+    }
+   ],
+   "name": "fridge",
+   "type": "articulated",
+   "pos": [
+    0.75,
+    -1.4,
+    0.0
+   ]
+  },
+  {
+   "id": "obj_red_cube",
+   "label": "Vật 1",
+   "category": "object",
+   "color_class": "red",
+   "shape": "box",
+   "links": [
+    {
+     "name": "obj_red_cube",
+     "parent": null,
+     "pos": [
+      0.636888437030501,
+      0.12412727044704483,
+      0.7705
+     ],
+     "yaw": -0.031771367667662004,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.04,
+        0.04
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#b91c1c",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_red_cube",
+   "type": "object",
+   "pos": [
+    0.63689,
+    0.12413,
+    0.7705
+   ]
+  },
+  {
+   "id": "obj_blue_cyl",
+   "label": "Vật 2",
+   "category": "object",
+   "color_class": "blue",
+   "shape": "cylinder",
+   "links": [
+    {
+     "name": "obj_blue_cyl",
+     "parent": null,
+     "pos": [
+      0.6251783350058593,
+      0.18018039554189774,
+      0.7755
+     ],
+     "yaw": -0.03802634501983429,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "cylinder",
+       "size": [
+        0.02,
+        0.05
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#2563eb",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_blue_cyl",
+   "type": "object",
+   "pos": [
+    0.62518,
+    0.18018,
+    0.7755
+   ]
+  },
+  {
+   "id": "obj_green_cube",
+   "label": "Vật 3",
+   "category": "object",
+   "color_class": "green",
+   "shape": "box",
+   "links": [
+    {
+     "name": "obj_green_cube",
+     "parent": null,
+     "pos": [
+      0.6356759717806955,
+      0.23685300361726283,
+      0.7705
+     ],
+     "yaw": -0.009361218339057675,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.04,
+        0.04,
+        0.04
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#15803d",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_green_cube",
+   "type": "object",
+   "pos": [
+    0.63568,
+    0.23685,
+    0.7705
+   ]
+  },
+  {
+   "id": "obj_red_cyl",
+   "label": "Vật 4",
+   "category": "object",
+   "color_class": "red",
+   "shape": "cylinder",
+   "links": [
+    {
+     "name": "obj_red_cyl",
+     "parent": null,
+     "pos": [
+      0.6316676407891006,
+      0.30652980616312536,
+      0.7755
+     ],
+     "yaw": 0.0018747423269561136,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "cylinder",
+       "size": [
+        0.02,
+        0.05
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#b91c1c",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_red_cyl",
+   "type": "object",
+   "pos": [
+    0.63167,
+    0.30653,
+    0.7755
+   ]
+  },
+  {
+   "id": "obj_blue_cube",
+   "label": "Vật 5",
+   "category": "object",
+   "color_class": "blue",
+   "shape": "box",
+   "links": [
+    {
+     "name": "obj_blue_cube",
+     "parent": null,
+     "pos": [
+      0.625636756887994,
+      0.3640928672665156,
+      0.7729999999999999
+     ],
+     "yaw": 0.04734759867013266,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.045,
+        0.045,
+        0.045
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#2563eb",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_blue_cube",
+   "type": "object",
+   "pos": [
+    0.62564,
+    0.36409,
+    0.773
+   ]
+  },
+  {
+   "id": "obj_green_cyl",
+   "label": "Vật 6",
+   "category": "object",
+   "color_class": "green",
+   "shape": "cylinder",
+   "links": [
+    {
+     "name": "obj_green_cyl",
+     "parent": null,
+     "pos": [
+      0.6250101268272488,
+      0.4265559400954918,
+      0.7755
+     ],
+     "yaw": 0.19311419041506123,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "cylinder",
+       "size": [
+        0.02,
+        0.05
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#15803d",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_green_cyl",
+   "type": "object",
+   "pos": [
+    0.62501,
+    0.42656,
+    0.7755
+   ]
+  },
+  {
+   "id": "obj_red_block",
+   "label": "Vật 7",
+   "category": "object",
+   "color_class": "red",
+   "shape": "box",
+   "links": [
+    {
+     "name": "obj_red_block",
+     "parent": null,
+     "pos": [
+      0.6362043447199318,
+      0.48643465520703333,
+      0.7705
+     ],
+     "yaw": -0.07594097227226695,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.03,
+        0.05,
+        0.04
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#b91c1c",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_red_block",
+   "type": "object",
+   "pos": [
+    0.6362,
+    0.48643,
+    0.7705
+   ]
+  },
+  {
+   "id": "obj_blue_block",
+   "label": "Vật 8",
+   "category": "object",
+   "color_class": "blue",
+   "shape": "box",
+   "links": [
+    {
+     "name": "obj_blue_block",
+     "parent": null,
+     "pos": [
+      0.6345966349652026,
+      0.546381412607488,
+      0.7679999999999999
+     ],
+     "yaw": 0.07359357276617651,
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "box",
+       "size": [
+        0.035,
+        0.05,
+        0.035
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#2563eb",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_blue_block",
+   "type": "object",
+   "pos": [
+    0.6346,
+    0.54638,
+    0.768
+   ]
+  },
+  {
+   "id": "obj_green_can",
+   "label": "Lon trong tủ lạnh",
+   "category": "object",
+   "color_class": "green",
+   "shape": "cylinder",
+   "inside": "fridge",
+   "links": [
+    {
+     "name": "obj_green_can",
+     "parent": null,
+     "pos": [
+      0.62,
+      -1.28,
+      0.7805
+     ],
+     "joint": {
+      "type": "free"
+     },
+     "geoms": [
+      {
+       "shape": "cylinder",
+       "size": [
+        0.02,
+        0.06
+       ],
+       "pos": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "color": "#15803d",
+       "collide": true,
+       "mass": 0.06
+      }
+     ]
+    }
+   ],
+   "name": "obj_green_can",
+   "type": "object",
+   "pos": [
+    0.62,
+    -1.28,
+    0.7805
+   ]
+  }
+ ],
+ "max_triangles": 20000,
+ "budget": {
+  "max_triangles": 20000,
+  "triangles_est": 3164,
+  "assume": "box 12, cylinder 128 (32 cạnh), sphere 960 (32x16) tam giác mỗi geom; không tính robot m1.glb"
+ }
+}

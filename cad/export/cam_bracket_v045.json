@@ -1,0 +1,128 @@
+{
+ "hop_bao": {
+  "camera_moi": [
+   293.93,
+   -23.62,
+   0.23,
+   320.82,
+   12.38,
+   36.34
+  ],
+  "gia_009": [
+   291.2,
+   -23.62,
+   -14.0,
+   308.72,
+   14.0,
+   37.57
+  ],
+  "camera_cu": [
+   274.93,
+   -23.62,
+   24.23,
+   301.82,
+   12.38,
+   60.34
+  ],
+  "vo_J56": [
+   216.25,
+   -26.02,
+   -41.97,
+   287.53,
+   18.8,
+   47.43
+  ]
+ },
+ "dat": {
+  "WCAM_DX": 19.0,
+  "WCAM_DY": 0.0,
+  "WCAM_DZ": -24.0,
+  "x_min": 291.2,
+  "z_min_camera": 0.23,
+  "the_tich_gia_cm3": 8.83,
+  "gia_giao_than_kep": 0.0,
+  "gia_giao_camera": 0.0,
+  "camera_giao_than_kep": 0.0,
+  "khe_camera_than_kep": 9.77,
+  "khe_camera_vo_J56": 6.4,
+  "khe_gia_vo_J56": 3.66
+ },
+ "cuon_moi": [],
+ "cuon_cu": [
+  [
+   -125,
+   {
+    "camera_cu|OB_F_J56_Bottom": 0.18
+   }
+  ],
+  [
+   -120,
+   {
+    "camera_cu|OB_F_J56_Bottom": 1.02
+   }
+  ],
+  [
+   -115,
+   {
+    "camera_cu|OB_F_J56_Bottom": 1.27
+   }
+  ],
+  [
+   -110,
+   {
+    "camera_cu|OB_F_J56_Bottom": 0.42
+   }
+  ]
+ ],
+ "ham_dong": {
+  "giao": [],
+  "khe_nho_nhat": 4.42
+ },
+ "tam_nhin": {
+  "tam_ong_kinh": [
+   317.74,
+   -5.62,
+   12.54
+  ],
+  "truc_quang": [
+   0.912,
+   -0.0,
+   -0.411
+  ],
+  "tia": {
+   "dinh_dau_ngon_co_dinh": {
+    "diem": [
+     391.18,
+     16.0,
+     -27.07
+    ],
+    "goc_lech_truc_quang_deg": 15.1,
+    "trong_FOV_doc_75": true,
+    "che_than_kep_mm3": 0.09,
+    "che_ham_mm3": 0.0
+   },
+   "dinh_dau_ham_dong_khep": {
+    "diem": [
+     391.14,
+     -3.02,
+     -25.57
+    ],
+    "goc_lech_truc_quang_deg": 3.7,
+    "trong_FOV_doc_75": true,
+    "che_than_kep_mm3": 0.0,
+    "che_ham_mm3": 0.02
+   },
+   "TCP_khep": {
+    "diem": [
+     394.02,
+     6.48,
+     -32.87
+    ],
+    "goc_lech_truc_quang_deg": 10.1,
+    "trong_FOV_doc_75": true,
+    "che_than_kep_mm3": 0.0,
+    "che_ham_mm3": 1.38
+   }
+  }
+ }
+}

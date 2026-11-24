@@ -1,0 +1,304 @@
+{
+ "pose": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "lift": 250.0,
+ "giao_cat": [
+  [
+   "M1-PW-014_battery_lid",
+   "M1-PW-015_battery_bay_lid",
+   15.0,
+   "mép nắp chính chồng mép nắp khoang F1/D0 (cặp chủ ý ('lid','bay_lid') của battery_box.py, hai nắp in riêng, ép gioăng)"
+  ],
+  [
+   "M1-LF-010_column",
+   "M1-LF-011_flange",
+   6528.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-030_top_block",
+   854.5,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-stop_top",
+   251.3,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-stop_bot",
+   502.7,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-stop_botpad",
+   251.3,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-carriage_nut",
+   1508.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-carriage_safe_nut",
+   1005.3,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-gear_pulley16",
+   402.1,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-screw",
+   "M1-LF-gear_belt",
+   129.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-rail0",
+   "M1-LF-block0",
+   2179.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-rail0",
+   "M1-LF-block1",
+   2179.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-rail1",
+   "M1-LF-block2",
+   2179.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-rail1",
+   "M1-LF-block3",
+   2179.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-block0",
+   "M1-LF-carriage_sideR",
+   4903.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-block1",
+   "M1-LF-carriage_sideR",
+   4903.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-block2",
+   "M1-LF-carriage_sideL",
+   4903.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-block3",
+   "M1-LF-carriage_sideL",
+   4903.2,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-carriage_sideR",
+   "M1-LF-carriage_bridge",
+   4500.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-carriage_sideL",
+   "M1-LF-carriage_bridge",
+   4500.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-carriage_bridge",
+   "M1-LF-carriage_nut",
+   185.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-carriage_bridge",
+   "M1-LF-carriage_safe_nut",
+   123.4,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-carriage_outR",
+   "M1-LF-carriage_padR",
+   21600.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-carriage_outL",
+   "M1-LF-carriage_padL",
+   21600.0,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-gear_zgear",
+   "M1-LF-gear_servo",
+   852.6,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-gear_pulley64",
+   "M1-LF-gear_belt",
+   729.9,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-LF-gear_pulley16",
+   "M1-LF-gear_belt",
+   172.4,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-012_pin_L",
+   "spring0_L",
+   229.9,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-012_pin_L",
+   "spring1_L",
+   229.9,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-014_anchor0_L",
+   "spring0_L",
+   228.5,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-014_anchor1_L",
+   "spring1_L",
+   228.5,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-017_low_stop_L",
+   "M1-SH-018_low_pad_L",
+   458.3,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "OB_F_J5_Elbow_Wrist_Bracket_L",
+   "OB_F_J5_Pin_Bearing_L",
+   186.1,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "OB_F_J5_Pin_Bearing_L",
+   "OB_F_J56_Bottom_L",
+   110.1,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-012_pin_R",
+   "spring0_R",
+   229.9,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-012_pin_R",
+   "spring1_R",
+   229.9,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-014_anchor0_R",
+   "spring0_R",
+   228.5,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-014_anchor1_R",
+   "spring1_R",
+   228.5,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "M1-SH-017_low_stop_R",
+   "M1-SH-018_low_pad_R",
+   458.3,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "OB_F_J5_Elbow_Wrist_Bracket_R",
+   "OB_F_J5_Pin_Bearing_R",
+   186.1,
+   "chủ ý (CAD gốc)"
+  ],
+  [
+   "OB_F_J5_Pin_Bearing_R",
+   "OB_F_J56_Bottom_R",
+   110.1,
+   "chủ ý (CAD gốc)"
+  ]
+ ],
+ "giao_hien_thi": [
+  [
+   "M1-PW-018_d0_drive",
+   "M1-SV-001_wheel2",
+   147.1
+  ],
+  [
+   "OB_F_J56_Wrist_Housing_L",
+   "wrist_roll_servo_L",
+   1580.0
+  ],
+  [
+   "OB_F_J56_Bottom_L",
+   "wrist_roll_servo_L",
+   555.2
+  ],
+  [
+   "OB_F_J7_Gripper_L",
+   "gripper_servo_L",
+   600.4
+  ],
+  [
+   "OB_F_J7_Jaw_L",
+   "gripper_servo_L",
+   998.8
+  ],
+  [
+   "OB_F_J56_Wrist_Housing_R",
+   "wrist_roll_servo_R",
+   1580.0
+  ],
+  [
+   "OB_F_J56_Bottom_R",
+   "wrist_roll_servo_R",
+   555.2
+  ],
+  [
+   "OB_F_J7_Gripper_R",
+   "gripper_servo_R",
+   600.4
+  ],
+  [
+   "OB_F_J7_Jaw_R",
+   "gripper_servo_R",
+   998.8
+  ]
+ ],
+ "ghi_chu_hien_thi": "servo cuộn/kẹp (DISPLAY_ONLY): không tính lỗi, xem assembly_full.DISPLAY_ONLY"
+}

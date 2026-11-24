@@ -1,0 +1,171 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Faibot M1 web-assets manifest",
+ "type": "object",
+ "required": [
+  "schema",
+  "nguon",
+  "files",
+  "lab_scene",
+  "max_triangles",
+  "budget",
+  "ma_chinh"
+ ],
+ "properties": {
+  "schema": {
+   "const": "faibot-m1-manifest/1"
+  },
+  "nguon": {
+   "type": "object",
+   "required": [
+    "commit",
+    "sim_assets_meshes_json_sha256",
+    "sim_assets"
+   ],
+   "properties": {
+    "commit": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{7,40}$"
+    },
+    "sim_assets_meshes_json_sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "sim_assets": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "file",
+       "sha256"
+      ],
+      "properties": {
+       "file": {
+        "type": "string"
+       },
+       "sha256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+       }
+      }
+     }
+    }
+   }
+  },
+  "decimate": {
+   "type": "object"
+  },
+  "files": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "required": [
+     "file",
+     "sha256",
+     "bytes"
+    ],
+    "properties": {
+     "file": {
+      "type": "string"
+     },
+     "role": {
+      "type": "string"
+     },
+     "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+     },
+     "bytes": {
+      "type": "integer",
+      "minimum": 1
+     }
+    }
+   }
+  },
+  "lab_scene": {
+   "type": "object",
+   "required": [
+    "file",
+    "trang_thai"
+   ],
+   "properties": {
+    "file": {
+     "const": "lab-scene.json"
+    },
+    "trang_thai": {
+     "type": "string"
+    },
+    "schema": {
+     "type": "string"
+    },
+    "sha256": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "nguon": {
+     "type": "string"
+    },
+    "bytes": {
+     "type": "integer"
+    },
+    "schema_sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "max_triangles": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    }
+   }
+  },
+  "max_triangles": {
+   "type": "integer",
+   "minimum": 1,
+   "description": "ngân sách tam giác của m1.glb"
+  },
+  "budget": {
+   "type": "object",
+   "required": [
+    "max_triangles"
+   ],
+   "properties": {
+    "max_triangles": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "max_bytes_glb": {
+     "type": "integer",
+     "minimum": 1,
+     "description": "trần kích thước thô m1.glb (byte, không nén)"
+    },
+    "max_bytes_glb_brotli": {
+     "type": "integer",
+     "minimum": 1,
+     "description": "trần m1.glb nén brotli q11 (byte); hợp đồng web 1.200.000"
+    },
+    "tam_giac_glb": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    }
+   }
+  },
+  "ma_chinh": {
+   "type": "object",
+   "description": "cụm -> mã chính (trùng cum.json cum[].ma_chinh)",
+   "additionalProperties": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "pattern": "^M1-[A-Z]{2}-[0-9]{3}$"
+    }
+   }
+  }
+ }
+}

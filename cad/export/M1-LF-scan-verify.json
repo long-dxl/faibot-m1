@@ -1,0 +1,12 @@
+{
+ "mode": "verify",
+ "pan": [
+  -70,
+  70
+ ],
+ "R_mm": 30.0,
+ "q_step": 3.0,
+ "so_tu_the": 164604,
+ "so_cham": 0,
+ "theo_chi_tiet": {}
+}

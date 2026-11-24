@@ -1,0 +1,228 @@
+{
+ "tinh": {
+  "cradle": 0.0,
+  "SH-017": 0.0,
+  "SH-018": 0.0,
+  "servoL": 0.0,
+  "servoR": 0.0
+ },
+ "quay_theo_vai": [],
+ "pan": [
+  {
+   "vai": 62.0,
+   "pan": -70,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 102.6
+  },
+  {
+   "vai": 62.0,
+   "pan": -70,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 102.6
+  },
+  {
+   "vai": 62.0,
+   "pan": -60,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": -60,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": -50,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": -50,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": -40,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": -40,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": -30,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": -30,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": -20,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 102.6
+  },
+  {
+   "vai": 62.0,
+   "pan": -20,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 102.6
+  },
+  {
+   "vai": 62.0,
+   "pan": -10,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 39.5
+  },
+  {
+   "vai": 62.0,
+   "pan": -10,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 39.5
+  },
+  {
+   "vai": 62.0,
+   "pan": 0,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 24.2
+  },
+  {
+   "vai": 62.0,
+   "pan": 0,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 24.2
+  },
+  {
+   "vai": 62.0,
+   "pan": 10,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 39.5
+  },
+  {
+   "vai": 62.0,
+   "pan": 10,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 39.5
+  },
+  {
+   "vai": 62.0,
+   "pan": 20,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 102.6
+  },
+  {
+   "vai": 62.0,
+   "pan": 20,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 102.6
+  },
+  {
+   "vai": 62.0,
+   "pan": 30,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": 30,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": 40,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": 40,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": 50,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": 50,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 448.7
+  },
+  {
+   "vai": 62.0,
+   "pan": 60,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": 60,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 232.3
+  },
+  {
+   "vai": 62.0,
+   "pan": 70,
+   "chi_tiet": "SH-004_link",
+   "xe": "outL",
+   "mm3": 102.6
+  },
+  {
+   "vai": 62.0,
+   "pan": 70,
+   "chi_tiet": "SH-004_link",
+   "xe": "padL",
+   "mm3": 102.6
+  }
+ ],
+ "tieu_chi_mm3": 0.5,
+ "ket_luan": {
+  "tinh_0": true,
+  "quay_theo_vai_0": true,
+  "pan_so_cham": 30
+ }
+}

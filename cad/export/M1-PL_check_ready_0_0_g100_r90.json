@@ -1,0 +1,109 @@
+{
+ "pose": "ready",
+ "lift": 0.0,
+ "pan": 0.0,
+ "kep": "am",
+ "mo_kep_pct": 100.0,
+ "cuon_deg": 90.0,
+ "n_parts": 159,
+ "giao_cat": [
+  [
+   "M1-LF-052_OB_Main_Assembly_Post2",
+   "M1-LF-053_OB_Main_Assembly_Post3",
+   79.2,
+   "mối ghép chồng 15 mm dán epoxy giữa hai đoạn trụ (vị trí lắp sẵn trong tệp bố trí upstream, cùng phép đặt)"
+  ],
+  [
+   "M1-LF-053_OB_Main_Assembly_Post3",
+   "M1-LF-054_O_Main_Assembly_Post4",
+   -3.4,
+   "mối ghép chồng 15 mm giữa Post3 và Post4 (z 307,8..323, như Post1-2, 2-3); boolean OCC lỗi trên cặp này (-3,4), không phải giao lớn (pl_tfix.py)"
+  ],
+  [
+   "M1-LF-053_OB_Main_Assembly_Post3",
+   "M1-LF-002_lift_gear_z20",
+   5.9,
+   "bánh răng ăn khớp thanh răng trụ (răng lồng nhau; bánh và trụ đặt theo URDF AlohaMini2, sâu ăn khớp 3,1 mm)"
+  ],
+  [
+   "M1-AR-001_OB_F_J4_Elbow_L",
+   "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_L",
+   337.6,
+   null
+  ],
+  [
+   "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_L",
+   "M1-AR-011_OB_F_J5_Pin_Bearing_L",
+   186.1,
+   "chốt J5 xuyên lỗ giá J5 (CAD gốc AM-ARM200, cặp chủ ý của assembly_full)"
+  ],
+  [
+   "M1-AR-011_OB_F_J5_Pin_Bearing_L",
+   "M1-AR-004_OB_F_J56_Bottom_L",
+   110.1,
+   "chốt J5 xuyên đáy J56 (CAD gốc AM-ARM200, cặp chủ ý của assembly_full)"
+  ],
+  [
+   "M1-AR-027_OB_F_Camera_L",
+   "M1-CM-001_wrist_cam_L",
+   29.4,
+   "bo camera 36 x 36 lọt hốc giá camera upstream; chồng 29 mm3 ở mép do khối bao camera giả định (đẩy ra 8 mm dọc trục quang vẫn 0,1 mm3: hốc ôm sát bo), gripper_am.cam_module_base"
+  ],
+  [
+   "M1-AR-001_OB_F_J4_Elbow_R",
+   "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_R",
+   337.6,
+   null
+  ],
+  [
+   "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_R",
+   "M1-AR-011_OB_F_J5_Pin_Bearing_R",
+   186.1,
+   "chốt J5 xuyên lỗ giá J5 (CAD gốc AM-ARM200, cặp chủ ý của assembly_full)"
+  ],
+  [
+   "M1-AR-011_OB_F_J5_Pin_Bearing_R",
+   "M1-AR-004_OB_F_J56_Bottom_R",
+   110.1,
+   "chốt J5 xuyên đáy J56 (CAD gốc AM-ARM200, cặp chủ ý của assembly_full)"
+  ],
+  [
+   "M1-AR-027_OB_F_Camera_R",
+   "M1-CM-001_wrist_cam_R",
+   29.4,
+   "bo camera 36 x 36 lọt hốc giá camera upstream; chồng 29 mm3 ở mép do khối bao camera giả định (đẩy ra 8 mm dọc trục quang vẫn 0,1 mm3: hốc ôm sát bo), gripper_am.cam_module_base"
+  ]
+ ],
+ "giao_hien_thi": [
+  [
+   "M1-LF-053_OB_Main_Assembly_Post3",
+   "M1-LF-lift_servo",
+   3109.6
+  ],
+  [
+   "M1-LF-057_OB_T_Connector_Middle",
+   "M1-LF-lift_servo",
+   11304.0
+  ],
+  [
+   "M1-AR-007_OB_F_J7_Gripper_L",
+   "M1-SV-001_gripper_L",
+   685.1
+  ],
+  [
+   "M1-AR-008_OB_F_J7_Jaw_L",
+   "M1-SV-001_gripper_L",
+   362.5
+  ],
+  [
+   "M1-AR-007_OB_F_J7_Gripper_R",
+   "M1-SV-001_gripper_R",
+   685.1
+  ],
+  [
+   "M1-AR-008_OB_F_J7_Jaw_R",
+   "M1-SV-001_gripper_R",
+   362.5
+  ]
+ ]
+}

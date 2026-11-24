@@ -1,0 +1,68 @@
+key,part_number,name,group,type,notes
+M1-BS-035_omni_hub,M1-BS-035,Omni wheel hub,Base,purchased,Simplified model of a bought 4 in omni wheel
+M1-BS-035_omni_plate,M1-BS-035,Omni wheel side plate,Base,purchased,Simplified model of a bought 4 in omni wheel
+M1-BS-035_omni_roller,M1-BS-035,Omni wheel roller,Base,purchased,Simplified model of a bought 4 in omni wheel
+M1-BS-031_spoke_front,M1-BS-031,Aluminium spoke 20 x 40 (front),Base,cut,Cut from 2040 extrusion
+M1-BS-031_spoke_side,M1-BS-031,Aluminium spoke 20 x 40 (side),Base,cut,Cut from 2040 extrusion
+M1-BS-036_wheel_mount_wall,M1-BS-036,Wheel servo mount wall,Base,printed,
+M1-BS-036_wheel_mount_cap,M1-BS-036,Wheel servo mount cap,Base,printed,
+M1-BS-032_cw_hub_plate,M1-BS-032,Counterweight plate (main),Base,cut,Laser-cut steel plate
+M1-BS-039_cw_plate,M1-BS-039,Counterweight plate (second layer),Base,cut,Laser-cut steel plate
+M1-BS-037_deck,M1-BS-037,Base deck,Base,printed,
+M1-BS-038_ebay0,M1-BS-038,Battery bay envelope,Power,purchased,Placeholder block for the battery pack; not a real part model
+M1-BS-038_ebay1,M1-BS-038,Electronics bay envelope,Electronics,purchased,"Placeholder block for the Pi 5, bus adapters and emergency stop; not a real part model"
+M1-ST-012_khay_de_00,M1-ST-012,Tray piece 00 (rear right),Base,printed,Four-piece tray; dovetail and M3 joints
+M1-ST-012_khay_de_01,M1-ST-012,Tray piece 01 (rear left),Base,printed,Four-piece tray; dovetail and M3 joints
+M1-ST-012_khay_de_10,M1-ST-012,Tray piece 10 (front right),Base,printed,Four-piece tray; dovetail and M3 joints
+M1-ST-012_khay_de_11,M1-ST-012,Tray piece 11 (front left),Base,printed,Four-piece tray; dovetail and M3 joints
+M1-ST-011_cot_do_cat,M1-ST-011,Tray bracket (short),Base,printed,Cut down to carry the 2040 rail
+M1-BS-006_2040_do_khay,M1-BS-006,Aluminium 2040 tray rail (190 mm),Base,cut,Cut from 2040 extrusion offcut
+M1-LF-051_OB_Main_Assembly_Post1,M1-LF-051,Column section 1,Lift,inherited,Has the gear rack
+M1-LF-052_OB_Main_Assembly_Post2,M1-LF-052,Column section 2,Lift,inherited,Has the gear rack
+M1-LF-053_OB_Main_Assembly_Post3,M1-LF-053,Column section 3,Lift,inherited,Has the gear rack
+M1-LF-054_O_Main_Assembly_Post4,M1-LF-054,Column section 4 (foot),Lift,inherited,
+M1-LF-055_O_POST4_Connector_Base,M1-LF-055,Column foot connector,Lift,inherited,
+M1-LF-057_OB_T_Connector_Middle,M1-LF-057,Middle T frame,Lift,inherited,Carries the lift servo and the arm station
+M1-LF-004_O_T_Connector_Dowel_Pin_12_25,M1-LF-004,Dowel pin 12 x 25,Lift,inherited,Steel pin; bought
+M1-LF-002_lift_gear_z20,M1-LF-002,Lift gear (20 teeth),Lift,printed,Drawn by Faibotic; replaces the 26-tooth gear of the upstream design
+M1-LF-050_latch_solenoid,M1-LF-050,Latch solenoid,Lift,purchased,Envelope block
+M1-LF-041_latch_pawl,M1-LF-041,Latch pawl,Lift,purchased,Steel pawl
+M1-LF-061_latch_sensor,M1-LF-061,Latch sensor switch,Lift,purchased,Envelope block
+M1-LF-060_latch_bracket,M1-LF-060,Latch bracket,Lift,printed,
+M1-LF-041_switch,M1-LF-041,Travel limit switch,Lift,purchased,Envelope block
+M1-LF-lift_servo,M1-SV-002,STS3095 servo (lift),Actuators,purchased,Simplified model; the arm servos are part of the arm meshes
+M1-SV-001_sts3215,M1-SV-001,STS3215 servo,Actuators,purchased,Simplified model; three drive wheels; two grippers; two wrist yaw joints
+M1-TR-020_de_ngam_xe,M1-TR-020,Dock mount (carriage side),Station,printed,
+M1-TR-021_chot_con_xe,M1-TR-021,Dock taper pin,Station,purchased,
+M1-TR-022_moc_giu_xe,M1-TR-022,Latch hook,Station,purchased,
+M1-TR-023_giac_21W4_cai_xe,M1-TR-023,D-sub combo connector (socket half),Electronics,purchased,Envelope block
+M1-TR-001_ray_truoc_2040,M1-TR-001,Station front rail 2040,Station,cut,Cut from 2040 extrusion
+M1-TR-002_tai_2040,M1-TR-002,Station ear 2040,Station,cut,Cut from 2040 extrusion
+M1-TR-003_ga_day_tay,M1-TR-003,Arm base bracket,Station,printed,
+M1-TR-004_khoi_bac,M1-TR-004,Bushing block,Station,printed,
+M1-TR-004b_bac_thep,M1-TR-004b,Steel bushing,Station,purchased,
+M1-TR-008_khoa_keo,M1-TR-008,Draw latch,Station,purchased,
+M1-TR-009_cong_tac_khoa,M1-TR-009,Latch limit switch,Station,purchased,Envelope block
+M1-TR-014_tay_cam,M1-TR-014,Handle,Station,printed,
+M1-TR-010_giac_21W4_duc,M1-TR-010,D-sub combo connector (plug half),Electronics,purchased,Envelope block
+M1-TR-011_gia_giac,M1-TR-011,Connector holder,Electronics,printed,
+M1-TR-005_cau_cot_camera,M1-TR-005,Camera mast bridge,Head camera,printed,
+M1-TR-006_cot_camera_2020,M1-TR-006,Camera mast 2020,Head camera,cut,Cut from 2020 extrusion
+M1-TR-007_ga_pan_tilt,M1-TR-007,Pan-tilt bracket,Head camera,printed,
+M1-TR-007b_num_khoa_M5,M1-TR-007b,Locking knob M5,Head camera,purchased,
+M1-CM-001_camera,M1-CM-001,USB camera module,Cameras,purchased,Envelope block; one on the head and one on each wrist
+M1-TR-012_estop_hop,M1-TR-012,Emergency stop box,Electronics,printed,
+M1-TR-012b_estop_nam,M1-TR-012b,Emergency stop button,Electronics,purchased,
+M1-TR-013_hop_dien_tram,M1-TR-013,Station electronics box,Electronics,printed,
+M1-SH-005_O_F_J1_Base,M1-SH-005,J1 base,Arm,inherited,
+M1-SH-019_O_F_J2_Rotation,M1-SH-019,J2 rotation frame,Arm,inherited,
+M1-SH-006_OB_F_J3_Shoulder,M1-SH-006,J3 shoulder,Arm,inherited,
+M1-AR-001_OB_F_J4_Elbow,M1-AR-001,J4 elbow,Arm,inherited,
+M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket,M1-AR-002,J5 elbow-wrist bracket,Arm,inherited,
+M1-AR-011_OB_F_J5_Pin_Bearing,M1-AR-011,J5 pin with bearing,Arm,inherited,
+M1-AR-003_OB_F_J56_Wrist_Housing,M1-AR-003,Wrist housing (J5/J6),Arm,inherited,
+M1-AR-004_OB_F_J56_Bottom,M1-AR-004,Wrist bottom (J5/J6),Arm,inherited,
+M1-AR-005_OB_F_J56_Top,M1-AR-005,Wrist top (J5/J6),Arm,inherited,
+M1-AR-007_OB_F_J7_Gripper,M1-AR-007,Gripper body (J7),Gripper,inherited,
+M1-AR-008_OB_F_J7_Jaw,M1-AR-008,Gripper jaw (J7),Gripper,inherited,
+M1-AR-027_OB_F_Camera,M1-AR-027,Wrist camera bracket,Wrist camera,inherited,

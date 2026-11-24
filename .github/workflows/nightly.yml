@@ -1,0 +1,64 @@
+name: nightly
+
+# Tier 1b long runs: 2-hour soak (sim and mock bus) and the 10,000-case fuzz. Not run on push.
+# Plan: docs/S4/KE-HOACH-TANG-1B.md (sections 2.3, 2.4). Run by hand with "Run workflow".
+on:
+  schedule:
+    - cron: "0 18 * * *"      # 01:00 Vietnam time
+  workflow_dispatch:
+    inputs:
+      phut:
+        description: "Soak length in minutes (default 120)"
+        default: "120"
+
+jobs:
+  soak:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        backend: [sim, bus-gia]
+    env:
+      M1_SKIP_RENDER: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e "sdk[dev]"
+      - name: Soak ${{ matrix.backend }}
+        run: python scripts/soak.py --backend ${{ matrix.backend }} --phut ${{ github.event.inputs.phut || '120' }} --bao-cao reports/soak-${{ matrix.backend }}.json
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: soak-${{ matrix.backend }}
+          path: reports/soak-${{ matrix.backend }}.json
+          if-no-files-found: warn
+
+  fuzz-dem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      M1_SKIP_RENDER: "1"
+      FUZZ_N: "10000"
+      SOAK_CHU_KY: "10000"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e "sdk[dev]"
+      - name: Fuzz 10,000 cases per input and 10,000 state-machine cycles
+        run: python -m pytest -q tests/tier1b/test_fuzz.py tests/tier1b/test_soak.py -m "not soak"

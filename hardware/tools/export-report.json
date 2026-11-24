@@ -1,0 +1,1574 @@
+{
+ "source": "cad/faibotic/assembly_pl.py build(lift=0, pose='ready')",
+ "units": "mm",
+ "assembly": {
+  "instances": 163,
+  "files": {
+   "assembly/faibot-m1-v0.5-mobile-base.step": {
+    "bytes": 3510690,
+    "instances": 86,
+    "bbox": [
+     -245.0,
+     -254.5,
+     -0.0,
+     320.0,
+     254.5,
+     220.0
+    ]
+   },
+   "assembly/faibot-m1-v0.5-mobile-lift.step": {
+    "bytes": 37456193,
+    "instances": 15,
+    "bbox": [
+     -160.7,
+     -75.4,
+     39.0,
+     112.0,
+     3171.7,
+     922.8
+    ]
+   },
+   "assembly/faibot-m1-v0.5-mobile-station.step": {
+    "bytes": 698812,
+    "instances": 32,
+    "bbox": [
+     -128.1,
+     -309.5,
+     476.7,
+     121.9,
+     309.5,
+     1115.7
+    ]
+   },
+   "assembly/faibot-m1-v0.5-mobile-arm.step": {
+    "bytes": 30983622,
+    "instances": 30,
+    "bbox": [
+     -16.9,
+     -308.2,
+     573.8,
+     551.5,
+     305.4,
+     863.8
+    ]
+   }
+  }
+ },
+ "parts": {
+  "M1-BS-035_omni_hub": {
+   "key": "M1-BS-035_omni_hub",
+   "qty": 3,
+   "instances": [
+    "M1-BS-035_omni0_hub",
+    "M1-BS-035_omni1_hub",
+    "M1-BS-035_omni2_hub"
+   ],
+   "volume_mm3": 109377.69,
+   "file": "parts/purchased/M1-BS-035-omni-wheel-hub.step",
+   "volume_reopened_mm3": 109377.69,
+   "volume_rel_err": 2.660856204100197e-16,
+   "size_mm": [
+    34.0,
+    64.0,
+    64.0
+   ],
+   "size_reopened_mm": [
+    34.0,
+    64.0,
+    64.0
+   ],
+   "product_name": "M1-BS-035-omni-wheel-hub",
+   "stem": "M1-BS-035-omni-wheel-hub",
+   "bytes": 7288
+  },
+  "M1-BS-035_omni_plate": {
+   "key": "M1-BS-035_omni_plate",
+   "qty": 6,
+   "instances": [
+    "M1-BS-035_omni0_plate0",
+    "M1-BS-035_omni0_plate1",
+    "M1-BS-035_omni1_plate0",
+    "M1-BS-035_omni1_plate1",
+    "M1-BS-035_omni2_plate0",
+    "M1-BS-035_omni2_plate1"
+   ],
+   "volume_mm3": 6870.663,
+   "file": "parts/purchased/M1-BS-035-omni-wheel-side-plate.step",
+   "volume_reopened_mm3": 6870.663,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    3.0,
+    54.0,
+    54.0
+   ],
+   "size_reopened_mm": [
+    3.0,
+    54.0,
+    54.0
+   ],
+   "product_name": "M1-BS-035-omni-wheel-side-plate",
+   "stem": "M1-BS-035-omni-wheel-side-plate",
+   "bytes": 7325
+  },
+  "M1-BS-035_omni_roller": {
+   "key": "M1-BS-035_omni_roller",
+   "qty": 54,
+   "instances": [
+    "M1-BS-035_omni0_roller0",
+    "M1-BS-035_omni0_roller1",
+    "M1-BS-035_omni0_roller2",
+    "M1-BS-035_omni0_roller3",
+    "M1-BS-035_omni0_roller4",
+    "M1-BS-035_omni0_roller5",
+    "M1-BS-035_omni0_roller6",
+    "M1-BS-035_omni0_roller7",
+    "M1-BS-035_omni0_roller8",
+    "M1-BS-035_omni0_roller9",
+    "M1-BS-035_omni0_roller10",
+    "M1-BS-035_omni0_roller11",
+    "M1-BS-035_omni0_roller12",
+    "M1-BS-035_omni0_roller13",
+    "M1-BS-035_omni0_roller14",
+    "M1-BS-035_omni0_roller15",
+    "M1-BS-035_omni0_roller16",
+    "M1-BS-035_omni0_roller17",
+    "M1-BS-035_omni1_roller0",
+    "M1-BS-035_omni1_roller1",
+    "M1-BS-035_omni1_roller2",
+    "M1-BS-035_omni1_roller3",
+    "M1-BS-035_omni1_roller4",
+    "M1-BS-035_omni1_roller5",
+    "M1-BS-035_omni1_roller6",
+    "M1-BS-035_omni1_roller7",
+    "M1-BS-035_omni1_roller8",
+    "M1-BS-035_omni1_roller9",
+    "M1-BS-035_omni1_roller10",
+    "M1-BS-035_omni1_roller11",
+    "M1-BS-035_omni1_roller12",
+    "M1-BS-035_omni1_roller13",
+    "M1-BS-035_omni1_roller14",
+    "M1-BS-035_omni1_roller15",
+    "M1-BS-035_omni1_roller16",
+    "M1-BS-035_omni1_roller17",
+    "M1-BS-035_omni2_roller0",
+    "M1-BS-035_omni2_roller1",
+    "M1-BS-035_omni2_roller2",
+    "M1-BS-035_omni2_roller3",
+    "M1-BS-035_omni2_roller4",
+    "M1-BS-035_omni2_roller5",
+    "M1-BS-035_omni2_roller6",
+    "M1-BS-035_omni2_roller7",
+    "M1-BS-035_omni2_roller8",
+    "M1-BS-035_omni2_roller9",
+    "M1-BS-035_omni2_roller10",
+    "M1-BS-035_omni2_roller11",
+    "M1-BS-035_omni2_roller12",
+    "M1-BS-035_omni2_roller13",
+    "M1-BS-035_omni2_roller14",
+    "M1-BS-035_omni2_roller15",
+    "M1-BS-035_omni2_roller16",
+    "M1-BS-035_omni2_roller17"
+   ],
+   "volume_mm3": 2709.295,
+   "file": "parts/purchased/M1-BS-035-omni-wheel-roller.step",
+   "volume_reopened_mm3": 2709.295,
+   "volume_rel_err": 1.3763465387918776e-14,
+   "size_mm": [
+    16.0,
+    15.0,
+    16.0
+   ],
+   "size_reopened_mm": [
+    16.0,
+    15.0,
+    16.0
+   ],
+   "product_name": "M1-BS-035-omni-wheel-roller",
+   "stem": "M1-BS-035-omni-wheel-roller",
+   "bytes": 12486
+  },
+  "M1-BS-031_spoke_front": {
+   "key": "M1-BS-031_spoke_front",
+   "qty": 1,
+   "instances": [
+    "M1-BS-031_spoke0"
+   ],
+   "volume_mm3": 102400.0,
+   "file": "parts/faibotic/M1-BS-031-aluminium-spoke-20-x-40-front.step",
+   "volume_reopened_mm3": 102400.0,
+   "volume_rel_err": 1.4210854715202006e-16,
+   "size_mm": [
+    128.0,
+    40.0,
+    20.0
+   ],
+   "size_reopened_mm": [
+    128.0,
+    40.0,
+    20.0
+   ],
+   "product_name": "M1-BS-031-aluminium-spoke-20-x-40-front",
+   "stem": "M1-BS-031-aluminium-spoke-20-x-40-front",
+   "bytes": 17094
+  },
+  "M1-BS-036_wheel_mount_wall": {
+   "key": "M1-BS-036_wheel_mount_wall",
+   "qty": 3,
+   "instances": [
+    "M1-BS-036_wheel_mount_wall0",
+    "M1-BS-036_wheel_mount_wall1",
+    "M1-BS-036_wheel_mount_wall2"
+   ],
+   "volume_mm3": 8239.75,
+   "file": "parts/faibotic/M1-BS-036-wheel-servo-mount-wall.step",
+   "volume_reopened_mm3": 8239.75,
+   "volume_rel_err": 9.271828692033783e-15,
+   "size_mm": [
+    3.0,
+    62.0,
+    44.3
+   ],
+   "size_reopened_mm": [
+    3.0,
+    62.0,
+    44.3
+   ],
+   "product_name": "M1-BS-036-wheel-servo-mount-wall",
+   "stem": "M1-BS-036-wheel-servo-mount-wall",
+   "bytes": 17184
+  },
+  "M1-BS-036_wheel_mount_cap": {
+   "key": "M1-BS-036_wheel_mount_cap",
+   "qty": 3,
+   "instances": [
+    "M1-BS-036_wheel_mount_cap0",
+    "M1-BS-036_wheel_mount_cap1",
+    "M1-BS-036_wheel_mount_cap2"
+   ],
+   "volume_mm3": 17680.0,
+   "file": "parts/faibotic/M1-BS-036-wheel-servo-mount-cap.step",
+   "volume_reopened_mm3": 17680.0,
+   "volume_rel_err": 4.1153606415064643e-16,
+   "size_mm": [
+    34.0,
+    52.0,
+    10.0
+   ],
+   "size_reopened_mm": [
+    34.0,
+    52.0,
+    10.0
+   ],
+   "product_name": "M1-BS-036-wheel-servo-mount-cap",
+   "stem": "M1-BS-036-wheel-servo-mount-cap",
+   "bytes": 17035
+  },
+  "M1-BS-031_spoke_side": {
+   "key": "M1-BS-031_spoke_side",
+   "qty": 2,
+   "instances": [
+    "M1-BS-031_spoke1",
+    "M1-BS-031_spoke2"
+   ],
+   "volume_mm3": 74400.0,
+   "file": "parts/faibotic/M1-BS-031-aluminium-spoke-20-x-40-side.step",
+   "volume_reopened_mm3": 74400.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    81.141,
+    100.54,
+    20.0
+   ],
+   "size_reopened_mm": [
+    81.141,
+    100.54,
+    20.0
+   ],
+   "product_name": "M1-BS-031-aluminium-spoke-20-x-40-side",
+   "stem": "M1-BS-031-aluminium-spoke-20-x-40-side",
+   "bytes": 17103
+  },
+  "M1-BS-032_cw_hub_plate": {
+   "key": "M1-BS-032_cw_hub_plate",
+   "qty": 1,
+   "instances": [
+    "M1-BS-032_cw_hub_plate"
+   ],
+   "volume_mm3": 631720.0,
+   "file": "parts/faibotic/M1-BS-032-counterweight-plate-main.step",
+   "volume_reopened_mm3": 631720.0,
+   "volume_rel_err": 5.528493089989306e-16,
+   "size_mm": [
+    365.0,
+    260.0,
+    8.5
+   ],
+   "size_reopened_mm": [
+    365.0,
+    260.0,
+    8.5
+   ],
+   "product_name": "M1-BS-032-counterweight-plate-main",
+   "stem": "M1-BS-032-counterweight-plate-main",
+   "bytes": 31203
+  },
+  "M1-BS-039_cw_plate": {
+   "key": "M1-BS-039_cw_plate",
+   "qty": 1,
+   "instances": [
+    "M1-BS-039_cw_plate2"
+   ],
+   "volume_mm3": 416520.0,
+   "file": "parts/faibotic/M1-BS-039-counterweight-plate-second-layer.step",
+   "volume_reopened_mm3": 416520.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    267.0,
+    260.0,
+    6.0
+   ],
+   "size_reopened_mm": [
+    267.0,
+    260.0,
+    6.0
+   ],
+   "product_name": "M1-BS-039-counterweight-plate-second-layer",
+   "stem": "M1-BS-039-counterweight-plate-second-layer",
+   "bytes": 17113
+  },
+  "M1-BS-037_deck": {
+   "key": "M1-BS-037_deck",
+   "qty": 1,
+   "instances": [
+    "M1-BS-037_deck"
+   ],
+   "volume_mm3": 449565.043,
+   "file": "parts/faibotic/M1-BS-037-base-deck.step",
+   "volume_reopened_mm3": 449565.043,
+   "volume_rel_err": 4.311534313588449e-14,
+   "size_mm": [
+    370.0,
+    370.0,
+    5.0
+   ],
+   "size_reopened_mm": [
+    370.0,
+    370.0,
+    5.0
+   ],
+   "product_name": "M1-BS-037-base-deck",
+   "stem": "M1-BS-037-base-deck",
+   "bytes": 22336
+  },
+  "M1-BS-038_ebay0": {
+   "key": "M1-BS-038_ebay0",
+   "qty": 1,
+   "instances": [
+    "M1-BS-038_ebay0"
+   ],
+   "volume_mm3": 525000.0,
+   "file": "parts/purchased/M1-BS-038-battery-bay-envelope.step",
+   "volume_reopened_mm3": 525000.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    100.0,
+    75.0,
+    70.0
+   ],
+   "size_reopened_mm": [
+    100.0,
+    75.0,
+    70.0
+   ],
+   "product_name": "M1-BS-038-battery-bay-envelope",
+   "stem": "M1-BS-038-battery-bay-envelope",
+   "bytes": 17044
+  },
+  "M1-BS-038_ebay1": {
+   "key": "M1-BS-038_ebay1",
+   "qty": 1,
+   "instances": [
+    "M1-BS-038_ebay1"
+   ],
+   "volume_mm3": 525000.0,
+   "file": "parts/purchased/M1-BS-038-electronics-bay-envelope.step",
+   "volume_reopened_mm3": 525000.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    100.0,
+    75.0,
+    70.0
+   ],
+   "size_reopened_mm": [
+    100.0,
+    75.0,
+    70.0
+   ],
+   "product_name": "M1-BS-038-electronics-bay-envelope",
+   "stem": "M1-BS-038-electronics-bay-envelope",
+   "bytes": 17068
+  },
+  "M1-ST-012_khay_de_00": {
+   "key": "M1-ST-012_khay_de_00",
+   "qty": 1,
+   "instances": [
+    "M1-ST-012_khay_de_00"
+   ],
+   "volume_mm3": 107423.92,
+   "file": "parts/faibotic/M1-ST-012-tray-piece-00-rear-right.step",
+   "volume_reopened_mm3": 107423.92,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    172.5,
+    196.5,
+    28.4
+   ],
+   "size_reopened_mm": [
+    172.5,
+    196.5,
+    28.4
+   ],
+   "product_name": "M1-ST-012-tray-piece-00-rear-right",
+   "stem": "M1-ST-012-tray-piece-00-rear-right",
+   "bytes": 913020
+  },
+  "M1-ST-012_khay_de_01": {
+   "key": "M1-ST-012_khay_de_01",
+   "qty": 1,
+   "instances": [
+    "M1-ST-012_khay_de_01"
+   ],
+   "volume_mm3": 109179.819,
+   "file": "parts/faibotic/M1-ST-012-tray-piece-01-rear-left.step",
+   "volume_reopened_mm3": 109179.819,
+   "volume_rel_err": 2.3457971389525758e-14,
+   "size_mm": [
+    172.5,
+    188.5,
+    28.4
+   ],
+   "size_reopened_mm": [
+    172.5,
+    188.5,
+    28.4
+   ],
+   "product_name": "M1-ST-012-tray-piece-01-rear-left",
+   "stem": "M1-ST-012-tray-piece-01-rear-left",
+   "bytes": 783854
+  },
+  "M1-ST-012_khay_de_10": {
+   "key": "M1-ST-012_khay_de_10",
+   "qty": 1,
+   "instances": [
+    "M1-ST-012_khay_de_10"
+   ],
+   "volume_mm3": 59812.221,
+   "file": "parts/faibotic/M1-ST-012-tray-piece-10-front-right.step",
+   "volume_reopened_mm3": 59812.221,
+   "volume_rel_err": 1.0583260396231812e-14,
+   "size_mm": [
+    88.5,
+    196.5,
+    26.4
+   ],
+   "size_reopened_mm": [
+    88.5,
+    196.5,
+    26.4
+   ],
+   "product_name": "M1-ST-012-tray-piece-10-front-right",
+   "stem": "M1-ST-012-tray-piece-10-front-right",
+   "bytes": 588727
+  },
+  "M1-ST-012_khay_de_11": {
+   "key": "M1-ST-012_khay_de_11",
+   "qty": 1,
+   "instances": [
+    "M1-ST-012_khay_de_11"
+   ],
+   "volume_mm3": 58406.392,
+   "file": "parts/faibotic/M1-ST-012-tray-piece-11-front-left.step",
+   "volume_reopened_mm3": 58406.392,
+   "volume_rel_err": 2.2049718407115016e-14,
+   "size_mm": [
+    88.5,
+    188.5,
+    26.4
+   ],
+   "size_reopened_mm": [
+    88.5,
+    188.5,
+    26.4
+   ],
+   "product_name": "M1-ST-012-tray-piece-11-front-left",
+   "stem": "M1-ST-012-tray-piece-11-front-left",
+   "bytes": 563045
+  },
+  "M1-ST-011_cot_do_cat": {
+   "key": "M1-ST-011_cot_do_cat",
+   "qty": 1,
+   "instances": [
+    "M1-ST-011_cot_do_cat"
+   ],
+   "volume_mm3": 407880.0,
+   "file": "parts/faibotic/M1-ST-011-tray-bracket-short.step",
+   "volume_reopened_mm3": 407880.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    55.0,
+    60.0,
+    123.6
+   ],
+   "size_reopened_mm": [
+    55.0,
+    60.0,
+    123.6
+   ],
+   "product_name": "M1-ST-011-tray-bracket-short",
+   "stem": "M1-ST-011-tray-bracket-short",
+   "bytes": 17045
+  },
+  "M1-BS-006_2040_do_khay": {
+   "key": "M1-BS-006_2040_do_khay",
+   "qty": 1,
+   "instances": [
+    "M1-BS-006_2040_do_khay"
+   ],
+   "volume_mm3": 152000.0,
+   "file": "parts/faibotic/M1-BS-006-aluminium-2040-tray-rail-190-mm.step",
+   "volume_reopened_mm3": 152000.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    40.0,
+    190.0,
+    20.0
+   ],
+   "size_reopened_mm": [
+    40.0,
+    190.0,
+    20.0
+   ],
+   "product_name": "M1-BS-006-aluminium-2040-tray-rail-190-mm",
+   "stem": "M1-BS-006-aluminium-2040-tray-rail-190-mm",
+   "bytes": 17108
+  },
+  "M1-LF-051_OB_Main_Assembly_Post1": {
+   "key": "M1-LF-051_OB_Main_Assembly_Post1",
+   "qty": 1,
+   "instances": [
+    "M1-LF-051_OB_Main_Assembly_Post1"
+   ],
+   "volume_mm3": 754064.122,
+   "file": "parts/inherited/alohamini2/OB_Main_Assembly_Post1.stp",
+   "source": "cad/upstream/AlohaMini/AlohaMini2/hardware/mobile_base2/stp/OB_Main_Assembly_Post1.stp",
+   "sha256": "9b5014bb76540d76adda2025fd80157b4552a1edf1b16766f1ca9d55e7832712",
+   "sha256_source": "9b5014bb76540d76adda2025fd80157b4552a1edf1b16766f1ca9d55e7832712",
+   "origin": "AlohaMini",
+   "bytes": 3019416
+  },
+  "M1-LF-052_OB_Main_Assembly_Post2": {
+   "key": "M1-LF-052_OB_Main_Assembly_Post2",
+   "qty": 1,
+   "instances": [
+    "M1-LF-052_OB_Main_Assembly_Post2"
+   ],
+   "volume_mm3": 779426.828,
+   "file": "parts/inherited/alohamini2/OB_Main_Assembly_Post2.stp",
+   "source": "cad/upstream/AlohaMini/AlohaMini2/hardware/mobile_base2/stp/OB_Main_Assembly_Post2.stp",
+   "sha256": "24126cf3ee7900699a1aec68bf1be678864ab1f5d64ce4b8dea90a2669390d12",
+   "sha256_source": "24126cf3ee7900699a1aec68bf1be678864ab1f5d64ce4b8dea90a2669390d12",
+   "origin": "AlohaMini",
+   "bytes": 4177539
+  },
+  "M1-LF-053_OB_Main_Assembly_Post3": {
+   "key": "M1-LF-053_OB_Main_Assembly_Post3",
+   "qty": 1,
+   "instances": [
+    "M1-LF-053_OB_Main_Assembly_Post3"
+   ],
+   "volume_mm3": 727606.028,
+   "file": "parts/inherited/alohamini2/OB_Main_Assembly_Post3.stp",
+   "source": "cad/upstream/AlohaMini/AlohaMini2/hardware/mobile_base2/stp/OB_Main_Assembly_Post3.stp",
+   "sha256": "5031903c84aae08736c1b104457444290d801a283519f306dc45223368b8ec98",
+   "sha256_source": "5031903c84aae08736c1b104457444290d801a283519f306dc45223368b8ec98",
+   "origin": "AlohaMini",
+   "bytes": 12297083
+  },
+  "M1-LF-054_O_Main_Assembly_Post4": {
+   "key": "M1-LF-054_O_Main_Assembly_Post4",
+   "qty": 1,
+   "instances": [
+    "M1-LF-054_O_Main_Assembly_Post4"
+   ],
+   "volume_mm3": 1644858.143,
+   "file": "parts/inherited/alohamini2/O_Main_Assembly_Post4.stp",
+   "source": "cad/upstream/AlohaMini/AlohaMini2/hardware/mobile_base2/stp/O_Main_Assembly_Post4.stp",
+   "sha256": "35d1e299ff0eb7f536a8c06f76d6d107723c685b10251dd2f66c391b7b6dfc28",
+   "sha256_source": "35d1e299ff0eb7f536a8c06f76d6d107723c685b10251dd2f66c391b7b6dfc28",
+   "origin": "AlohaMini",
+   "bytes": 6383940
+  },
+  "M1-LF-055_O_POST4_Connector_Base": {
+   "key": "M1-LF-055_O_POST4_Connector_Base",
+   "qty": 1,
+   "instances": [
+    "M1-LF-055_O_POST4_Connector_Base"
+   ],
+   "volume_mm3": 478541.753,
+   "file": "parts/inherited/alohamini2/O_POST4_Connector_Base.stp",
+   "source": "cad/upstream/AlohaMini/AlohaMini2/hardware/mobile_base2/stp/O_POST4_Connector_Base.stp",
+   "sha256": "986c93175eeb7d0f919d9339f179691d55f6578aa2e616717fe13d61dd6f1d43",
+   "sha256_source": "986c93175eeb7d0f919d9339f179691d55f6578aa2e616717fe13d61dd6f1d43",
+   "origin": "AlohaMini",
+   "bytes": 411341
+  },
+  "M1-LF-057_OB_T_Connector_Middle": {
+   "key": "M1-LF-057_OB_T_Connector_Middle",
+   "qty": 1,
+   "instances": [
+    "M1-LF-057_OB_T_Connector_Middle"
+   ],
+   "volume_mm3": 535888.055,
+   "file": "parts/inherited/alohamini2/OB_T_Connector_Middle.stp",
+   "source": "cad/upstream/AlohaMini/AlohaMini2/hardware/mobile_base2/stp/OB_T_Connector_Middle.stp",
+   "sha256": "52873c5212764159bdce5679a1a94b5bfac83db6b7b7ae19408a945a502459f4",
+   "sha256_source": "52873c5212764159bdce5679a1a94b5bfac83db6b7b7ae19408a945a502459f4",
+   "origin": "AlohaMini",
+   "bytes": 2031294
+  },
+  "M1-LF-004_O_T_Connector_Dowel_Pin_12_25": {
+   "key": "M1-LF-004_O_T_Connector_Dowel_Pin_12_25",
+   "qty": 1,
+   "instances": [
+    "M1-LF-004_O_T_Connector_Dowel_Pin_12_25"
+   ],
+   "volume_mm3": 2264.174,
+   "file": "parts/inherited/alohamini2/O_T_Connector_Dowel_Pin_12_25.stp",
+   "source": "cad/upstream/AlohaMini/AlohaMini2/hardware/mobile_base2/stp/O_T_Connector_Dowel_Pin_12_25.stp",
+   "sha256": "fb8e09ea7fbacb3713eb3f8208a76e5bce281e4266c8c41b1df04a929984b418",
+   "sha256_source": "fb8e09ea7fbacb3713eb3f8208a76e5bce281e4266c8c41b1df04a929984b418",
+   "origin": "AlohaMini",
+   "bytes": 8720
+  },
+  "M1-LF-002_lift_gear_z20": {
+   "key": "M1-LF-002_lift_gear_z20",
+   "qty": 1,
+   "instances": [
+    "M1-LF-002_lift_gear_z20"
+   ],
+   "volume_mm3": 11150.727,
+   "file": "parts/faibotic/M1-LF-002-lift-gear-20-teeth.step",
+   "volume_reopened_mm3": 11150.727,
+   "volume_rel_err": 1.3115445709353987e-13,
+   "size_mm": [
+    32.972,
+    21.0,
+    32.972
+   ],
+   "size_reopened_mm": [
+    32.972,
+    21.0,
+    32.972
+   ],
+   "product_name": "M1-LF-002-lift-gear-20-teeth",
+   "stem": "M1-LF-002-lift-gear-20-teeth",
+   "bytes": 312763
+  },
+  "M1-LF-050_latch_solenoid": {
+   "key": "M1-LF-050_latch_solenoid",
+   "qty": 1,
+   "instances": [
+    "M1-LF-050_latch_solenoid"
+   ],
+   "volume_mm3": 23760.0,
+   "file": "parts/purchased/M1-LF-050-latch-solenoid.step",
+   "volume_reopened_mm3": 23760.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    45.0,
+    24.0,
+    22.0
+   ],
+   "size_reopened_mm": [
+    45.0,
+    24.0,
+    22.0
+   ],
+   "product_name": "M1-LF-050-latch-solenoid",
+   "stem": "M1-LF-050-latch-solenoid",
+   "bytes": 16999
+  },
+  "M1-LF-041_latch_pawl": {
+   "key": "M1-LF-041_latch_pawl",
+   "qty": 1,
+   "instances": [
+    "M1-LF-041_latch_pawl"
+   ],
+   "volume_mm3": 1248.0,
+   "file": "parts/purchased/M1-LF-041-latch-pawl.step",
+   "volume_reopened_mm3": 1248.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    26.0,
+    8.0,
+    6.0
+   ],
+   "size_reopened_mm": [
+    26.0,
+    8.0,
+    6.0
+   ],
+   "product_name": "M1-LF-041-latch-pawl",
+   "stem": "M1-LF-041-latch-pawl",
+   "bytes": 16939
+  },
+  "M1-LF-061_latch_sensor": {
+   "key": "M1-LF-061_latch_sensor",
+   "qty": 1,
+   "instances": [
+    "M1-LF-061_latch_sensor"
+   ],
+   "volume_mm3": 2000.0,
+   "file": "parts/purchased/M1-LF-061-latch-sensor-switch.step",
+   "volume_reopened_mm3": 2000.0,
+   "volume_rel_err": 2.2737367544323206e-16,
+   "size_mm": [
+    20.0,
+    10.0,
+    10.0
+   ],
+   "size_reopened_mm": [
+    20.0,
+    10.0,
+    10.0
+   ],
+   "product_name": "M1-LF-061-latch-sensor-switch",
+   "stem": "M1-LF-061-latch-sensor-switch",
+   "bytes": 17025
+  },
+  "M1-LF-060_latch_bracket": {
+   "key": "M1-LF-060_latch_bracket",
+   "qty": 1,
+   "instances": [
+    "M1-LF-060_latch_bracket"
+   ],
+   "volume_mm3": 8280.0,
+   "file": "parts/faibotic/M1-LF-060-latch-bracket.step",
+   "volume_reopened_mm3": 8280.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    60.0,
+    46.0,
+    3.0
+   ],
+   "size_reopened_mm": [
+    60.0,
+    46.0,
+    3.0
+   ],
+   "product_name": "M1-LF-060-latch-bracket",
+   "stem": "M1-LF-060-latch-bracket",
+   "bytes": 16978
+  },
+  "M1-LF-041_switch": {
+   "key": "M1-LF-041_switch",
+   "qty": 2,
+   "instances": [
+    "M1-LF-041_switch_bot",
+    "M1-LF-041_switch_top"
+   ],
+   "volume_mm3": 2880.0,
+   "file": "parts/purchased/M1-LF-041-travel-limit-switch.step",
+   "volume_reopened_mm3": 2880.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    18.0,
+    20.0,
+    8.0
+   ],
+   "size_reopened_mm": [
+    18.0,
+    20.0,
+    8.0
+   ],
+   "product_name": "M1-LF-041-travel-limit-switch",
+   "stem": "M1-LF-041-travel-limit-switch",
+   "bytes": 17012
+  },
+  "M1-TR-020_de_ngam_xe": {
+   "key": "M1-TR-020_de_ngam_xe",
+   "qty": 1,
+   "instances": [
+    "M1-TR-020_de_ngam_xe"
+   ],
+   "volume_mm3": 304403.363,
+   "file": "parts/faibotic/M1-TR-020-dock-mount-carriage-side.step",
+   "volume_reopened_mm3": 304403.363,
+   "volume_rel_err": 1.338531948073471e-15,
+   "size_mm": [
+    92.0,
+    240.0,
+    30.0
+   ],
+   "size_reopened_mm": [
+    92.0,
+    240.0,
+    30.0
+   ],
+   "product_name": "M1-TR-020-dock-mount-carriage-side",
+   "stem": "M1-TR-020-dock-mount-carriage-side",
+   "bytes": 69452
+  },
+  "M1-TR-021_chot_con_xe": {
+   "key": "M1-TR-021_chot_con_xe",
+   "qty": 2,
+   "instances": [
+    "M1-TR-021_chot_con_L_xe",
+    "M1-TR-021_chot_con_R_xe"
+   ],
+   "volume_mm3": 1372.468,
+   "file": "parts/purchased/M1-TR-021-dock-taper-pin.step",
+   "volume_reopened_mm3": 1372.468,
+   "volume_rel_err": 3.313355861081116e-16,
+   "size_mm": [
+    7.9,
+    7.9,
+    28.0
+   ],
+   "size_reopened_mm": [
+    7.9,
+    7.9,
+    28.0
+   ],
+   "product_name": "M1-TR-021-dock-taper-pin",
+   "stem": "M1-TR-021-dock-taper-pin",
+   "bytes": 7257
+  },
+  "M1-TR-022_moc_giu_xe": {
+   "key": "M1-TR-022_moc_giu_xe",
+   "qty": 2,
+   "instances": [
+    "M1-TR-022_moc_giu_L_xe",
+    "M1-TR-022_moc_giu_R_xe"
+   ],
+   "volume_mm3": 3360.0,
+   "file": "parts/purchased/M1-TR-022-latch-hook.step",
+   "volume_reopened_mm3": 3360.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    20.0,
+    14.0,
+    12.0
+   ],
+   "size_reopened_mm": [
+    20.0,
+    14.0,
+    12.0
+   ],
+   "product_name": "M1-TR-022-latch-hook",
+   "stem": "M1-TR-022-latch-hook",
+   "bytes": 16965
+  },
+  "M1-TR-023_giac_21W4_cai_xe": {
+   "key": "M1-TR-023_giac_21W4_cai_xe",
+   "qty": 1,
+   "instances": [
+    "M1-TR-023_giac_21W4_cai_xe"
+   ],
+   "volume_mm3": 7420.0,
+   "file": "parts/purchased/M1-TR-023-d-sub-combo-connector-socket-half.step",
+   "volume_reopened_mm3": 7420.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    53.0,
+    14.0,
+    10.0
+   ],
+   "size_reopened_mm": [
+    53.0,
+    14.0,
+    10.0
+   ],
+   "product_name": "M1-TR-023-d-sub-combo-connector-socket-half",
+   "stem": "M1-TR-023-d-sub-combo-connector-socket-half",
+   "bytes": 17124
+  },
+  "M1-TR-001_ray_truoc_2040": {
+   "key": "M1-TR-001_ray_truoc_2040",
+   "qty": 1,
+   "instances": [
+    "M1-TR-001_ray_truoc_2040"
+   ],
+   "volume_mm3": 480000.0,
+   "file": "parts/faibotic/M1-TR-001-station-front-rail-2040.step",
+   "volume_reopened_mm3": 480000.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    40.0,
+    600.0,
+    20.0
+   ],
+   "size_reopened_mm": [
+    40.0,
+    600.0,
+    20.0
+   ],
+   "product_name": "M1-TR-001-station-front-rail-2040",
+   "stem": "M1-TR-001-station-front-rail-2040",
+   "bytes": 17079
+  },
+  "M1-TR-002_tai_2040": {
+   "key": "M1-TR-002_tai_2040",
+   "qty": 2,
+   "instances": [
+    "M1-TR-002_tai_2040_L",
+    "M1-TR-002_tai_2040_R"
+   ],
+   "volume_mm3": 160000.0,
+   "file": "parts/faibotic/M1-TR-002-station-ear-2040.step",
+   "volume_reopened_mm3": 160000.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    200.0,
+    20.0,
+    40.0
+   ],
+   "size_reopened_mm": [
+    200.0,
+    20.0,
+    40.0
+   ],
+   "product_name": "M1-TR-002-station-ear-2040",
+   "stem": "M1-TR-002-station-ear-2040",
+   "bytes": 17018
+  },
+  "M1-TR-003_ga_day_tay": {
+   "key": "M1-TR-003_ga_day_tay",
+   "qty": 2,
+   "instances": [
+    "M1-TR-003_ga_day_tay_L",
+    "M1-TR-003_ga_day_tay_R"
+   ],
+   "volume_mm3": 197680.0,
+   "file": "parts/faibotic/M1-TR-003-arm-base-bracket.step",
+   "volume_reopened_mm3": 197680.0,
+   "volume_rel_err": 1.4722698531330284e-16,
+   "size_mm": [
+    135.0,
+    144.0,
+    27.0
+   ],
+   "size_reopened_mm": [
+    135.0,
+    144.0,
+    27.0
+   ],
+   "product_name": "M1-TR-003-arm-base-bracket",
+   "stem": "M1-TR-003-arm-base-bracket",
+   "bytes": 37588
+  },
+  "M1-TR-004_khoi_bac": {
+   "key": "M1-TR-004_khoi_bac",
+   "qty": 2,
+   "instances": [
+    "M1-TR-004_khoi_bac_L",
+    "M1-TR-004_khoi_bac_R"
+   ],
+   "volume_mm3": 13738.053,
+   "file": "parts/faibotic/M1-TR-004-bushing-block.step",
+   "volume_reopened_mm3": 13738.053,
+   "volume_rel_err": 5.693422692772253e-15,
+   "size_mm": [
+    40.0,
+    20.0,
+    20.0
+   ],
+   "size_reopened_mm": [
+    40.0,
+    20.0,
+    20.0
+   ],
+   "product_name": "M1-TR-004-bushing-block",
+   "stem": "M1-TR-004-bushing-block",
+   "bytes": 20738
+  },
+  "M1-TR-004b_bac_thep": {
+   "key": "M1-TR-004b_bac_thep",
+   "qty": 2,
+   "instances": [
+    "M1-TR-004b_bac_thep_L",
+    "M1-TR-004b_bac_thep_R"
+   ],
+   "volume_mm3": 1256.637,
+   "file": "parts/purchased/M1-TR-004b-steel-bushing.step",
+   "volume_reopened_mm3": 1256.637,
+   "volume_rel_err": 2.2074463069215238e-14,
+   "size_mm": [
+    12.0,
+    12.0,
+    20.0
+   ],
+   "size_reopened_mm": [
+    12.0,
+    12.0,
+    20.0
+   ],
+   "product_name": "M1-TR-004b-steel-bushing",
+   "stem": "M1-TR-004b-steel-bushing",
+   "bytes": 10863
+  },
+  "M1-TR-008_khoa_keo": {
+   "key": "M1-TR-008_khoa_keo",
+   "qty": 2,
+   "instances": [
+    "M1-TR-008_khoa_keo_L",
+    "M1-TR-008_khoa_keo_R"
+   ],
+   "volume_mm3": 13056.0,
+   "file": "parts/purchased/M1-TR-008-draw-latch.step",
+   "volume_reopened_mm3": 13056.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    30.0,
+    16.0,
+    47.0
+   ],
+   "size_reopened_mm": [
+    30.0,
+    16.0,
+    47.0
+   ],
+   "product_name": "M1-TR-008-draw-latch",
+   "stem": "M1-TR-008-draw-latch",
+   "bytes": 30829
+  },
+  "M1-TR-009_cong_tac_khoa": {
+   "key": "M1-TR-009_cong_tac_khoa",
+   "qty": 2,
+   "instances": [
+    "M1-TR-009_cong_tac_khoa_L",
+    "M1-TR-009_cong_tac_khoa_R"
+   ],
+   "volume_mm3": 2000.0,
+   "file": "parts/purchased/M1-TR-009-latch-limit-switch.step",
+   "volume_reopened_mm3": 2000.0,
+   "volume_rel_err": 1.1368683772161603e-16,
+   "size_mm": [
+    20.0,
+    10.0,
+    10.0
+   ],
+   "size_reopened_mm": [
+    20.0,
+    10.0,
+    10.0
+   ],
+   "product_name": "M1-TR-009-latch-limit-switch",
+   "stem": "M1-TR-009-latch-limit-switch",
+   "bytes": 17019
+  },
+  "M1-TR-014_tay_cam": {
+   "key": "M1-TR-014_tay_cam",
+   "qty": 2,
+   "instances": [
+    "M1-TR-014_tay_cam_L",
+    "M1-TR-014_tay_cam_R"
+   ],
+   "volume_mm3": 11900.0,
+   "file": "parts/faibotic/M1-TR-014-handle.step",
+   "volume_reopened_mm3": 11900.0,
+   "volume_rel_err": 3.05712504797623e-16,
+   "size_mm": [
+    35.0,
+    20.0,
+    32.0
+   ],
+   "size_reopened_mm": [
+    35.0,
+    20.0,
+    32.0
+   ],
+   "product_name": "M1-TR-014-handle",
+   "stem": "M1-TR-014-handle",
+   "bytes": 31362
+  },
+  "M1-TR-010_giac_21W4_duc": {
+   "key": "M1-TR-010_giac_21W4_duc",
+   "qty": 1,
+   "instances": [
+    "M1-TR-010_giac_21W4_duc"
+   ],
+   "volume_mm3": 8904.0,
+   "file": "parts/purchased/M1-TR-010-d-sub-combo-connector-plug-half.step",
+   "volume_reopened_mm3": 8904.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    53.0,
+    14.0,
+    12.0
+   ],
+   "size_reopened_mm": [
+    53.0,
+    14.0,
+    12.0
+   ],
+   "product_name": "M1-TR-010-d-sub-combo-connector-plug-half",
+   "stem": "M1-TR-010-d-sub-combo-connector-plug-half",
+   "bytes": 17112
+  },
+  "M1-TR-011_gia_giac": {
+   "key": "M1-TR-011_gia_giac",
+   "qty": 1,
+   "instances": [
+    "M1-TR-011_gia_giac"
+   ],
+   "volume_mm3": 24960.0,
+   "file": "parts/faibotic/M1-TR-011-connector-holder.step",
+   "volume_reopened_mm3": 24960.0,
+   "volume_rel_err": 1.457523560533539e-16,
+   "size_mm": [
+    56.0,
+    20.0,
+    28.0
+   ],
+   "size_reopened_mm": [
+    56.0,
+    20.0,
+    28.0
+   ],
+   "product_name": "M1-TR-011-connector-holder",
+   "stem": "M1-TR-011-connector-holder",
+   "bytes": 30478
+  },
+  "M1-TR-005_cau_cot_camera": {
+   "key": "M1-TR-005_cau_cot_camera",
+   "qty": 1,
+   "instances": [
+    "M1-TR-005_cau_cot_camera"
+   ],
+   "volume_mm3": 99712.0,
+   "file": "parts/faibotic/M1-TR-005-camera-mast-bridge.step",
+   "volume_reopened_mm3": 99712.0,
+   "volume_rel_err": 1.4593945792248527e-16,
+   "size_mm": [
+    66.0,
+    104.0,
+    36.0
+   ],
+   "size_reopened_mm": [
+    66.0,
+    104.0,
+    36.0
+   ],
+   "product_name": "M1-TR-005-camera-mast-bridge",
+   "stem": "M1-TR-005-camera-mast-bridge",
+   "bytes": 37169
+  },
+  "M1-TR-006_cot_camera_2020": {
+   "key": "M1-TR-006_cot_camera_2020",
+   "qty": 1,
+   "instances": [
+    "M1-TR-006_cot_camera_2020"
+   ],
+   "volume_mm3": 184400.0,
+   "file": "parts/faibotic/M1-TR-006-camera-mast-2020.step",
+   "volume_reopened_mm3": 184400.0,
+   "volume_rel_err": 1.578298831710071e-16,
+   "size_mm": [
+    20.0,
+    20.0,
+    461.0
+   ],
+   "size_reopened_mm": [
+    20.0,
+    20.0,
+    461.0
+   ],
+   "product_name": "M1-TR-006-camera-mast-2020",
+   "stem": "M1-TR-006-camera-mast-2020",
+   "bytes": 17018
+  },
+  "M1-TR-007_ga_pan_tilt": {
+   "key": "M1-TR-007_ga_pan_tilt",
+   "qty": 1,
+   "instances": [
+    "M1-TR-007_ga_pan_tilt"
+   ],
+   "volume_mm3": 20850.973,
+   "file": "parts/faibotic/M1-TR-007-pan-tilt-bracket.step",
+   "volume_reopened_mm3": 20850.973,
+   "volume_rel_err": 2.0937030831100166e-15,
+   "size_mm": [
+    32.0,
+    48.0,
+    52.0
+   ],
+   "size_reopened_mm": [
+    32.0,
+    48.0,
+    52.0
+   ],
+   "product_name": "M1-TR-007-pan-tilt-bracket",
+   "stem": "M1-TR-007-pan-tilt-bracket",
+   "bytes": 43555
+  },
+  "M1-TR-007b_num_khoa_M5": {
+   "key": "M1-TR-007b_num_khoa_M5",
+   "qty": 2,
+   "instances": [
+    "M1-TR-007b_num_khoa_M5_L",
+    "M1-TR-007b_num_khoa_M5_R"
+   ],
+   "volume_mm3": 923.628,
+   "file": "parts/purchased/M1-TR-007b-locking-knob-m5.step",
+   "volume_reopened_mm3": 923.628,
+   "volume_rel_err": 2.2155700638221997e-15,
+   "size_mm": [
+    14.0,
+    6.0,
+    14.0
+   ],
+   "size_reopened_mm": [
+    14.0,
+    6.0,
+    14.0
+   ],
+   "product_name": "M1-TR-007b-locking-knob-m5",
+   "stem": "M1-TR-007b-locking-knob-m5",
+   "bytes": 7259
+  },
+  "M1-CM-001_camera": {
+   "key": "M1-CM-001_camera",
+   "qty": 3,
+   "instances": [
+    "M1-CM-001_head_cam",
+    "M1-CM-001_wrist_cam_L",
+    "M1-CM-001_wrist_cam_R"
+   ],
+   "volume_mm3": 12135.146,
+   "file": "parts/purchased/M1-CM-001-usb-camera-module.step",
+   "volume_reopened_mm3": 12135.146,
+   "volume_rel_err": 3.597463611994899e-15,
+   "size_mm": [
+    32.72,
+    36.0,
+    30.18
+   ],
+   "size_reopened_mm": [
+    32.72,
+    36.0,
+    30.18
+   ],
+   "product_name": "M1-CM-001-usb-camera-module",
+   "stem": "M1-CM-001-usb-camera-module",
+   "bytes": 20994
+  },
+  "M1-TR-012_estop_hop": {
+   "key": "M1-TR-012_estop_hop",
+   "qty": 1,
+   "instances": [
+    "M1-TR-012_estop_hop"
+   ],
+   "volume_mm3": 86000.0,
+   "file": "parts/faibotic/M1-TR-012-emergency-stop-box.step",
+   "volume_reopened_mm3": 86000.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    50.0,
+    43.0,
+    40.0
+   ],
+   "size_reopened_mm": [
+    50.0,
+    43.0,
+    40.0
+   ],
+   "product_name": "M1-TR-012-emergency-stop-box",
+   "stem": "M1-TR-012-emergency-stop-box",
+   "bytes": 17019
+  },
+  "M1-TR-012b_estop_nam": {
+   "key": "M1-TR-012b_estop_nam",
+   "qty": 1,
+   "instances": [
+    "M1-TR-012b_estop_nam"
+   ],
+   "volume_mm3": 18849.556,
+   "file": "parts/purchased/M1-TR-012b-emergency-stop-button.step",
+   "volume_reopened_mm3": 18849.556,
+   "volume_rel_err": 1.9300077000406763e-16,
+   "size_mm": [
+    40.0,
+    15.0,
+    40.0
+   ],
+   "size_reopened_mm": [
+    40.0,
+    15.0,
+    40.0
+   ],
+   "product_name": "M1-TR-012b-emergency-stop-button",
+   "stem": "M1-TR-012b-emergency-stop-button",
+   "bytes": 7317
+  },
+  "M1-TR-013_hop_dien_tram": {
+   "key": "M1-TR-013_hop_dien_tram",
+   "qty": 1,
+   "instances": [
+    "M1-TR-013_hop_dien_tram"
+   ],
+   "volume_mm3": 152000.0,
+   "file": "parts/faibotic/M1-TR-013-station-electronics-box.step",
+   "volume_reopened_mm3": 152000.0,
+   "volume_rel_err": 0.0,
+   "size_mm": [
+    95.0,
+    40.0,
+    40.0
+   ],
+   "size_reopened_mm": [
+    95.0,
+    40.0,
+    40.0
+   ],
+   "product_name": "M1-TR-013-station-electronics-box",
+   "stem": "M1-TR-013-station-electronics-box",
+   "bytes": 17049
+  },
+  "M1-SV-001_sts3215": {
+   "key": "M1-SV-001_sts3215",
+   "qty": 7,
+   "instances": [
+    "M1-SV-001_wheel0",
+    "M1-SV-001_wheel1",
+    "M1-SV-001_wheel2",
+    "M1-SV-001_wrist_yaw_L",
+    "M1-SV-001_gripper_L",
+    "M1-SV-001_wrist_yaw_R",
+    "M1-SV-001_gripper_R"
+   ],
+   "volume_mm3": 38357.511,
+   "file": "parts/purchased/M1-SV-001-sts3215-servo.step",
+   "volume_reopened_mm3": 38357.511,
+   "volume_rel_err": 1.1381276835158578e-15,
+   "size_mm": [
+    38.5,
+    45.4,
+    24.8
+   ],
+   "size_reopened_mm": [
+    38.5,
+    45.4,
+    24.8
+   ],
+   "product_name": "M1-SV-001-sts3215-servo",
+   "stem": "M1-SV-001-sts3215-servo",
+   "bytes": 52983
+  },
+  "M1-LF-lift_servo": {
+   "key": "M1-LF-lift_servo",
+   "qty": 1,
+   "instances": [
+    "M1-LF-lift_servo"
+   ],
+   "volume_mm3": 83045.989,
+   "file": "parts/purchased/M1-SV-002-sts3095-servo-lift.step",
+   "volume_reopened_mm3": 83045.989,
+   "volume_rel_err": 4.380679705409969e-15,
+   "size_mm": [
+    48.0,
+    33.5,
+    67.5
+   ],
+   "size_reopened_mm": [
+    48.0,
+    33.5,
+    67.5
+   ],
+   "product_name": "M1-SV-002-sts3095-servo-lift",
+   "stem": "M1-SV-002-sts3095-servo-lift",
+   "bytes": 88544
+  },
+  "M1-SH-005_O_F_J1_Base": {
+   "key": "M1-SH-005_O_F_J1_Base",
+   "qty": 2,
+   "instances": [
+    "M1-SH-005_O_F_J1_Base_L",
+    "M1-SH-005_O_F_J1_Base_R"
+   ],
+   "volume_mm3": 296148.144,
+   "file": "parts/inherited/am-arm200/O_F_J1_Base.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/O_F_J1_Base.stp",
+   "sha256": "4cb4d03055b0a51c45f91778ce88fb4b5499f7de413b893dd757d324d5b8e068",
+   "sha256_source": "4cb4d03055b0a51c45f91778ce88fb4b5499f7de413b893dd757d324d5b8e068",
+   "origin": "AM-ARM",
+   "bytes": 1191099
+  },
+  "M1-SH-019_O_F_J2_Rotation": {
+   "key": "M1-SH-019_O_F_J2_Rotation",
+   "qty": 2,
+   "instances": [
+    "M1-SH-019_O_F_J2_Rotation_L",
+    "M1-SH-019_O_F_J2_Rotation_R"
+   ],
+   "volume_mm3": 150809.179,
+   "file": "parts/inherited/am-arm200/O_F_J2_Rotation.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/O_F_J2_Rotation.stp",
+   "sha256": "dc728556b779944e7924fdd96579f984112ba043392a14e4214ab8b19d79d03c",
+   "sha256_source": "dc728556b779944e7924fdd96579f984112ba043392a14e4214ab8b19d79d03c",
+   "origin": "AM-ARM",
+   "bytes": 3147223
+  },
+  "M1-SH-006_OB_F_J3_Shoulder": {
+   "key": "M1-SH-006_OB_F_J3_Shoulder",
+   "qty": 2,
+   "instances": [
+    "M1-SH-006_OB_F_J3_Shoulder_L",
+    "M1-SH-006_OB_F_J3_Shoulder_R"
+   ],
+   "volume_mm3": 244412.391,
+   "file": "parts/inherited/am-arm200/OB_F_J3_Shoulder.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J3_Shoulder.stp",
+   "sha256": "cb5970848a5ac9fb33568e0ba33df7969930cb50c37412eebdf11648e99d16c9",
+   "sha256_source": "cb5970848a5ac9fb33568e0ba33df7969930cb50c37412eebdf11648e99d16c9",
+   "origin": "AM-ARM",
+   "bytes": 4431984
+  },
+  "M1-AR-001_OB_F_J4_Elbow": {
+   "key": "M1-AR-001_OB_F_J4_Elbow",
+   "qty": 2,
+   "instances": [
+    "M1-AR-001_OB_F_J4_Elbow_L",
+    "M1-AR-001_OB_F_J4_Elbow_R"
+   ],
+   "volume_mm3": 255592.334,
+   "file": "parts/inherited/am-arm200/OB_F_J4_Elbow.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J4_Elbow.stp",
+   "sha256": "d03c0a33ec49757f6611587f019c25a4a11e2560be5da25d98e015f9750cb844",
+   "sha256_source": "d03c0a33ec49757f6611587f019c25a4a11e2560be5da25d98e015f9750cb844",
+   "origin": "AM-ARM",
+   "bytes": 4738325
+  },
+  "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket": {
+   "key": "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket",
+   "qty": 2,
+   "instances": [
+    "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_L",
+    "M1-AR-002_OB_F_J5_Elbow_Wrist_Bracket_R"
+   ],
+   "volume_mm3": 30443.469,
+   "file": "parts/inherited/am-arm200/OB_F_J5_Elbow_Wrist_Bracket.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J5_Elbow_Wrist_Bracket.stp",
+   "sha256": "7339a27b8c522993da6bd09e00e2818b7503b06fce1f3895103879f560ff9128",
+   "sha256_source": "7339a27b8c522993da6bd09e00e2818b7503b06fce1f3895103879f560ff9128",
+   "origin": "AM-ARM",
+   "bytes": 1177130
+  },
+  "M1-AR-011_OB_F_J5_Pin_Bearing": {
+   "key": "M1-AR-011_OB_F_J5_Pin_Bearing",
+   "qty": 2,
+   "instances": [
+    "M1-AR-011_OB_F_J5_Pin_Bearing_L",
+    "M1-AR-011_OB_F_J5_Pin_Bearing_R"
+   ],
+   "volume_mm3": 9815.496,
+   "file": "parts/inherited/am-arm200/OB_F_J5_Pin_Bearing.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J5_Pin_Bearing.stp",
+   "sha256": "a33bfcacbf290aaf76184825c79e80384d3b7629ba14136f0d3a212809685ef5",
+   "sha256_source": "a33bfcacbf290aaf76184825c79e80384d3b7629ba14136f0d3a212809685ef5",
+   "origin": "AM-ARM",
+   "bytes": 44127
+  },
+  "M1-AR-003_OB_F_J56_Wrist_Housing": {
+   "key": "M1-AR-003_OB_F_J56_Wrist_Housing",
+   "qty": 2,
+   "instances": [
+    "M1-AR-003_OB_F_J56_Wrist_Housing_L",
+    "M1-AR-003_OB_F_J56_Wrist_Housing_R"
+   ],
+   "volume_mm3": 76777.805,
+   "file": "parts/inherited/am-arm200/OB_F_J56_Wrist_Housing.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J56_Wrist_Housing.stp",
+   "sha256": "04dda1b8e2c6917655be1c9edcff9c0808499ff18b19ff1bebd41a47fecd44f7",
+   "sha256_source": "04dda1b8e2c6917655be1c9edcff9c0808499ff18b19ff1bebd41a47fecd44f7",
+   "origin": "AM-ARM",
+   "bytes": 542713
+  },
+  "M1-AR-004_OB_F_J56_Bottom": {
+   "key": "M1-AR-004_OB_F_J56_Bottom",
+   "qty": 2,
+   "instances": [
+    "M1-AR-004_OB_F_J56_Bottom_L",
+    "M1-AR-004_OB_F_J56_Bottom_R"
+   ],
+   "volume_mm3": 30622.737,
+   "file": "parts/inherited/am-arm200/OB_F_J56_Bottom.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J56_Bottom.stp",
+   "sha256": "a3d02b0b41a1e4689b6584a9f25105f0f1feba9324817be63640b7c4be8906d2",
+   "sha256_source": "a3d02b0b41a1e4689b6584a9f25105f0f1feba9324817be63640b7c4be8906d2",
+   "origin": "AM-ARM",
+   "bytes": 423549
+  },
+  "M1-AR-005_OB_F_J56_Top": {
+   "key": "M1-AR-005_OB_F_J56_Top",
+   "qty": 2,
+   "instances": [
+    "M1-AR-005_OB_F_J56_Top_L",
+    "M1-AR-005_OB_F_J56_Top_R"
+   ],
+   "volume_mm3": 1459.507,
+   "file": "parts/inherited/am-arm200/OB_F_J56_Top.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J56_Top.stp",
+   "sha256": "799000c2ec89c13f13d4be34578802d31521875fd7eed04c8504afa53efa23e1",
+   "sha256_source": "799000c2ec89c13f13d4be34578802d31521875fd7eed04c8504afa53efa23e1",
+   "origin": "AM-ARM",
+   "bytes": 63079
+  },
+  "M1-AR-007_OB_F_J7_Gripper": {
+   "key": "M1-AR-007_OB_F_J7_Gripper",
+   "qty": 2,
+   "instances": [
+    "M1-AR-007_OB_F_J7_Gripper_L",
+    "M1-AR-007_OB_F_J7_Gripper_R"
+   ],
+   "volume_mm3": 61726.923,
+   "file": "parts/inherited/am-arm200/OB_F_J7_Gripper.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J7_Gripper.stp",
+   "sha256": "9427b0e88f6b96e01120ca6f8d94ea302bc98e132442b1766316abf101e6ad43",
+   "sha256_source": "9427b0e88f6b96e01120ca6f8d94ea302bc98e132442b1766316abf101e6ad43",
+   "origin": "AM-ARM",
+   "bytes": 1373017
+  },
+  "M1-AR-027_OB_F_Camera": {
+   "key": "M1-AR-027_OB_F_Camera",
+   "qty": 2,
+   "instances": [
+    "M1-AR-027_OB_F_Camera_L",
+    "M1-AR-027_OB_F_Camera_R"
+   ],
+   "volume_mm3": 12630.896,
+   "file": "parts/inherited/am-arm200/OB_F_Camera.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_Camera.stp",
+   "sha256": "a8e793c69101f9c52ece284ad80f611779d10cb299ef9708f4c2120d35d0a249",
+   "sha256_source": "a8e793c69101f9c52ece284ad80f611779d10cb299ef9708f4c2120d35d0a249",
+   "origin": "AM-ARM",
+   "bytes": 1689385
+  },
+  "M1-AR-008_OB_F_J7_Jaw": {
+   "key": "M1-AR-008_OB_F_J7_Jaw",
+   "qty": 2,
+   "instances": [
+    "M1-AR-008_OB_F_J7_Jaw_L",
+    "M1-AR-008_OB_F_J7_Jaw_R"
+   ],
+   "volume_mm3": 28176.329,
+   "file": "parts/inherited/am-arm200/OB_F_J7_Jaw.stp",
+   "source": "cad/upstream/AM-ARM/am-arm200/stp/follower/OB_F_J7_Jaw.stp",
+   "sha256": "e8065e79c861fbc7728dc125a980afb9dc08c2090ee5553a2abad85d14c055fd",
+   "sha256_source": "e8065e79c861fbc7728dc125a980afb9dc08c2090ee5553a2abad85d14c055fd",
+   "origin": "AM-ARM",
+   "bytes": 716929
+  }
+ },
+ "errors": []
+}

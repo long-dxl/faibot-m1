@@ -1,0 +1,379 @@
+{
+ "phuong_phap": "pl_lift_scan.scan_tay: SDF voxel (trạm 3 mm, thân 4 mm) + điểm mặt tay 5 mm; 20 cấu hình xấu nhất mỗi nhóm đo lại bằng trimesh",
+ "luoi": {
+  "so_cau_hinh_moi_tay": 50460,
+  "pan_buoc": 10,
+  "vai": [
+   -80,
+   -64,
+   -48,
+   -32,
+   -16,
+   0,
+   8,
+   16,
+   24,
+   32,
+   40,
+   48.5
+  ],
+  "khuyu_buoc": 9,
+  "co_tay_buoc": 20,
+  "cuon": [
+   0,
+   90
+  ]
+ },
+ "shoulder_y_m": 0.2375,
+ "ket_qua": {
+  "left_lift0": {
+   "cot_camera": {
+    "khe_min_mm": -13.5,
+    "so_cau_hinh_cham": 1486,
+    "khe_min_trong_luat_mm": -4.5,
+    "cham_trong_luat": 11,
+    "q_xau_nhat_deg": [
+     -70.0,
+     -80.0,
+     -1.0,
+     82.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": -0.2
+   },
+   "dau_camera": {
+    "khe_min_mm": -13.5,
+    "so_cau_hinh_cham": 33,
+    "khe_min_trong_luat_mm": 1.5,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     -60.0,
+     -80.0,
+     -10.0,
+     62.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": 3.4
+   },
+   "be_tram": {
+    "khe_min_mm": -20.7,
+    "so_cau_hinh_cham": 5086,
+    "khe_min_trong_luat_mm": -7.5,
+    "cham_trong_luat": 10,
+    "q_xau_nhat_deg": [
+     -60.0,
+     48.5,
+     -1.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": -4.6
+   },
+   "xe_nang": {
+    "khe_min_mm": -19.5,
+    "so_cau_hinh_cham": 3061,
+    "khe_min_trong_luat_mm": 8.9,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     -60.0,
+     -48.0,
+     89.0,
+     42.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": 12.5
+   },
+   "cot_nang": {
+    "khe_min_mm": -6.0,
+    "so_cau_hinh_cham": 1,
+    "khe_min_trong_luat_mm": 31.0,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     -70.0,
+     -80.0,
+     -1.0,
+     82.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": 35.7
+   },
+   "de": {
+    "khe_min_mm": -34.0,
+    "so_cau_hinh_cham": 5403,
+    "khe_min_trong_luat_mm": -8.9,
+    "cham_trong_luat": 498,
+    "q_xau_nhat_deg": [
+     -10.0,
+     -16.0,
+     80.0,
+     22.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": -2.5
+   },
+   "bi_luat_cam_loai": 22046
+  },
+  "left_lift0.45": {
+   "cot_camera": {
+    "khe_min_mm": -13.5,
+    "so_cau_hinh_cham": 1486,
+    "khe_min_trong_luat_mm": -4.5,
+    "cham_trong_luat": 11,
+    "q_xau_nhat_deg": [
+     -70.0,
+     -80.0,
+     -1.0,
+     82.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": -0.2
+   },
+   "dau_camera": {
+    "khe_min_mm": -13.5,
+    "so_cau_hinh_cham": 33,
+    "khe_min_trong_luat_mm": 1.5,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     -60.0,
+     -80.0,
+     -10.0,
+     62.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": 3.4
+   },
+   "be_tram": {
+    "khe_min_mm": -20.7,
+    "so_cau_hinh_cham": 5086,
+    "khe_min_trong_luat_mm": -7.5,
+    "cham_trong_luat": 10,
+    "q_xau_nhat_deg": [
+     -60.0,
+     48.5,
+     -1.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": -4.6
+   },
+   "xe_nang": {
+    "khe_min_mm": -19.5,
+    "so_cau_hinh_cham": 3061,
+    "khe_min_trong_luat_mm": 8.9,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     -60.0,
+     -48.0,
+     89.0,
+     42.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": 12.5
+   },
+   "cot_nang": {
+    "khe_min_mm": 14.5,
+    "so_cau_hinh_cham": 0,
+    "khe_min_trong_luat_mm": 81.2,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     -60.0,
+     48.5,
+     -10.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 87.1
+   },
+   "de": {
+    "khe_min_mm": 262.0,
+    "so_cau_hinh_cham": 0,
+    "khe_min_trong_luat_mm": 266.0,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     -30.0,
+     48.5,
+     26.0,
+     2.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": 267.6
+   },
+   "bi_luat_cam_loai": 20964
+  },
+  "right_lift0": {
+   "cot_camera": {
+    "khe_min_mm": -13.5,
+    "so_cau_hinh_cham": 1066,
+    "khe_min_trong_luat_mm": 5.2,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     60.0,
+     48.5,
+     -10.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 6.5
+   },
+   "dau_camera": {
+    "khe_min_mm": -7.5,
+    "so_cau_hinh_cham": 4,
+    "khe_min_trong_luat_mm": 27.0,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     70.0,
+     -80.0,
+     -1.0,
+     82.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 31.1
+   },
+   "be_tram": {
+    "khe_min_mm": -22.5,
+    "so_cau_hinh_cham": 4441,
+    "khe_min_trong_luat_mm": -4.5,
+    "cham_trong_luat": 2,
+    "q_xau_nhat_deg": [
+     60.0,
+     48.5,
+     -1.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": -1.0
+   },
+   "xe_nang": {
+    "khe_min_mm": -19.5,
+    "so_cau_hinh_cham": 2224,
+    "khe_min_trong_luat_mm": 25.5,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     40.0,
+     -64.0,
+     127.0,
+     22.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 28.0
+   },
+   "cot_nang": {
+    "khe_min_mm": 2.0,
+    "so_cau_hinh_cham": 0,
+    "khe_min_trong_luat_mm": 59.4,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     70.0,
+     -80.0,
+     -1.0,
+     82.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 64.8
+   },
+   "de": {
+    "khe_min_mm": -34.0,
+    "so_cau_hinh_cham": 5015,
+    "khe_min_trong_luat_mm": -8.9,
+    "cham_trong_luat": 378,
+    "q_xau_nhat_deg": [
+     10.0,
+     -16.0,
+     80.0,
+     22.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": -2.5
+   },
+   "bi_luat_cam_loai": 22046
+  },
+  "right_lift0.45": {
+   "cot_camera": {
+    "khe_min_mm": -13.5,
+    "so_cau_hinh_cham": 1066,
+    "khe_min_trong_luat_mm": 5.2,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     60.0,
+     48.5,
+     -10.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 6.5
+   },
+   "dau_camera": {
+    "khe_min_mm": -7.5,
+    "so_cau_hinh_cham": 4,
+    "khe_min_trong_luat_mm": 27.0,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     70.0,
+     -80.0,
+     -1.0,
+     82.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 31.1
+   },
+   "be_tram": {
+    "khe_min_mm": -22.5,
+    "so_cau_hinh_cham": 4441,
+    "khe_min_trong_luat_mm": -4.5,
+    "cham_trong_luat": 2,
+    "q_xau_nhat_deg": [
+     60.0,
+     48.5,
+     -1.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": -1.0
+   },
+   "xe_nang": {
+    "khe_min_mm": -19.5,
+    "so_cau_hinh_cham": 2224,
+    "khe_min_trong_luat_mm": 25.5,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     40.0,
+     -64.0,
+     127.0,
+     22.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 28.0
+   },
+   "cot_nang": {
+    "khe_min_mm": 30.0,
+    "so_cau_hinh_cham": 0,
+    "khe_min_trong_luat_mm": 83.6,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     60.0,
+     48.5,
+     -1.0,
+     -77.5,
+     0.0
+    ],
+    "khe_chinh_xac_mm": 89.9
+   },
+   "de": {
+    "khe_min_mm": 262.0,
+    "so_cau_hinh_cham": 0,
+    "khe_min_trong_luat_mm": 266.0,
+    "cham_trong_luat": 0,
+    "q_xau_nhat_deg": [
+     30.0,
+     48.5,
+     26.0,
+     2.5,
+     90.0
+    ],
+    "khe_chinh_xac_mm": 267.6
+   },
+   "bi_luat_cam_loai": 20964
+  }
+ },
+ "thoi_gian_s": 1784
+}

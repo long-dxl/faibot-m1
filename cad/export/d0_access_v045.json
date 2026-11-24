@@ -1,0 +1,22 @@
+{
+ "a_can_ngang": {
+  "giao_than_banh_mm3": {
+   "M1-BS-010_wheel2_hub": 3083.5,
+   "M1-BS-010_wheel2_plateA": 272.1,
+   "M1-BS-010_wheel2_plateB": 272.1
+  },
+  "phi_huong_deg": -52.4
+ },
+ "b_truc_dung": {
+  "xy": [
+   33.33,
+   -114.48
+  ],
+  "r_mm": 119.2,
+  "phi_deg": -73.8,
+  "khe_toi_banh": 13.31,
+  "khe_toi_thanh_than": 23.3,
+  "khe_toi_vo_pin": 1.0,
+  "khe_toi_chi_tiet_khac": 13.31
+ }
+}

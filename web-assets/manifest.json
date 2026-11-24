@@ -1,0 +1,279 @@
+{
+ "schema": "faibot-m1-manifest/1",
+ "ngay": "23/11/2026",
+ "nguon": {
+  "commit": "640910b",
+  "ghi_chu": "commit CAD nguồn mà sim/assets được xuất từ đó (export_sim_meshes.py); sim/assets và m1.glb của lượt dựng có thể chưa commit lúc ghi, đối chiếu bằng sha256 bên dưới. m1.glb dựng từ chính sim/assets/*.stl và cây body/khớp của sim/m1.xml, không xuất lại từ STEP",
+  "sim_assets_meshes_json_sha256": "86293e096de4a8435d2aa5db7a63417769e36e17e4741b649b2a718e26c19018",
+  "sim_assets": [
+   {
+    "file": "base__alu.stl",
+    "sha256": "7ac76d986585fb08397c89440a24a05924012eeac9bfbe6c3768baf4777cb569"
+   },
+   {
+    "file": "base__hub.stl",
+    "sha256": "6d102aa2bf3354d501887139f2a64d1e3f57fb5f401c3854f76bcf3bf51ffb40"
+   },
+   {
+    "file": "base__ivory.stl",
+    "sha256": "5795f5b75656b1a407fa5bb65552f0f40d2ab98abc880dc5954231836358edd7"
+   },
+   {
+    "file": "base__ivory_hi.stl",
+    "sha256": "ba7890c9d332e4e35b01154457965c79dd1290aa9f78820180097a0094059531"
+   },
+   {
+    "file": "base__navy.stl",
+    "sha256": "ec7ab171dfe73d26539b251aa4a8834c6587dd8430dbddc45e952a9d7a749f3a"
+   },
+   {
+    "file": "base__rubber.stl",
+    "sha256": "d6d120c3caf44a201dd039cb87ed5b48c9c774c12d75bd9b15185b5797c1fcf4"
+   },
+   {
+    "file": "base__servo_body.stl",
+    "sha256": "319e8e6f297df4906c9ec0e40c0fe8e38e65c291c4f44d1f1c43f6f256e1cecb"
+   },
+   {
+    "file": "base__steel.stl",
+    "sha256": "c6d35232488dec8a900edb2bdd4995a0d8da0b479d7c21962c67b4a15b86cbff"
+   },
+   {
+    "file": "carriage__alu.stl",
+    "sha256": "f8c88f6f9d504f22ae63035a90d76386bb3c37734c62c64dfdb8e9a6c25cf919"
+   },
+   {
+    "file": "carriage__ivory.stl",
+    "sha256": "ad562b99100a9fab1c6b9c4b744175f20e5d674894e47cf959643009a8c77480"
+   },
+   {
+    "file": "carriage__navy.stl",
+    "sha256": "192a2a4dd884e3bfc8fcbe7492555ae5d7d2c624715ae24e1547835cf6ae0a6a"
+   },
+   {
+    "file": "carriage__servo.stl",
+    "sha256": "d565d0e693208eab7720283af586fbf6c74cdeaaa5aef6f9b5928258c33ad0a2"
+   },
+   {
+    "file": "carriage__servo_body.stl",
+    "sha256": "1975470173e30ff3038481f4da90a1bb971fc6f7b56b9281b3b4e85915af590c"
+   },
+   {
+    "file": "carriage__steel.stl",
+    "sha256": "70abc7172d07ce528e4a4fc8d3503b2fc34bcca02c052c26340febd0ff57ed8b"
+   },
+   {
+    "file": "left_carriage__ivory.stl",
+    "sha256": "adb95ee794437f41f49546359e00725f7e792c97bfa871dc620512ef4a1d2f2d"
+   },
+   {
+    "file": "left_fore__navy.stl",
+    "sha256": "e3ee984e360e95f4c6122b5b55508a984bcbf468b6ea935e5d299200f2c3cf0a"
+   },
+   {
+    "file": "left_fore__servo_body.stl",
+    "sha256": "a311216d9733a901ff3518cadc60479da67b53b0f608f39af354c30be691fee2"
+   },
+   {
+    "file": "left_hand__ivory.stl",
+    "sha256": "803f716db8029d9b5e4523a7b8cd9e0480cecaeb7bab31baa032cc66eb6ea7f4"
+   },
+   {
+    "file": "left_hand__navy.stl",
+    "sha256": "74ac93ecdc9205c916d55c0541f85ac7c232c226a6aba3fbba33cdb0f522a53f"
+   },
+   {
+    "file": "left_hand__servo.stl",
+    "sha256": "bdc2435f3081e20381c7bf6036add130273bb59f3e302186b5b206ff3f01dc02"
+   },
+   {
+    "file": "left_hand__servo_body.stl",
+    "sha256": "ccfb068ad0a0e8cb7b595c82173e638095f4a1bfa7ab64c2ebedadc85340acba"
+   },
+   {
+    "file": "left_jaw__navy.stl",
+    "sha256": "5997e96530895a1aa237ff6821b73f22b8d33fd84f2d619dda800980df9ea55d"
+   },
+   {
+    "file": "left_shoulder__navy.stl",
+    "sha256": "adc50b086a131ddb4a7760d20d5e5df74259c5dc08adf946f9be806b544811fa"
+   },
+   {
+    "file": "left_upper__ivory.stl",
+    "sha256": "1b911c7d0cdd90ae72f71125af9a756ae19a49e5832ec05722fb13cb3e0f7c3e"
+   },
+   {
+    "file": "left_wrist__ivory.stl",
+    "sha256": "1b0ccc08212be1541935ea0811853c3ab4cab281ca4794e6abaee505f80f3d57"
+   },
+   {
+    "file": "left_yaw__navy.stl",
+    "sha256": "a009019f07c335f64aab1b5f21e78fbe431e9294e43572656f7d382a4c91f9b4"
+   },
+   {
+    "file": "left_yaw__servo_body.stl",
+    "sha256": "74cb6d0e484d3baaee5a0bb1c36c2fe94e68ae3dd22a535c02ea39fdf998843f"
+   },
+   {
+    "file": "left_yaw__steel.stl",
+    "sha256": "0ffe1aba54bba80ad39707c3f518b5c177f0cc2ca6ae5593b937480be929e469"
+   },
+   {
+    "file": "right_carriage__ivory.stl",
+    "sha256": "a355dd0425efd0abe60da03320c035ea56c830b6319d5e7db0e7ac86edf15ac5"
+   },
+   {
+    "file": "right_fore__navy.stl",
+    "sha256": "1f7eac5c47340b99695a9676debb5dd38b7aa62de137bf702b4c4b3b63b3da39"
+   },
+   {
+    "file": "right_fore__servo_body.stl",
+    "sha256": "e6ce702100c8d1faea06c8b9bffab6915243e6c34a6be32c762626b17d1e1fde"
+   },
+   {
+    "file": "right_hand__ivory.stl",
+    "sha256": "3ef4a4b54763c2da2ca69d5f1a9dcfa69f7ac2ce8158e90ba396472ccf48d2c3"
+   },
+   {
+    "file": "right_hand__navy.stl",
+    "sha256": "31226bdc730f8ce4094fa385df2b2d41a6b23ac60e27098ab174bca7da39d0c7"
+   },
+   {
+    "file": "right_hand__servo.stl",
+    "sha256": "15b6b616fdc8c5bf2b145e7ac6db0655291efd3b92cceed11d56f6ef985f61dd"
+   },
+   {
+    "file": "right_hand__servo_body.stl",
+    "sha256": "33dec82f070fb6d5b7c8e2c2d33008a3f9685ad3593375cd68227f306c901a9e"
+   },
+   {
+    "file": "right_jaw__navy.stl",
+    "sha256": "3499631f514b9312bb9a7a6e2dba2979be44885aee2b047dd2ea3f1e6243463c"
+   },
+   {
+    "file": "right_shoulder__navy.stl",
+    "sha256": "fdf3a26aeabdbdc1eca985bdc76ee0538eaec1ba5c0b2b5f08468a8ef9584121"
+   },
+   {
+    "file": "right_upper__ivory.stl",
+    "sha256": "030d74665f001f700b25dfe89bc475ff4de7d0d31af6631fb340abb6f17e9657"
+   },
+   {
+    "file": "right_wrist__ivory.stl",
+    "sha256": "11910c9bef1e10083a3a861dfecc48b3283781ae2639b50fe0cab97de0c1bcdc"
+   },
+   {
+    "file": "right_yaw__navy.stl",
+    "sha256": "efb4e693b9cc26f50d87db8661f0e8aa0624c5ee2bd75bbebddc99cc3906a4af"
+   },
+   {
+    "file": "right_yaw__servo_body.stl",
+    "sha256": "199bf9f1de08436d83ef9dfa3cd81b9f220efcc256d80867a9c2c541dd88c3f1"
+   },
+   {
+    "file": "right_yaw__steel.stl",
+    "sha256": "5da82627479ac8558e6af2599c623fa53457f0d60666f9f8af34ac341ce2aeb5"
+   }
+  ]
+ },
+ "max_triangles": 150000,
+ "budget": {
+  "max_triangles": 150000,
+  "max_bytes_glb": 4000000,
+  "max_bytes_glb_brotli": 1200000,
+  "tam_giac_glb": 89778
+ },
+ "ma_chinh": {
+  "base": [
+   "M1-BS-032"
+  ],
+  "power": [
+   "M1-BS-038"
+  ],
+  "lift": [
+   "M1-LF-057",
+   "M1-SV-002"
+  ],
+  "shoulder_L": [
+   "M1-SH-005",
+   "M1-SH-006"
+  ],
+  "shoulder_R": [
+   "M1-SH-005",
+   "M1-SH-006"
+  ],
+  "arm_L": [
+   "M1-AR-001",
+   "M1-SV-001"
+  ],
+  "arm_R": [
+   "M1-AR-001",
+   "M1-SV-001"
+  ],
+  "gripper_L": [
+   "M1-AR-007"
+  ],
+  "gripper_R": [
+   "M1-AR-007"
+  ],
+  "camera": [
+   "M1-CM-001"
+  ]
+ },
+ "decimate": {
+  "ti_le_tam_giac": 0.5207,
+  "tam_giac_goc": 172426,
+  "tam_giac_glb": 89778,
+  "tham_so": 0.1,
+  "tam_giac_moi_con_lan": 24,
+  "ghi_chu": "decimate quadric (fast-simplification) theo từng thành phần liên thông; thành phần <= 160 tam giác giữ nguyên"
+ },
+ "files": [
+  {
+   "file": "m1.glb",
+   "role": "robot GLB (node theo khớp và cụm)",
+   "sha256": "e1416b73bc90e28e6e6602ed4122824d2a0c541ec02f82d929735b28b752bbba",
+   "bytes": 3672724
+  },
+  {
+   "file": "joints.json",
+   "role": "cây khớp, trục, giới hạn mềm từ spec.py, bảng ghép, tư thế",
+   "sha256": "ca6d5e2babf4a7efd062f65a672b904e1ed55464b7fcf1d95790a98276b86812",
+   "bytes": 16801
+  },
+  {
+   "file": "cum.json",
+   "role": "cụm -> mã M1-xx -> chi tiết",
+   "sha256": "7ded8c04438e9c49f9a7ae6cd84ec082f670d862b65b15283acfb923691dafcf",
+   "bytes": 35921
+  },
+  {
+   "file": "limits.mjs",
+   "role": "bản JS của giới hạn ghép (spec.py)",
+   "sha256": "4e23f3dc6e30950e805c253c162b1b0cb78b0c8575965e90c8ed526b51a8bcd6",
+   "bytes": 2122
+  },
+  {
+   "file": "LICENSE",
+   "role": "Apache-2.0 (AM-ARM, AlohaMini, Menagerie robotstudio_so101)",
+   "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+   "bytes": 11357
+  },
+  {
+   "file": "NOTICE",
+   "role": "ghi công bản dẫn xuất",
+   "sha256": "8ca5aaa935557ab5f19daad2d068a37655781dc494fea87f88e73a8479a604fb",
+   "bytes": 1688
+  }
+ ],
+ "lab_scene": {
+  "file": "lab-scene.json",
+  "trang_thai": "đã xuất (luồng C, sim/lab/build_lab.py)",
+  "nguon": "sim/lab/lab-scene.json",
+  "schema": "schema/lab-scene.schema.json",
+  "sha256": "7d1665344ee7961ffc9dfef6ec880807b35e621cbb84a95b93490e43fa665f45",
+  "bytes": 39022,
+  "schema_sha256": "5010d3a2313d5b6a2b0b240f9b49496b7f7092389d570920aafb4789ab10eb66",
+  "max_triangles": 20000
+ }
+}

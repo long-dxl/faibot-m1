@@ -1,0 +1,164 @@
+{
+ "khuyu_dem": [
+  {
+   "q_khuyu": 120,
+   "dem_ar022": 0.0
+  },
+  {
+   "q_khuyu": 126,
+   "dem_ar022": 0.0
+  },
+  {
+   "q_khuyu": 127,
+   "dem_ar022": 0.0
+  },
+  {
+   "q_khuyu": 127.5,
+   "dem_ar022": 0.0
+  },
+  {
+   "q_khuyu": 128,
+   "dem_ar022": 0.1
+  },
+  {
+   "q_khuyu": 128.1,
+   "dem_ar022": 0.4
+  },
+  {
+   "q_khuyu": 129,
+   "dem_ar022": 10.6
+  },
+  {
+   "q_khuyu": 130,
+   "dem_ar022": 37.9
+  },
+  {
+   "q_khuyu": 131,
+   "dem_ar022": 81.8
+  },
+  {
+   "q_khuyu": 133,
+   "dem_ar022": 174.2
+  }
+ ],
+ "dem_tab_gan_link_vs_gia": [
+  {
+   "q_vai": -80,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": -60,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": -30,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": 0,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": 30,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": 45,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": 50,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": 55,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  },
+  {
+   "q_vai": 62,
+   "cradle": 0.0,
+   "chan_duoi": 0.0,
+   "dem_duoi": 0.0,
+   "thanh_tren": 0.0,
+   "dem_tren": 0.0
+  }
+ ],
+ "thanh_tren_v043": [
+  {
+   "q_vai": -88,
+   "thanh_cradle": 0.0,
+   "thanh_link": 0.0,
+   "thanh_pin": 0.0,
+   "thanh_spring": 0.0,
+   "dem_link": 532.9
+  },
+  {
+   "q_vai": -85,
+   "thanh_cradle": 0.0,
+   "thanh_link": 0.0,
+   "thanh_pin": 0.0,
+   "thanh_spring": 0.0,
+   "dem_link": 310.6
+  },
+  {
+   "q_vai": -80.5,
+   "thanh_cradle": 0.0,
+   "thanh_link": 0.0,
+   "thanh_pin": 0.0,
+   "thanh_spring": 0.0,
+   "dem_link": 0.0
+  },
+  {
+   "q_vai": -80,
+   "thanh_cradle": 0.0,
+   "thanh_link": 0.0,
+   "thanh_pin": 0.0,
+   "thanh_spring": 0.0,
+   "dem_link": 0.0
+  },
+  {
+   "q_vai": -60,
+   "thanh_cradle": 0.0,
+   "thanh_link": 0.0,
+   "thanh_pin": 0.0,
+   "thanh_spring": 0.0,
+   "dem_link": 0.0
+  }
+ ],
+ "cradle_vs_servo": 0.0,
+ "cradle_vs_link0": 0.0,
+ "cradle_volume_mm3": 164492.2,
+ "thanh_vs_trụ_gia_vai": 0.0
+}

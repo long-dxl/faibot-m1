@@ -1,0 +1,218 @@
+{
+ "ghi_chu": "DK-N66: yaw URDF chạm đầu tiên (chia đôi 0,25 độ, vượt nền yaw 0 > 0,5 mm3) theo gập cổ tay (độ URDF = SDK), cuộn 0, kẹp khép. Yaw SDK = -URDF. Nút gập >= 73,4 đã chạm cẳng tay J4 ở yaw 0 (DK-N68).",
+ "gap_deg": [
+  -77.5,
+  -60.0,
+  -40.0,
+  -20.0,
+  0.0,
+  10.0,
+  20.0,
+  30.0,
+  40.0,
+  50.0,
+  60.0,
+  65.0,
+  70.0,
+  72.5
+ ],
+ "cham": {
+  "-77.5": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -83.75,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.8
+    }
+   }
+  },
+  "-60": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -83.75,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.8
+    }
+   }
+  },
+  "-40": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -83.75,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.8
+    }
+   }
+  },
+  "-20": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -83.75,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.8
+    }
+   }
+  },
+  "0": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -83.75,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.8
+    }
+   }
+  },
+  "10": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -83.75,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.8
+    }
+   }
+  },
+  "20": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -65.78,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.6
+    }
+   }
+  },
+  "30": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -45.0,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.6
+    }
+   }
+  },
+  "40": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -30.94,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.7
+    }
+   }
+  },
+  "50": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -22.19,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.6
+    }
+   }
+  },
+  "60": {
+   "duong_urdf": {
+    "cham_deg": 84.69,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 1.5
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -14.06,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.6
+    }
+   }
+  },
+  "65": {
+   "duong_urdf": {
+    "cham_deg": 83.28,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 0.6
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -9.53,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.6
+    }
+   }
+  },
+  "70": {
+   "duong_urdf": {
+    "cham_deg": 81.88,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 0.8
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -4.53,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.7
+    }
+   }
+  },
+  "72.5": {
+   "duong_urdf": {
+    "cham_deg": 81.25,
+    "cap": {
+     "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 0.6
+    }
+   },
+   "am_urdf": {
+    "cham_deg": -1.72,
+    "cap": {
+     "OB_F_J56_BottomxOB_F_J4_Elbow": 0.7
+    }
+   }
+  }
+ },
+ "thoi_gian_s": 1998.9
+}

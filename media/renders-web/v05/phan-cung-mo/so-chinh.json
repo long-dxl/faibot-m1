@@ -1,0 +1,78 @@
+{
+  "schema": "faibot-m1-so-chinh/1",
+  "ghi_chu": "Số chính cho khối Phần cứng mở: 5 số đầu + 1 dòng phụ (độ cao tâm kẹp). Nhãn [tính] = lấy từ CAD/SDK; [ước] = có giả định nêu kèm.",
+  "so": [
+    {
+      "id": "chieu_cao_toi_da",
+      "label": "Chiều cao tối đa (trụ nâng lên hết)",
+      "value": 1406,
+      "unit": "mm",
+      "nhan": "[tính]",
+      "nguon": [
+        "media/renders-web/v05/phan-cung-mo/lop.py (hộp bao GLB, lift = LIFT_RANGE trên)",
+        "web-assets/m1.glb (GLB e81a130)",
+        "sdk/faibotic/spec.py:98 (LIFT_RANGE = (0.0, 0.45))"
+      ],
+      "luu_y": "Hộp bao toàn robot theo trục z ở lift 0,45 m (đỉnh cột camera), tay buông xuống; log: CHIEU_CAO_TOI_DA_m 1.4061."
+    },
+    {
+      "id": "do_cao_tam_kep_toi_da",
+      "label": "Độ cao tâm kẹp lớn nhất so với sàn (lift 0,45 m)",
+      "value": 1528,
+      "unit": "mm",
+      "nhan": "[tính]",
+      "nguon": [
+        "docs/vi/specifications.md:88"
+      ]
+    },
+    {
+      "id": "khoi_luong",
+      "label": "Khối lượng robot (cận trên theo CAD, chi tiết in tính khối đặc)",
+      "value": 21.2,
+      "unit": "kg",
+      "nhan": "[tính]",
+      "nguon": [
+        "docs/vi/specifications.md:208",
+        "product/00-tong-quan.md:30",
+        "cad/export/M1-PL-masses.json:tong_robot_kg"
+      ],
+      "luu_y": "Cận trên; thân 16,9 kg + 2 tay 2,13 kg (6+1, đủ 7 servo, xuất CAD 24/11). Cân thật chờ EVT."
+    },
+    {
+      "id": "khop_co_dong_co",
+      "label": "Khớp có động cơ (mỗi khớp một servo)",
+      "value": 16,
+      "unit": "khớp",
+      "nhan": "[tính]",
+      "nguon": [
+        "docs/vi/specifications.md:102",
+        "sdk/faibotic/spec.py:427"
+      ]
+    },
+    {
+      "id": "tai_dinh",
+      "label": "Tải đỉnh ở tầm 0,25 m (gần thân, kẹp chúi xuống)",
+      "value": 2.1,
+      "unit": "kg",
+      "nhan": "[tính]",
+      "tam_m": 0.25,
+      "nguon": [
+        "docs/vi/specifications.md:155",
+        "product/00-tong-quan.md:22"
+      ],
+      "luu_y": "Chưa đo trên robot thật."
+    },
+    {
+      "id": "pin_wh",
+      "label": "Dung lượng pin (3S4P, 12 cell 21700, giả định cell 4 Ah)",
+      "value": 172.8,
+      "unit": "Wh",
+      "nhan": "[tính]",
+      "nguon": [
+        "docs/vi/specifications.md:208",
+        "product/00-tong-quan.md:29"
+      ],
+      "luu_y": "Giả định cell 4 Ah; thời gian chạy chờ EVT."
+    }
+  ]
+}

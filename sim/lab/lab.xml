@@ -1,0 +1,169 @@
+<mujoco model="faibotic_m1_lab">
+  <!-- Phòng lab M1. File sinh tự động bởi sim/lab/build_lab.py (cùng nguồn với lab-scene.json); sửa build_lab.py rồi chạy lại. -->
+  <include file="../m1.xml"/>
+  <compiler meshdir="../assets"/>
+  <option timestep="0.002" integrator="implicitfast" cone="elliptic" impratio="10"/>
+  <visual><global offwidth="1280" offheight="720"/><quality shadowsize="4096" offsamples="4"/>
+    <headlight ambient="0.12 0.12 0.12" diffuse="0.15 0.15 0.15" specular="0.02 0.02 0.02"/></visual>
+  <default>
+    <default class="lab_fix"><geom contype="2" conaffinity="1" friction="1 0.01 0.001" solref="0.004 1"/></default>
+    <default class="lab_moving"><geom contype="4" conaffinity="1" friction="1 0.01 0.001" solref="0.004 1" density="300"/></default>
+    <default class="lab_obj"><geom contype="1" conaffinity="1" condim="4" friction="1.2 0.02 0.001" solref="0.004 1" solimp="0.95 0.99 0.001"/></default>
+  </default>
+  <worldbody>
+    <light pos="0.5 -1.0 2.6" dir="0.1 0.3 -1" directional="false" diffuse="0.12 0.12 0.12" castshadow="false" attenuation="1 0 0"/>
+    <camera name="lab_overview" pos="-0.9 -1.6 1.9" xyaxes="0.681419 -0.731894 0 0.379179 0.353029 0.855332" fovy="55"/>
+    <camera name="lab_table" pos="0.05 -0.95 1.45" xyaxes="0.857493 -0.514496 0 0.266245 0.443741 0.855691" fovy="55"/>
+    <camera name="lab_sort" pos="0 0.25 1.5" xyaxes="-0.587395 -0.8093 0 0.554245 -0.402275 0.728689" fovy="55"/>
+    <camera name="lab_fridge" pos="-0.9 -0.4 1.55" xyaxes="-0.658505 -0.752577 0 0.385194 -0.337045 0.859084" fovy="55"/>
+    <camera name="lab_cabinet" pos="0.1 1.5 1.35" xyaxes="-0.794358 -0.60745 0 0.282649 -0.369618 0.885151" fovy="55"/>
+    <camera name="lab_fridge_in" pos="-0.25 -0.75 1.15" xyaxes="-0.566529 -0.824042 0 0.307175 -0.211183 0.927925" fovy="55"/>
+    <camera name="lab_front" pos="1.55 -0.45 1.45" xyaxes="0.39291 0.919577 -0 -0.439053 0.187595 0.878658" fovy="55"/>
+    <camera name="lab_front_sort" pos="1.55 -0.75 1.5" xyaxes="0.478852 0.877896 -0 -0.43739 0.238576 0.867048" fovy="55"/>
+    <body name="room" pos="0 0 0">
+      <geom name="room_g0" class="lab_fix" type="box" size="3 3 0.005" pos="0.5 0 -0.005" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="room_g1" class="lab_fix" type="box" size="0.025 3 0.8" pos="2 0 0.8" rgba="0.9804 0.9804 0.9765 1"/>
+      <geom name="room_g2" class="lab_fix" type="box" size="3 0.025 0.8" pos="0.5 2.4 0.8" rgba="0.9804 0.9804 0.9765 1"/>
+    </body>
+    <body name="table" pos="0.8 0 0">
+      <geom name="table_g0" class="lab_fix" type="box" size="0.3 1 0.015" pos="0 0 0.735" rgba="0.702 0.7176 0.7412 1"/>
+      <geom name="table_g1" class="lab_fix" type="box" size="0.02 0.02 0.36" pos="-0.26 -0.96 0.36" rgba="0.702 0.7176 0.7412 1"/>
+      <geom name="table_g2" class="lab_fix" type="box" size="0.02 0.02 0.36" pos="-0.26 0.96 0.36" rgba="0.702 0.7176 0.7412 1"/>
+      <geom name="table_g3" class="lab_fix" type="box" size="0.02 0.02 0.36" pos="0.26 -0.96 0.36" rgba="0.702 0.7176 0.7412 1"/>
+      <geom name="table_g4" class="lab_fix" type="box" size="0.02 0.02 0.36" pos="0.26 0.96 0.36" rgba="0.702 0.7176 0.7412 1"/>
+      <geom name="table_g5" class="lab_fix" type="box" size="0.002 1 0.015" pos="-0.298 0 0.705" rgba="0.1176 0.2275 0.3725 1"/>
+    </body>
+    <body name="target_zone" pos="0.64 -0.02 0.75">
+      <geom name="target_zone_g0" class="lab_fix" type="box" size="0.07 0.1 0.001" pos="0 0 0.001" rgba="0.1176 0.2275 0.3725 1" contype="0" conaffinity="0"/>
+    </body>
+    <body name="sort_tray" pos="0.63 -0.32 0.75">
+      <geom name="sort_tray_g0" class="lab_fix" type="box" size="0.071 0.162 0.002" pos="0 0 0.002" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="sort_tray_g1" class="lab_fix" type="box" size="0.003 0.162 0.02" pos="-0.068 0 0.02" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="sort_tray_g2" class="lab_fix" type="box" size="0.003 0.162 0.02" pos="0.068 0 0.02" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="sort_tray_g3" class="lab_fix" type="box" size="0.065 0.003 0.02" pos="0 0.159 0.02" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="sort_tray_g4" class="lab_fix" type="box" size="0.065 0.003 0.02" pos="0 0.053 0.02" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="sort_tray_g5" class="lab_fix" type="box" size="0.065 0.003 0.02" pos="0 -0.053 0.02" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="sort_tray_g6" class="lab_fix" type="box" size="0.065 0.003 0.02" pos="0 -0.159 0.02" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="sort_tray_g7" class="lab_fix" type="box" size="0.065 0.05 0.0005" pos="0 0.106 0.0045" rgba="0.7255 0.1098 0.1098 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g8" class="lab_fix" type="cylinder" size="0.025 0.0005" pos="0 0.106 0.0055" rgba="0.9804 0.9804 0.9765 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g9" class="lab_fix" type="box" size="0.002 0.04 0.015" pos="-0.072 0.106 0.022" rgba="0.7255 0.1098 0.1098 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g10" class="lab_fix" type="cylinder" size="0.011 0.001" pos="-0.075 0.106 0.022" rgba="0.9804 0.9804 0.9765 1" euler="0 1.5708 0" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g11" class="lab_fix" type="box" size="0.065 0.05 0.0005" pos="0 0 0.0045" rgba="0.08235 0.502 0.2392 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g12" class="lab_fix" type="box" size="0.0215 0.0215 0.0005" pos="0 0 0.0055" rgba="0.9804 0.9804 0.9765 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g13" class="lab_fix" type="box" size="0.002 0.04 0.015" pos="-0.072 0 0.022" rgba="0.08235 0.502 0.2392 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g14" class="lab_fix" type="box" size="0.001 0.00946 0.00946" pos="-0.075 0 0.022" rgba="0.9804 0.9804 0.9765 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g15" class="lab_fix" type="box" size="0.065 0.05 0.0005" pos="0 -0.106 0.0045" rgba="0.1451 0.3882 0.9216 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g16" class="lab_fix" type="box" size="0.0295 0.005 0.0005" pos="-0.01443 -0.106 0.0055" rgba="0.9804 0.9804 0.9765 1" euler="0 0 -1.5708" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g17" class="lab_fix" type="box" size="0.0295 0.005 0.0005" pos="0.00722 -0.1185 0.0055" rgba="0.9804 0.9804 0.9765 1" euler="0 0 0.5236" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g18" class="lab_fix" type="box" size="0.0295 0.005 0.0005" pos="0.00722 -0.0935 0.0055" rgba="0.9804 0.9804 0.9765 1" euler="0 0 2.618" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g19" class="lab_fix" type="box" size="0.002 0.04 0.015" pos="-0.072 -0.106 0.022" rgba="0.1451 0.3882 0.9216 1" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g20" class="lab_fix" type="box" size="0.001 0.01298 0.0022" pos="-0.075 -0.106 0.01565" rgba="0.9804 0.9804 0.9765 1" euler="3.1416 0 0" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g21" class="lab_fix" type="box" size="0.001 0.01298 0.0022" pos="-0.075 -0.1115 0.02518" rgba="0.9804 0.9804 0.9765 1" euler="1.0472 0 0" contype="0" conaffinity="0"/>
+      <geom name="sort_tray_g22" class="lab_fix" type="box" size="0.001 0.01298 0.0022" pos="-0.075 -0.1005 0.02518" rgba="0.9804 0.9804 0.9765 1" euler="-1.0472 0 0" contype="0" conaffinity="0"/>
+    </body>
+    <body name="lid_box" pos="0.65 -0.58 0.75">
+      <geom name="lid_box_g0" class="lab_fix" type="box" size="0.08 0.08 0.003" pos="0 0 0.003" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="lid_box_g1" class="lab_fix" type="box" size="0.003 0.08 0.025" pos="-0.077 0 0.025" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="lid_box_g2" class="lab_fix" type="box" size="0.003 0.08 0.025" pos="0.077 0 0.025" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="lid_box_g3" class="lab_fix" type="box" size="0.074 0.003 0.025" pos="0 -0.077 0.025" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="lid_box_g4" class="lab_fix" type="box" size="0.074 0.003 0.025" pos="0 0.077 0.025" rgba="0.1176 0.2275 0.3725 1"/>
+      <body name="lid_box_lid" pos="0 0.08 0.05">
+        <joint name="lid_hinge" type="hinge" axis="-1 0 0" range="0 1.75" ref="0" damping="0.05" frictionloss="0.01" armature="0.01"/>
+        <geom name="lid_box_lid_g0" class="lab_moving" type="box" size="0.082 0.082 0.004" pos="0 -0.08 0.004" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="lid_box_lid_g1" class="lab_moving" type="cylinder" size="0.005 0.01" pos="0 -0.08 0.018" rgba="0.2784 0.3333 0.4118 1"/>
+        <geom name="lid_box_lid_g2" class="lab_moving" type="sphere" size="0.012" pos="0 -0.08 0.038" rgba="0.2784 0.3333 0.4118 1"/>
+        <site name="lid_box_lid_knob" pos="0 -0.08 0.038" size="0.006" rgba="1 1 1 0"/>
+      </body>
+    </body>
+    <body name="drawer_cabinet" pos="0.87 0.85 0.75">
+      <geom name="drawer_cabinet_g0" class="lab_fix" type="box" size="0.13 0.15 0.005" pos="0 0 0.005" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="drawer_cabinet_g1" class="lab_fix" type="box" size="0.13 0.15 0.005" pos="0 0 0.155" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="drawer_cabinet_g2" class="lab_fix" type="box" size="0.13 0.15 0.005" pos="0 0 0.08" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="drawer_cabinet_g3" class="lab_fix" type="box" size="0.005 0.15 0.08" pos="0.125 0 0.08" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="drawer_cabinet_g4" class="lab_fix" type="box" size="0.13 0.005 0.08" pos="0 -0.145 0.08" rgba="0.1176 0.2275 0.3725 1"/>
+      <geom name="drawer_cabinet_g5" class="lab_fix" type="box" size="0.13 0.005 0.08" pos="0 0.145 0.08" rgba="0.1176 0.2275 0.3725 1"/>
+      <body name="drawer_0" pos="0 0 0.045">
+        <joint name="drawer_0_slide" type="slide" axis="-1 0 0" range="0 0.13" ref="0" damping="3.0" frictionloss="0.3" armature="0.01"/>
+        <geom name="drawer_0_g0" class="lab_moving" type="box" size="0.006 0.147 0.0305" pos="-0.124 0 0" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_0_g1" class="lab_moving" type="box" size="0.115 0.137 0.003" pos="-0.015 0 -0.0205" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_0_g2" class="lab_moving" type="box" size="0.003 0.137 0.0155" pos="0.1 0 -0.005" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_0_g3" class="lab_moving" type="box" size="0.115 0.003 0.0155" pos="-0.015 -0.134 -0.005" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_0_g4" class="lab_moving" type="box" size="0.115 0.003 0.0155" pos="-0.015 0.134 -0.005" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_0_g5" class="lab_moving" type="cylinder" size="0.006 0.05" pos="-0.17 0 0" rgba="0.2784 0.3333 0.4118 1" euler="1.5708 0 0"/>
+        <geom name="drawer_0_g6" class="lab_moving" type="box" size="0.02 0.004 0.004" pos="-0.15 -0.045 0" rgba="0.2784 0.3333 0.4118 1"/>
+        <geom name="drawer_0_g7" class="lab_moving" type="box" size="0.02 0.004 0.004" pos="-0.15 0.045 0" rgba="0.2784 0.3333 0.4118 1"/>
+        <site name="drawer_0_handle" pos="-0.17 0 0" size="0.006" rgba="1 1 1 0"/>
+      </body>
+      <body name="drawer_1" pos="0 0 0.115">
+        <joint name="drawer_1_slide" type="slide" axis="-1 0 0" range="0 0.13" ref="0" damping="3.0" frictionloss="0.3" armature="0.01"/>
+        <geom name="drawer_1_g0" class="lab_moving" type="box" size="0.006 0.147 0.0305" pos="-0.124 0 0" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_1_g1" class="lab_moving" type="box" size="0.115 0.137 0.003" pos="-0.015 0 -0.0205" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_1_g2" class="lab_moving" type="box" size="0.003 0.137 0.0155" pos="0.1 0 -0.005" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_1_g3" class="lab_moving" type="box" size="0.115 0.003 0.0155" pos="-0.015 -0.134 -0.005" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_1_g4" class="lab_moving" type="box" size="0.115 0.003 0.0155" pos="-0.015 0.134 -0.005" rgba="0.9451 0.9373 0.9098 1"/>
+        <geom name="drawer_1_g5" class="lab_moving" type="cylinder" size="0.006 0.05" pos="-0.17 0 0" rgba="0.2784 0.3333 0.4118 1" euler="1.5708 0 0"/>
+        <geom name="drawer_1_g6" class="lab_moving" type="box" size="0.02 0.004 0.004" pos="-0.15 -0.045 0" rgba="0.2784 0.3333 0.4118 1"/>
+        <geom name="drawer_1_g7" class="lab_moving" type="box" size="0.02 0.004 0.004" pos="-0.15 0.045 0" rgba="0.2784 0.3333 0.4118 1"/>
+        <site name="drawer_1_handle" pos="-0.17 0 0" size="0.006" rgba="1 1 1 0"/>
+      </body>
+    </body>
+    <body name="fridge" pos="0.75 -1.4 0">
+      <geom name="fridge_g0" class="lab_fix" type="box" size="0.25 0.25 0.015" pos="0 0 0.265" rgba="0.9804 0.9804 0.9765 1"/>
+      <geom name="fridge_g1" class="lab_fix" type="box" size="0.25 0.25 0.015" pos="0 0 0.935" rgba="0.9804 0.9804 0.9765 1"/>
+      <geom name="fridge_g2" class="lab_fix" type="box" size="0.015 0.25 0.35" pos="0.235 0 0.6" rgba="0.9804 0.9804 0.9765 1"/>
+      <geom name="fridge_g3" class="lab_fix" type="box" size="0.22 0.22 0.006" pos="0.01 0 0.744" rgba="0.9176 0.9412 0.9686 1"/>
+      <geom name="fridge_g4" class="lab_fix" type="box" size="0.22 0.22 0.006" pos="0.01 0 0.45" rgba="0.9176 0.9412 0.9686 1"/>
+      <geom name="fridge_g5" class="lab_fix" type="box" size="0.015 0.015 0.125" pos="-0.235 -0.235 0.125" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="fridge_g6" class="lab_fix" type="box" size="0.015 0.015 0.125" pos="-0.235 0.235 0.125" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="fridge_g7" class="lab_fix" type="box" size="0.015 0.015 0.125" pos="0.235 -0.235 0.125" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="fridge_g8" class="lab_fix" type="box" size="0.015 0.015 0.125" pos="0.235 0.235 0.125" rgba="0.3922 0.4549 0.5451 1"/>
+      <geom name="fridge_g9" class="lab_fix" type="box" size="0.25 0.015 0.35" pos="0 -0.235 0.6" rgba="0.9804 0.9804 0.9765 1"/>
+      <geom name="fridge_g10" class="lab_fix" type="box" size="0.25 0.015 0.35" pos="0 0.235 0.6" rgba="0.9804 0.9804 0.9765 1"/>
+      <body name="fridge_door" pos="-0.27 -0.245 0">
+        <joint name="fridge_hinge" type="hinge" axis="0 0 1" range="0 1.75" ref="0" damping="1.0" frictionloss="0.2" armature="0.01"/>
+        <geom name="fridge_door_g0" class="lab_moving" type="box" size="0.02 0.245 0.345" pos="0 0.245 0.6" rgba="0.9451 0.9373 0.9098 1" mass="2.5"/>
+        <geom name="fridge_door_g1" class="lab_moving" type="box" size="0.002 0.15 0.006" pos="-0.022 0.245 0.87" rgba="0.1176 0.2275 0.3725 1" contype="0" conaffinity="0"/>
+        <geom name="fridge_door_g2" class="lab_moving" type="cylinder" size="0.008 0.09" pos="-0.07 0.44 0.71" rgba="0.2784 0.3333 0.4118 1"/>
+        <geom name="fridge_door_g3" class="lab_moving" type="box" size="0.025 0.007 0.007" pos="-0.045 0.44 0.64" rgba="0.2784 0.3333 0.4118 1"/>
+        <geom name="fridge_door_g4" class="lab_moving" type="box" size="0.025 0.007 0.007" pos="-0.045 0.44 0.7" rgba="0.2784 0.3333 0.4118 1"/>
+        <site name="fridge_door_handle" pos="-0.07 0.44 0.775" size="0.006" rgba="1 1 1 0"/>
+      </body>
+    </body>
+    <body name="obj_red_cube" pos="0.63689 0.12413 0.7705" euler="0 0 -0.031771">
+      <freejoint name="obj_red_cube"/>
+      <geom name="obj_red_cube_g0" class="lab_obj" type="box" size="0.02 0.02 0.02" pos="0 0 0" rgba="0.7255 0.1098 0.1098 1" mass="0.06"/>
+    </body>
+    <body name="obj_blue_cyl" pos="0.62518 0.18018 0.7755" euler="0 0 -0.038026">
+      <freejoint name="obj_blue_cyl"/>
+      <geom name="obj_blue_cyl_g0" class="lab_obj" type="cylinder" size="0.02 0.025" pos="0 0 0" rgba="0.1451 0.3882 0.9216 1" mass="0.06"/>
+    </body>
+    <body name="obj_green_cube" pos="0.63568 0.23685 0.7705" euler="0 0 -0.0093612">
+      <freejoint name="obj_green_cube"/>
+      <geom name="obj_green_cube_g0" class="lab_obj" type="box" size="0.02 0.02 0.02" pos="0 0 0" rgba="0.08235 0.502 0.2392 1" mass="0.06"/>
+    </body>
+    <body name="obj_red_cyl" pos="0.63167 0.30653 0.7755" euler="0 0 0.0018747">
+      <freejoint name="obj_red_cyl"/>
+      <geom name="obj_red_cyl_g0" class="lab_obj" type="cylinder" size="0.02 0.025" pos="0 0 0" rgba="0.7255 0.1098 0.1098 1" mass="0.06"/>
+    </body>
+    <body name="obj_blue_cube" pos="0.62564 0.36409 0.773" euler="0 0 0.047348">
+      <freejoint name="obj_blue_cube"/>
+      <geom name="obj_blue_cube_g0" class="lab_obj" type="box" size="0.0225 0.0225 0.0225" pos="0 0 0" rgba="0.1451 0.3882 0.9216 1" mass="0.06"/>
+    </body>
+    <body name="obj_green_cyl" pos="0.62501 0.42656 0.7755" euler="0 0 0.19311">
+      <freejoint name="obj_green_cyl"/>
+      <geom name="obj_green_cyl_g0" class="lab_obj" type="cylinder" size="0.02 0.025" pos="0 0 0" rgba="0.08235 0.502 0.2392 1" mass="0.06"/>
+    </body>
+    <body name="obj_red_block" pos="0.6362 0.48643 0.7705" euler="0 0 -0.075941">
+      <freejoint name="obj_red_block"/>
+      <geom name="obj_red_block_g0" class="lab_obj" type="box" size="0.015 0.025 0.02" pos="0 0 0" rgba="0.7255 0.1098 0.1098 1" mass="0.06"/>
+    </body>
+    <body name="obj_blue_block" pos="0.6346 0.54638 0.768" euler="0 0 0.073594">
+      <freejoint name="obj_blue_block"/>
+      <geom name="obj_blue_block_g0" class="lab_obj" type="box" size="0.0175 0.025 0.0175" pos="0 0 0" rgba="0.1451 0.3882 0.9216 1" mass="0.06"/>
+    </body>
+    <body name="obj_green_can" pos="0.62 -1.28 0.7805">
+      <freejoint name="obj_green_can"/>
+      <geom name="obj_green_can_g0" class="lab_obj" type="cylinder" size="0.02 0.03" pos="0 0 0" rgba="0.08235 0.502 0.2392 1" mass="0.06"/>
+    </body>
+  </worldbody>
+</mujoco>

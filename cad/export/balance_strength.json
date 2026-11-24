@@ -1,0 +1,66 @@
+{
+ "lo_xo": {
+  "d_mm": 1.4,
+  "D_mm": 15.4,
+  "C": 11.0,
+  "Wahl": 1.131,
+  "Na": 20.8,
+  "L0_tinh_mm": 58.5,
+  "Rm_MPa": 2106,
+  "tau_max_MPa": 765,
+  "tau_max_over_Rm": 0.363,
+  "tau0_MPa": 73,
+  "F0_N": 5.1,
+  "k_N_mm": 0.5,
+  "gian_max_mm": 84.4,
+  "L_min_mm": 73.0
+ },
+ "tai_huong_kinh_them_len_truc_vai_N": 94.6,
+ "F_max_N": 47.3,
+ "F_theo_q": {
+  "-100": 12.4,
+  "-50": 21.6,
+  "0": 36.3,
+  "45": 45.3,
+  "90": 47.0
+ },
+ "Fx_max_N": 18.3,
+ "ghi_chu": "SF = giới hạn / (sigma x Kt); Kt = 1 cho bu-lông thép",
+ "ket_qua": [
+  {
+   "check": "chốt M6 uốn",
+   "sigma_MPa": 129.42,
+   "gioi_han_MPa": 640.0,
+   "Kt": 1.0,
+   "SF": 4.95
+  },
+  {
+   "check": "link ép mặt lỗ chốt",
+   "sigma_MPa": 1.97,
+   "gioi_han_MPa": 39.0,
+   "Kt": 3.0,
+   "SF": 6.59
+  },
+  {
+   "check": "trụ neo uốn (Fx + lệch tâm Fz)",
+   "sigma_MPa": 2.2,
+   "gioi_han_MPa": 39.0,
+   "Kt": 3.0,
+   "SF": 5.92
+  },
+  {
+   "check": "trụ neo ép mặt bu-lông",
+   "sigma_MPa": 0.56,
+   "gioi_han_MPa": 39.0,
+   "Kt": 3.0,
+   "SF": 23.08
+  },
+  {
+   "check": "cổ link tại lỗ chốt (mô-men tay, không trừ lò xo)",
+   "sigma_MPa": 4.5,
+   "gioi_han_MPa": 39.0,
+   "Kt": 3.0,
+   "SF": 2.89
+  }
+ ]
+}

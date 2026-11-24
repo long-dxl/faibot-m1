@@ -1,0 +1,1790 @@
+{
+ "ghi_chu": "DK-N66: chi tiết đi theo khớp yaw (vỏ/đáy/nắp J56, servo yaw, thân kẹp J7, hàm, giá camera, camera, servo kẹp) x giá J5 + chốt (theo gập) + cẳng tay J4. Góc độ URDF (yaw SDK = -URDF; gập, cuộn URDF = SDK). Giao mm3 vượt nền (cùng gập/cuộn/kẹp ở yaw 0) > 0,5; g0/g100 = độ mở kẹp %. STEP follower AM-ARM200 + khối bao servo STS3215 (servos.py) + camera bao giả định.",
+ "nen_lap_san": {
+  "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+ },
+ "cham_yaw": {
+  "duong": {
+   "urdf_deg": 84.61,
+   "cap": {
+    "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 8.0
+   }
+  },
+  "am": {
+   "urdf_deg": -83.67,
+   "cap": {
+    "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 15.3
+   }
+  }
+ },
+ "quet_tho_5deg": {
+  "y5": {},
+  "y10": {},
+  "y15": {},
+  "y20": {},
+  "y25": {},
+  "y30": {},
+  "y35": {},
+  "y40": {},
+  "y45": {},
+  "y50": {},
+  "y55": {},
+  "y60": {},
+  "y65": {},
+  "y70": {},
+  "y75": {},
+  "y80": {},
+  "y85": {
+   "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 5.9
+  },
+  "y-5": {},
+  "y-10": {},
+  "y-15": {},
+  "y-20": {},
+  "y-25": {},
+  "y-30": {},
+  "y-35": {},
+  "y-40": {},
+  "y-45": {},
+  "y-50": {},
+  "y-55": {},
+  "y-60": {},
+  "y-65": {},
+  "y-70": {},
+  "y-75": {},
+  "y-80": {},
+  "y-85": {
+   "OB_F_J56_Wrist_HousingxOB_F_J5_Elbow_Wrist_Bracket": 55.0
+  }
+ },
+ "bien_deg": 3.0,
+ "gioi_han_urdf_deg": [
+  -80,
+  81
+ ],
+ "gioi_han_sdk_deg": [
+  -81,
+  80
+ ],
+ "luoi": {
+  "gap_deg": [
+   -77.5,
+   -60.0,
+   -40.0,
+   -20.0,
+   0.0,
+   20.0,
+   40.0,
+   60.0,
+   80.0,
+   87.5
+  ],
+  "cuon_deg": [
+   -160.0,
+   -120.0,
+   -80.0,
+   -40.0,
+   0.0,
+   40.0,
+   80.0,
+   120.0,
+   160.0
+  ],
+  "kep_pct": [
+   0,
+   100
+  ],
+  "yaw_urdf_deg": [
+   -80.0,
+   -60.0,
+   -40.0,
+   -20.0,
+   0.0,
+   20.0,
+   40.0,
+   60.0,
+   80.0,
+   81.0
+  ],
+  "vuot_nen": {
+   "g0_f20_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f20_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g0_f40_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f40_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g0_f40_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g0_f40_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g0_f60_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r-160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r-120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r-80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r-40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r0_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f60_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g0_f60_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g0_f60_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g0_f60_r160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g0_f80_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r-160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r-160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r-160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r-120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r-120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r-120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r-80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r-80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r-80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r-40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r-40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r-40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r0_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r0_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r0_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f80_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g0_f80_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g0_f80_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g0_f80_r160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g0_f80_r160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g0_f80_r160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g0_f87.5_r-160_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r-160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r-160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r-160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r-120_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r-120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r-120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r-120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r-80_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r-80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r-80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r-80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r-40_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r-40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r-40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r-40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r0_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r0_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r0_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r0_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r40_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r80_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r120_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g0_f87.5_r160_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g0_f87.5_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g0_f87.5_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g0_f87.5_r160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g0_f87.5_r160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g0_f87.5_r160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f20_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f20_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 49.6
+   },
+   "g100_f40_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f40_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1564.1
+   },
+   "g100_f40_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 441.8
+   },
+   "g100_f40_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 54.7
+   },
+   "g100_f60_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r-160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r-120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r-80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r-40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r0_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f60_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3766.1
+   },
+   "g100_f60_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1958.0
+   },
+   "g100_f60_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 846.0
+   },
+   "g100_f60_r160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 46.0
+   },
+   "g100_f80_r-160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r-160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r-160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r-160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r-120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r-120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r-120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r-120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r-80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r-80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r-80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r-80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r-40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r-40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r-40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r-40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r0_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r0_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r0_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r0_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r40_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r80_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r120_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f80_r160_y-80": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 4903.2
+   },
+   "g100_f80_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3516.4
+   },
+   "g100_f80_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1665.3
+   },
+   "g100_f80_r160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 975.4
+   },
+   "g100_f80_r160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 1.4
+   },
+   "g100_f80_r160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 12.5
+   },
+   "g100_f87.5_r-160_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r-160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r-160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r-160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r-160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r-160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r-120_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r-120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r-120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r-120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r-120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r-120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r-80_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r-80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r-80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r-80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r-80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r-80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r-40_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r-40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r-40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r-40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r-40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r-40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r0_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r0_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r0_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r0_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r0_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r0_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r40_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r40_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r40_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r40_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r40_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r40_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r80_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r80_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r80_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r80_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r80_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r80_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r120_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r120_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r120_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r120_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r120_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r120_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   },
+   "g100_f87.5_r160_y-80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 11.3,
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 5498.7
+   },
+   "g100_f87.5_r160_y-60": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 3696.9
+   },
+   "g100_f87.5_r160_y-40": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 1172.3
+   },
+   "g100_f87.5_r160_y-20": {
+    "OB_F_J56_BottomxOB_F_J4_Elbow": 451.3
+   },
+   "g100_f87.5_r160_y80": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 36.8
+   },
+   "g100_f87.5_r160_y81": {
+    "OB_F_J56_Wrist_HousingxOB_F_J4_Elbow": 71.3
+   }
+  }
+ },
+ "nen_yaw0_theo_tu_the": {
+  "g0_f-77.5_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-77.5_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-60_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-40_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f-20_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f0_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f20_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f40_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f60_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r-160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r-120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r-80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r-40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r0": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f80_r160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r-160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r-120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r-80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r-40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r0": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g0_f87.5_r160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-77.5_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-60_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-40_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f-20_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f0_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f20_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f40_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r-160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r-120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r-80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r-40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r0": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r40": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r80": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r120": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f60_r160": {
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r-160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r-120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r-80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r-40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r0": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f80_r160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 118.6,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r-160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r-120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r-80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r-40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r0": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r40": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r80": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r120": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  },
+  "g100_f87.5_r160": {
+   "OB_F_J56_BottomxOB_F_J4_Elbow": 937.3,
+   "OB_F_J56_BottomxOB_F_J5_Pin_Bearing": 110.1
+  }
+ },
+ "gap_cham_cang_tay_yaw0_deg": 73.4375,
+ "thoi_gian_s": 2395.8
+}

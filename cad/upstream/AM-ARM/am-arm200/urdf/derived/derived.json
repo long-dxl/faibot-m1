@@ -1,0 +1,228 @@
+{
+ "nguon": "liyiteng/AM-ARM 5b03af1 am-arm200/urdf/am-arm200-meshes (Apache-2.0); đã tách nhóm, bỏ chi tiết < 6 mm, rút gọn",
+ "link": {
+  "left_Base": {
+   "servo": {
+    "left_pan": {
+     "model": "STS3095",
+     "thanh_phan": 13,
+     "tam_giac": 1372,
+     "hop_bao_m": [
+      [
+       -0.02199,
+       -0.0169,
+       0.03627
+      ],
+      [
+       0.02201,
+       0.07116,
+       0.11337
+      ]
+     ]
+    }
+   },
+   "bo": 16135,
+   "than": {
+    "thanh_phan": 1,
+    "tam_giac": 3298
+   }
+  },
+  "left_Rotation_Pitch": {
+   "servo": {
+    "left_shoulder": {
+     "model": "STS3095",
+     "thanh_phan": 10,
+     "tam_giac": 1228,
+     "hop_bao_m": [
+      [
+       -0.03211,
+       -0.07399,
+       0.05846
+      ],
+      [
+       0.02969,
+       -0.04199,
+       0.12546
+      ]
+     ]
+    }
+   },
+   "bo": 16135,
+   "than": {
+    "thanh_phan": 3,
+    "tam_giac": 3400
+   },
+   "kim_loai": {
+    "thanh_phan": 2,
+    "tam_giac": 322
+   }
+  },
+  "left_Upper_Arm": {
+   "servo": {
+    "left_elbow": {
+     "model": "STS3095",
+     "thanh_phan": 10,
+     "tam_giac": 1200,
+     "hop_bao_m": [
+      [
+       -0.05802,
+       0.11249,
+       -0.03434
+      ],
+      [
+       0.00898,
+       0.14449,
+       0.02746
+      ]
+     ]
+    }
+   },
+   "bo": 16135,
+   "than": {
+    "thanh_phan": 3,
+    "tam_giac": 4000
+   },
+   "kim_loai": {
+    "thanh_phan": 2,
+    "tam_giac": 318
+   }
+  },
+  "left_Lower_Arm": {
+   "servo": {
+    "left_wrist_flex": {
+     "model": "STS3215",
+     "thanh_phan": 14,
+     "tam_giac": 1525,
+     "hop_bao_m": [
+      [
+       -0.0102,
+       -0.20952,
+       -0.01972
+      ],
+      [
+       0.01652,
+       -0.1623,
+       0.01798
+      ]
+     ]
+    }
+   },
+   "bo": 5910,
+   "than": {
+    "thanh_phan": 2,
+    "tam_giac": 3500
+   },
+   "kim_loai": {
+    "thanh_phan": 2,
+    "tam_giac": 300
+   }
+  },
+  "left_Wrist_Pitch_Roll": {
+   "servo": {},
+   "bo": 0,
+   "than": {
+    "thanh_phan": 1,
+    "tam_giac": 1500
+   }
+  },
+  "left_Fixed_Jaw": {
+   "servo": {},
+   "bo": 0,
+   "than": {
+    "thanh_phan": 2,
+    "tam_giac": 1998
+   }
+  },
+  "left_Moving_Jaw": {
+   "servo": {},
+   "bo": 0,
+   "than": {
+    "thanh_phan": 1,
+    "tam_giac": 1068
+   }
+  },
+  "left_camera": {
+   "servo": {},
+   "bo": 0,
+   "than": {
+    "thanh_phan": 2,
+    "tam_giac": 700
+   }
+  },
+  "left_wrist_yaw": {
+   "servo": {
+    "left_wrist_roll": {
+     "model": "STS3215",
+     "thanh_phan": 14,
+     "tam_giac": 1296,
+     "hop_bao_m": [
+      [
+       -0.01336,
+       0.02069,
+       -0.03314
+      ],
+      [
+       0.01336,
+       0.05839,
+       0.01408
+      ]
+     ]
+    },
+    "left_gripper": {
+     "model": "STS3215",
+     "thanh_phan": 14,
+     "tam_giac": 1483,
+     "hop_bao_m": [
+      [
+       -0.01589,
+       0.06925,
+       -0.04199
+      ],
+      [
+       0.03133,
+       0.09597,
+       -0.00429
+      ]
+     ]
+    },
+    "left_wrist_yaw": {
+     "model": "STS3215",
+     "thanh_phan": 14,
+     "tam_giac": 1568,
+     "hop_bao_m": [
+      [
+       -0.01336,
+       -0.01111,
+       0.01762
+      ],
+      [
+       0.01336,
+       0.03611,
+       0.05532
+      ]
+     ]
+    }
+   },
+   "bo": 17555,
+   "bo_servo_yaw": {
+    "thanh_phan": 14,
+    "hop_bao_m": [
+     [
+      -0.01336,
+      -0.01111,
+      0.01762
+     ],
+     [
+      0.01336,
+      0.03611,
+      0.05532
+     ]
+    ]
+   },
+   "than": {
+    "thanh_phan": 9,
+    "tam_giac": 2498
+   }
+  }
+ }
+}
