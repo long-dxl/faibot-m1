@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Đế ngàm (nửa cố định của giao diện lắp nhanh) và đế bàn (BỘ TUỲ CHỌN bán riêng). build123d.
 
 Khung trạm S (mm) như tram_hai_tay.py. Cùng một đế ngàm M1-TR-020 (in PETG, chữ U: hai khối bên ôm hai mặt bên khung T giữa + thanh ngang

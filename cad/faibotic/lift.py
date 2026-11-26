@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Cột nâng M1: cột 4040 + 2 ray MGN12H + xe nâng (Al) + vitme T8x2 treo + tăng tốc 16:1 (bánh răng in 4:1 + đai GT2 4:1).
 build123d. Hệ toạ độ như sdk (m -> mm): x trước, y trái, z lên, gốc sàn, tâm đế x=0.
 Chạy: python lift.py -> ../export/M1-LF-*.step + M1-LF-build.json (khối lượng, giao cắt).

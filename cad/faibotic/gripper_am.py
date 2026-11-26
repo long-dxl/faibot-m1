@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """(24/11/2026): kẹp gốc AM-ARM200 làm kẹp mặc định của M1 P-L. Thân kẹp OB_F_J7_Gripper (M1-AR-007), hàm động OB_F_J7_Jaw (M1-AR-008),
 giá camera cổ tay OB_F_Camera (M1-AR-027): STEP follower upstream (commit 5b03af1, Apache-2.0), đặt vào khung URDF bằng am_j7_register.py
 (cad/export/AM_J7_registration.json). Servo kẹp STS3215 theo khớp left_gripper URDF (như assembly_full.gripper_servo_pose, không dời).

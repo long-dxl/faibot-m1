@@ -28,7 +28,7 @@
     {
       "id": "khoi_luong",
       "label": "Khối lượng robot (cận trên theo CAD, chi tiết in tính khối đặc)",
-      "value": 21.2,
+      "value": 21.5,
       "unit": "kg",
       "nhan": "[tính]",
       "nguon": [

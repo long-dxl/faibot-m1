@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Mất điện (servo tắt) ở tư thế xấu: tốc độ, năng lượng tới chặn cơ khí, khả năng hấp thụ (v0.4).
 
 Mô hình: cùng MJCF của model.py nhưng bỏ lực servo (mjDSBL_ACTUATION), khoá trục nâng/đế, tắt va chạm hình học

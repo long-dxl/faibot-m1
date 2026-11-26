@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Bộ điều khiển teleop bàn phím cho M1 (không phụ thuộc cửa sổ, test được không cần màn hình).
 
 Mã phím theo GLFW. Phím giữ (đế, trục nâng, di chuyển kẹp) đọc từ tập phím đang giữ;

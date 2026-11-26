@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Lớp lỗi có mã của SDK M1 (Tầng 1b, docs/S4/KE-HOACH-TANG-1B.md mục 2.5; bảng mã ở sdk/faibotic/loi.py).
 
 Mọi lỗi SDK chủ động ném kế thừa `M1Loi` (có `.ma` và `.khop`) và giữ lớp chuẩn quen dùng (ConnectionError, ValueError, TypeError,

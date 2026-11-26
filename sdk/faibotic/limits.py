@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Giới hạn mềm M1: ARM_LIMITS + giới hạn ghép cổ tay-khuỷu-vai (spec.wrist_max) và yaw-gập (spec.wrist_yaw_range), kiểm cả đường đi giữa hai đích
 (yaw-gập: kiểm tại đích ở Robot và backend, chưa kiểm đoạn nội suy: DK-N66 ghi chú).
 

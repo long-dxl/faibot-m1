@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Ảnh cổng hình P-L: 3 góc (trước, bên, 3/4) cùng thước, chiếu song song, từ thư mục mesh của assembly_pl.py --mesh. matplotlib, không GPU.
  Chạy: python render_pl.py MESH_DIR OUT_DIR [nhãn]  -> OUT_DIR/{front,side,34}_<nhãn>.png"""
 import json, os, sys

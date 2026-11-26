@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Bền chi tiết chịu lực lò xo (tính tay, PETG ngang 39 MPa [datasheet Prusa Polymers, nguồn trong bao-cao-cad.md], Kt = 3 giả định,
 bu-lông M5 cấp 8.8 Rp0,2 >= 640 MPa [ISO 898-1, giá trị điển hình, chưa kiểm nguồn lần này]). Chạy: python balance_strength.py"""
 import json, math, os, sys

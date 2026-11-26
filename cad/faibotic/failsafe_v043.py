@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4.3: (1) đệm khuỷu M1-AR-022 dời để chạm ở 128 độ (chặn cứng khuỷu 136 -> 133); (2) kiểm DFM trong CAD: thanh M1-SH-016 giữa hai trụ,
 vát 45 độ trụ M1-SH-003, lỗ giọt nước, R1,5 link, tab M1-AR-023 chữ U 24 (2 x M3 xuyên link); (3) xuất STEP v043. build123d.
 Chạy: python failsafe_v043.py [--check] [--step] [--elbow]  -> ../export/failsafe_v043_scan.json, STEP *_v043.step"""

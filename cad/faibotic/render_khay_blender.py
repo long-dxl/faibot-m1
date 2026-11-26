@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC-BY-NC-SA-4.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """R4 khay: hiện tại / --de-xuat (khay B gắn xe nâng, ẩn khay đế) / --hai-tang (giữ khay đế + laptop đóng nắp + khay B). Gốc: m1-r11/rw/web2.py.
 Render ảnh web Faibot M1 v0.5 từ m1.glb (4aaaa56): tư thế theo joints.json, sân khấu + camera theo render_scene.py/views.json.
 Thêm --khay-de trong|laptop|jetson [--khay-de-cad cad/export/khay-de] (view "khay" trong media/renders-web/src/views.json): khay đế M1-ST-012 + vật mô phỏng đúng kích thước.

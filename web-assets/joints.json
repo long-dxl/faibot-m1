@@ -339,11 +339,11 @@
    "sdk_unit": "rad",
    "limit_soft": [
     -1.3526301702956054,
-    1.5271630954950384
+    1.2217304763960306
    ],
    "limit_soft_deg": [
     -77.5,
-    87.5
+    70.0
    ],
    "sign": "dương = gập xuống; giới hạn trên theo vai và khuỷu (couplings.wrist_max)"
   },
@@ -478,11 +478,11 @@
    "sdk_unit": "rad",
    "limit_soft": [
     -1.3526301702956054,
-    1.5271630954950384
+    1.2217304763960306
    ],
    "limit_soft_deg": [
     -77.5,
-    87.5
+    70.0
    ],
    "sign": "dương = gập xuống; giới hạn trên theo vai và khuỷu (couplings.wrist_max)"
   },
@@ -733,9 +733,7 @@
     50.0,
     60.0,
     65.0,
-    70.0,
-    72.5,
-    87.5
+    70.0
    ],
    "min_deg": [
     -81.0,
@@ -746,9 +744,7 @@
     -81.0,
     -81.0,
     -80.0,
-    -78.5,
-    -78.0,
-    0.0
+    -78.5
    ],
    "max_deg": [
     80.0,
@@ -759,9 +755,7 @@
     19.0,
     11.0,
     6.5,
-    1.5,
-    0.0,
-    0.0
+    1.5
    ],
    "note": "tầm yaw (độ SDK) theo gập cổ tay, hẹp nhất hai nút kề như spec.wrist_yaw_range; trong limit_soft của wrist_yaw"
   },
@@ -773,15 +767,15 @@
    "q": {
     "left_pan": 0.0,
     "left_shoulder": -1.396263,
-    "left_elbow": 1.623156,
-    "left_wrist_flex": 1.518436,
+    "left_elbow": 1.780236,
+    "left_wrist_flex": 1.186824,
     "left_wrist_yaw": 0.0,
     "left_wrist_roll": 0.0,
     "left_gripper": 100.0,
     "right_pan": 0.0,
     "right_shoulder": -1.396263,
-    "right_elbow": 1.623156,
-    "right_wrist_flex": 1.518436,
+    "right_elbow": 1.780236,
+    "right_wrist_flex": 1.186824,
     "right_wrist_yaw": 0.0,
     "right_wrist_roll": 0.0,
     "right_gripper": 100.0,

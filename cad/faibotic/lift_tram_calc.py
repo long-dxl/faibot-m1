@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Trục nâng P-L khi gánh trạm hai tay (R3d): so phương án đưa servo lift về <= 70% định mức, không lò xo lộ ngoài.
  Nhẹ, chạy tại chỗ: python3 lift_tram_calc.py -> ../export/M1-LF-tram-calc.json (+ in bảng).
 Tải lấy từ R3c mục 2 (8,28 / 8,77 / 9,28 kg); gia tốc 0,5 m/s²; lực răng = m(g+a), chưa cộng ma sát (như R3c).

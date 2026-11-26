@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Trục nâng M1: so phương án truyền động, tải, mô-men servo, tự hãm, bền.
 Chạy: python lift_calc.py -> ../export/M1-LF-calc.json (+ in tóm tắt).
 Mọi số có cờ trong archive/v0.4/cad/bao-cao-cot-nang.md. g = 9,81."""

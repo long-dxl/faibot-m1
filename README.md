@@ -2,9 +2,18 @@
 
 An open mobile robot with two arms and a lifting column, built for university robotics labs. This repository holds its CAD, simulation model, Python SDK, wiring diagrams and assembly guide.
 
-![Faibot M1](media/renders-web/v05/faibot-m1-v05-hero.png)
+![Faibot M1](media/renders-web/v05f/faibot-m1-v05f-hero.webp)
 
 **Status:** design v0.5, before the first engineering build. No physical robot has been assembled yet; everything here is checked in simulation and against the CAD.
+
+## Simulation demos
+
+Three lab tasks, played at 2× speed (60 fps). Each task was measured on 20 randomised seeds before recording.
+
+| Sorting | Pick & place | Opening & closing |
+| --- | --- | --- |
+| ![Sorting](media/video/m1-sorting-2x.gif) | ![Pick and place](media/video/m1-pick_place-2x.gif) | ![Opening and closing](media/video/m1-open_close-2x.gif) |
+| Both arms pick at the same time and the base carries the objects to the tray. A zone lock keeps only one arm inside the tray area at a time. [MP4](media/video/m1-sorting-60fps-2x.mp4) · [WebM](media/video/m1-sorting-60fps-2x.webm) | Objects are picked from the table and placed in a box while the base moves between them. [MP4](media/video/m1-pick_place-60fps-2x.mp4) · [WebM](media/video/m1-pick_place-60fps-2x.webm) | The drawer is pulled open, an object is placed inside and the drawer is closed. At the fridge, the right arm opens the door and the left arm takes the can out. [MP4](media/video/m1-open_close-60fps-2x.mp4) · [WebM](media/video/m1-open_close-60fps-2x.webm) |
 
 ## What's in this repository
 
@@ -43,13 +52,13 @@ The written documentation is currently in Vietnamese, starting at [`docs/vi/READ
 
 ## License
 
-| Folders | License |
+| What | License |
 | --- | --- |
-| `sdk/`, `sim/`, `web-assets/`, `hardware/urdf/`, `hardware/tools/`, `scripts/`, `tests/` | [Apache License 2.0](LICENSE) |
-| `cad/`, `hardware/` (except the items above and inherited parts), `electrical/`, `product/`, `docs/`, `media/` | [CC BY-NC-SA 4.0](LICENSE-hardware); commercial use needs a separate written agreement with Faibotic |
-| `cad/upstream/`, `hardware/parts/inherited/` | Apache License 2.0, by their original authors |
+| Software (`sdk/`, `scripts/`, `tests/`, `demos/`, `examples/`), the generated MJCF/URDF, and the meshes derived only from AM-ARM200 and MuJoCo Menagerie | [Apache License 2.0](LICENSE) |
+| Parts Faibotic drew, as CAD (`cad/`, `hardware/`), as sim meshes (the base, lift carriage and wrist camera meshes in `sim/assets/`) and in `web-assets/m1.glb`; electrical drawings, documentation, images | [CC BY-NC-SA 4.0](LICENSE-hardware). For commercial use, contact founder@faibotic.com |
+| Third-party designs in `cad/upstream/`, `hardware/parts/inherited/`, and the third-party parts inside the files above | Apache License 2.0, by their original authors |
 
-The full folder list is in [`NOTICE`](NOTICE).
+The file-by-file list is in [`NOTICE`](NOTICE). Releases v0.5 and earlier published the Faibotic-drawn meshes under the Apache License 2.0. Copyright (c) 2026 Leo Dao (Faibotic). "Faibotic" and "Faibot" are trade names; no trademark rights are granted.
 
 ## Credits
 

@@ -186,7 +186,7 @@ print("thanh phan nhan do tin cay thap:", len(unl), unl[:5]); print("tam giac th
 # ---- GLB ----
 MAT = {"ivory": ("#f1efe8", .5, 0), "ivory_hi": ("#f6f5f1", .45, 0), "navy": ("#1e3a5f", .42, 0), "alu": ("#b3b7bd", .40, .85), "steel": ("#8d939b", .35, 1.0), "servo": ("#1b1d21", .62, 0), "servo_body": ("#2b2d31", .38, .35), "pad": ("#33363d", .75, 0), "rubber": ("#26282d", .8, 0), "hub": ("#6d727a", .42, .9)}
 def lin(h): return [round(((int(h[i:i + 2], 16) / 255) ** 2.2), 4) for i in (1, 3, 5)] + [1.0]
-gl = G.GLTF2(asset=G.Asset(version="2.0", generator="faibotic web-assets/src/10_build_m1_glb.py", copyright="Faibotic. Derived from AM-ARM200 and AlohaMini2 by liyiteng, and the STS3215 mesh of MuJoCo Menagerie robotstudio_so101 (Apache-2.0, modified: tessellated, decimated, regrouped by joint). See LICENSE and NOTICE."), scene=0, scenes=[G.Scene(nodes=[0])])
+gl = G.GLTF2(asset=G.Asset(version="2.0", generator="faibotic web-assets/src/10_build_m1_glb.py", copyright="Copyright (c) 2026 Leo Dao (Faibotic). Faibotic-drawn parts: CC BY-NC-SA 4.0. Contains parts derived from AM-ARM200 and AlohaMini2 by liyiteng, and the STS3215 mesh of MuJoCo Menagerie robotstudio_so101 (Apache-2.0, modified: tessellated, decimated, regrouped by joint). See NOTICE."), scene=0, scenes=[G.Scene(nodes=[0])])
 matidx = {}
 for k, (h, r, me) in MAT.items(): matidx[k] = len(gl.materials); gl.materials.append(G.Material(name=k, pbrMetallicRoughness=G.PbrMetallicRoughness(baseColorFactor=lin(h), metallicFactor=me, roughnessFactor=r)))
 blob = bytearray()

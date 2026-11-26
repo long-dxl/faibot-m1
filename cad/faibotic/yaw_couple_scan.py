@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """DK-N66: giới hạn ghép yaw cổ tay theo gập cổ tay. Quét lưới gripper_am.py --yaw-scan cho thấy đáy/vỏ J56 chạm cẳng tay J4 khi gập > 0
 và yaw URDF âm (SDK dương), không phụ thuộc cuộn và độ mở kẹp; vỏ J56 chạm giá J5 ở yaw URDF +84,6 / -83,7 độ ở mọi gập.
 Script này chia đôi (0,25 độ) góc yaw chạm đầu tiên ở từng nút gập (cuộn 0, kẹp khép), cả hai chiều.

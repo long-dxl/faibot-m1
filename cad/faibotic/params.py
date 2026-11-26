@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Tham số chung (mm). Mọi số có cờ nguồn trong ../ASSUMPTIONS.md."""
 
 # Servo Feetech STS3095-C002 (12 V): 65 x 30 x 48 mm [trang bên bán, chưa có bản vẽ hãng]

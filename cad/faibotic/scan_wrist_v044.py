@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4.4: quét giao cắt cụm cổ tay (giá J5, chốt J5, vỏ/đáy/nắp J56, khoá yaw M1-AR-025, kẹp J7, ngón, camera cổ tay) khi gập quanh trục wrist_flex URDF.
  Hình học lấy từ assembly_full.py (cùng phép đặt, không chép số). Thay scan_wrist_v043.py (cổ tay quay quanh chốt J5, hình cũ).
 Vật cản như v0.4.3 (giá chặn dưới M1-SH-017 + đệm M1-SH-018, thanh chặn trên M1-SH-016 + đệm M1-SH-015, gá vai M1-SH-003, link M1-SH-004, chốt cân bằng, hai lò xo)

@@ -18,6 +18,7 @@ Bản v0.5 chuyển M1 sang hai tay đặt trên một trạm tháo lắp đư�
 - Bộ leader cho gói teleop là AM-ARM200 6+1 (14 servo).
 - Đế chạy tối đa 0,40 m/s, quay tối đa 0,25 rad/s, tăng và giảm tốc theo dốc 0,05 m/s². Hệ số chống lật: tĩnh 1,638, động 1,503.
 - Tải tính lại theo 6+1: đỉnh 2,0 kg ở tầm 0,25 m; vật khuyến nghị ≤ 0,05 kg. Yaw giới hạn −81…+80° theo quét va chạm CAD, hẹp lại theo góc gập cổ tay.
+- Gập cổ tay giới hạn −77,5…+70° (trước +87,5°): quét va chạm CAD trên cẳng tay gốc AM-ARM200 cho thấy vỏ cổ tay chạm cẳng tay từ 73,4°. Tư thế gốc đổi thành khuỷu 102°, gập cổ tay 68°, kẹp chĩa thẳng xuống.
 - Ảnh render và mô hình 3D web cập nhật theo bản v05f.
 
 ## Trục nâng
@@ -27,7 +28,7 @@ Bản v0.5 chuyển M1 sang hai tay đặt trên một trạm tháo lắp đư�
 ## Thông số chính
 - 18 servo: 7 STS3095 (pan, vai, khuỷu mỗi tay và trục nâng) và 11 STS3215 (gập, yaw, cuộn cổ tay, kẹp, 3 bánh).
 - Pin 12 V 3S4P cell 21700, 172,8 Wh, có BMS, nút dừng khẩn và cầu chì.
-- Khối lượng theo CAD khoảng 21,2 kg. Hệ số chống lật 1,64 tĩnh và 1,50 khi chạy với dốc gia tốc của đế.
+- Khối lượng theo CAD khoảng 21,5 kg. Hệ số chống lật 1,64 tĩnh và 1,50 khi chạy với dốc gia tốc của đế.
 - Tải tính trên mô hình, chưa đo: đỉnh 2,0 kg ở tầm 0,25 m khi kẹp chúi xuống; liên tục 0 kg ở tầm với tối đa; vật khuyến nghị ≤ 0,05 kg ở tầm 0,45 m khi kẹp ngang. Thời gian chạy pin và tốc độ đế thật: chờ đo trên robot thật.
 
 ## Phần mềm và mô phỏng

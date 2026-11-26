@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Khối lượng in ước tính (PETG 1,27 g/cm³, 4 thành 0,4 mm, infill 15%: kịch bản "thấp" của arm_mass.py) của chi tiết tay AM-ARM200 follower,
 so với khối lượng URDF upstream (khối đặc 1,0 g/cm³). Cùng công thức cad/export/arm_mass.json: vỏ = min(diện tích x số thành x 0,4 mm, V),
 nội thất = infill x phần còn lại. Chạy (venv build123d): python cad/faibotic/print_mass_pl.py -> in JSON (dùng cho spec.PRINT_FACTOR_PL)."""

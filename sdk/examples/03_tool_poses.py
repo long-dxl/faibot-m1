@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Follow a list of tool poses, the way a learned policy outputs them: one IK solve per step.
 
     python sdk/examples/03_tool_poses.py
@@ -7,8 +9,8 @@ import numpy as np
 from faibotic import Robot
 
 SIDE = "left"
-START = np.array([0.34, 0.217, 0.72])      # tool point, robot frame, metres
-END = np.array([0.32, 0.137, 0.74])
+START = np.array([0.34, 0.217, 0.70])      # tool point, robot frame, metres (gripper pointing down reaches z 0.72 here at lift 0.288)
+END = np.array([0.32, 0.137, 0.70])
 
 
 def main(steps: int = 30) -> int:

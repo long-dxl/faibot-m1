@@ -6,6 +6,10 @@
 # Nhóm có "cua_buoc": gom mọi chi tiết đã lắp ở các bước đó (đặt trạm lên đế ngàm). "canh_bao": hộp cảnh báo trên trang bước. "anh": thẻ dùng ảnh trong media/hardware/thumbs.
 cum: {de: Đế di động, truc: Trục nâng, tram: Trạm hai tay, dien: Điện}
 goc_mac_dinh: [20, -50]
+# Kiểu web: một góc camera cho cả cụm (el, az). Kiểu PDF vẫn dùng "goc" của từng bước.
+web_goc: {de: [28, -50], truc: [20, -50], tram: [24, -50], dien: [22, -50]}
+# Ảnh cụm (Cycles, màu sản phẩm): chi tiết thêm vào khung ảnh của cụm (regex tên chi tiết).
+web_cum_khung: {dien: '^M1-TR-(00[12]|01[0-3])'}
 buoc:
 - id: de-1
   cum: de
@@ -255,8 +259,10 @@ buoc:
     lech: [0, 0, 260]
   - re: M1-AR-002.*_L$|M1-AR-011.*_L$
     lech: [0, 0, 420]
-  - re: M1-AR-003.*_L$|M1-AR-004.*_L$|M1-AR-005.*_L$|M1-SV-001_wrist_yaw_L$
+  - re: M1-AR-003.*_L$|M1-AR-004.*_L$|M1-AR-005.*_L$
     lech: [0, 0, 580]
+  - re: M1-SV-001_wrist_yaw_L$
+    lech: [0, 0, 780]
   chi_tiet:
   - {ma: M1-AR-001, ten: Khuỷu J4, sl: 1, hinh: M1-AR-001_.*_L$}
   - {ma: M1-AR-002, ten: Giá nối J5, sl: 1, hinh: M1-AR-002_.*_L$}
@@ -317,8 +323,10 @@ buoc:
     lech: [0, 0, 260]
   - re: M1-AR-002.*_R$|M1-AR-011.*_R$
     lech: [0, 0, 420]
-  - re: M1-AR-003.*_R$|M1-AR-004.*_R$|M1-AR-005.*_R$|M1-SV-001_wrist_yaw_R$
+  - re: M1-AR-003.*_R$|M1-AR-004.*_R$|M1-AR-005.*_R$
     lech: [0, 0, 580]
+  - re: M1-SV-001_wrist_yaw_R$
+    lech: [0, 0, 780]
   chi_tiet:
   - {ma: M1-AR-001, ten: Khuỷu J4, sl: 1, hinh: M1-AR-001_.*_R$}
   - {ma: M1-AR-002, ten: Giá nối J5, sl: 1, hinh: M1-AR-002_.*_R$}

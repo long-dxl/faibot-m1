@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Quét va chạm chuỗi tay (vai 140 + cẳng 434 duỗi, bán kính 30 mm [giả định]) với cột, ray, khối, xe, đầu, tay đỡ bên kia (hộp bao).
   lift_scan.py derive   -> tìm khuỷu lớn nhất không chạm theo vai (pan ±70, lift 0 và 0,50 m), ghi ../export/M1-LF-scan.json
   lift_scan.py verify   -> quét với giới hạn trong spec (ARM_LIMITS + spec.elbow_max_by_shoulder), mong 0 chạm

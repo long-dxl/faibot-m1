@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Khay đế M1: sàn thiết bị cho laptop HOẶC Jetson + phụ kiện. Yêu cầu: docs/M1-TRAM/R5-khay-de.md.
 
 Thay tấm khay M1-ST-010 (giữ cột đỡ in M1-ST-011, cắt ngắn để đỡ thanh 2040). Mọi số tham chiếu chung với đế:

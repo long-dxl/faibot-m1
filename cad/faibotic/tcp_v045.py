@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """(22/11/2026): đo TCP kẹp thật trên CAD v0.4.4 (assembly_full: kẹp J7 + hàm động đặt như lắp ráp), so với spec.py.
 Hàm động quay quanh trục khớp left_gripper của URDF upstream (am-arm200.urdf, quy về hệ STEP bằng wrist_ref, như cụm cổ tay) tới khi chạm hàm cố định
 (giao thể tích > 0,05 mm3, chia đôi góc). Đầu ngón mỗi hàm: ngang/đứng = trọng tâm đỉnh lưới trong 3 mm cuối theo trục cuộn, dọc = mút ngón. TCP khép = trung điểm hai đầu ngón khi khép;

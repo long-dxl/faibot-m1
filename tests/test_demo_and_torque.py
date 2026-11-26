@@ -85,8 +85,8 @@ def test_joint_limits_v03():
     assert math.degrees(spec.ARM_LIMITS["shoulder"][0]) == -80.0 and abs(math.degrees(spec.ARM_LIMITS["elbow"][1]) - 127.0) < 1e-9
     # ràng buộc v0.3 (vai < -85 thì khuỷu <= 90) đã bỏ khỏi spec (mã chết vì vai >= -80): khuỷu <= 130 suốt dải vai thấp
     assert not hasattr(spec, "SHOULDER_COUPLE_DEG")
-    # bảng quét theo cuộn: vai -80 chỉ bị tự va chạm (87), khuỷu 127: 84,5; v0.4.5 (DK-W4, camera + giá M1-AR-009): 74,5
-    assert abs(spec.wrist_max(math.radians(-80), math.radians(100)) - math.radians(87)) < 1e-12 and abs(spec.wrist_max(math.radians(-80), math.radians(127)) - math.radians(74.5)) < 1e-12
+    # bảng quét theo cuộn: vai -80 chỉ bị tự va chạm (87; trần gập 70 từ 24/11 trên cẳng tay J4 upstream), khuỷu 127: 84,5; v0.4.5 (DK-W4, camera + giá M1-AR-009): 74,5
+    assert abs(spec.wrist_max(math.radians(-80), math.radians(100)) - math.radians(70)) < 1e-12 and abs(spec.wrist_max(math.radians(-80), math.radians(127)) - math.radians(70)) < 1e-12
     from faibotic import Robot
     r = Robot("sim")
     r.keepout = False   # G1/E3: test kẹp giới hạn khớp; tư thế cực nằm trong vùng cấm bệ (kiểm ở test_tram)
@@ -106,8 +106,9 @@ def test_reach_table_heights_060_to_080():
         assert hi - lo >= 0.10, (h, rm[h])  # với được ít nhất dải 10 cm tính từ mép bàn
 
 
+@pytest.mark.xfail(strict=True, reason="24/11: trần gập cổ tay 87,5 -> 70 (đáy vỏ cổ tay chạm cẳng tay J4 ở 73,4): bàn 0,85 m chỉ còn dải 5,5 cm (0,055-0,11 m) ở lift 0,45; trước 13 cm")
 def test_reach_table_height_085():
-    """kẹp AM-ARM200 ngắn hơn kẹp cũ 32 mm: bàn 0,85 m với được 0,055-0,185 m từ mép (S1G với kẹp cũ: 7 cm, xfail)."""
+    """kẹp AM-ARM200 ngắn hơn kẹp cũ 32 mm: bàn 0,85 m với được 0,055-0,185 m từ mép (S1G với kẹp cũ: 7 cm, xfail). Trần gập 70: 0,055-0,11 m."""
     rm = reach_map((0.85,))
     lo, hi = rm["0.85"]["depth_from_edge_m"]
     assert hi - lo >= 0.10, rm

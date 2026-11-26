@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Đăng ký chi tiết AlohaMini2 (STL bố trí in) vào mesh URDF base_link / vertical_link (mm, vertical_move 0) bằng ICP.
 Cần bản clone đủ upstream ở ~/m1-g2a-ref (hardware/mobile_base2/stl, urdf/alohamini2/alohamini2_meshes): không lưu trong repo vì nặng (~100 MB).
 Giai đoạn 1 (mặc định): chi tiết cùng hướng bố trí (Rz -90) chạy ICP nhiều điểm xuất phát; chi tiết khác hướng quét 24 phép quay.

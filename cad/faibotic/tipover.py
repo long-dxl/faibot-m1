@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Hệ số chống lật tĩnh cho đế 3 bánh omni (M1 v0.5). Chỉ numpy, không cần build123d.
 
 Mô hình (như R1b mục 4.1): nền phẳng, tĩnh. Mép lật là 3 cạnh tam giác nối điểm chạm đất của 3 bánh. Với mỗi cạnh, khối nằm ngoài cạnh

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Giao diện backend chung. Mọi backend (sim, feetech) cài đủ các hàm dưới đây."""
 from __future__ import annotations
 

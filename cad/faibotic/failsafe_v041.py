@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4.1: chặn dưới vai (tay thõng, M1-SH-017 + đệm M1-SH-018), đệm khuỷu trước M1-AR-022, chặn khuỷu ngược M1-AR-023. build123d.
  Kích thước đệm khớp spec.FAILSAFE_PADS (diện tích tiếp xúc = bề dày link 8 mm x chiều cao đệm).
 Chạy: python failsafe_v041.py [--scan]  -> ../export/failsafe_v041_scan.json + STEP của chi tiết mới."""

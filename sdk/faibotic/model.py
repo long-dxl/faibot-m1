@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Sinh mô hình M1 (MJCF cho MuJoCo, URDF cho ROS/khác) từ spec.py.
 
 P-L (S1C): 2 tay AM-ARM200 gốc 6+1 (khớp yaw mở, body `<bên>_yaw`) (khung body theo URDF upstream, quy ước góc SDK), kẹp gốc AM-ARM200 (thân kẹp trong body
@@ -361,6 +363,7 @@ def robot_mjcf(scene: bool = True, meshdir: str | None = None, print_scale: dict
       <geom name="box_geom" type="box" size="{f(*BOX_HALF)}" mass="{BOX_MASS}" rgba="0.1 0.7 0.3 1" friction="1.5 0.02 0.001"/>
     </body>"""
     return f"""<mujoco model="faibotic_m1">
+  <!-- SPDX-License-Identifier: Apache-2.0. Copyright (c) 2026 Leo Dao (Faibotic). Meshes in assets/ carry their own licence per file, listed in NOTICE at the repository root. -->
   <!-- Faibotic M1 v0.5 P-L. File sinh tự động bởi faibotic.model; sửa spec.py rồi xuất lại. -->
   <compiler angle="radian" autolimits="true"{compiler}/>
   <option timestep="0.002" integrator="implicitfast" cone="elliptic" impratio="10"/>
@@ -502,6 +505,7 @@ def robot_urdf() -> str:
         mj = '<mujoco><compiler meshdir="assets" discardvisual="true"/></mujoco>\n  '
     body = mj + "\n  ".join(L + J)
     return f"""<?xml version="1.0"?>
+<!-- SPDX-License-Identifier: Apache-2.0. Copyright (c) 2026 Leo Dao (Faibotic). Meshes in assets/ carry their own licence per file, listed in NOTICE at the repository root. -->
 <!-- Faibotic M1 v0.5 P-L. File sinh tự động bởi faibotic.model từ spec.py. Đế di động: base_link gắn sàn (đế omni xử lý ngoài URDF).
      Góc khớp theo quy ước SDK (spec.URDF_TO_SDK đổi từ góc URDF upstream AM-ARM200). -->
 <robot name="faibotic_m1">

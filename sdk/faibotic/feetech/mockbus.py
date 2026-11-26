@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Bus giả: giả lập phía servo Feetech STS để test backend khi chưa có phần cứng.
 
 Hiểu PING, READ, WRITE, SYNC_READ, SYNC_WRITE; kiểm checksum từng gói nhận; lưu nhật ký gói.

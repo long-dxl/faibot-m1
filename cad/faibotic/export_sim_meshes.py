@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Xuất mesh rút gọn cho sim MuJoCo (sim/assets/) từ lắp ráp CAD v0.4.x (assembly_full.py), gom theo body MJCF và vật liệu.
  Chi tiết tay từ AM-ARM (Apache-2.0): xem sim/assets/NOTICE.
 Cách làm giống luồng web (nay là archive/v0.4/web-assets/legacy-web-sim/src/01_export_parts.py, 02_build_glb.py) nhưng không import các file đó:

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Cửa sổ xem MuJoCo tối giản của Faibotic (GLFW), dùng cho teleop bàn phím.
 
 Khác viewer có sẵn của MuJoCo: biết phím đang được giữ (giữ = chạy, nhả = dừng) và không

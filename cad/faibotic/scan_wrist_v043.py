@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4.3: quét giao cắt kẹp J7 + vỏ cổ tay J56 (AM-ARM200) với giá chặn và gá (vai x khuỷu x cổ tay). build123d.
 Vật cản: giá chặn dưới M1-SH-017 v3 + đệm M1-SH-018 v3, thanh chặn trên M1-SH-016 + đệm M1-SH-015, gá vai M1-SH-003 (cradle_v4).
 Trục cổ tay suy từ chốt J5 [giả định như arm_fit]; cuộn cổ tay 0 (quét theo cuộn: Chưa có số liệu).

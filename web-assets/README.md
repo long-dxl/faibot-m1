@@ -12,7 +12,7 @@ Bản P-L, kẹp gốc AM-ARM200 (24/11/2026; S1G 23/11 có kẹp cũ). Một ng
 | `schema/*.schema.json` | JSON Schema cho manifest, joints, cum, lab-scene |
 | `limits.mjs` | `elbowMax`, `wristMax`, `clampArm` (bản JS của spec.py; giới hạn P-L vẫn lấy của P-A, DK-N38) |
 | `kiem.json`, `build_stat.json` | kết quả `12_validate.py` và thống kê dựng |
-| `LICENSE`, `NOTICE` | Apache-2.0 (AM-ARM200 gồm kẹp J7, AlohaMini2, Menagerie); phục vụ cùng GLB |
+| `LICENSE`, `NOTICE` | `m1.glb`: CC BY-NC-SA 4.0 (phần Faibotic vẽ), phần AM-ARM200 (gồm kẹp J7), AlohaMini2, Menagerie bên trong giữ Apache-2.0; tệp dữ liệu và `src/`: Apache-2.0 (`LICENSE`). Danh sách đầy đủ: `NOTICE` ở gốc repo. Phục vụ cùng GLB |
 
 **Giấy phép kẹp:** GLB dùng kẹp gốc AM-ARM200 (thân J7, hàm J7, giá camera OB_F_Camera; Apache-2.0), không còn hình kẹp song song cũ (giấy phép upstream đang đổi; lưu nội bộ). DK-N44 đóng.
 

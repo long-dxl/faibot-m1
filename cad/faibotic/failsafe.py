@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4: chặn mất điện vai (CHẶN 2 của QC2 v0.3). build123d.
 Đổi so với balance.py: (1) thanh chặn M1-SH-016 bằng nhôm 6061 8 mm thay thanh PETG 6 mm, dời lên bán kính ~90 mm
 (z 80..100, trước đây z 40..56) để lực chặn trên cùng mô-men nhỏ hơn ~2 lần; (2) đệm PU M1-SH-015 dời để link chạm đệm

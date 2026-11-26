@@ -29,7 +29,7 @@ SNAP_DIR = ROOT / "media" / "sim-snapshots" / "lab"
 SIDE = "left"                     # tay làm việc; vai trái ở y +0,17 trong khung robot
 ARM_Y = spec.SHOULDER_Y          # S1G: 0,18726 (CAD P-L)
 WORK_X = L.TABLE_EDGE_X - L.ROBOT_STANDOFF   # x tâm đế khi làm việc ở bàn
-CLEAR_Z = L.TABLE_H + 0.10        # độ cao TCP khi di chuyển giữa các điểm (S1C P-L: 0,12 -> 0,10, đầu ngón còn cách mặt bàn 9 cm)
+CLEAR_Z = L.TABLE_H + 0.08        # 24/11: 0,10 -> 0,08 vì trần gập 70 hạ đỉnh tầm kẹp chĩa xuống (x 0,39 lift 0,45: z <= 0,845). Độ cao TCP khi di chuyển giữa các điểm (S1C P-L: 0,12 -> 0,10, đầu ngón còn cách mặt bàn 9 cm)
 SKIP_RENDER = os.environ.get("M1_SKIP_RENDER") == "1"
 
 
@@ -38,12 +38,12 @@ def make_robot(viewer: bool = False) -> Robot:
 
 
 def scatter(robot: Robot, seed: int | None) -> None:
-    """Xáo nhẹ vị trí/hướng vật trên bàn theo seed (±1 cm, ±0,2 rad) lúc bố trí cảnh, trước khi robot làm gì."""
+    """Xáo nhẹ vị trí/hướng vật trên bàn và lon trong tủ lạnh theo seed (±1 cm, ±0,2 rad) lúc bố trí cảnh, trước khi robot làm gì."""
     if seed is None:
         return
     import mujoco
     b = robot.backend
-    sc = L.objects(seed)
+    sc = L.objects(seed, can_jitter=True)
     for it in sc:
         ln = it["links"][0]
         a = b.model.joint(it["id"]).qposadr[0]

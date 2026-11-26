@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Backend mô phỏng MuJoCo cho M1."""
 from __future__ import annotations
 

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Giao thức bus nối tiếp Feetech STS/SMS (TTL half-duplex), viết lại từ tài liệu giao thức của hãng.
 
 Gói lệnh:   0xFF 0xFF ID LEN INSTR P1..Pn CHK,  LEN = n + 2

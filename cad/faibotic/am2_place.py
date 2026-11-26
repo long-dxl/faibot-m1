@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Gộp kết quả đăng ký AlohaMini2 (am2_register.py -> ../export/AlohaMini2_registration.json) thành phép đặt dùng cho lắp ráp P-L
 (../export/AlohaMini2_placement.json) và các số dẫn xuất (răng trụ, bánh răng, khung T, chân trụ). Chỉ numpy.
 

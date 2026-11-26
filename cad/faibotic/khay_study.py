@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """R4: khay đặt vật của M1 6+1. In bảng (1) khay hiện tại và (2) so 3 phương án A/B/C. Chỉ nghiên cứu: không sửa spec, sim, GLB, BOM.
 
     .venv/bin/python cad/faibotic/khay_study.py          (cần mujoco cho tải tay; chạy ~1 phút)

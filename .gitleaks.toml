@@ -1,0 +1,11 @@
+# Cấu hình gitleaks cho repo Faibot M1.
+# hardware/tools/export-report.json là báo cáo xuất CAD: trường "key" là mã linh kiện (vd M1-BS-035_omni_hub),
+# không phải bí mật, nên luật generic-api-key báo nhầm. Chỉ bỏ qua đúng tệp này.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Báo cáo xuất CAD: khoá 'key' là mã linh kiện, không phải bí mật"
+paths = [
+  '''hardware/tools/export-report\.json''',
+]

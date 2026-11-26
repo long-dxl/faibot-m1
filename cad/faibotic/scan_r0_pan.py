@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Quét R0 (23/11/2026): đế xoay M1-LF-024 + cụm vai quay pan so với xe nâng; đế xoay so với chi tiết quay theo vai; đệm khuỷu M1-AR-022 so với tay đỡ.
 build123d. Chạy: nice -n 10 python scan_r0_pan.py -> ../export/M1-LF-R0-scan.json
 (1) đế xoay với gá vai, giá chặn M1-SH-017, đệm M1-SH-018, servo vai (tĩnh) và link, chốt, lò xo ở vai -80..62 (bước 2).

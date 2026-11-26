@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """R3 (G1b): nghiên cứu thiết kế trạm hai tay tháo lắp. Chỉ phân tích, không dựng hình, không sửa CAD/SDK.
  Chỉ numpy (+ matplotlib để vẽ).
 

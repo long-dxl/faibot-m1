@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Lắp ráp toàn robot Faibot M1 (v0.4.4 + cột nâng + thân đế nháp + cụm nguồn + camera): đế omni, vỏ pin, bảng đi dây EVT, cột 4040, xe nâng, 2 tay
 (vai, khuỷu, cẳng tay M1-AR-021 + ngàm servo gập M1-AR-026, cổ tay J5/J56 + khoá yaw M1-AR-025, kẹp J7), camera đầu và cổ tay. build123d.
  Hệ toạ độ như sdk (mm): x trước, y trái, z lên, gốc sàn. Tay phải = gương tay trái qua mặt y = 0.

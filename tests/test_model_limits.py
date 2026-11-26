@@ -116,3 +116,23 @@ def test_wrist_yaw_limits_from_mesh_scan_d61():
     assert out["left_wrist_yaw"] == pytest.approx(y60[1])
     assert limits.violations({"left_wrist_flex": math.radians(60), "left_wrist_yaw": math.radians(80)})
     assert not limits.violations({"left_wrist_flex": 0.0, "left_wrist_yaw": math.radians(80)})
+
+
+def test_wrist_flex_limit_from_forearm_scan():
+    """Trần gập cổ tay theo quét mesh trên cẳng tay J4 upstream: đáy J56 chạm cẳng tay ở 73,4 độ (yaw 0, mọi cuộn/kẹp), biên >= 3 độ;
+    tư thế gốc nằm trong tầm và trong bảng ghép yaw; bảng ghép yaw không có nút vượt trần gập."""
+    import json
+    scan = json.loads((ROOT / "cad" / "export" / "AM_wrist_yaw_scan.json").read_text())
+    lo, hi = spec.ARM_LIMITS["wrist_flex"]
+    cham = scan["gap_cham_cang_tay_yaw0_deg"]
+    assert math.degrees(hi) <= cham - 3 + 1e-9 and math.degrees(hi) == pytest.approx(70.0)
+    assert math.degrees(lo) == pytest.approx(-77.5)
+    # mọi tư thế quét ở gập <= 60 và ở -77,5 (mọi cuộn, kẹp) không có giao với cẳng tay J4 ở yaw 0
+    for k, v in scan["nen_yaw0_theo_tu_the"].items():
+        f = float(k.split("_f")[1].split("_r")[0])
+        if f <= math.degrees(hi):
+            assert not any(p.endswith("J4_Elbow") for p in v), k
+    assert max(spec.WRIST_YAW_COUPLE_FLEX_DEG) <= math.degrees(hi) + 1e-9
+    assert spec.HOME_ARM["wrist_flex"] <= hi and spec.HOME_ARM["wrist_flex"] <= spec.wrist_max(spec.HOME_ARM["shoulder"], spec.HOME_ARM["elbow"])
+    ylo, yhi = spec.wrist_yaw_range(spec.HOME_ARM["wrist_flex"])
+    assert ylo <= spec.HOME_ARM["wrist_yaw"] <= yhi

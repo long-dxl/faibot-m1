@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Your own teleoperation loop: send joint targets at a fixed rate and always stop safely.
 
 The targets here come from a sine wave; replace `read_leader()` with a leader arm or a keyboard.

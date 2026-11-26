@@ -103,7 +103,7 @@ def table():
             "links": [{"name": "table", "parent": None, "pos": [cx, cy, 0], "joint": None, "geoms": geoms}]}
 
 
-def objects(seed: int | None = None):
+def objects(seed: int | None = None, can_jitter: bool = False):
     import random
     rnd = random.Random(seed) if seed is not None else None
     out = []
@@ -118,9 +118,15 @@ def objects(seed: int | None = None):
                     "links": [{"name": oid, "parent": None, "pos": [x, y, TABLE_H + h / 2 + 0.0005], "yaw": yaw,
                                "joint": {"type": "free"}, "geoms": [g]}]})
     oid, shape, size, color = FRIDGE_OBJ
+    cx, cy = FRIDGE_OBJ_XY
+    cyaw = 0.0
+    if rnd and can_jitter:   # lon trong tủ xáo theo seed khi chạy demo/đo (±1 cm, ±0,2 rad; lab_common.scatter). Rút sau các vật trên bàn nên
+                             # vật trên bàn theo seed không đổi; bố cục ghi trong lab.xml/lab-scene.json (objects(SEED)) giữ lon ở chỗ gốc
+        cx += rnd.uniform(-0.01, 0.01); cy += rnd.uniform(-0.01, 0.01); cyaw = rnd.uniform(-0.2, 0.2)
     out.append({"id": oid, "label": "Lon trong tủ lạnh", "category": "object", "color_class": color, "shape": shape,
                 "inside": "fridge",
-                "links": [{"name": oid, "parent": None, "pos": [*FRIDGE_OBJ_XY, FRIDGE_SHELF_Z + size[1] / 2 + 0.0005],
+                "links": [{"name": oid, "parent": None, "pos": [cx, cy, FRIDGE_SHELF_Z + size[1] / 2 + 0.0005],
+                           **({"yaw": cyaw} if rnd and can_jitter else {}),
                            "joint": {"type": "free"}, "geoms": [G(shape, size, (0, 0, 0), color, mass=OBJ_MASS)]}]})
     return out
 

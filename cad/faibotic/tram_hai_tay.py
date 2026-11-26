@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Trạm hai tay tháo lắp (G1b): khung chữ U nhôm 2040, gá đáy tay, cột camera đầu + gá pan/tilt, nửa trạm của giao diện
 lắp nhanh (bạc chốt, khoá kéo, công tắc khoá, giắc D-sub 21W4 đực), E-stop trạm, hộp điện trạm. Đế ngàm (giống nhau trên xe nâng và trên đế
 bàn) và đế bàn (BỘ TUỲ CHỌN, không thuộc robot chuẩn) ở tram_de.py. build123d.

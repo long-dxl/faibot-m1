@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Ảnh tô màu theo cụm cho tờ HARDWARE: trạm hai tay, trụ nâng, đế (và nơi đặt điện).
 
 Dùng lại bộ vẽ của render_buoc_lap.py (thuật toán người thợ sơn trên PIL, cùng góc nhìn, cùng đọc mesh).

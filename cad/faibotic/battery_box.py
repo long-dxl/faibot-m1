@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Vỏ pin 3S5P (15 x 21700) + BMS 3S 200 A + khoang F1/D0, v2 (vòng 2 theo QC2-vo-pin.md). build123d + numpy.
  Chạy: nice -n 15 python battery_box.py [thư mục xuất]  (mặc định ../export)
 Mọi số có cờ nguồn trong ../../archive/v0.4/cad/bao-cao-vo-pin.md. Kích thước linh kiện chưa có bản vẽ hãng: [giả định], đo hàng thật rồi sửa."""

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Đế nguồn: khay pin 3S, giá PCB nguồn, bảng E-stop. build123d."""
 from build123d import Box, Cylinder, Pos, Rot, Align
 from params import *

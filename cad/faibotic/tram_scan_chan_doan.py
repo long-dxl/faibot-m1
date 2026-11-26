@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Chẩn đoán quét tay trạm: với các cấu hình xấu nhất (cad/export/M1-PL-tram-scan-tay.json), đo khoảng cách từng khâu tay tới từng chi tiết
 vật cản (trimesh, điểm mặt 2 mm) để biết chi tiết nào chạm.
 Chạy (venv build123d, PYTHONPATH có sdk): python tram_scan_chan_doan.py"""

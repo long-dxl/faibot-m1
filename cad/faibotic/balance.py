@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Cơ cấu cân bằng trọng lực vai (2 lò xo kéo + chốt M6 trên link + trụ neo liền gá) và gá khuỷu ghép đôi. build123d.
  Chạy: python balance.py  -> ../export/balance.json + STEP.
 Mã: M1-SH-003 gá vai v2 (trụ neo liền), M1-SH-004 link v2, M1-SH-012 chốt M6x140 + đai ốc/chặn dọc trục (mua), M1-SH-013 lò xo (mua),

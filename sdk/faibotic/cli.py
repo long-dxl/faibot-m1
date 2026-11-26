@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Command line for the Faibot M1 SDK: `faibot-m1 <command>`.
 
 Look (touches nothing):      doctor, ports, model

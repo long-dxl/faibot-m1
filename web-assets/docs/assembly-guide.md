@@ -35,12 +35,12 @@ Danh sách đầy đủ, kèm cỡ, loại và bước dùng: [docs/vi/tools.md]
 
 ## Cách đọc hình
 
-- **Xám** là phần đã lắp ở các bước trước. **Xanh** là phần thêm vào ở bước đó. Mọi hình cùng một góc nhìn.
-- Hình `buoc-NN` là hình cộng dồn theo chuỗi lắp cả robot: đế (01), bánh (02), trụ (03), xe nâng (04), trạm (05), tay trái (06), tay phải (07), kẹp (08), camera (09), khay (10). Số hình không trùng số bước trong bảng của từng cụm.
-- Hình `cum-*` tô xanh cả cụm trên robot đủ.
+- Trên hình bước, chi tiết **cam** là phần thêm vào ở bước đó: kéo ra một đoạn, mũi tên chỉ chỗ lắp, nét cam mảnh là vị trí lắp. **Xám nhạt** là phần đã lắp ở các bước trước. Trong một cụm, mọi hình bước dùng cùng một góc nhìn.
+- Mỗi hình ghi số bước của cụm ngay dưới hình. Bước lắp cùng một nhóm chi tiết dùng chung một hình; bước chỉ đi dây không có chi tiết mới nên dùng hình vị trí hoặc robot đủ bộ.
+- Hình cận và hình cụm giữ màu sản phẩm, chi tiết đang nói tới màu cam.
+- Phần điện của đế (pack, BMS, tấm điện, Pi 5) chưa có chi tiết trong CAD: hình chỉ vị trí khoang điện.
 - Mã chi tiết (`M1-xx-nnn`) và ID servo giống nhau ở mọi tài liệu. Tra mã ở `product/parts-register.csv`.
 - Cột **Ốc vít** lấy từ `media/hardware/bang-oc.csv`. Ô ghi "chờ EVT" là chưa chốt cỡ, vì CAD chưa vẽ lỗ bắt.
-- Hình riêng cho từng bước nhỏ chưa có: các lưới bên dưới dùng hình cộng dồn tạm. Ô "chưa có hình" sẽ được thay khi có render từng bước. Phụ đề trên `buoc-05.png` bị cột camera đè một đoạn ("giắc, hộp"); đọc tên bước ở bảng, hình chỉ dùng để xem vị trí.
 
 ## Trình tự lắp
 
@@ -78,7 +78,7 @@ Gán ID trước khi servo vào robot: mỗi lần chỉ một servo trên bus, 
 | 21 | Tay trái, yaw cổ tay | STS3215 | 12 V | BUS_L |
 | 22 | Tay phải, yaw cổ tay | STS3215 | 12 V | BUS_R |
 
-Tay là 6+1 như AM-ARM200 gốc, có servo yaw cổ tay (ID 21 và 22, 18 servo tổng cộng). Hướng dẫn gốc của trụ AlohaMini2 dùng ID khác cho bánh và trục nâng; robot này theo bảng trên.
+\1\n![Vị trí 18 servo trên robot đủ bộ (chấm trắng)](../../web-assets/lap-rap/servo-id-800.webp)<br>Vị trí 18 servo trên robot đủ bộ (chấm trắng)
 
 ---
 
@@ -109,14 +109,12 @@ Dụng cụ: lục giác, cờ lê lực. Tấm thép đối trọng nặng, nh�
 - Laptop mở nắp khi chạy: nắp mở không quá ~95° (chân trụ ngay sau khay) và khai báo `cao=0.26`; lift khi đó giữ ≥ khoảng 226 mm để màn hình không chạm xe nâng.
 - Jetson đặt trên vùng gá giữa khay (lỗ VESA), có ô quạt hút từ dưới; không che kín.
 
-Hình 10 bên dưới còn là khay cũ; hình khay mới sẽ cập nhật.
-
-Hình (cộng dồn):
+Hình theo bước:
 
 | | | |
 |:-:|:-:|:-:|
-| ![Đế, nan, sàn, đối trọng](../../media/lap-rap/buoc-01.png)<br>Hình 01: đế và đối trọng | ![Bánh, servo bánh, giá servo](../../media/lap-rap/buoc-02.png)<br>Hình 02: bánh, servo bánh, giá | ![Khay và cột đỡ khay](../../media/lap-rap/buoc-10.png)<br>Hình 10: khay và cột đỡ |
-| ![Cụm đế trên robot đủ](../../media/hardware/hl/cum-de.png)<br>Cụm đế trên robot đủ | chưa có hình bước 3 (servo bánh) | chưa có hình bước 5 (sàn) |
+| ![Bước 1, 2: tấm thép đối trọng và ba nan](../../web-assets/lap-rap/buoc-01-800.webp)<br>Bước 1, 2: tấm thép đối trọng và ba nan | ![Bước 3: giá servo bánh và servo](../../web-assets/lap-rap/buoc-02-800.webp)<br>Bước 3: giá servo bánh và servo | ![Bước 4: bánh omni](../../web-assets/lap-rap/buoc-03-800.webp)<br>Bước 4: bánh omni |
+| ![Bước 5: sàn đế và khoang điện](../../web-assets/lap-rap/buoc-04-800.webp)<br>Bước 5: sàn đế và khoang điện | ![Bước 6, 7: cột đỡ, thanh 2040 và khay](../../web-assets/lap-rap/buoc-05-800.webp)<br>Bước 6, 7: cột đỡ, thanh 2040 và khay | ![Bước 8, 9: khay đặt lên thanh 2040; dây đi về tâm đế](../../web-assets/lap-rap/cum-de-800.webp)<br>Bước 8, 9: khay đặt lên thanh 2040; dây đi về tâm đế |
 
 Kiểm: bánh quay tay trơn, con lăn không kẹt; ba bánh chạm sàn cùng lúc; đo và ghi mô-men siết ốc nan, giá servo, bánh; cân đế.
 
@@ -143,11 +141,11 @@ Chuỗi nguồn: pack 3S4P → BMS → cầu chì tổng → giắc cách ly b�
 | 9 | Đi dây vòng dịch vụ: trục nâng (chữ U neo giữa cột), vai, khuỷu, gập, cuộn cổ tay; dây vòng E-stop đi trong ống bọc riêng từng sợi | Kẹp giảm lực ≤ 50 mm trước nửa giắc: cỡ chờ EVT |
 | 10 | Cấp điện lần đầu trên nguồn bàn, từng nhóm servo | Không có |
 
-Hình:
+Hình theo bước:
 
 | | | |
 |:-:|:-:|:-:|
-| ![Cụm điện trên robot đủ](../../media/hardware/hl/cum-dien.png)<br>Cụm điện trên robot đủ | chưa có hình bước 3 (tấm điện) | chưa có hình bước 6 (mạch dừng) |
+| ![Bước 1–5, 7, 8: khoang điện trên đế (cam): vỏ pin, tấm điện, Pi 5 và đường dây](../../web-assets/lap-rap/dien-khoang-800.webp)<br>Bước 1–5, 7, 8: khoang điện trên đế (cam): vỏ pin, tấm điện, Pi 5 và đường dây | ![Bước 6: nút E-stop 2NC của mạch dừng](../../web-assets/lap-rap/estop-800.webp)<br>Bước 6: nút E-stop 2NC của mạch dừng | ![Bước 9, 10: robot đủ bộ, vòng dịch vụ dọc trụ và hai tay](../../web-assets/lap-rap/sau-khi-lap-800.webp)<br>Bước 9, 10: robot đủ bộ, vòng dịch vụ dọc trụ và hai tay |
 
 **An toàn, phải giữ:**
 
@@ -178,12 +176,12 @@ Dụng cụ: epoxy, lục giác M3, M5, M6, cờ lê lực, đồng hồ vạn n
 | 11 | Hàn cầu chắn GND giữa các chân 2, 4, 6, 8 và 16 của giắc; đi dây vòng và dây phụ vào nửa giắc. **Bố trí hàng chân hiện là giả định**, chưa có bản vẽ hãng: đối chiếu giắc thật và datasheet trước khi hàn, rồi đo thông mạch theo IPQC-05A (chân 2, 4, 6, 8 thông chân 16, không thông chân 1, 3, 5, 7, 9). Cầu chắn này bảo vệ vòng E-stop | Đầu cos SC10-6 cho dây nguồn 8 AWG |
 | 12 | Che nửa giắc bằng **nắp che thường ngày** khi chưa có trạm: nắp in (đề xuất M1-TR-024) | Không có |
 
-Hình:
+Hình theo bước:
 
 | | | |
 |:-:|:-:|:-:|
-| ![Trụ nâng](../../media/lap-rap/buoc-03.png)<br>Hình 03: trụ nâng | ![Xe nâng, bánh răng, chốt hãm, công tắc](../../media/lap-rap/buoc-04.png)<br>Hình 04: xe nâng | ![Cụm trục nâng trên robot đủ](../../media/hardware/hl/cum-truc-nang.png)<br>Cụm trục nâng trên robot đủ |
-| chưa có hình bước 8 (đế ngàm) | chưa có hình bước 10 (nửa giắc) | |
+| ![Bước 1, 2: đế nối trụ và trụ bốn đoạn](../../web-assets/lap-rap/buoc-06-800.webp)<br>Bước 1, 2: đế nối trụ và trụ bốn đoạn | ![Bước 3, 4, 5: khung T giữa, bánh răng và servo trục nâng](../../web-assets/lap-rap/buoc-07-800.webp)<br>Bước 3, 4, 5: khung T giữa, bánh răng và servo trục nâng | ![Bước 6, 7: giá chốt hãm, solenoid, công tắc](../../web-assets/lap-rap/buoc-08-800.webp)<br>Bước 6, 7: giá chốt hãm, solenoid, công tắc |
+| ![Bước 8, 10, 11, 12: đế ngàm chữ U, chốt côn, móc khoá và nửa giắc 21W4](../../web-assets/lap-rap/buoc-09-800.webp)<br>Bước 8, 10, 11, 12: đế ngàm chữ U, chốt côn, móc khoá và nửa giắc 21W4 | ![Bước 9: hai chốt côn Ø8 trên đế ngàm (cam), nhìn khi đã gắn trạm](../../web-assets/lap-rap/tram-gan-800.webp)<br>Bước 9: hai chốt côn Ø8 trên đế ngàm (cam), nhìn khi đã gắn trạm | ![Cụm trục nâng trên robot đủ](../../web-assets/lap-rap/cum-truc-nang-800.webp)<br>Cụm trục nâng trên robot đủ |
 
 **An toàn, phải giữ:**
 
@@ -219,12 +217,16 @@ Dụng cụ: lục giác M3 và M5, kìm bấm cos 8 AWG, thước kẹp, thư�
 | 13 | Camera: 1 camera đầu trên gá pan + tilt, 2 camera cổ tay trên giá camera cổ tay: M1-CM-001 (×3), M1-AR-027 (×2) | M2×12 Phillips: 4 (cổ tay) + 2 (đầu) |
 | 14 | Đi dây nguồn và DATA hai tay theo bảng dây, chừa vòng dịch vụ ở mỗi khớp | Không có |
 
-Hình (cộng dồn):
+Hình theo bước:
 
 | | | |
 |:-:|:-:|:-:|
-| ![Trạm hai tay](../../media/lap-rap/buoc-05.png)<br>Hình 05: khung trạm, gá, khoá, giắc, hộp, cột | ![Tay trái](../../media/lap-rap/buoc-06.png)<br>Hình 06: tay trái | ![Tay phải](../../media/lap-rap/buoc-07.png)<br>Hình 07: tay phải |
-| ![Kẹp](../../media/lap-rap/buoc-08.png)<br>Hình 08: kẹp (thân, hàm, servo) | ![Camera](../../media/lap-rap/buoc-09.png)<br>Hình 09: camera | ![Cụm trạm trên robot đủ](../../media/hardware/hl/cum-tram.png)<br>Cụm trạm trên robot đủ |
+| ![Bước 1: ray trước, hai tai và tay cầm](../../web-assets/lap-rap/buoc-10-800.webp)<br>Bước 1: ray trước, hai tai và tay cầm | ![Bước 2, 3: gá vai và khối bạc](../../web-assets/lap-rap/buoc-11-800.webp)<br>Bước 2, 3: gá vai và khối bạc | ![Bước 4: khoá kéo và công tắc báo khoá](../../web-assets/lap-rap/buoc-12-800.webp)<br>Bước 4: khoá kéo và công tắc báo khoá |
+| ![Bước 5, 6: giắc 21W4 và hộp E-stop dưới tai trái](../../web-assets/lap-rap/buoc-20-800.webp)<br>Bước 5, 6: giắc 21W4 và hộp E-stop dưới tai trái | ![Bước 6: nút E-stop 2NC trên hộp](../../web-assets/lap-rap/estop-800.webp)<br>Bước 6: nút E-stop 2NC trên hộp | ![Bước 7 và camera đầu của bước 13: cột camera, gá pan + tilt](../../web-assets/lap-rap/buoc-13-800.webp)<br>Bước 7 và camera đầu của bước 13: cột camera, gá pan + tilt |
+| ![Bước 8: hộp điện trạm](../../web-assets/lap-rap/buoc-21-800.webp)<br>Bước 8: hộp điện trạm | ![Bước 9, 14: trạm đủ hai tay và camera, đi dây theo bảng dây](../../web-assets/lap-rap/tram-u-800.webp)<br>Bước 9, 14: trạm đủ hai tay và camera, đi dây theo bảng dây | ![Bước 10, 11: tay trái, đế J1, khung xoay J2, vai J3, đặt lên gá](../../web-assets/lap-rap/buoc-14-800.webp)<br>Bước 10, 11: tay trái, đế J1, khung xoay J2, vai J3, đặt lên gá |
+| ![Bước 10: tay trái, khuỷu J4, giá J5, cổ tay](../../web-assets/lap-rap/buoc-15-800.webp)<br>Bước 10: tay trái, khuỷu J4, giá J5, cổ tay | ![Bước 10, 11: tay phải, đế J1, khung xoay J2, vai J3, đặt lên gá](../../web-assets/lap-rap/buoc-17-800.webp)<br>Bước 10, 11: tay phải, đế J1, khung xoay J2, vai J3, đặt lên gá | ![Bước 10: tay phải, khuỷu J4, giá J5, cổ tay](../../web-assets/lap-rap/buoc-18-800.webp)<br>Bước 10: tay phải, khuỷu J4, giá J5, cổ tay |
+| ![Bước 12, 13: tay trái, kẹp và camera cổ tay](../../web-assets/lap-rap/buoc-16-800.webp)<br>Bước 12, 13: tay trái, kẹp và camera cổ tay | ![Bước 12, 13: tay phải, kẹp và camera cổ tay](../../web-assets/lap-rap/buoc-19-800.webp)<br>Bước 12, 13: tay phải, kẹp và camera cổ tay | ![Gắn trạm lên đế ngàm (mục 6 của Trình tự lắp)](../../web-assets/lap-rap/buoc-22-800.webp)<br>Gắn trạm lên đế ngàm (mục 6 của Trình tự lắp) |
+| ![Cụm trạm trên robot đủ](../../web-assets/lap-rap/cum-tram-800.webp)<br>Cụm trạm trên robot đủ |   |   |
 
 **Lưu ý khi lắp tay:**
 
@@ -243,6 +245,6 @@ Hình (cộng dồn):
 
 ---
 
-## Sau khi lắp
+\1![Robot đủ bộ](../../web-assets/lap-rap/sau-khi-lap-800.webp)<br>Robot đủ bộ
 
 Làm FQC theo `product/phieu-kiem/FQC.md`. Cân robot và từng khâu, đo thời gian gắn và tháo trạm, ghi vào phiếu. Số đo được thay cho các giá trị [ước] và "chờ EVT" trong `docs/vi/specifications.md`.

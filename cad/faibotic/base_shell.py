@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Thân đế omni Faibot M1: M1-BS-001 (thân), M1-BS-002 (nắp), M1-BS-003 (cửa D0), M1-BS-010 (bánh omni Ø127). THIẾT KẾ MỚI, NHÁP (22/11/2026).
 build123d. Hệ toạ độ như sdk: x trước, y trái, z lên, gốc sàn, tâm đế x=y=0 (mm).
 Là thân ĐƠN GIẢN dựng cho bộ ảnh sản phẩm và kiểm giao cắt lắp ráp; CHƯA phải bản vẽ chế tạo. Kích thước lấy từ sdk/faibotic/spec.py (R 200, z 35..170,

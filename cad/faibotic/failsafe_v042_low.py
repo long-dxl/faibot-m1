@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4.2 (phương án 2): chặn dưới vai để LINK chạm đệm TRƯỚC khi gá khuỷu tới thanh chặn. build123d.
 Đệm PU 50A dán mặt dưới link (hệ link: x = r +-6, z -35..-15, y +-7; diện tích tiếp xúc 8 x 6 = 48 mm2), lưng đệm là tấm nhôm 8 mm trên
 giá chữ Z M1-SH-017 (bắt dưới chân gá vai). So hai hình:

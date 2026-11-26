@@ -194,13 +194,13 @@ Assembly and first power-up steps: [docs/vi/assembly-guide.md](../docs/vi/assemb
 | left_pan | 1 | STS3095-C002 | BUS_L | -70 .. 70 deg |
 | left_shoulder | 2 | STS3095-C002 | BUS_L | -80 .. 48.5 deg |
 | left_elbow | 3 | STS3095-C002 | BUS_L | -10 .. 127 deg |
-| left_wrist_flex | 4 | STS3215-C018 | BUS_L | -77.5 .. 87.5 deg |
+| left_wrist_flex | 4 | STS3215-C018 | BUS_L | -77.5 .. 70 deg |
 | left_wrist_roll | 5 | STS3215-C018 | BUS_L | -160 .. 160 deg |
 | left_gripper | 6 | STS3215-C018 | BUS_L | 0 .. 100 % |
 | right_pan | 7 | STS3095-C002 | BUS_R | -70 .. 70 deg |
 | right_shoulder | 8 | STS3095-C002 | BUS_R | -80 .. 48.5 deg |
 | right_elbow | 9 | STS3095-C002 | BUS_R | -10 .. 127 deg |
-| right_wrist_flex | 10 | STS3215-C018 | BUS_R | -77.5 .. 87.5 deg |
+| right_wrist_flex | 10 | STS3215-C018 | BUS_R | -77.5 .. 70 deg |
 | right_wrist_roll | 11 | STS3215-C018 | BUS_R | -160 .. 160 deg |
 | right_gripper | 12 | STS3215-C018 | BUS_R | 0 .. 100 % |
 | wheel_0 | 13 | STS3215-C018 | BUS_B | continuous (wheel) |

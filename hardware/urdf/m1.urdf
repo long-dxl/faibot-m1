@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- SPDX-License-Identifier: Apache-2.0. Copyright (c) 2026 Leo Dao (Faibotic). Meshes in assets/ carry their own licence per file, listed in NOTICE at the repository root. -->
 <!-- Faibotic M1 v0.5 P-L. File sinh tự động bởi faibotic.model từ spec.py. Đế di động: base_link gắn sàn (đế omni xử lý ngoài URDF).
      Góc khớp theo quy ước SDK (spec.URDF_TO_SDK đổi từ góc URDF upstream AM-ARM200). -->
 <robot name="faibotic_m1">
@@ -51,7 +52,7 @@
   <joint name="left_elbow" type="revolute"><parent link="left_upper"/><child link="left_fore"/>
     <origin xyz="0.13491 0 0"/><axis xyz="0 1 0"/><limit lower="-0.174533" upper="2.21657" effort="5.59" velocity="3.0"/></joint>
   <joint name="left_wrist_flex" type="revolute"><parent link="left_fore"/><child link="left_wrist"/>
-    <origin xyz="0.19841 0 -0.00316"/><axis xyz="0 1 0"/><limit lower="-1.35263" upper="1.52716" effort="1.765" velocity="3.0"/></joint>
+    <origin xyz="0.19841 0 -0.00316"/><axis xyz="0 1 0"/><limit lower="-1.35263" upper="1.22173" effort="1.765" velocity="3.0"/></joint>
   <joint name="left_wrist_yaw" type="revolute"><parent link="left_wrist"/><child link="left_yaw"/>
     <origin xyz="0.02813 -0.00381 -0.0013"/><axis xyz="0 0 1"/><limit lower="-1.41372" upper="1.39626" effort="2.354" velocity="3.0"/></joint>
   <joint name="left_wrist_roll" type="revolute"><parent link="left_yaw"/><child link="left_hand"/>
@@ -66,7 +67,7 @@
   <joint name="right_elbow" type="revolute"><parent link="right_upper"/><child link="right_fore"/>
     <origin xyz="0.13491 0 0"/><axis xyz="0 1 0"/><limit lower="-0.174533" upper="2.21657" effort="5.59" velocity="3.0"/></joint>
   <joint name="right_wrist_flex" type="revolute"><parent link="right_fore"/><child link="right_wrist"/>
-    <origin xyz="0.19841 0 -0.00316"/><axis xyz="0 1 0"/><limit lower="-1.35263" upper="1.52716" effort="1.765" velocity="3.0"/></joint>
+    <origin xyz="0.19841 0 -0.00316"/><axis xyz="0 1 0"/><limit lower="-1.35263" upper="1.22173" effort="1.765" velocity="3.0"/></joint>
   <joint name="right_wrist_yaw" type="revolute"><parent link="right_wrist"/><child link="right_yaw"/>
     <origin xyz="0.02813 0.00381 -0.0013"/><axis xyz="0 0 1"/><limit lower="-1.41372" upper="1.39626" effort="2.354" velocity="3.0"/></joint>
   <joint name="right_wrist_roll" type="revolute"><parent link="right_yaw"/><child link="right_hand"/>

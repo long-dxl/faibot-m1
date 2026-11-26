@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Ảnh từng bước lắp P-L: mỗi ảnh cộng thêm một nhóm chi tiết, nhóm mới màu xanh, phần đã lắp màu xám, cùng một góc nhìn đẳng cự.
 
 Hai bước:

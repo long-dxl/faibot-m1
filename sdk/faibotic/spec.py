@@ -1,7 +1,10 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Thông số M1 v0: nguồn sự thật duy nhất cho mô hình sim, động học và backend Feetech.
 
-Mọi kích thước tự đặt từ bảng "Thông số v0" của SPEC F016 (không lấy từ file CAD/URDF
-của dự án khác). Đơn vị SI: m, kg, rad, N·m.
+Kích thước khâu tay, khối lượng và quán tính của tay lấy từ URDF AM-ARM200
+(https://github.com/liyiteng/AM-ARM, Apache-2.0, commit 5b03af1ef6c80595bd988e0137cf8e7c35811eb6);
+phần còn lại theo thông số Faibot M1 của Faibotic. Đơn vị SI: m, kg, rad, N·m.
 """
 from __future__ import annotations
 
@@ -268,7 +271,7 @@ ARM_MASS_MOVING = sum(LINK_MASS[b] for b in ("shoulder", "upper", "fore", "wrist
 # giữ LINK_PRINT (URDF, cận trên); số công bố khối lượng lấy CAD. tests/test_tipover.py kiểm khớp masses.json.
 ARM_MASS_CAD = 2.128         # kg, một tay đủ 7 servo (spec cộng tay: ARM_MASS_MOVING + LINK_MASS["mount"] = 2,201)
 ARM_COM_R_CAD = 0.189        # m, tâm khối lượng tay duỗi ngang cách trục pan (CAD); tipover.arm_pl URDF không servo: 0,181
-ROBOT_MASS_CAD = 21.17       # kg = thân không tay 16,91 (masses.json tong_khong_tay_kg) + 2 x ARM_MASS_CAD
+ROBOT_MASS_CAD = 21.463       # kg = masses.json tong_robot_kg: thân không tay (gồm khay đế 4 mảnh + cột ngắn + ray) + 2 x ARM_MASS_CAD
 
 SHOULDER_SOFT_MAX_DEG = 48.5   # v0.4.3: 49,5 -> 48,5; đệm chặn dưới chạm ở 50 độ (FAILSAFE_PADS["shoulder_up"]), biên 1,5 độ = 1,18 mm tại r 45 >= dung sai dày đệm PU +-0,5 mm (v0.4.2: 0,5 độ = 0,39 mm)
 ELBOW_SOFT_MAX_DEG = 127.0     # v0.4.3: 130 -> 127; đệm khuỷu M1-AR-022 chạm ở 128 (FAILSAFE_PADS["elbow_high"]), biên 1 độ = 1,06 mm tại r 61 >= 0,5 mm
@@ -280,7 +283,11 @@ ARM_LIMITS = {
     #
     "shoulder": (math.radians(-80), math.radians(SHOULDER_SOFT_MAX_DEG)),      # v0.4.3: +49,5 -> +48,5; v0.4.2 (-2): +90 -> +49,5, link chạm đệm dưới ở 50 (mất 0 tầm tool-down bàn 0,60-0,90 m); v0.4.1 vòng 2: -85 -> -80, đệm vai trên chạm ở -80,5 (thêm 5 độ hành trình); v0.4: -90 -> -85: chặn đệm chạm ở -85,5 (mất điện, CHẶN 2); v0.3: -100 -> -90
     "elbow": (math.radians(-10), math.radians(ELBOW_SOFT_MAX_DEG)),         # v0.4.3: 130 -> 127 (chặn cứng 136 -> 133, đệm dời chạm ở 128); v0.4.1 vòng 2: -20 -> -10 (chặn khuỷu ngược có hành trình);         # v0.3: 150 -> 130 (khe 8,2 mm tới link; 140 độ chạm); xem ELBOW_MAX_BY_SHOULDER
-    "wrist_flex": (math.radians(-77.5), math.radians(87.5)),   # v0.4.4: -100..120 -> -77,5..87,5: tự va chạm cụm cổ tay với đầu cẳng tay (ngàm M1-AR-026, servo gập) quét vòng 2: chạm thật trong (90; 90,5], phía âm sạch tới -77,5 (chỉ quét tới đó); biên dương 3 độ (cad/export/couple_v044.json, failsafe_v044_wrist_roll_scan.json)
+    # 24/11/2026: trên cẳng tay J4 upstream (6+1), đáy vỏ J56 chạm cẳng tay J4 từ gập 73,4 độ ngay ở yaw 0, mọi cuộn và độ mở kẹp
+    # (gripper_am.py --yaw-scan -> cad/export/AM_wrist_yaw_scan.json gap_cham_cang_tay_yaw0_deg; 119 mm3 ở 80, 937 mm3 ở 87,5).
+    # Xác nhận: cad/faibotic/flex_scan.py -> AM_wrist_flex_scan.json (gập 65..73,4 sạch, 73,5 chạm, mọi cuộn/kẹp).
+    # Trần 87,5 -> 70 (chạm - 3 độ, làm tròn xuống). Phía âm: -77,5 sạch ở mọi cuộn/kẹp, giữ nguyên.
+    "wrist_flex": (math.radians(-77.5), math.radians(70.0)),   # v0.4.4: -100..120 -> -77,5..87,5: tự va chạm cụm cổ tay với đầu cẳng tay (ngàm M1-AR-026, servo gập) quét vòng 2: chạm thật trong (90; 90,5], phía âm sạch tới -77,5 (chỉ quét tới đó); biên dương 3 độ (cad/export/couple_v044.json, failsafe_v044_wrist_roll_scan.json)
     # URDF upstream ghi ±3,14 (WRIST_YAW_URDF_LIMIT) cho mọi khớp, không phải tầm thật; SDK tạm ±90 [giả định].
     # (DK-N66, 24/11/2026): quét mesh STEP (gripper_am.py --yaw-scan -> cad/export/AM_wrist_yaw_scan.json): vỏ J56 chạm giá J5 ở yaw URDF
     # +84,6 / -83,7 độ (SDK -84,6 / +83,7) ở mọi gập, cuộn, độ mở kẹp; biên 3 độ -> SDK -81..+80. Gập > 0 thì đáy/vỏ J56 chạm cẳng tay J4
@@ -362,12 +369,12 @@ def _bracket(nodes, x):
 
 # (DK-N66): giới hạn ghép yaw theo gập cổ tay (độ SDK). Nút gập; yaw SDK nhỏ nhất/lớn nhất = (chạm đầu tiên, chia đôi 0,25 độ,
 # cad/faibotic/yaw_couple_scan.py -> cad/export/AM_wrist_yaw_couple.json) trừ biên 3 độ, không vượt ARM_LIMITS. Tra: hẹp nhất hai nút kề (bảo thủ).
-# Gập >= 73,4 độ: đáy J56 đã chạm cẳng tay J4 ngay ở yaw 0 (DK-N68, giới hạn gập 87,5 lấy từ CAD cẳng tay cũ) -> nút cuối khoá yaw 0.
+# Gập >= 73,4 độ: đáy J56 đã chạm cẳng tay J4 ngay ở yaw 0, nên trần gập là 70 (ARM_LIMITS) và bảng dừng ở nút 70.
 # Chạm yaw URDF âm (SDK dương, đáy J56 x cẳng tay J4) theo gập 0/10/20/30/40/50/60/65/70/72,5: -83,75 (giá J5)/-83,75/-65,8/-45,0/-30,9/-22,2/-14,1/-9,5/-4,5/-1,7;
-# phía URDF dương (SDK âm): giá J5 +84,7 tới gập 60, rồi vỏ J56 x J4 83,3/81,9/81,3 ở gập 65/70/72,5. Nút 72,5 (biên < 3 độ) và 87,5: khoá yaw 0.
-WRIST_YAW_COUPLE_FLEX_DEG = (-77.5, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 65.0, 70.0, 72.5, 87.5)
-WRIST_YAW_COUPLE_MIN_DEG = (-81.0, -81.0, -81.0, -81.0, -81.0, -81.0, -81.0, -80.0, -78.5, -78.0, 0.0)
-WRIST_YAW_COUPLE_MAX_DEG = (80.0, 80.0, 62.5, 42.0, 27.5, 19.0, 11.0, 6.5, 1.5, 0.0, 0.0)
+# phía URDF dương (SDK âm): giá J5 +84,7 tới gập 60, rồi vỏ J56 x J4 83,3/81,9 ở gập 65/70 (72,5: 81,3, ngoài tầm gập).
+WRIST_YAW_COUPLE_FLEX_DEG = (-77.5, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 65.0, 70.0)
+WRIST_YAW_COUPLE_MIN_DEG = (-81.0, -81.0, -81.0, -81.0, -81.0, -81.0, -81.0, -80.0, -78.5)
+WRIST_YAW_COUPLE_MAX_DEG = (80.0, 80.0, 62.5, 42.0, 27.5, 19.0, 11.0, 6.5, 1.5)
 
 
 def wrist_yaw_range(q_wrist_flex: float) -> tuple[float, float]:
@@ -453,8 +460,10 @@ PAYLOAD_TARGET = 0.5        # kg/tay: tải dùng cho bảng mô-men mặc đị
 # Tư thế gốc (H): cánh tay dựng đứng, cẳng tay nằm ngang, kẹp chĩa xuống
 # (TCP cách gốc tay ~0,16 m về trước, thấp hơn gốc tay ~0,03 m; trước 0,15 m trước, cao hơn 0,075 m; sẵn sàng cho teleop Descartes)
 # v0.4.4: giới hạn gập 87,5 và ô bảng ghép vai -80 là 87, nên khuỷu 90 -> 93, cổ tay 90 -> 87 (tổng góc dụng cụ giữ 100 độ, kẹp chĩa xuống như cũ)
-HOME_ARM = {"pan": 0.0, "shoulder": math.radians(-80), "elbow": math.radians(93),
-            "wrist_flex": math.radians(87), "wrist_yaw": 0.0, "wrist_roll": 0.0}
+# 24/11/2026 (trần gập 70): khuỷu 93 -> 102, gập 87 -> 68 (biên 2 độ dưới trần), góc dụng cụ 90: kẹp chĩa thẳng xuống. Tâm kẹp x 0,30 m
+# (khung trạm, ngoài luật bệ x < 0,14), y ±0,244 (ngoài khay |y| <= 0,19), z +0,021 trên đáy J1; không vi phạm vùng cấm ở mọi lift, có/không khay.
+HOME_ARM = {"pan": 0.0, "shoulder": math.radians(-80), "elbow": math.radians(102),
+            "wrist_flex": math.radians(68), "wrist_yaw": 0.0, "wrist_roll": 0.0}
 
 
 def joint_name(side: str, j: str) -> str:

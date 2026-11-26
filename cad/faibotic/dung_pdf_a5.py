@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Dựng docs/vi/M1_assembly_A5_v0.5.pdf (A5, tiếng Việt) từ hình bước đã render và dữ liệu trong repo.
 
   1. python render_pdf_buoc.py MESH_DIR IMG_DIR            (hình bước, thẻ chi tiết, bìa; xem file đó)

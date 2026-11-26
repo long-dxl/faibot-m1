@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Khai báo vật trên khay đế (docs/M1-TRAM/R5-khay-de.md).
 
 Khay đế là sàn thiết bị: laptop (<= 2,5 kg) HOẶC Jetson kèm DC-DC, cộng phụ kiện, tổng <= spec.KHAY_DE_TAI_MAX. Tay robot không

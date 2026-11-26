@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """GPIO thật trên Raspberry Pi 5 cho bộ #0 (bảng đi dây EVT, electrical/bang-di-day-evt.md mục 2): ngõ ra K5_EN, ngõ vào opto
 ESTOP_OK, ARM_SENSE, RESET_SENSE (K1_AUX nếu có), hai công tắc hành trình trục nâng LIFT_BOT, LIFT_TOP, và chốt hãm trục nâng
 thanh răng v0.5 (R2 7.2): ngõ ra LIFT_LATCH_EN (kích cuộn solenoid qua MOSFET/rơ-le; cuộn lấy 12 V từ SERVO+ sau K1) và ngõ vào

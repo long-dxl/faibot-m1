@@ -1,4 +1,5 @@
 <mujoco model="faibotic_m1">
+  <!-- SPDX-License-Identifier: Apache-2.0. Copyright (c) 2026 Leo Dao (Faibotic). Meshes in assets/ carry their own licence per file, listed in NOTICE at the repository root. -->
   <!-- Faibotic M1 v0.5 P-L. File sinh tự động bởi faibotic.model; sửa spec.py rồi xuất lại. -->
   <compiler angle="radian" autolimits="true" meshdir="assets"/>
   <option timestep="0.002" integrator="implicitfast" cone="elliptic" impratio="10"/>
@@ -148,7 +149,7 @@
         <geom name="left_fore__navy" class="vis" mesh="left_fore__navy" material="m1_navy"/>
         <geom name="left_fore__servo_body" class="vis" mesh="left_fore__servo_body" material="m1_servo_body"/>
             <body name="left_wrist" pos="0.19841 0 -0.00316">
-              <joint name="left_wrist_flex" class="arm_small" axis="0 1 0" range="-1.35263 1.52716"/>
+              <joint name="left_wrist_flex" class="arm_small" axis="0 1 0" range="-1.35263 1.22173"/>
               <inertial pos="0.01479 -0.00273 0.00073" mass="0.03045" fullinertia="1.1295e-05 8.225e-06 1.4509e-05 -5.07e-07 -2.43e-07 -1.6e-08"/>
         <geom name="left_wrist__ivory" class="vis" mesh="left_wrist__ivory" material="m1_ivory"/>
               <body name="left_yaw" pos="0.02813 -0.00381 -0.0013">
@@ -200,7 +201,7 @@
         <geom name="right_fore__navy" class="vis" mesh="right_fore__navy" material="m1_navy"/>
         <geom name="right_fore__servo_body" class="vis" mesh="right_fore__servo_body" material="m1_servo_body"/>
             <body name="right_wrist" pos="0.19841 0 -0.00316">
-              <joint name="right_wrist_flex" class="arm_small" axis="0 1 0" range="-1.35263 1.52716"/>
+              <joint name="right_wrist_flex" class="arm_small" axis="0 1 0" range="-1.35263 1.22173"/>
               <inertial pos="0.01479 0.00273 0.00073" mass="0.03045" fullinertia="1.1295e-05 8.225e-06 1.4509e-05 5.07e-07 -2.43e-07 1.6e-08"/>
         <geom name="right_wrist__ivory" class="vis" mesh="right_wrist__ivory" material="m1_ivory"/>
               <body name="right_yaw" pos="0.02813 0.00381 -0.0013">
@@ -254,14 +255,14 @@
     <position name="left_pan" joint="left_pan" kp="177.9" kv="10.7" ctrlrange="-1.22173 1.22173" forcerange="-4.65816 4.65816"/>
     <position name="left_shoulder" joint="left_shoulder" kp="213.5" kv="12.8" ctrlrange="-1.39626 0.846485" forcerange="-5.58979 5.58979"/>
     <position name="left_elbow" joint="left_elbow" kp="213.5" kv="12.8" ctrlrange="-0.174533 2.21657" forcerange="-5.58979 5.58979"/>
-    <position name="left_wrist_flex" joint="left_wrist_flex" kp="67.43" kv="4.05" ctrlrange="-1.35263 1.52716" forcerange="-1.7652 1.7652"/>
+    <position name="left_wrist_flex" joint="left_wrist_flex" kp="67.43" kv="4.05" ctrlrange="-1.35263 1.22173" forcerange="-1.7652 1.7652"/>
     <position name="left_wrist_yaw" joint="left_wrist_yaw" kp="89.9" kv="5.39" ctrlrange="-1.41372 1.39626" forcerange="-2.3536 2.3536"/>
     <position name="left_wrist_roll" joint="left_wrist_roll" kp="56.19" kv="3.37" ctrlrange="-2.79253 2.79253" forcerange="-1.471 1.471"/>
     <position name="left_gripper" joint="left_gripper" kp="14.71" kv="0.735" ctrlrange="0 1.11701" forcerange="-1.471 1.471"/>
     <position name="right_pan" joint="right_pan" kp="177.9" kv="10.7" ctrlrange="-1.22173 1.22173" forcerange="-4.65816 4.65816"/>
     <position name="right_shoulder" joint="right_shoulder" kp="213.5" kv="12.8" ctrlrange="-1.39626 0.846485" forcerange="-5.58979 5.58979"/>
     <position name="right_elbow" joint="right_elbow" kp="213.5" kv="12.8" ctrlrange="-0.174533 2.21657" forcerange="-5.58979 5.58979"/>
-    <position name="right_wrist_flex" joint="right_wrist_flex" kp="67.43" kv="4.05" ctrlrange="-1.35263 1.52716" forcerange="-1.7652 1.7652"/>
+    <position name="right_wrist_flex" joint="right_wrist_flex" kp="67.43" kv="4.05" ctrlrange="-1.35263 1.22173" forcerange="-1.7652 1.7652"/>
     <position name="right_wrist_yaw" joint="right_wrist_yaw" kp="89.9" kv="5.39" ctrlrange="-1.41372 1.39626" forcerange="-2.3536 2.3536"/>
     <position name="right_wrist_roll" joint="right_wrist_roll" kp="56.19" kv="3.37" ctrlrange="-2.79253 2.79253" forcerange="-1.471 1.471"/>
     <position name="right_gripper" joint="right_gripper" kp="14.71" kv="0.735" ctrlrange="0 1.11701" forcerange="-1.471 1.471"/>

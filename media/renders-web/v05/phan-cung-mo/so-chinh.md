@@ -5,7 +5,7 @@ Dữ liệu máy đọc: `so-chinh.json`. Nhãn [tính] lấy từ CAD hoặc SD
 | Số | Giá trị | Nhãn | Nguồn |
 |---|---|---|---|
 | Chiều cao tối đa (trụ nâng lên hết) | 1406 mm | [tính] | `lop.py` (hộp bao GLB ở lift 0,45 m) + GLB e81a130 + `sdk/faibotic/spec.py:98` (LIFT_RANGE) |
-| Khối lượng robot (cận trên theo CAD) | 21,2 kg | [tính] | `docs/vi/specifications.md:203`, `product/00-tong-quan.md:30` |
+| Khối lượng robot (cận trên theo CAD) | 21,5 kg | [tính] | `docs/vi/specifications.md:203`, `product/00-tong-quan.md:30` |
 | Khớp có động cơ | 16 | [tính] | `docs/vi/specifications.md:102`, `sdk/faibotic/spec.py:427` |
 | Tải đỉnh ở tầm 0,25 m | 2,1 kg | [tính] | `docs/vi/specifications.md:155`, `product/00-tong-quan.md:22` |
 | Dung lượng pin | 172,8 Wh | [tính] | `docs/vi/specifications.md:208`, `product/00-tong-quan.md:29` |

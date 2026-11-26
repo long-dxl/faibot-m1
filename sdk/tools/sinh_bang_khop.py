@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Generate the joint table of sdk/README.md from sdk/faibotic/spec.py (no hand-typed numbers).
 
     python3 sdk/tools/sinh_bang_khop.py            # print the table

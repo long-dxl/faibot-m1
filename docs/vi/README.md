@@ -2,13 +2,16 @@
 
 Robot di động hai tay có trụ nâng, thiết kế mở cho lab robot đại học: dạy học, thu dữ liệu teleop và huấn luyện policy trên cùng một robot. Repo gồm CAD, mô phỏng, SDK Python, sơ đồ điện, BOM và hướng dẫn lắp.
 
-![Faibot M1](../../media/renders-web/v05/faibot-m1-v05-hero.png)
+![Faibot M1](../../media/renders-web/v05f/faibot-m1-v05f-hero.webp)
 
 **Trạng thái: v0.5, trước EVT.** Mới có mô phỏng và thiết kế, chưa có robot thật, nên chưa phần nào được xác nhận trên phần cứng. Backend `feetech` của SDK mới test với bus giả.
 
-![Mô phỏng gắp đặt](../../media/video/m1-v05e-hero.gif)
+Video mô phỏng ba bài lab, tốc độ 2×, 60 fps; mỗi bài đã đo trên 20 seed ngẫu nhiên trước khi quay.
 
-Video mô phỏng (MuJoCo): [gắp đặt](../../media/video/m1-v05e-pick_place.mp4) · [phân loại](../../media/video/m1-v05e-sorting.mp4) · [mở nắp hộp](../../media/video/m1-v05e-open_close.mp4)
+| Phân loại | Gắp đặt | Mở và đóng |
+|---|---|---|
+| ![Phân loại](../../media/video/m1-sorting-2x.gif) | ![Gắp đặt](../../media/video/m1-pick_place-2x.gif) | ![Mở và đóng](../../media/video/m1-open_close-2x.gif) |
+| Hai tay gắp cùng lúc, đế chở vật tới khay; khoá vùng khay để mỗi lúc chỉ một tay vào khay. [MP4](../../media/video/m1-sorting-60fps-2x.mp4) · [WebM](../../media/video/m1-sorting-60fps-2x.webm) | Gắp vật trên bàn đặt vào hộp, đế di chuyển giữa các vị trí. [MP4](../../media/video/m1-pick_place-60fps-2x.mp4) · [WebM](../../media/video/m1-pick_place-60fps-2x.webm) | Kéo ngăn kéo, đặt vật vào rồi đóng lại; ở tủ lạnh, tay phải mở cửa, tay trái lấy lon. [MP4](../../media/video/m1-open_close-60fps-2x.mp4) · [WebM](../../media/video/m1-open_close-60fps-2x.webm) |
 
 | Nghiêng 3/4 | Cánh tay và servo | Trạm hai tay trên bàn |
 |---|---|---|
@@ -46,7 +49,7 @@ Giá trị "Chờ EVT" sẽ có sau khi dựng và đo bộ đầu tiên.
 | Camera | 3 camera: 1 camera đầu trên cột trạm, chúi 50° (chỉnh 20–70°), 2 camera cổ tay |
 | Máy tính | Raspberry Pi 5 |
 | Pin, nguồn | Pin 12 V 3S4P cell 21700, 172,8 Wh, có BMS, nút E-stop, cầu chì cỡ gọn (chuỗi nguồn L). Thời gian chạy pin: Chờ EVT |
-| Khối lượng | ~21,2 kg theo CAD (thân 16,9 kg + 2 tay, mỗi tay 2,13 kg đủ 7 servo; cận trên); cân thật: Chờ EVT |
+| Khối lượng | ~21,5 kg theo CAD (thân 17,2 kg gồm khay đế + 2 tay, mỗi tay 2,13 kg đủ 7 servo; cận trên); cân thật: Chờ EVT |
 | Kích thước, tốc độ đế | Chờ EVT |
 | Phần mềm | SDK Python `faibotic`, mô phỏng MuJoCo |
 
@@ -141,10 +144,10 @@ Ngoài ra: `demos/`, `examples/`, `tests/` (pytest), `scripts/` (kiểm chéo, q
 ## Giấy phép và ghi công
 
 - **Phần kế thừa (Apache License 2.0):** tay và kẹp gốc AM-ARM200; khung đế và trụ nâng AlohaMini2; hình học thân servo STS3215 dẫn xuất từ SO-ARM100 (bản rút gọn đã sửa, ghi ở `cad/CHANGES.md`). Nguồn, commit và tệp đã sửa: [cad/NOTICE](../../cad/NOTICE); ghi công tổng: [NOTICE](../../NOTICE). Bản license: `cad/upstream/LICENSE`.
-- **Phần Faibotic làm:** phần mềm (`sdk/`, `sim/`, `web-assets/`, `demos/`, `tests/`, `scripts/`) theo Apache License 2.0 ([LICENSE](../../LICENSE)); thiết kế phần cứng và tài liệu (CAD `cad/faibotic/`, `electrical/`, `docs/`, ảnh) theo CC BY-NC-SA 4.0 ([LICENSE-hardware](../../LICENSE-hardware)), dùng thương mại cần thoả thuận riêng với Faibotic. Bảng theo thư mục: [NOTICE](../../NOTICE).
+- **Phần Faibotic làm** (Copyright (c) 2026 Leo Dao (Faibotic)): phần mềm, MJCF/URDF sinh từ SDK và các mesh chỉ dẫn xuất từ phần kế thừa theo Apache License 2.0 ([LICENSE](../../LICENSE)); các chi tiết Faibotic vẽ (CAD, mesh đế, xe nâng, camera cổ tay trong `sim/assets/`, `web-assets/m1.glb`), sơ đồ điện, tài liệu, ảnh theo CC BY-NC-SA 4.0 ([LICENSE-hardware](../../LICENSE-hardware)). Dùng thương mại: liên hệ founder@faibotic.com. Danh sách đầy đủ từng thư mục, từng tệp: [NOTICE](../../NOTICE). Các bản phát hành từ v0.5 trở về trước đã phát hành mesh phần Faibotic vẽ theo Apache License 2.0.
 - Bố cục tài liệu theo cách tài liệu robot mở thường trình bày; không chép chữ, hình hay logo của ai.
 - Thư viện Python dùng qua `pip`: giấy phép riêng, liệt kê ở [docs/licenses.md](licenses.md). Bảng kiểm từng phần kế thừa: [docs/BANG-KIEM-GIAY-PHEP.md](../../docs/BANG-KIEM-GIAY-PHEP.md).
-- Tên các dự án kế thừa không phải nhãn hiệu của Faibotic.
+- Tên các dự án kế thừa không phải nhãn hiệu của Faibotic. "Faibotic" và "Faibot" là tên thương mại; giấy phép không cấp quyền nhãn hiệu.
 
 ## Hạn chế hiện tại
 

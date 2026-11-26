@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Lắp ráp Faibot M1 v0.5 cấu hình P-L (chốt 23/11/2026 tối): 2 tay AM-ARM200 follower nguyên bản (6+1; trước: 5+1, yaw khoá) trên trạm hai tay
 tháo lắp (S2, G1b 24/11, tram_hai_tay.py, vai 0,475 m, cột camera đầu) gắn lên đế ngàm (tram_de.py) trên khung T giữa AlohaMini2
 (xe nâng; bỏ khung T trái/phải, xà ngang, giá camera ngực), trụ AlohaMini2 (file bản thường), trục nâng thanh răng AlohaMini2 (1 STS3095) +

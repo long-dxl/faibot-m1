@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """P-L: đặt khung T AlohaMini2 theo khớp URDF thay cho đăng ký ICP (DK-N39).
 Ghi ma trận 'post_W' (hệ robot, mm) vào ../export/AlohaMini2_placement.json; không đổi hình học upstream. Chạy lại được (lần hai dời ~0).
 

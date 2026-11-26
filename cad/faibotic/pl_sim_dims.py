@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """S1G: kích thước và khối lượng thân P-L cho hình va chạm sim (sdk/faibotic/spec.py) lấy từ CAD assembly_pl.py, ghi ../export/M1-PL-sim-dims.json.
 tests/test_pl_sim_dims.py so spec.py với tệp này (sai <= 0,5 mm, 0,01 kg), để sim và CAD cùng một nguồn.
 Hệ robot (m): base = sàn tại tâm tam giác bánh; carriage = gốc tay (đáy J1) ở lift SDK 0, tức lift CAD spec.LIFT_CAD_OFFSET.

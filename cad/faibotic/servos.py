@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Thân servo thật cho lắp ráp Faibot M1 (v0.4.6, 23/11/2026): hình học, tư thế đặt, mesh hiển thị. build123d + numpy.
 Phần mã và mô hình STS3095 là của Faibotic. Mesh STS3215 lấy từ MuJoCo Menagerie robotstudio_so101 (Apache-2.0),
 xem cad/upstream/menagerie-so101/README.md.

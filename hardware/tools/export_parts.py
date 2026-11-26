@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Make the generated part of hardware/ from the CAD sources in cad/ and sim/.
 
   python hardware/tools/export_parts.py export       build123d needed. Builds the v0.5 P-L assembly (lift 0, pose ready), writes
@@ -34,7 +35,7 @@ MAX_MB = 50
 TABLE_START, TABLE_END = "<!-- parts-table:start -->", "<!-- parts-table:end -->"
 GROUPS = ["Base", "Lift", "Station", "Arm", "Gripper", "Wrist camera", "Head camera", "Cameras", "Actuators", "Power", "Electronics"]
 CSV_COLS = ["file", "part_number", "name", "qty", "type", "group", "license", "origin", "source", "material", "process", "status", "notes"]
-LIC = {"printed": "CC-BY-NC-SA-4.0", "machined": "CC-BY-NC-SA-4.0", "cut": "CC-BY-NC-SA-4.0", "inherited": "Apache-2.0", "purchased": "vendor"}
+LIC = {"printed": "CC-BY-NC-SA-4.0", "machined": "CC-BY-NC-SA-4.0", "cut": "CC-BY-NC-SA-4.0", "inherited": "Apache-2.0", "purchased": "CC-BY-NC-SA-4.0"}
 # a few instances share one part file; the left and right copies and the numbered copies are folded into one key
 MERGE = {"M1-LF-041_switch_bot": "M1-LF-041_switch", "M1-LF-041_switch_top": "M1-LF-041_switch",
          "M1-CM-001_head_cam": "M1-CM-001_camera", "M1-CM-001_wrist_cam": "M1-CM-001_camera",
@@ -228,7 +229,7 @@ def load_rows() -> list[dict]:
         n = nm[k]
         r = reg[n["part_number"]]
         typ = n["type"]
-        origin = ORIGIN[e["origin"]] if typ == "inherited" else ("vendor" if typ == "purchased" else "Faibotic")
+        origin = ORIGIN[e["origin"]] if typ == "inherited" else "Faibotic"  # purchased: simplified envelope drawn by Faibotic
         source = e["source"] if typ == "inherited" else "cad/faibotic/assembly_pl.py"
         notes = n["notes"]
         if typ != "inherited":

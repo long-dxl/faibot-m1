@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Động học của M1: tay 6+1 (như AM-ARM200 gốc: gập -> yaw -> cuộn) FK đủ 6 khớp, IK giải tích khoá yaw = 0; đế 3 bánh omni.
 
 IK: khớp yaw giữ 0 (chuỗi khi đó trùng 5+1 cũ, nghiệm giải tích ổn định cho demo/teleop Descartes). Yaw dùng qua điều khiển khớp

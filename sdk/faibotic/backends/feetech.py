@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Backend phần cứng thật: 16 servo Feetech STS trên một bus (P-L, xem spec.SERVO_IDS).
 
 CHƯA chạy với phần cứng thật; đã test với bus giả (faibotic.feetech.mockbus).

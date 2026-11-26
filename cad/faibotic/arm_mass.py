@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Khối lượng + trọng tâm tay M1 từ hình học AM-ARM200 (STEP, Apache-2.0) + gá vai Faibotic.
 Chạy: python (venv có build123d) cad/faibotic/arm_mass.py  -> cad/export/arm_mass.json
  Mọi giả định có cờ; xem ../../archive/v0.4/cad/ASSUMPTIONS.md mục v0.2.

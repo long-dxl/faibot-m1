@@ -47,7 +47,7 @@ def test_lift_and_gripper(robot):
 
 def test_move_tcp_accuracy(robot):
     robot.move_joints({"lift": 0.333}, 1.0)   # S1G: trục vai 0,5619 + lift (CAD P-L); 0,333 giữ trục vai 0,895 m như trước (0,55 + 0,345)
-    target = np.array([0.34, 0.137, 0.78])  # S1G: trục pan 0,0599 / ±0,18726 (trước 0,12 / ±0,17): giữ nguyên điểm so với trục pan (trước 0,40; 0,12)
+    target = np.array([0.34, 0.137, 0.74])  # 24/11: z 0,78 -> 0,74 (trần gập 70 hạ đỉnh tầm kẹp chĩa xuống ~4 cm). S1G: trục pan 0,0599 / ±0,18726 (trước 0,12 / ±0,17): giữ nguyên điểm so với trục pan (trước 0,40; 0,12)
     robot.move_tcp("left", target, duration=1.5)
     robot.wait(1.0)
     assert np.linalg.norm(robot.tcp_position("left") - target) < 0.01

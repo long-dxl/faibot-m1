@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Quét giới hạn khớp: vai -90..-70 x khuỷu 100..130 (bước 5 độ) và kiểm chạm đệm chặn. Gá khuỷu M1-AR-020 với gá vai v2, đệm chặn, link, chốt.
 Chạy: python limit_scan.py -> ../export/limit_scan.json. Khe yêu cầu >= 0,3 mm (cùng khe thiết kế)."""
 import json, os, sys

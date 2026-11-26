@@ -29,7 +29,17 @@ def plan(limit: int | None = None) -> list[tuple[str, str]]:
     return out[:limit] if limit else out
 
 
-def run(robot, limit: int | None = None, snap=None, log=print) -> dict:
+CHOREO_DEFAULT = "new"     # vòng 3: hai tay cùng gắp, đế chở sang khay; 19/20 seed, 0 lần đứng hình, jerk p95 <= 4,83 (docs/CHOREO-M1-ketqua.md)
+
+
+def run(robot, limit: int | None = None, snap=None, log=print, choreo: str = CHOREO_DEFAULT) -> dict:
+    """choreo: "new" = biên đạo mới (lab_choreo.sorting): mỗi chuyến hai tay gắp hai vật cùng lúc, đế chở sang khay, hai tay đặt;
+    chỗ trong ngăn theo lab_choreo.SORT_TRIPS (SLOTS chỉ dùng cho vật ngoài bảng chuyến); "old" = một tay, đế đi theo vật."""
+    if choreo == "new":
+        import lab_choreo as CH
+        done = CH.sorting(robot, plan(limit), cells(), SLOTS, RELEASE_OPEN, snap=snap, log=log)
+        robot.wait(1.0)
+        return check(robot, done)
     snap = snap or (lambda *a, **k: None)
     cl = cells()
     used = {c: 0 for c in cl}
@@ -72,12 +82,13 @@ def main() -> int:
     ap.add_argument("--seed", type=int, default=0, help="xáo vị trí vật theo seed; -1 = bố cục gốc")
     ap.add_argument("--limit", type=int, default=None, help="chỉ phân loại n vật đầu")
     ap.add_argument("--snap", action="store_true")
+    ap.add_argument("--choreo", choices=("old", "new"), default=CHOREO_DEFAULT, help="biên đạo: new (CHOREO-M1) hoặc old (trước 25/11)")
     a = ap.parse_args()
     LC.headless_env(not a.viewer)
     robot = LC.make_robot(viewer=a.viewer)
     LC.scatter(robot, None if a.seed < 0 else a.seed)
     snap = LC.Snapper(robot, "sorting", "lab_front_sort", enabled=a.snap)
-    res = run(robot, a.limit, snap, log=lambda m: print(m, file=sys.stderr))
+    res = run(robot, a.limit, snap, log=lambda m: print(m, file=sys.stderr), choreo=a.choreo)
     res["seed"] = a.seed
     res["snapshots"] = [str(p) for p in snap.saved]
     print(json.dumps(res, ensure_ascii=False))

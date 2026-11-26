@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4.1 vòng 2: giới hạn mềm vai -80 / khuỷu ngược -10. Dời chặn vai trên (đệm chạm -80,5, dày 20), chặn khuỷu ngược (đệm chạm -17,5),
 và chặn dưới vai dạng HẸP giữa (qua khe giữa hai servo khuỷu) để gá khuỷu không đập thanh. build123d.
 Chạy: python failsafe_v042.py [--scan] -> ../export/failsafe_v042_scan.json + STEP."""

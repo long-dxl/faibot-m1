@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Render PNG từ STL bằng trimesh + matplotlib (không GPU)."""
 import sys, os, numpy as np, trimesh
 import matplotlib; matplotlib.use("Agg")

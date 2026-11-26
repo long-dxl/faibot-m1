@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """An toàn phần mềm M1: chốt E-stop tạm bằng phần mềm và phát hiện lò xo cân bằng vai đứt.
 
 SafetyLatch là lớp TẠM để chẩn đoán. Pi chạy Linux, không phải thiết bị an toàn: dừng thật là K1 cắt bằng phần cứng.

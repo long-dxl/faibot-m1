@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """v0.4.5 (22/11/2026): tab U M1-AR-023 + ốc M3 thật + cầu chặn ngược M1-AR-020. build123d.
 Sửa: (1) lỗ M3 dưới dời (105,5; -8) -> (91,5; -8) (params.TAB_HOLES), chân tab kéo dài; (2) đệm PU 70A chặn ngược dời vào giữa |y| <= 6,5,
 ngoài dải y servo khuỷu; (3) cầu chặn ngược trên M1-AR-020 (balance.elbow_bridge) chạm đệm thay góc trên-sau servo, cùng góc chạm -23,5.

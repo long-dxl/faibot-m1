@@ -23,12 +23,12 @@ from faibotic import Robot, spec  # noqa: E402
 from faibotic import model as scene  # noqa: E402
 
 # Nhiệm vụ (toạ độ thế giới, lấy từ bố cục cảnh; chưa dùng thị giác)
-STOP_X = scene.TABLE_EDGE_X - 0.25      # dừng đế cách mép bàn 5 cm (thân đế bán kính 0,20 m)
+STOP_X = scene.TABLE_EDGE_X - 0.215     # dừng đế cách mép bàn 1,5 cm (thân đế bán kính 0,20 m). 24/11: 0,25 -> 0,215 cùng RAISE 0,04 (trần gập 70); thử 0,21-0,22 đạt, 0,20 và 0,23-0,25 trượt
 LIFT_H = 0.45                            # 22/11/2026: 0,31 -> 0,355, trục vai SDK hạ 45 mm về đúng CAD (0,55 + lift); tay giữ nguyên độ cao so với bàn
                                          # 0,355 -> 0,45: giới hạn gập 87,5 + bảng ghép theo cuộn, kẹp chĩa xuống ở x 0,37 chỉ tới z 0,81 (cần 0,865 ở điểm trên hộp)
 GRASP_DY = 0.11                          # hai điểm kẹp cách tâm hộp theo trục dài (hộp dài 26 cm). S2: 0,095 -> 0,11 vì vai rộng 0,475 m: điểm 0,095 ra ngoài tầm kẹp chĩa xuống ở x 0,37
 GRASP_Z = scene.TABLE_HEIGHT + scene.BOX_HALF[2] + 0.015    # kẹp AM-ARM200 ngón 34 mm, thân kẹp ngay sau ngón: kẹp cao hơn 10 mm để mặt hộp không chạm thân kẹp
-RAISE = 0.08
+RAISE = 0.04                             # 24/11: 0,08 -> 0,04: trần gập 70 (đáy vỏ cổ tay chạm cẳng tay ở 73,4), kẹp chĩa xuống ở x 0,37 lift 0,45 chỉ tới z 0,84
 
 
 def run_pick_place(robot: Robot, log=print, on_step=None) -> None:

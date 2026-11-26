@@ -163,8 +163,8 @@ def test_wrist_couple_table_direct():
             exp = min(T[a][b] for a in ai for b in bj)
             assert spec.wrist_max(D(sd), D(ed)) == pytest.approx(min(D(exp), whi))
             assert spec.wrist_max(D(sd), D(ed)) <= min(D(T[i][j]), whi) + 1e-12
-    assert spec.wrist_max(D(-80), D(100)) == pytest.approx(D(87))               # vai -80, khuỷu <= 120: chỉ tự va chạm (đáy J56 với ngàm ở 90,5), 90 - 3
-    assert spec.wrist_max(D(-80), D(127)) == pytest.approx(D(74.5))             # v0.4.5 (DK-W4): camera ở cuộn -160 chạm đệm chặn dưới ở 80 (84,5)
+    assert spec.wrist_max(D(-80), D(100)) == pytest.approx(D(70))               # vai -80, khuỷu <= 120: ô bảng 87, trần gập 70 (đáy J56 chạm cẳng tay J4 ở 73,4)
+    assert spec.wrist_max(D(-80), D(127)) == pytest.approx(D(70))                # v0.4.5 (DK-W4): camera ở cuộn -160 chạm đệm chặn dưới ở 80 (84,5)
     assert spec.wrist_max(D(48.5), D(127)) < D(60)                              # vai tối đa, khuỷu tối đa: cổ tay thấp
     assert spec.HOME_ARM["wrist_flex"] <= spec.wrist_max(spec.HOME_ARM["shoulder"], spec.HOME_ARM["elbow"]) + 1e-9
     assert not hasattr(spec, "LOWSTOP_COUPLE_DEG")      # mã ghép vai-khuỷu ngủ đã bỏ; elbow_max (cột nâng, QC2 vòng 2) là giới hạn khác: khuỷu theo vai
@@ -180,7 +180,7 @@ def test_wrist_couple_table_direct():
 
 
 def test_intermediate_path_checked():
-    q0, q1 = P3(9, 98, -21), P3(31, 70, 85)    # v0.5: khuỷu <= elbow_max(vai) (cột nâng); cặp này vẫn cắt vùng cấm ghép cổ tay
+    q0, q1 = P3(9, 98, -21), P3(41, 70, 68)    # v0.5: khuỷu <= elbow_max(vai) (cột nâng); cặp này vẫn cắt vùng cấm ghép cổ tay (24/11: gập 85 -> 68 theo trần 70, vai 31 -> 41)
     assert not limits.violations(q0) and not limits.violations(q1)
     assert not limits.segment_ok(q0, q1)                              # giữa đường cổ tay còn cao ở vai/khuỷu cao
     legs = limits.plan(q0, q1)
@@ -222,7 +222,7 @@ def test_backend_guard_blocks_crossing_jump(backend, port):
     r = Robot(backend, **kw)
     r.keepout = False   # G1/E3: test này kiểm giới hạn khớp/bảng ghép, tư thế cực (cổ tay thấp sau trục pan) nằm trong vùng cấm bệ; vùng cấm kiểm ở test_tram
     r.move_joints(P3(9, 98, -21), duration=0.2)
-    sent = r.backend.write_joints(P3(31, 70, 85))   # gọi thẳng backend, bỏ qua Robot
+    sent = r.backend.write_joints(P3(41, 70, 68))   # gọi thẳng backend, bỏ qua Robot
     assert sent["left_shoulder"] == pytest.approx(D(9)) and sent["left_elbow"] == pytest.approx(D(98))
     sent = r.backend.write_joints({"left_elbow": D(150), "left_pan": D(200)})      # ngoài ARM_LIMITS
     assert sent["left_elbow"] <= D(spec.ELBOW_SOFT_MAX_DEG) + 1e-9 and sent["left_pan"] == pytest.approx(D(spec.PAN_SOFT_MAX_DEG))

@@ -68,7 +68,8 @@ def main() -> int:
     # (cổ tay theo URDF upstream): (0,40; 0,20; 0,85) ngoài tầm khi kẹp chĩa xuống (trục gập cách vai 0,38 m > 0,338 m); hạ còn 0,78 m
     # (giới hạn gập 87,5 + bảng ghép quét theo cuộn): ở lift 0,3 kẹp chĩa xuống chỉ tới z 0,74 (x 0,40) / 0,76 (x 0,38); hạ 6 cm
     # S1G: trục pan CAD P-L (0,0599; ±0,18726) thay (0,12; ±0,17): điểm dời theo để giữ nguyên so với trục pan
-    pts = {"left": [[0.34, 0.217, 0.72], [0.32, 0.137, 0.74]], "right": [[0.32, -0.137, 0.74]]}
+    # 24/11: trần gập 87,5 -> 70 (đáy vỏ cổ tay chạm cẳng tay ở 73,4): kẹp chĩa xuống ở x 0,32-0,34 chỉ tới z 0,72; hạ cả ba điểm về 0,70
+    pts = {"left": [[0.34, 0.217, 0.70], [0.32, 0.137, 0.70]], "right": [[0.32, -0.137, 0.70]]}
     errs = []
     for side, plist in pts.items():
         for p in plist:

@@ -22,7 +22,7 @@ Tay trái và tay phải đối xứng gương, cùng giới hạn. Góc 0 = tay
 | Xoay đế tay (pan) | -70,0 | 70,0 | 140,0 | [tính] giới hạn mềm SDK; ±70° vì tay chạm tay đỡ bên kia và cột khi gập |
 | Vai (shoulder) | -80,0 | 48,5 | 128,5 | [tính] 0° = tay duỗi ngang ra trước, dương = gập xuống; đệm chặn chạm ở 50° |
 | Khuỷu (elbow) | -10,0 | 127,0 | 137,0 | [tính] giới hạn trên giảm theo vai, xem bảng ghép bên dưới |
-| Gập cổ tay (wrist flex) | -77,5 | 87,5 | 165,0 | [tính] giới hạn trên giảm theo vai và khuỷu |
+| Gập cổ tay (wrist flex) | -77,5 | 70,0 | 147,5 | [tính] giới hạn trên giảm theo vai và khuỷu |
 | Yaw cổ tay (wrist yaw) | -81,0 | 80,0 | 161,0 | [tính] quét va chạm CAD, biên 3°; hẹp lại theo gập cổ tay (bảng ghép yaw–gập) |
 | Cuộn cổ tay (wrist roll) | -160,0 | 160,0 | 320,0 | [tính] có vùng cấm −147…−87°, xem ghi chú |
 | Kẹp (gripper) | 0 | 100 % | 64° góc hàm | [tính] 100 % = mở mềm 64°, đầu hai ngón cách 97,25 mm |
@@ -95,7 +95,7 @@ Tầm với của tâm kẹp, tính trong giới hạn khớp và giới hạn g
 | Sâu nhất dưới mặt bàn 850 mm, lift 0,45 m | 317 | [ước] mặt bàn là giả định |
 | Tầm ngang của điểm sâu nhất | 173 | [tính] |
 
-Quét lưới 96043 tư thế (bước 3° ở vai, khuỷu, gập cổ tay) trong giới hạn khớp và giới hạn ghép, bằng `faibotic.kinematics.arm_fk`, rồi bỏ các tư thế vi phạm vùng cấm của SDK (`limits.keepout_violations`, cấu hình di động, lift 0,45 m; riêng dòng lift 0 áp vùng cấm ở lift 0): 14 % tư thế bị loại. Vùng cấm gồm đầu camera, cột camera, mặt bệ, mặt khay. Chưa tính va chạm với bàn lab và thân robot ngoài các vùng đó. Số 576 mm là cực đại của quét (gập cổ tay −7,5°); bảng tải ở mục Tải dùng tay duỗi thẳng (0,57 m). Cả hai cùng tính từ trục pan, không phải từ trục vai (khoảng 516 mm).
+Quét lưới 87913 tư thế (bước 3° ở vai, khuỷu, gập cổ tay) trong giới hạn khớp và giới hạn ghép, bằng `faibotic.kinematics.arm_fk`, rồi bỏ các tư thế vi phạm vùng cấm của SDK (`limits.keepout_violations`, cấu hình di động, lift 0,45 m; riêng dòng lift 0 áp vùng cấm ở lift 0): 13 % tư thế bị loại. Vùng cấm gồm đầu camera, cột camera, mặt bệ, mặt khay. Chưa tính va chạm với bàn lab và thân robot ngoài các vùng đó. Số 576 mm là cực đại của quét (gập cổ tay −7,5°); bảng tải ở mục Tải dùng tay duỗi thẳng (0,57 m). Cả hai cùng tính từ trục pan, không phải từ trục vai (khoảng 516 mm).
 <!-- /sinh:tamvoi -->
 
 ## Servo
@@ -170,7 +170,6 @@ Câu công bố (sinh bằng `scripts/tinh_tai.py` từ cùng mô hình, chưa �
 | kẹp ngang | 0,50 | -0,15 | 0,66 | 0,72 | vai |
 | kẹp chúi xuống | 0,25 | -0,20 | 2,05 | 2,14 | vai |
 | kẹp chúi xuống | 0,30 | -0,20 | 1,42 | 1,51 | vai |
-| kẹp chúi xuống | 0,35 | -0,20 | 1,00 | 1,10 | vai |
 | kẹp chúi xuống | 0,25 | -0,30 | 1,90 | 2,02 | vai |
 | kẹp chúi xuống | 0,30 | -0,30 | 1,34 | 1,45 | vai |
 <!-- /sinh:tai -->
@@ -200,12 +199,12 @@ Câu công bố (sinh bằng `scripts/tinh_tai.py` từ cùng mô hình, chưa �
 | Khối lượng trạm, chưa tay | 2,094 kg | [ước] CAD và giả định |
 | Khối lượng phần quay theo pan, mỗi tay | 1,69 kg | [tính] cận trên, khối đặc |
 | Khối lượng mỗi tay theo CAD, đủ 7 servo | 2,13 kg | [tính] chi tiết in khối đặc, servo theo datasheet |
-| Khối lượng cả robot theo CAD | 21,2 kg | [tính] cận trên; cân thật chờ EVT |
+| Khối lượng cả robot theo CAD | 21,5 kg | [tính] cận trên; cân thật chờ EVT |
 <!-- /sinh:denang -->
 
 - **Chống lật:** hệ số 1,638 tính tĩnh [tính]; 1,503 khi tính động với dốc gia tốc của đế (tốc độ ≤ 0,40 m/s, quay ≤ 0,25 rad/s, dốc 0,05 m/s²) [tính]. Mục tiêu ≥ 1,5. Đối trọng thép là phần giữ hệ số này, nên không tháo.
 - Trục nâng có chốt hãm cơ khí: mất điện thì xe nâng tụt tối đa một nấc răng rồi tựa chốt [ước]. Thử rơi: chờ EVT.
-- Khối lượng cả robot ≈ 21,2 kg theo CAD (thân 16,9 kg, mỗi tay 2,13 kg gồm 7 servo), cận trên vì chi tiết in tính khối đặc [tính]. Cân thật: chờ EVT.
+- Khối lượng cả robot ≈ 21,5 kg theo CAD (thân 17,2 kg gồm khay đế, mỗi tay 2,13 kg gồm 7 servo), cận trên vì chi tiết in tính khối đặc [tính]. Cân thật: chờ EVT.
 - Kích thước ngoài toàn bộ: chờ EVT.
 
 ## Khay đế

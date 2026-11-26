@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """P-L: hành trình thật của xe nâng trên trụ (voxel, nhanh), và (--tay) quét va chạm hai tay bằng mesh.
 Trụ và đế trụ (tĩnh) voxel hoá 2 mm; xe nâng S2 (khung T giữa, chốt định vị, đế ngàm, trạm hai tay chưa tay) lấy 40.000 điểm mặt mỗi chi tiết,
 dời theo z, đếm điểm rơi vào trụ.

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """đăng ký kẹp gốc AM-ARM200 (STEP follower OB_F_J7_Gripper + OB_F_Camera, OB_F_J7_Jaw) vào khung URDF upstream.
 STEP follower đặt kẹp J7 theo bố cục trưng bày (lệch khỏi chỗ lắp, xem assembly_full GRIP_UP), nên không dùng được phép STEP = URDF + t như các chi tiết khác.
 Lấy mesh URDF left_Fixed_Jaw / left_Moving_Jaw (cad/upstream/AM-ARM/am-arm200/urdf/am-arm200-meshes, commit 5b03af1, Apache-2.0) đặt bằng FK tư thế 0,

@@ -11,6 +11,7 @@ Kiểm hoàn thành (mỗi vật): tâm trong vùng đích, đáy trên mặt b�
 from __future__ import annotations
 
 import argparse
+import os as _os
 import json
 import math
 import sys
@@ -77,9 +78,18 @@ def fetch_from_fridge(robot, oid, target_xy, snap, log) -> None:
     robot.move_joints({spec.joint_name(side, j): v for j, v in spec.HOME_ARM.items()}, duration=1.2)
 
 
-def run(robot, objs=None, snap=None, log=print) -> dict:
-    snap = snap or (lambda *a, **k: None)
+CHOREO_DEFAULT = "new"     # biên đạo mới đạt cả ba cổng (20/20 seed, 0 đứng hình > 150 ms, jerk p95 ≤ 5; docs/CHOREO-M1-ketqua.md); cũ: --choreo old
+
+
+def run(robot, objs=None, snap=None, log=print, choreo: str = CHOREO_DEFAULT) -> dict:
+    """choreo: "new" = biên đạo docs/CHOREO-M1.md; "old" = một tay, đế đi theo vật (trước 25/11)."""
     objs = objs or L.PICK_PLACE_OBJS
+    if choreo == "new":
+        import lab_choreo as CH
+        CH.pick_place(robot, objs, [slot(i) for i in range(len(objs))], snap=snap, log=log)
+        robot.wait(1.0)
+        return check(robot, objs)
+    snap = snap or (lambda *a, **k: None)
     snap("1-bat-dau")
     LC.raise_to_work(robot)
     for i, oid in enumerate(objs):
@@ -98,6 +108,49 @@ def run(robot, objs=None, snap=None, log=print) -> dict:
     return check(robot, objs)
 
 
+CAN_TARGET = (0.56, -0.95)    # CHOREO-M1 4.3: chỗ đặt lon trên bàn khi đo riêng phần tủ lạnh (0,62 ngoài tầm từ F2b)
+
+
+def run_fridge(robot, snap=None, log=print, choreo: str = "new") -> dict:
+    """Riêng phần tủ lạnh (mở cửa, lấy lon, đặt lon lên bàn ở CAN_TARGET): để đo biên đạo cũ/mới (scripts/do_choreo.py).
+    old: tay trái mở cửa (kéo theo cung, đế bám), tay phải lấy lon bằng đế đi; new: tay phải kéo rồi đẩy cửa, tay trái lấy lon."""
+    snap = snap or (lambda *a, **k: None)
+    oid = L.FRIDGE_OBJ[0]
+    if choreo == "new":
+        import lab_choreo as CH
+        CH.fridge_fetch(robot, oid, CAN_TARGET, snap=snap, log=log)
+    else:
+        LC.raise_to_work(robot)
+        fetch_from_fridge(robot, oid, CAN_TARGET, snap, log)
+    robot.wait(1.0)
+    return check_fridge(robot, oid, CAN_TARGET)
+
+
+def run_oc_fridge(robot, snap=None, log=print) -> dict:
+    """O&C tủ lạnh có lon (CHOREO-M1-ketqua mục 8.7): tay phải mở cửa, tay trái lấy lon đặt ở CAN_TARGET (nguyên mục 5), rồi đóng cửa.
+    Đạt khi lon trong vùng 4 cm quanh CAN_TARGET và cửa <= closed_max (0,05 rad) sau 1 s."""
+    import lab_choreo as CH
+    oid = L.FRIDGE_OBJ[0]
+    fn = CH.oc_fridge_can if _os.environ.get("M1_OCF_REGRASP") == "1" else CH.oc_fridge_can_push   # mặc định: đẩy mặt ngoài
+    r0 = fn(robot, oid, CAN_TARGET, snap=snap, log=log)
+    robot.wait(1.0)
+    door = LC.joint_q(robot, "fridge_hinge")
+    js = next(ln["joint"] for ln in L.fridge()["links"] if (ln.get("joint") or {}).get("name") == "fridge_hinge")
+    r = LC.in_zone(robot, oid, CAN_TARGET, 0.04)
+    ok_door = door <= js["closed_max"]
+    return {"task": "oc_fridge", "pass": bool(r["ok"] and ok_door), "done": int(r["ok"]) + int(ok_door), "total": 2,
+            "detail": {"can": r, "door_open_q": round(r0["open_q"], 3), "door_q": round(door, 3)}}
+
+
+def check_fridge(robot, oid, target) -> dict:
+    door = LC.joint_q(robot, "fridge_hinge")
+    js = next(ln["joint"] for ln in L.fridge()["links"] if (ln.get("joint") or {}).get("name") == "fridge_hinge")
+    r = LC.in_zone(robot, oid, target, 0.04)
+    ok_door = door >= js["open_min"]     # cửa còn mở >= open_min lúc kiểm (bài này không đóng cửa)
+    return {"task": "fridge", "pass": bool(r["ok"] and ok_door), "done": int(r["ok"]) + int(ok_door), "total": 2,
+            "detail": {"can": r, "door_q": round(door, 3)}}
+
+
 def check(robot, objs) -> dict:
     (zx, zy), (lx, ly) = L.ZONE["pos"], L.ZONE["size"]
     rows = [LC.in_zone(robot, oid, (zx, zy), (lx / 2, ly / 2)) for oid in objs]
@@ -112,12 +165,15 @@ def main() -> int:
     ap.add_argument("--seed", type=int, default=0, help="xáo vị trí vật trên bàn theo seed (0 = bố cục trong lab-scene.json)")
     ap.add_argument("--objects", default=",".join(L.PICK_PLACE_OBJS), help="danh sách vật, cách nhau dấu phẩy")
     ap.add_argument("--snap", action="store_true", help="chụp khung vào media/sim-snapshots/lab/")
+    ap.add_argument("--choreo", choices=("old", "new"), default=None, help="biên đạo: new (CHOREO-M1) hoặc old (trước 25/11)")
+    ap.add_argument("--fridge-only", action="store_true", help="chỉ phần tủ lạnh: mở cửa, lấy lon, đặt lên bàn (0,56; -0,95)")
     a = ap.parse_args()
     LC.headless_env(not a.viewer)
     robot = LC.make_robot(viewer=a.viewer)
     LC.scatter(robot, a.seed)
     snap = LC.Snapper(robot, "pick-place", "lab_front", enabled=a.snap)
-    res = run(robot, a.objects.split(","), snap, log=lambda m: print(m, file=sys.stderr))
+    lg = lambda m: print(m, file=sys.stderr)
+    res = run_fridge(robot, snap, lg, a.choreo or "new") if a.fridge_only else run(robot, a.objects.split(","), snap, lg, a.choreo or CHOREO_DEFAULT)
     res["seed"] = a.seed
     res["snapshots"] = [str(p) for p in snap.saved]
     print(json.dumps(res, ensure_ascii=False))

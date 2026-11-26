@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Dựng cụm, kiểm giao cắt/khe hở, xuất STEP/STL + metrics.json. Chạy: python build_all.py <thư mục xuất>
 """
 import json, sys, os, itertools

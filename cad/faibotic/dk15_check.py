@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """(22/11/2026): bằng chứng số cho ba lệch cũ, đo trên CAD hiện hành (assembly_full v0.4.5). build123d.
 (1) Đế xoay M1-LF-024 và tấm giao diện M1-LF-023b đồng trục pan dưới trục vai như SDK (spec.SHOULDER_X/Y); trước R0 lùi 83 mm.
 (2) Chặn dưới M1-SH-017 + đệm M1-SH-018 với tay đỡ M1-LF-023 + tấm giao diện: thể tích giao và khe nhỏ nhất theo vai -80..62 và pan -70..70 (bước 10),

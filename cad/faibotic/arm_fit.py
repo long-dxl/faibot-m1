@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Kiểm giao cắt khuỷu AM-ARM200 (OB_F_J4_Elbow) với gá vai Faibotic.
 Chạy: python (venv có build123d) cad/faibotic/arm_fit.py -> cad/export/arm_fit.json
 Đặt J4: tâm cung đầu khuỷu (suy từ bbox) trùng đầu link x = LINK_LEN; hướng tay -y_stp -> +x; mặt đối xứng -> y = 0 [giả định, STEP không có ràng buộc lắp].

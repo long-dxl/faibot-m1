@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """First moves on the simulation backend: raise the lift, reach with the left arm, close the gripper.
 
     python sdk/examples/01_first_moves.py

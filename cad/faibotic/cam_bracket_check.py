@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """DK-W4 (22/11/2026): kiểm giá camera cổ tay M1-AR-009 + vị trí camera mới (assembly_full.cam_wrist, cam_bracket_009). build123d.
 (1) ràng buộc đặt: camera + giá trước mặt đầu vỏ J56 (x >= 289,5), trên mặt hàm (z >= -2); (2) cuộn -160..160 (bước 5): camera + giá với chi tiết cổ tay
 không cuộn (vỏ/đáy/nắp J56, giá J5, chốt, khoá yaw), cả vị trí camera cũ để so; (3) hàm động quay quanh trục left_gripper URDF -40..18,56 (khép): với camera + giá;

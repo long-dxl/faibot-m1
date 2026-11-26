@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Tay AM-ARM200 follower nguyên bản (cấu hình P-L, 23/11/2026): động học thuận theo URDF upstream (cad/upstream/AM-ARM/am-arm200/urdf/am-arm200.urdf,
 commit 5b03af1, Apache-2.0, chỉ đọc), khối lượng/tâm khối lượng link theo URDF, và gán 14 STEP follower vào link để dựng tư thế.
  Chỉ numpy (+ build123d khi dựng hình).

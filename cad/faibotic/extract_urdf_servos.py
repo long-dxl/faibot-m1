@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
-# Copyright (c) 2026 Faibotic
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Tách mesh link URDF upstream AM-ARM200 follower (liyiteng/AM-ARM commit 5b03af1, Apache-2.0, am-arm200/urdf/am-arm200-meshes/*.STL;
 mesh SolidWorks có sẵn thân servo lắp đúng chỗ, tai bắt, ổ bi, bu lông) thành: thân link, chi tiết kim loại (bu lông 42,5 x Ø4,2, ổ bi Ø30),
 và từng servo (STS3095 65 x 30, STS3215 45,2 x 24,7: các tấm thân + trục/còi + giắc nằm trong hộp bao servo). Bỏ chi tiết < MIN_MM (ren, đầu vít).
-Rút gọn từng nhóm, ghi STL trong KHUNG LINK URDF (m) + derived.json. Bản quyền Faibotic (mã).
+Rút gọn từng nhóm, ghi STL trong KHUNG LINK URDF (m) + derived.json. Copyright (c) 2026 Leo Dao (Faibotic) (mã).
 Chạy (trimesh, fast-simplification): python extract_urdf_servos.py DIR_MESH_URDF OUT_DIR
 Dùng ở web-assets/src/10_build_m1_glb.py (đặt theo FK URDF như export_sim_meshes.pl_urdf_to_fore)."""
 import sys, os, json, numpy as np, trimesh, fast_simplification

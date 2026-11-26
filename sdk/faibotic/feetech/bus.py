@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """Bus servo Feetech trên cổng nối tiếp (pyserial) hoặc bất kỳ đối tượng có read/write/reset_input_buffer.
 
 Tầng 1b: lỗi I/O của cổng (rút USB: OSError/SerialException) -> BusMat (BUS-01); mở cổng lỗi/bận -> BusMat (BUS-05);

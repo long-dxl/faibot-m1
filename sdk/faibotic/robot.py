@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 Leo Dao (Faibotic)
 """API thống nhất `Robot` cho M1: cùng một script chạy với backend "sim" hoặc "feetech".
 
 Tầng 1b: mọi đầu vào được kiểm trước khi đổi trạng thái (NaN/inf -> LenhKhongHopLe, kiểu sai -> KieuLenhSai, tên khớp sai ->

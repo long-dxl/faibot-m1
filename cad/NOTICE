@@ -1,4 +1,5 @@
-Faibotic M1 — CAD
+Faibot M1 — CAD
+Copyright (c) 2026 Leo Dao (Faibotic) cho phần Faibotic vẽ; phần upstream/ thuộc tác giả gốc.
 
 Thư mục upstream/ chứa bản sao một phần CAD từ các kho mã nguồn mở, giữ nguyên nội dung. Cả ba mục theo Apache License 2.0 (upstream/LICENSE). Phần kẹp cũ đã gỡ khỏi bản công khai và không còn trong danh sách này:
 
@@ -21,7 +22,7 @@ Thư mục upstream/ chứa bản sao một phần CAD từ các kho mã nguồn
 Hai kho AlohaMini và AM-ARM chỉ có một tệp LICENSE (Apache-2.0, dòng "Copyright [yyyy] [name of copyright owner]" của phụ lục để trống, kho không nêu tên chủ bản quyền riêng). Không có tệp CAD nào mang header license riêng. Thông báo bản quyền, ghi công và tên chủ kho (liyiteng) được giữ ở đây và trong upstream/*/README.md nguyên văn.
 Không dùng tên "AlohaMini", "AM-ARM" làm nhãn hiệu của sản phẩm Faibotic (Apache-2.0 điều 6).
 
-Các tệp do Faibotic sửa hoặc vẽ mới: xem CHANGES.md. Phần Faibotic tự vẽ (faibotic/*.py và tệp xuất trong export/): CC BY-NC-SA 4.0, xem LICENSE-hardware ở gốc repo; dùng thương mại cần thoả thuận riêng. Các tệp upstream/ giữ Apache-2.0.
+Các tệp do Faibotic sửa hoặc vẽ mới: xem CHANGES.md. Phần Faibotic tự vẽ (faibotic/*.py và tệp xuất trong export/): Copyright (c) 2026 Leo Dao (Faibotic), CC BY-NC-SA 4.0, xem LICENSE-hardware ở gốc repo. Dùng thương mại: liên hệ founder@faibotic.com. Các tệp upstream/ giữ Apache-2.0. Tệp lắp ráp (export/*assembly*.step) chứa nguyên các chi tiết Apache của bên thứ ba liệt kê ở trên; các chi tiết đó vẫn theo Apache-2.0. Danh sách đầy đủ tệp theo từng giấy phép (gồm mesh sim và m1.glb): NOTICE ở gốc repo.
 
 Bố cục tài liệu theo cách tài liệu robot mở thường trình bày; không chép chữ, hình hay logo của ai.
 Thay đổi 24/11/2026 (v0.5c, Apache-2.0 điều 4b): `upstream/AM-ARM/am-arm200/urdf/derived/` dẫn xuất từ mesh URDF follower `am-arm200/urdf/am-arm200-meshes/left_{Base,Rotation_Pitch,Upper_Arm,Lower_Arm}.STL` (commit 5b03af1): tách thân link, chi tiết kim loại và thân servo; bỏ chi tiết nhỏ hơn 6 mm; rút gọn lưới (`faibotic/extract_urdf_servos.py`). Chỉ dùng cho hình web (`web-assets/m1.glb`).

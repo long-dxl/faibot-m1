@@ -238,8 +238,8 @@
   {
    "file": "joints.json",
    "role": "cây khớp, trục, giới hạn mềm từ spec.py, bảng ghép, tư thế",
-   "sha256": "ca6d5e2babf4a7efd062f65a672b904e1ed55464b7fcf1d95790a98276b86812",
-   "bytes": 16801
+   "sha256": "69b611b0a56f4f55c64f19d26bce7fd5c661b73a5e7ff57d33c0eb0bd418b897",
+   "bytes": 16743
   },
   {
    "file": "cum.json",
@@ -262,8 +262,8 @@
   {
    "file": "NOTICE",
    "role": "ghi công bản dẫn xuất",
-   "sha256": "8ca5aaa935557ab5f19daad2d068a37655781dc494fea87f88e73a8479a604fb",
-   "bytes": 1688
+   "sha256": "313135bea88f799e39ae11a15fba50c5977d4db781718af1aa6cac081a99add0",
+   "bytes": 2531
   }
  ],
  "lab_scene": {
